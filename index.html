@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biougra Pond v8 - BTC LIVE</title>
+<style>
+body{background:#000;color:#0f0;font-family:monospace;padding:10px;margin:0}
+#universal{font-size:16px;border:2px solid #0f0;padding:10px;margin-bottom:10px;word-break:break-all;white-space:pre-line}
+button{background:#0f0;color:#000;border:0;padding:12px;font-size:14px;font-weight:bold;margin:4px 2px}
+button.small{background:#111;color:#0f0;border:1px solid #0f0;padding:8px;font-size:11px}
+#log{font-size:11px}
+.tx{border:1px solid #0f0;padding:8px;margin:6px 0;word-break:break-all}
+#verify{border:2px dashed #0f0;padding:10px;margin-top:15px}
+input{width:95%;background:#111;color:#0f0;border:1px solid #0f0;padding:8px;margin:4px 0;font-family:monospace}
+</style>
+</head>
+<body>
+
+<h2>🌵 Biougra Pond v8 - BTC LIVE FETCH</h2>
+<div id="universal">loading... fetching real BTC...</div>
+
+<button onclick="mintZero()">MINT ZERO</button>
+<button onclick="exportChain()" class="small">EXPORT CHAIN.json</button>
+<button onclick="document.getElementById('fileIn').click()" class="small">IMPORT CHAIN</button>
+<input type="file" id="fileIn" style="display:none" onchange="importChain(this)">
+<button onclick="clearPond()" class="small" style="color:#f55;border-color:#f55">CLEAR</button>
+<button onclick="fetchRealBtc()" class="small">REFRESH BTC LIVE</button>
+
+<div id="log"></div>
+
+<div id="verify">
+<h3>🔍 PUBLIC VERIFIER - Anyone can check</h3>
+Paste Tx ID or full JSON:<br>
+<input id="verifyInput" placeholder="paste id like m2x... or full tx json">
+<button onclick="verifyTx()">VERIFY</button>
+<div id="verifyOut" style="margin-top:8px;white-space:pre-line"></div>
+</div>
+<script>
+// ===== POND v8 - BIOUGRA LAB - BTC LIVE ORACLE =====
+let chain = [];
+try{ chain = JSON.parse(localStorage.getItem('pond_chain')||'[]'); }catch(e){ chain=[]; }
+let personalCount = parseInt(localStorage.getItem('pond_personal')||'0')||0;
+let genesisId = localStorage.getItem('pond_genesis_id') || `wakha-alik-${Date.now()}`;
+localStorage.setItem('pond_genesis_id', genesisId);
+
+let realBtc = 969040;
+let realBtcTime = 0;
+let _a = {btc:realBtc, sun:0, you:chain.length};
+let universalBase = 969040000 + chain.length;
+
+async function fetchRealBtc(){
+  try{
+    let r = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd");
+    let j = await r.json();
+    realBtc = Math.floor(j.bitcoin.usd);
+    realBtcTime = Date.now();
+    _a.btc = realBtc;
+    refreshUniversal();
+    return realBtc;
+  }catch(e){
+    return realBtc;
+  }
+}
+
+function refreshUniversal(){
+  let d = new Date();
+  let h = d.getUTCHours() + d.getUTCMinutes()/60 + d.getUTCSeconds()/3600;
+  _a.sun = Math.floor(Math.max(0, Math.sin((h-6)*Math.PI/12))*1000000);
+  _a.you = chain.length + personalCount;
+  _a.btc = realBtc;
+  universalBase = _a.btc*1000 + _a.sun + _a.you*10;
+  let el = document.getElementById('universal');
+  if(el){
+    let timeStr = d.toLocaleTimeString('en-GB',{timeZone:'Etc/GMT',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    let liveTag = realBtcTime? `LIVE ${new Date(realBtcTime).toLocaleTimeString()}` : "FALLBACK";
+    el.innerText = `UNIVERSAL: ${universalBase}\nBTC:${_a.btc} ${liveTag} SUN:${_a.sun} YOU:${_a.you}\nTIME: ${timeStr} GMT\nGENESIS:${genesisId}\nCHAIN:${chain.length} tx - READY - BIOUGRA LAB`;
+  }
+}
+
+let pondSensors = { battery:19, motion:9, touch:0, gps:"Biougra" };
+try{ if(navigator.getBattery){ navigator.getBattery().then(b=>{ pondSensors.battery=Math.floor(b.level*100); }); } }catch(e){}
+window.addEventListener('devicemotion', e=>{ let a=e.accelerationIncludingGravity; if(a) pondSensors.motion=Math.floor(Math.abs(a.x+a.y+a.z)); });
+window.addEventListener('touchstart', ()=>{ pondSensors.touch++; });
+
+function clearPond(){ if(confirm("Clear?")){ localStorage.clear(); location.reload(); } }
+
+async function mintZero(){
+  await fetchRealBtc();
+  personalCount = chain.length;
+  let d = new Date();
+  let id = "m2x" + Date.now().toString(36) + Math.random().toString(36).slice(2,6);
+  let tx = {
+    id: id,
+    genesis: chain.length>0? chain[0].genesis : genesisId,
+    universal: Date.now(),
+    prev: chain.length>0? chain[chain.length-1].id : "GENESIS",
+    time: d.toLocaleTimeString('en-GB',{timeZone:'Etc/GMT'}),
+    pond: `BTC:${_a.btc} SUN:${_a.sun} YOU:${chain.length + personalCount} BAT:${pondSensors.battery}%`,
+    branch: `b${chain.length} - Biougra verified - BTC LIVE`,
+    btc: _a.btc,
+    sun: _a.sun,
+    you: chain.length + personalCount,
+    btcSource: realBtcTime? "coingecko-live" : "fallback"
+  };
+  chain.push(tx);
+  localStorage.setItem('pond_chain', JSON.stringify(chain));
+  localStorage.setItem('pond_personal', chain.length.toString());
+  render();
+  refreshUniversal();
+}
+
+function render(){
+  let log=document.getElementById('log'); if(!log) return;
+  let existingExport = document.getElementById('exportWrap');
+  let exportHTML = existingExport? existingExport.outerHTML : "";
+  log.innerHTML = exportHTML;
+  for(let i=chain.length-1;i>=0;i--){
+    let tx=chain[i];
+    log.innerHTML+=`<div class="tx">#${i} ${tx.time} | ${tx.pond}<br>ID:${tx.id} PREV:${tx.prev}<br>${tx.branch} | src:${tx.btcSource||'old'}</div>`;
+  }
+}
+
+function exportChain(){
+  let data=JSON.stringify({genesis:genesisId,chain:chain,exported_at:new Date().toISOString()},null,2);
+  let log=document.getElementById('log');
+  let wrap = `<div id="exportWrap" class="tx" style="background:#111;border:2px solid yellow"><b>EXPORT - LONG PRESS TEXTAREA TO COPY:</b><br><textarea id="exportBox" style="width:100%;height:350px;background:#000;color:#0f0;border:1px solid yellow;font-size:9px;font-family:monospace">${data}</textarea><br><button class="small" onclick="let b=document.getElementById('exportBox');b.select();b.setSelectionRange(0,999999);document.execCommand('copy');alert('COPIED '+b.value.length+' chars')">COPY ALL</button> <button class="small" onclick="document.getElementById('exportWrap').remove()">CLOSE</button></div>`;
+  if(log){ log.innerHTML = wrap + log.innerHTML; }
+  alert("Export at TOP - scroll up, long press to copy");
+}
+
+function importChain(input){
+  let file=input.files[0]; if(!file) return;
+  let r=new FileReader();
+  r.onload=e=>{
+    try{ let j=JSON.parse(e.target.result); if(j.chain){ chain=j.chain; genesisId=j.genesis; localStorage.setItem('pond_chain',JSON.stringify(chain)); localStorage.setItem('pond_genesis_id',genesisId); location.reload(); } }catch(err){ alert("bad file"); }
+  }; r.readAsText(file);
+}
+
+function verifyTx(){
+  let q = document.getElementById('verifyInput').value.trim();
+  let res = document.getElementById('verifyOut');
+  if(!q){ res.innerHTML="Paste id"; return; }
+  let found = chain.find(tx=> tx.id===q);
+  if(!found){ res.innerHTML="❌ FAKE - not in chain"; return; }
+  let okGenesis = chain.every(tx=> tx.genesis===chain[0].genesis);
+  let okPrev = true;
+  for(let i=1;i<chain.length;i++){ if(chain[i].prev!== chain[i-1].id) okPrev=false; }
+  let okUniversal = true;
+  for(let i=1;i<chain.length;i++){ if(chain[i].universal < chain[i-1].universal) okUniversal=false; }
+  res.innerHTML = `✅ REAL - ${found.branch}\nID: ${found.id}\nPond: ${found.pond}\nCHAIN: ${chain.length} blocks\nGenesis locked: ${okGenesis?'✅':'❌'}\nPrev link: ${okPrev?'✅':'❌'}\nTime order: ${okUniversal?'✅':'❌'}\n${okGenesis&&okPrev&&okUniversal?'🔥 REAL BIOUGRA LAB CHAIN - '+chain.length+' blocks verified':'❌ CHAIN BROKEN'}`;
+}
+
+fetchRealBtc();
+setInterval(fetchRealBtc, 60000);
+refreshUniversal();
+render();
+</script>
+</body>
+</html>
