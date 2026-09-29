@@ -4,9 +4,9 @@ let genesisId=localStorage.getItem('pond_genesis_id')||`wakha-alik-${Date.now()}
 let realBtc=969040,realBtcTime=0,realBtcSrc="fallback-init";let _a={btc:realBtc,sun:0,you:chain.length};let universalBase=969040000+chain.length;
 async function fetchRealBtc(){
  let sources=[
-   async()=>{let r=await fetch("https://api.allorigins.win/raw?url=https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT");let j=await r.json();return{price:Math.floor(parseFloat(j.price)),src:"binance-proxy"}},
- async()=>{let r=await fetch("https://corsproxy.io/?https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT");let j=await r.json();return{price:Math.floor(parseFloat(j.price)),src:"binance-proxy2"}},
- async()=>{let r=await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd");let j=await r.json();return{price:Math.floor(j.bitcoin.usd),src:"coingecko"}
+    async()=>{let r=await fetch("https://api.coinbase.com/v2/prices/BTC-USD/spot");let j=await r.json();return{price:Math.floor(parseFloat(j.data.amount)),src:"coinbase"}},
+ async()=>{let r=await fetch("https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT");let j=await r.json();return{price:Math.floor(parseFloat(j.price)),src:"binance"}},
+ async()=>{let r=await fetch("https://api.kraken.com/0/public/Ticker?pair=XBTUSD");let j=await r.json();return{price:Math.floor(parseFloat(j.result.XXBTZUSD.c[0])),src:"kraken"}}
  ];
  for(let fn of sources){try{let res=await fn();if(res.price>1000){realBtc=res.price;realBtcTime=Date.now();realBtcSrc=res.src;_a.btc=realBtc;refreshUniversal();return realBtc}}catch(e){}}
  return realBtc;
