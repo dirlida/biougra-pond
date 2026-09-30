@@ -1,139 +1,64 @@
 {
-  "genesis": "wakha-alik-1790628213737",
+  "genesis": "wakha-1790774019487",
+  "personalCount": 8,
   "chain": [
     {
-      "id": "m2xmumrevjom1a3",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790691379764,
-      "time": "14:16:19",
-      "pond": "BTC:969040 SUN:828304 YOU:13 BAT:69%",
-      "branch": "b0 - Biougra verified",
-      "btc": 969040,
-      "sun": 828304,
-      "you": 13
+      "id": "zero-1790773624829",
+      "you": 1,
+      "ts": 1790773624829
     },
     {
-      "id": "m2xmumrfm3mosfg",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790691414178,
-      "prev": "m2xmumrevjom1a3",
-      "time": "14:16:54",
-      "pond": "BTC:969040 SUN:828264 YOU:15 BAT:69%",
-      "branch": "b1 - Biougra verified",
-      "btc": 969040,
-      "sun": 828264,
-      "you": 15
+      "id": "zero-1790773626701",
+      "you": 2,
+      "ts": 1790773626701
     },
     {
-      "id": "m2xmumrgwviamqf",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790691474798,
-      "prev": "m2xmumrfm3mosfg",
-      "time": "14:17:54",
-      "pond": "BTC:969040 SUN:824537 YOU:10 BAT:70%",
-      "branch": "b2 - Biougra verified",
-      "btc": 969040,
-      "sun": 824537,
-      "you": 10
+      "id": "zero-1790774024733",
+      "you": 3,
+      "pond": "BTC:113500 SUN:13216 YOU:2",
+      "btc": 113500,
+      "sun": 13216,
+      "ts": 1790774024733
     },
     {
-      "id": "m2xmumroyd868yg",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790691849980,
-      "prev": "m2xmumrgwviamqf",
-      "time": "14:24:09",
-      "pond": "BTC:969040 SUN:813819 YOU:12 BAT:71%",
-      "branch": "b3 - Biougra verified",
-      "btc": 969040,
-      "sun": 813819,
-      "you": 12
+      "id": "zero-1790774099358",
+      "you": 4,
+      "pond": "BTC:113500 SUN:13216 YOU:3",
+      "btc": 113500,
+      "sun": 13216,
+      "ts": 1790774099358
     },
     {
-      "id": "m2xmumrrr6tdb0u",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790691980645,
-      "prev": "m2xmumroyd868yg",
-      "time": "14:26:20",
-      "pond": "BTC:969040 SUN:803120 YOU:8 BAT:72%",
-      "branch": "b4 - Biougra verified",
-      "btc": 969040,
-      "sun": 803120,
-      "you": 8
+      "id": "zero-1790774100193",
+      "you": 5,
+      "pond": "BTC:113500 SUN:13233 YOU:4",
+      "btc": 113500,
+      "sun": 13233,
+      "ts": 1790774100193
     },
     {
-      "id": "m2xmumrylev4ro9",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790692299751,
-      "prev": "m2xmumrrr6tdb0u",
-      "time": "14:31:39",
-      "pond": "BTC:969040 SUN:788994 YOU:10 BAT:72%",
-      "branch": "b5 - Biougra verified",
-      "btc": 969040,
-      "sun": 788994,
-      "you": 10
+      "id": "zero-1790774100930",
+      "you": 6,
+      "pond": "BTC:113500 SUN:13250 YOU:5",
+      "btc": 113500,
+      "sun": 13250,
+      "ts": 1790774100930
     },
     {
-      "id": "m2xmums1t9phjq7",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790692449901,
-      "prev": "m2xmumrylev4ro9",
-      "time": "14:34:09",
-      "pond": "BTC:969040 SUN:788950 YOU:12 BAT:72%",
-      "branch": "b6 - Biougra verified",
-      "btc": 969040,
-      "sun": 788950,
-      "you": 12
+      "id": "zero-1790774101615",
+      "you": 7,
+      "pond": "BTC:113500 SUN:13250 YOU:6",
+      "btc": 113500,
+      "sun": 13250,
+      "ts": 1790774101615
     },
     {
-      "id": "m2xmums9gp8bwm8",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790692806860,
-      "prev": "m2xmums1t9phjq7",
-      "time": "14:40:06",
-      "pond": "BTC:969040 SUN:765950 YOU:14 BAT:74%",
-      "branch": "b7 - Biougra verified",
-      "btc": 969040,
-      "sun": 765950,
-      "you": 14
-    },
-    {
-      "id": "m2xmumyx6524mej",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790703990614,
-      "prev": "m2xmums9gp8bwm8",
-      "time": "17:46:30",
-      "pond": "BTC:969040 SUN:59161 YOU:16 BAT:50%",
-      "branch": "b8 - Biougra verified",
-      "btc": 969040,
-      "sun": 59161,
-      "you": 16
-    },
-    {
-      "id": "m2xmumz23zp2end",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790704221109,
-      "prev": "m2xmumyx6524mej",
-      "time": "17:50:21",
-      "pond": "BTC:969040 SUN:43038 YOU:18 BAT:51%",
-      "branch": "b9 - Biougra verified - BTC LIVE",
-      "btc": 969040,
-      "sun": 43038,
-      "you": 18,
-      "btcSource": "fallback"
-    },
-    {
-      "id": "m2xmumz9d9gtsf4",
-      "genesis": "wakha-alik-1790628213737",
-      "universal": 1790704559716,
-      "prev": "m2xmumz23zp2end",
-      "time": "17:55:59",
-      "pond": "BTC:83030 SUN:17525 YOU:20 BAT:52%",
-      "branch": "b10 - Biougra verified - BTC LIVE",
-      "btc": 83030,
-      "sun": 17525,
-      "you": 20,
-      "btcSource": "coingecko-live"
+      "id": "zero-1790774108056",
+      "you": 8,
+      "pond": "BTC:113500 SUN:13250 YOU:7",
+      "btc": 113500,
+      "sun": 13250,
+      "ts": 1790774108056
     }
-  ],
-  "exported_at": "2026-09-29T19:55:41.860Z"
+  ]
 }
