@@ -1,0 +1,4 @@
+.env
+node_modules
+pond_backup_*.json
+.DS_Store
