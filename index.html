@@ -1,62 +1,40 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content=width=device-width,initial-scale=1><title>Biougra Pond v14</title><style>
-body{background:#000;color:#0f0;font-family:monospace;padding:12px;margin:0}
-#uni{border:2px solid #0f0;padding:12px;margin-bottom:12px;white-space:pre-line;font-size:15px;word-break:break-all}
-button{background:#0f0;color:#000;border:0;padding:12px 16px;margin:4px;font-weight:bold;font-size:14px}
-button.small{background:#111;color:#0f0;border:1px solid #0f0;padding:8px;font-size:12px}
-button.save{background:#ff0;color:#000}
-.tx{border:1px solid #333;padding:8px;margin:6px 0;word-break:break-all;font-size:12px}
-#log{margin-top:10px}
-</style></head><body>
-<h2>🌵 Biougra Pond v14 - Full Vault</h2>
-<div id=uni>loading universal...</div>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content=width=device-width,initial-scale=1><title>v14 debug</title><style>body{background:#000;color:#0f0;font-family:monospace;padding:12px}#uni{border:2px solid #0f0;padding:10px;white-space:pre-line}button{background:#0f0;color:#000;padding:12px;margin:4px;font-weight:bold}</style></head><body>
+<h2>Biougra v14 debug</h2>
+<div id=uni>starting...</div>
+<div id=err style=color:#f55></div>
 <button onclick=mintZero()>MINT ZERO</button>
-<button onclick=saveVault() class=save>SAVE VAULT FILE</button>
-<button onclick=clearPond() class=small style=color:#f55;border-color:#f55>CLEAR LOCAL</button>
-<button onclick=refreshBtc() class=small>REFRESH BTC</button>
+<button onclick=saveVault() style=background:#ff0>SAVE VAULT</button>
 <div id=log></div>
 <script>
+function showErr(e){document.getElementById('err').innerText='ERROR: '+e.message+'
+'+e.stack}
+window.onerror=function(m,s,l,c,er){showErr(er||{message:m});}
+try{
 let chain=[];let personalCount=0;
-let genesisId=localStorage.getItem('pond_genesis')||('wakha-alik-'+Date.now());
+let genesisId=localStorage.getItem('pond_genesis')||('wakha-'+Date.now());
 localStorage.setItem('pond_genesis',genesisId);
 let realBtc=113500;let realBtcSrc='fallback';
 let _a={btc:realBtc,sun:0,you:0};let uniBase=0;
-
-function loadLocal(){
-  try{chain=JSON.parse(localStorage.getItem('pond_chain')||'[]')}catch(e){chain=[]}
-  personalCount=parseInt(localStorage.getItem('pond_personal')||'0');
-}
+function loadLocal(){try{chain=JSON.parse(localStorage.getItem('pond_chain')||'[]')}catch(e){chain=[]} personalCount=parseInt(localStorage.getItem('pond_personal')||'0')||chain.length;}
 function refreshUni(){
-  let d=new Date();let h=d.getUTCHours()+d.getUTCMinutes()/60+d.getUTCSeconds()/3600;
-  _a.sun=Math.floor(Math.max(0,Math.sin((h-6)*Math.PI/12))*1000000);
-  _a.you=personalCount;_a.btc=realBtc;
-  uniBase=_a.btc*1000+_a.sun+_a.you*10;
+  let d=new Date();let h=d.getUTCHours()+d.getUTCMinutes()/60;
+  _a.sun=Math.floor(h*1000);_a.you=personalCount;_a.btc=realBtc;uniBase=_a.btc*1000+_a.sun+_a.you*10;
   document.getElementById('uni').innerText='UNIVERSAL: '+uniBase+'
-BTC:'+_a.btc+' ('+realBtcSrc+') SUN:'+_a.sun+' YOU:'+_a.you+' CHAIN:'+chain.length+'
+BTC:'+_a.btc+' SUN:'+_a.sun+' YOU:'+_a.you+' CHAIN:'+chain.length+'
 ID:'+genesisId;
-}
-function log(m){document.getElementById('log').innerHTML='<div>> '+m+'</div>'+document.getElementById('log').innerHTML}
-function render(){document.getElementById('log').innerHTML=chain.slice(-20).reverse().map(x=>'<div class=tx>'+x.id.slice(0,40)+'<br>YOU:'+x.you+' BTC:'+x.btc+' SUN:'+x.sun+'<br>'+x.pond+'</div>').join('')}
-
-async function refreshBtc(){
-  try{
-    let r=await fetch('https://api.coinbase.com/v2/prices/BTC-USD/spot');
-    let j=await r.json();realBtc=Math.floor(parseFloat(j.data.amount));realBtcSrc='coinbase';log('BTC '+realBtc+' coinbase');
-  }catch(e){log('BTC fetch failed, using '+realBtc)}
-  refreshUni();
 }
 function mintZero(){
   personalCount++;localStorage.setItem('pond_personal',personalCount);
-  let id='zero-'+Date.now()+'-'+Math.random().toString(36).slice(2,8);
-  let tx={id:id,genesis:genesisId,universal:uniBase,time:new Date().toTimeString().slice(0,8),pond:'BTC:'+_a.btc+' SUN:'+_a.sun+' YOU:'+_a.you,branch:'b'+chain.length,btc:_a.btc,sun:_a.sun,you:_a.you,btcSource:realBtcSrc,ts:Date.now()};
-  chain.push(tx);localStorage.setItem('pond_chain',JSON.stringify(chain));
-  refreshUni();render();log('MINTED YOU='+personalCount+' '+id);
+  let id='zero-'+Date.now();let tx={id:id,you:personalCount,pond:'BTC:'+_a.btc+' SUN:'+_a.sun+' YOU:'+_a.you,btc:_a.btc,sun:_a.sun,ts:Date.now()};
+  chain.push(tx);localStorage.setItem('pond_chain',JSON.stringify(chain));refreshUni();
+  document.getElementById('log').innerHTML='<div>MINTED '+id+'</div>'+document.getElementById('log').innerHTML;
 }
 function saveVault(){
-  let vault={genesis:genesisId,personalCount:personalCount,chain:chain,exported_at:new Date().toISOString(),universal:uniBase,btc_last:realBtc};
+  let vault={genesis:genesisId,personalCount:personalCount,chain:chain};
   let blob=new Blob([JSON.stringify(vault,null,2)],{type:'application/json'});
   let url=URL.createObjectURL(blob);let a=document.createElement('a');a.href=url;a.download='chain.json';a.click();
-  log('SAVED chain.json - now move from Downloads to ~/biougra-pond and git yeet to save to vault!');
 }
-loadLocal();refreshUni();render();refreshBtc();
-setInterval(()=>{refreshUni()},60000);
+loadLocal();refreshUni();
+document.getElementById('log').innerHTML+='<div>loaded ok</div>';
+}catch(e){showErr(e)}
 </script></body></html>
