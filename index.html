@@ -3,92 +3,148 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Biougra Pond v19 Market Peek</title>
+<title>Biougra Pond v20 Moon Direct</title>
 <style>
-body{background:#001a12;color:#0f3;font-family:monospace;padding:12px}
-#market-bar{display:flex;flex-wrap:wrap;gap:12px;padding:10px;border:1px dashed #0f3;background:#002a1a;margin-bottom:12px}
+body{background:#000e14;color:#0f3;font-family:monospace;padding:12px}
+#market-bar{display:flex;flex-wrap:wrap;gap:12px;padding:10px;border:1px solid #0f3;background:#001a22;margin-bottom:12px}
+#moon-bar{display:flex;gap:12px;padding:8px;border:1px dashed #f0f;background:#1a002a}
 button{background:#0f3;color:#001a12;border:none;padding:8px 14px;font-weight:bold;cursor:pointer}
 #chain{max-height:200px;overflow:auto;border:1px solid #0f3;padding:8px;margin-top:12px}
 .fish{padding:2px 0;border-bottom:1px dotted #0f3}
 </style>
 </head>
 <body>
-<div id="market-bar">
-  <span>🌊 POND://biougra</span>
-  <span id="ocean">Ocean:...</span>
-  <span id="you-count">You:...</span>
-  <button id="copyPond">Copy Pond Link</button>
-</div>
+<div id="market-bar"><span>🌊 POND://biougra</span><span id="ocean">...</span><span id="you-count">...</span><button id="copyPond">Copy Pond Link</button></div>
+<div id="moon-bar"><span id="sun-real">SUN:...</span><span id="moon-real">MOON:...</span><span id="btc-real">BTC:...</span></div>
 
-<h2>Biougra Pond v19</h2>
-<div>BTC: <span id="btc">loading</span> | SUN: <span id="sun">...</span> | YOU: <span id="you">...</span></div>
-<canvas id="pond" width="360" height="200" style="border:1px solid #0f3;margin:12px 0;background:#003322"></canvas><br>
+<h2>Biougra Pond v20 - REAL SUN / REAL MOON</h2>
+<canvas id="pond" width="360" height="220" style="border:1px solid #0f3;background:#001822;margin:12px 0"></canvas><br>
 <button id="mint">MINT YOU FISH 🎣</button>
-
 <div id="chain"></div>
 
 <script>
-const GENESIS = "wakha-1790774019487";
-const RAW = "https://raw.githubusercontent.com/dirlida/biougra-pond/main/chain.json";
+const GENESIS="wakha-1790774019487";
+const RAW="https://raw.githubusercontent.com/dirlida/biougra-pond/main/chain.json";
+const LAT=30.4278, LON=-9.5981; // Biougra/Agadir
+
+// REAL SUN for Agadir - solar calc
+function getSunCycle(){
+  const now=new Date();
+  const start=new Date(now.getFullYear(),0,0);
+  const day=Math.floor((now-start)/86400000);
+  const decl=23.45*Math.sin((360/365)*(284+day)*Math.PI/180);
+  const latRad=LAT*Math.PI/180;
+  const cosH=-Math.tan(latRad)*Math.tan(decl*Math.PI/180);
+  const H=Math.acos(Math.min(1,Math.max(-1,cosH)))*180/Math.PI;
+  const sunrise=12-H/15 - LON/15; // rough local
+  const sunset=12+H/15 - LON/15;
+  const curH=now.getHours()+now.getMinutes()/60+now.getSeconds()/3600;
+  let sunProg;
+  if(curH<sunrise) sunProg=0;
+  else if(curH>sunset) sunProg=16000;
+  else sunProg=Math.floor(((curH-sunrise)/(sunset-sunrise))*16000);
+  return {sun:sunProg, sunrise:sunrise.toFixed(2), sunset:sunset.toFixed(2), day};
+}
+// REAL MOON phase 0-29.53
+function getMoon(){
+  const knownNew= new Date('2024-01-11T11:57:00Z').getTime();
+  const cycle=29.53058867*86400000;
+  const now=Date.now();
+  const phase=((now-knownNew)%cycle)/cycle;
+  const age=Math.floor(phase*29.53);
+  let name="🌑 New";
+  if(phase<0.125) name="🌑 New";
+  else if(phase<0.25) name="🌒 Waxing Crescent";
+  else if(phase<0.375) name="🌓 First Quarter";
+  else if(phase<0.5) name="🌔 Waxing Gibbous";
+  else if(phase<0.625) name="🌕 Full";
+  else if(phase<0.75) name="🌖 Waning Gibbous";
+  else if(phase<0.875) name="🌗 Last Quarter";
+  else name="🌘 Waning Crescent";
+  const moonVal=Math.floor(phase*16000);
+  return {moon:moonVal, age, name, phase:phase.toFixed(3)};
+}
 
 async function loadChain(){
   try{
-    const r = await fetch(RAW+"?v="+Date.now());
-    const t = await r.text();
-    if(t.includes('}{')) throw new Error('corrupted double JSON detected');
-    const j = JSON.parse(t);
-    if(!j.chain) throw new Error('no chain field');
-    console.log('from github', j.personalCount);
+    const r=await fetch(RAW+"?v="+Date.now());
+    const t=await r.text();
+    if(t.includes('}{')) throw new Error('corrupt');
+    const j=JSON.parse(t);
     return j;
   }catch(e){
-    console.warn('github fail, local', e.message);
-    const l = localStorage.getItem('wakha-chain');
+    const l=localStorage.getItem('wakha-chain');
     if(l) return JSON.parse(l);
-    return {genesis:GENESIS, personalCount:0, chain:[]};
+    return {genesis:GENESIS,personalCount:0,chain:[]};
   }
 }
 function saveChain(o){
-  const txt = JSON.stringify(o,null,2);
-  if(txt.includes('}{')){ alert('BLOCKED corrupt save'); return; }
-  localStorage.setItem('wakha-chain', txt);
-  const blob = new Blob([txt],{type:'application/json'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'chain.json';
+  const txt=JSON.stringify(o,null,2);
+  if(txt.includes('}{')){alert('blocked');return;}
+  localStorage.setItem('wakha-chain',txt);
+  const blob=new Blob([txt],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='chain.json';
   a.click();
 }
 let state;
 async function init(){
-  state = await loadChain();
-  document.getElementById('you-count').textContent = 'You: '+state.personalCount;
-  document.getElementById('ocean').textContent = 'Ocean: '+state.personalCount+' fish';
-  document.getElementById('you').textContent = state.personalCount;
-  renderChain();
-  setInterval(()=>{
-    const now = Date.now();
-    const sun = Math.floor((now % 86400000)/5400);
-    document.getElementById('sun').textContent = sun;
-    document.getElementById('btc').textContent = 83934 + Math.floor(Math.random()*200);
-  },2000);
+  state=await loadChain();
+  document.getElementById('you-count').textContent='You: '+state.personalCount;
+  document.getElementById('ocean').textContent='Ocean: '+state.personalCount+' fish';
+  render();
+  // tick real sun/moon/btc
+  async function tick(){
+    const s=getSunCycle();
+    const m=getMoon();
+    document.getElementById('sun-real').textContent=`SUN:${s.sun} rise:${s.sunrise} set:${s.sunset}`;
+    document.getElementById('moon-real').textContent=`${m.name} ${m.moon} age:${m.age}d`;
+    try{
+      const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+      const j=await r.json();
+      document.getElementById('btc-real').textContent='BTC:'+j.bitcoin.usd;
+      window._btc=j.bitcoin.usd;
+    }catch{ document.getElementById('btc-real').textContent='BTC:'+(window._btc||83934); }
+    drawPond(s,m);
+  }
+  tick(); setInterval(tick, 10000);
 }
-function renderChain(){
-  const c = document.getElementById('chain');
-  c.innerHTML = state.chain.slice(-20).reverse().map(f=>`<div class="fish">#${f.you} ${f.id} btc:${f.btc||'-'} sun:${f.sun||'-'}</div>`).join('');
+function render(){
+  const c=document.getElementById('chain');
+  c.innerHTML=state.chain.slice(-20).reverse().map(f=>`<div class="fish">#${f.you} ${f.id} btc:${f.btc} sun:${f.sun} moon:${f.moon||0}</div>`).join('');
 }
-document.getElementById('mint').onclick = ()=>{
-  const id = 'zero-'+Date.now();
-  const fish = {id, you: state.personalCount+1, ts: Date.now(), btc: 83934, sun: 15637, uni: 83949797+state.personalCount};
-  state.chain.push(fish);
-  state.personalCount++;
-  saveChain(state);
-  renderChain();
-  document.getElementById('you-count').textContent = 'You: '+state.personalCount;
-  document.getElementById('ocean').textContent = 'Ocean: '+state.personalCount+' fish';
+function drawPond(s,m){
+  const cv=document.getElementById('pond');
+  const ctx=cv.getContext('2d');
+  ctx.clearRect(0,0,360,220);
+  // sky by sun
+  const bright=Math.max(0,Math.min(1, s.sun/8000));
+  ctx.fillStyle=`rgb(${20+bright*100},${30+bright*80},${60+bright*100})`;
+  ctx.fillRect(0,0,360,120);
+  // sun dot
+  ctx.fillStyle='#ff0';
+  ctx.beginPath(); ctx.arc(20+(s.sun/16000)*320, 100-bright*60, 8,0,Math.PI*2); ctx.fill();
+  // moon
+  ctx.fillStyle='#fff';
+  ctx.beginPath(); ctx.arc(300,40,10,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle='#000e14'; ctx.beginPath(); ctx.arc(300+ (m.phase-0.5)*12,40,9,0,Math.PI*2); ctx.fill();
+  // water
+  ctx.fillStyle='#003322'; ctx.fillRect(0,120,360,100);
+  // fish count
+  ctx.fillStyle='#0f3'; ctx.fillText(`Pond fish: ${state.personalCount} Moon:${m.name}`,10,210);
+}
+document.getElementById('mint').onclick=()=>{
+  const s=getSunCycle(); const m=getMoon();
+  const fish={id:'zero-'+Date.now(), you:state.personalCount+1, ts:Date.now(), btc:window._btc||83934, sun:s.sun, moon:m.moon, moonName:m.name, sunrise:s.sunrise, sunset:s.sunset};
+  state.chain.push(fish); state.personalCount++;
+  saveChain(state); render();
+  document.getElementById('you-count').textContent='You: '+state.personalCount;
+  document.getElementById('ocean').textContent='Ocean: '+state.personalCount+' fish';
 };
-document.getElementById('copyPond').onclick = ()=>{
-  const link = location.origin + location.pathname + '?pond=biougra&genesis='+GENESIS;
-  navigator.clipboard.writeText(link);
-  alert('Copied: '+link);
+document.getElementById('copyPond').onclick=()=>{
+  navigator.clipboard.writeText(location.href.split('?')[0]+'?pond=biougra&genesis='+GENESIS);
+  alert('pond link copied');
 };
 init();
 </script>
