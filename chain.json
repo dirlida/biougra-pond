@@ -1,6 +1,6 @@
 {
   "genesis": "wakha-1790774019487",
-  "personalCount": 21,
+  "personalCount": 23,
   "chain": [
     {
       "id": "zero-1790773624829",
@@ -187,6 +187,17 @@
       "btc": 83630,
       "sun": 16000,
       "moon": 10214,
+      "moonName": "🌖 Waning Gibbous",
+      "sunrise": "6.79",
+      "sunset": "18.49"
+    },
+    {
+      "id": "zero-1790801471316",
+      "you": 23,
+      "ts": 1790801471316,
+      "btc": 83934,
+      "sun": 16000,
+      "moon": 10219,
       "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.79",
       "sunset": "18.49"
