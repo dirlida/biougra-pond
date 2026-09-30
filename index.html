@@ -23,15 +23,17 @@ button{background:#0f3;color:#001a12;border:none;padding:8px 14px;font-weight:bo
 <div id="chain"></div>
 
 <script>
-const GH_TOKEN = "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"; // your saved token
 const REPO = "dirlida/biougra-pond";
 const FILE_PATH = "chain.json";
+let GH_TOKEN = localStorage.getItem('gh_token');
+if(!GH_TOKEN){
+  GH_TOKEN = prompt("Paste ghp token (once, saved in browser):");
+  if(GH_TOKEN) localStorage.setItem('gh_token', GH_TOKEN.trim());
+}
 
 async function pushDirect(chainObj){
   const contentStr = JSON.stringify(chainObj, null, 2);
   const b64 = btoa(unescape(encodeURIComponent(contentStr)));
-  
-  // get current sha
   let sha = null;
   try{
     const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, {
@@ -40,23 +42,15 @@ async function pushDirect(chainObj){
     const j = await r.json();
     sha = j.sha;
   }catch(e){}
-
   const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, {
     method:"PUT",
-    headers:{
-      Authorization:`token ${GH_TOKEN}`,
-      "Content-Type":"application/json"
-    },
-    body: JSON.stringify({
-      message: `auto ${chainObj.personalCount} ${new Date().toISOString()}`,
-      content: b64,
-      sha: sha
-    })
+    headers:{ Authorization:`token ${GH_TOKEN}`, "Content-Type":"application/json" },
+    body: JSON.stringify({ message:`fish ${chainObj.personalCount} ${new Date().toISOString()}`, content:b64, sha })
   });
   const out = await res.json();
   console.log("[direct push]", out);
   if(out.content) alert("Pushed to ocean: "+chainObj.personalCount);
-  else alert("Push failed: "+JSON.stringify(out).slice(0,200));
+  else alert("Push failed: "+JSON.stringify(out).slice(0,300));
 }
 const GENESIS="wakha-1790774019487";
 const RAW="https://raw.githubusercontent.com/dirlida/biougra-pond/main/chain.json";
