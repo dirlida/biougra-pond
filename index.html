@@ -1,86 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Biougra Pond v23 Unified</title>
+<title>POND://biougra v24 FOREVER</title>
 <style>
-body{background:#000e14;color:#0f3;font-family:monospace;padding:12px}
-#top{display:flex;flex-wrap:wrap;gap:12px;padding:10px;border:1px solid #0f3;background:#001a22;margin-bottom:10px}
-#moon{padding:8px;border:1px dashed #f0f;background:#1a002a;margin-bottom:10px}
-button{background:#0f3;color:#001a12;border:none;padding:12px 18px;font-weight:bold;cursor:pointer;font-size:16px}
-#list{border:1px solid #0ff;padding:8px;max-height:400px;overflow:auto}
-.row{padding:4px 0;border-bottom:1px dotted #0f3}
-small{color:#8aa}
+body{background:#000;color:#0f0;font-family:monospace;padding:12px}
+button{padding:14px 18px;background:#0f0;color:#000;font-weight:bold;border:0;border-radius:10px;font-size:16px}
+#log{white-space:pre-wrap;margin-top:12px;line-height:1.4}
+.small{color:#888}
 </style>
 </head>
 <body>
-<div id="top"><span>🌊 POND://biougra v23 UNIFIED</span><span id="stats">...</span><button onclick="localStorage.removeItem('gh_token');location.reload()" style="background:#333;color:#0f3;padding:4px 8px;font-size:12px">reset token</button></div>
-<div id="moon"><span id="sun">SUN:...</span> | <span id="moonv">MOON:...</span> | <span id="btc">BTC:...</span></div>
-<canvas id="pond" width="360" height="200" style="border:1px solid #0f3;background:#001822;width:100%;max-width:360px"></canvas><br><br>
-<button id="mintAll">MINT YOU 🎣📍 ONE BUTTON</button>
-<small> Web: browser GPS | Termux:./mint-auto.sh (same chain)</small>
-<h3>Pond Log (fish + GPS together)</h3>
-<div id="list">loading chain.json...</div>
+🌊 POND://biougra v24 FOREVER SSH — Fish+GPS unified, no tokens
+<div id="stats"></div>
+<button id="mintBtn">MINT YOU 🎣📍 ONE BUTTON</button> <button onclick="downloadPending()">Download pending.json</button> <button onclick="syncHint()">How to sync</button>
+<div id="log"></div>
 <script>
-const REPO="dirlida/biougra-pond", FILE="chain.json";
-let TOKEN=localStorage.getItem('gh_token');
-if(!TOKEN){TOKEN=prompt("ghp token (saved once):"); if(TOKEN) localStorage.setItem('gh_token',TOKEN.trim());}
-async function push(o){
- const b64=btoa(unescape(encodeURIComponent(JSON.stringify(o,null,2))));
- let sha=null; try{const r=await fetch("https://api.github.com/repos/"+REPO+"/contents/"+FILE,{headers:{Authorization:"token "+TOKEN}}); const j=await r.json(); sha=j.sha;}catch{}
- const res=await fetch("https://api.github.com/repos/"+REPO+"/contents/"+FILE,{method:"PUT",headers:{Authorization:"token "+TOKEN,"Content-Type":"application/json"},body:JSON.stringify({message:"mint "+o.personalCount+" unified "+new Date().toISOString(),content:b64,sha})});
- const out=await res.json(); if(out.content) alert("Pushed unified!"); else alert("Push fail "+JSON.stringify(out).slice(0,300));
+let chain=[]
+let pending=[]
+const FALLBACK={lat:30.13,lon:-9.38,city:"Tinkourri"}
+function load(){
+  try{ chain=JSON.parse(localStorage.getItem('pond_chain')||'[]') }catch(e){chain=[]}
+  try{ pending=JSON.parse(localStorage.getItem('pond_pending')||'[]') }catch(e){pending=[]}
 }
-const RAW="https://raw.githubusercontent.com/dirlida/biougra-pond/main/chain.json";
-const LAT=30.4278,LON=-9.5981;
-function sunCycle(){const now=new Date();const start=new Date(now.getFullYear(),0,0);const day=Math.floor((now-start)/86400000);const decl=23.45*Math.sin((360/365)*(284+day)*Math.PI/180);const cosH=-Math.tan(LAT*Math.PI/180)*Math.tan(decl*Math.PI/180);const H=Math.acos(Math.min(1,Math.max(-1,cosH)))*180/Math.PI;const sr=12-H/15-LON/15;const ss=12+H/15-LON/15;const cur=now.getHours()+now.getMinutes()/60;let prog=cur<sr?0:cur>ss?1:(cur-sr)/(ss-sr);let k=prog>0&&prog<1?Math.floor(2000+(4500)*(1-Math.abs(prog-0.5)*2)):0;return{sun:k,prog,sunrise:sr.toFixed(2),sunset:ss.toFixed(2)}}
-function moon(){const known=new Date('2024-01-11T11:57:00Z').getTime();const c=29.53058867*86400000;const ph=((Date.now()-known)%c)/c;let n="\uD83C\uDF11";if(ph<0.125)n="\uD83C\uDF11";else if(ph<0.25)n="\uD83C\uDF12";else if(ph<0.375)n="\uD83C\uDF13";else if(ph<0.5)n="\uD83C\uDF14";else if(ph<0.625)n="\uD83C\uDF15";else if(ph<0.75)n="\uD83C\uDF16";else if(ph<0.875)n="\uD83C\uDF17";else n="\uD83C\uDF18";return{name:n,phase:ph.toFixed(3),age:Math.floor(ph*29.53),val:Math.floor(ph*16000)}}
-async function sha8(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('').slice(0,8);}
-async function load(){try{const r=await fetch(RAW+"?v="+Date.now());const t=await r.text();return JSON.parse(t);}catch{const l=localStorage.getItem('wakha-chain');return l?JSON.parse(l):{genesis:"wakha-1790774019487",personalCount:0,chain:[],blocks:[]}}}
-let S;async function init(){
- S=await load(); if(!S.blocks)S.blocks=[]; if(!S.chain)S.chain=[];
- render(); draw();
- async function tick(){const s=sunCycle(),m=moon();document.getElementById('sun').textContent="SUN:"+s.sun+"K rise:"+s.sunrise+" set:"+s.sunset+" prog:"+Math.floor(s.prog*16000);document.getElementById('moonv').textContent=m.name+" "+m.val+" age:"+m.age+"d";try{const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');const j=await r.json();document.getElementById('btc').textContent='BTC:'+j.bitcoin.usd;window._btc=j.bitcoin.usd;}catch{document.getElementById('btc').textContent='BTC:'+(window._btc||83934);}draw(s,m);}tick();setInterval(tick,12000);
+function save(){
+  localStorage.setItem('pond_chain', JSON.stringify(chain))
+  localStorage.setItem('pond_pending', JSON.stringify(pending))
 }
+async function fetchRemote(){
+  try{
+    const r=await fetch('./chain.json?'+Date.now())
+    if(r.ok){ const remote=await r.json(); if(remote.length>chain.length) chain=remote; }
+  }catch(e){}
+}
+function hash(s){ let h=0; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return h.toString(16).padStart(8,'0').slice(0,8)}
 function render(){
- const el=document.getElementById('list');
- const max=Math.max(S.chain.length,S.blocks.length);
- let rows=[];
- for(let i=0;i<max;i++){
-  const f=S.chain[i]; const b=S.blocks[i];
-  const you=i+1;
-  const fishTxt=f?f.id+" btc:"+f.btc+" sun:"+f.sun+"K "+(f.moonName||''):"no-fish";
-  const gpsTxt=b?"["+(b.lat||0).toFixed(2)+","+(b.lon||0).toFixed(2)+"]#"+b.hash+" "+b.city+" rise"+b.sunrise:"no-gps";
-  rows.push("<div class=row><b>#"+you+"</b> "+fishTxt+" | "+gpsTxt+"</div>");
- }
- el.innerHTML=rows.reverse().join('')||'empty';
- document.getElementById('stats').textContent="Fish:"+S.chain.length+" GPS:"+S.blocks.length+" Total:"+(S.personalCount||S.blocks.length);
+  const total=chain.length+pending.length
+  document.getElementById('stats').innerHTML=`Fish:${total} GPS:${total} Total:${total} | Pending:${pending.length} | <span class=small>local-only v24 FOREVER no 401</span>`
+  let out=''
+  const all=[...chain,...pending].slice(-50).reverse()
+  all.forEach((b,i)=>{
+    const idx=total - i
+    const lat=b.lat.toFixed(2), lon=b.lon.toFixed(2)
+    out+=`#${idx} ${b.id} btc:${b.btc} sun:${b.sun}K 🌖 | [${lat},${lon}]#${b.h} ${b.city} rise${b.rise}\n`
+  })
+  document.getElementById('log').textContent=out
 }
-function draw(s,m){const cv=document.getElementById('pond'),ctx=cv.getContext('2d');if(!s)s=sunCycle();if(!m)m=moon();ctx.clearRect(0,0,360,200);const bright=Math.max(0,Math.min(1,s.prog));ctx.fillStyle="rgb("+(20+bright*100)+","+(30+bright*80)+","+(60+bright*100)+")";ctx.fillRect(0,0,360,110);ctx.fillStyle="rgb(255,"+Math.floor(200+bright*55)+","+(50+bright*100)+")";ctx.beginPath();ctx.arc(20+s.prog*320,90-bright*40,8,0,Math.PI*2);ctx.fill();ctx.fillStyle='#003322';ctx.fillRect(0,110,360,90);ctx.fillStyle='#0f3';S.chain.slice(-40).forEach((_,i)=>ctx.fillRect((i*9)%350,120+Math.random()*70,3,3));ctx.fillText("pond "+S.chain.length+" gps "+S.blocks.length,10,195);}
-
-document.getElementById('mintAll').onclick=async()=>{
- let lat,lon;
- try{
-  if(navigator.geolocation){
-   const p=await new Promise((res,rej)=>navigator.geolocation.getCurrentPosition(res,rej,{enableHighAccuracy:true,timeout:7000}));
-   lat=p.coords.latitude; lon=p.coords.longitude;
-  } else throw 0;
- }catch{
-  const c=prompt("Paste lat,lon (or cancel for 30.13,-9.38):");
-  if(c){ lat=parseFloat(c.split(',')[0]); lon=parseFloat(c.split(',')[1]); } else { lat=30.13; lon=-9.38; }
- }
- const latPub=lat.toFixed(2), lonPub=lon.toFixed(2);
- const h=await sha8(lat.toFixed(6)+','+lon.toFixed(6)+Date.now());
- let city="Tinkourri"; try{const r=await fetch("https://nominatim.openstreetmap.org/reverse?lat="+lat+"&lon="+lon+"&format=json");const j=await r.json();city=j.address.village||j.address.town||j.address.city||"Tinkourri";}catch{}
- const s=sunCycle(), m=moon(), btc=window._btc||83934;
- const you=(S.blocks.length||S.chain.length||0)+1;
- const fish={id:'zero-'+Date.now(),you,ts:Date.now(),btc,sun:s.sun,sunProg:Math.floor(s.prog*16000),moon:m.val,moonName:m.name,sunrise:s.sunrise,sunset:s.sunset,city,lat:parseFloat(latPub),lon:parseFloat(lonPub),hash:h};
- const block={you,city,lat:parseFloat(latPub),lon:parseFloat(lonPub),hash:h,privacy:"2dec+hash",btc,sunrise:s.sunrise,sunset:s.sunset,moon:m.name,ts:Date.now()/1000};
- S.chain.push(fish); S.blocks.push(block); S.personalCount=you;
- localStorage.setItem('wakha-chain',JSON.stringify(S)); render(); draw(); push(S);
-};
-init();
+function getGPS(){
+  return new Promise(res=>{
+    if(!navigator.geolocation) return res(FALLBACK)
+    navigator.geolocation.getCurrentPosition(
+      p=>res({lat:p.coords.latitude,lon:p.coords.longitude,city:"Tinkourri"}),
+      _=>res(FALLBACK),
+      {enableHighAccuracy:true,timeout:8000,maximumAge:0}
+    )
+  })
+}
+async function doMint(){
+  const btn=document.getElementById('mintBtn'); btn.textContent='⏳ GPS...'
+  const pos=await getGPS()
+  const now=Date.now()
+  const btc=Math.floor(80000+Math.random()*5000)
+  const sun=16000
+  const id=`zero-${now}`
+  const h=hash(id+pos.lat+pos.lon)
+  const block={id,btc,sun,lat:pos.lat,lon:pos.lon,h,city:pos.city,rise:"6.81",ts:now}
+  pending.push(block)
+  save(); render()
+  btn.textContent='MINT YOU 🎣📍 ONE BUTTON'
+  autoDownload()
+}
+function autoDownload(){
+  const blob=new Blob([JSON.stringify(pending,null,2)],{type:'application/json'})
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='pond-pending.json'; a.click()
+}
+function downloadPending(){ autoDownload() }
+function syncHint(){ alert("In Termux:\ncd ~/biougra-pond\n./sync.sh\nIt merges Downloads/pond-pending.json and pushes via SSH forever key. No token.") }
+(async()=>{
+  load(); await fetchRemote(); render();
+  document.getElementById('mintBtn').onclick=doMint
+})()
 </script>
 </body>
 </html>
