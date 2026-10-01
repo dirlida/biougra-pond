@@ -13,7 +13,7 @@ button{padding:14px 18px;background:#0f0;color:#000;font-weight:bold;border:0;bo
 <body>
 🌊 POND://biougra v24 FOREVER SSH — Fish+GPS unified, no tokens
 <div id="stats"></div>
-<button id="mintBtn">MINT YOU 🎣📍 ONE BUTTON</button> <button onclick="downloadPending()">Download pending.json</button> <button onclick="syncHint()">How to sync</button>
+<button id="mintBtn">MINT YOU 🎣📍 ONE BUTTON</button> <button onclick="downloadPending()">Download pending.json</button> <button onclick="clearPending()">Clear Pending</button> <button onclick="alert('Termux: ./sync.sh')">Sync hint</button>
 <div id="log"></div>
 <script>
 let chain=[]
@@ -75,6 +75,7 @@ function autoDownload(){
   const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='pond-pending.json'; a.click()
 }
 function downloadPending(){ autoDownload() }
+function clearPending(){localStorage.removeItem('pond_pending');location.reload()}
 function syncHint(){ alert("In Termux:\ncd ~/biougra-pond\n./sync.sh\nIt merges Downloads/pond-pending.json and pushes via SSH forever key. No token.") }
 (async()=>{
   load(); await fetchRemote(); render();
