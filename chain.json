@@ -224,5 +224,19 @@
       "sunrise": "6.81",
       "sunset": "18.47"
     }
+  ],
+  "blocks": [
+    {
+      "you": 1,
+      "city": "Tin Lbaz تين الباز",
+      "lat": 30.131736,
+      "lon": -9.382995,
+      "btc": 85019,
+      "sunrise": "07:30:40",
+      "sunset": "19:23:39",
+      "moon": "🌖",
+      "ts": 1790876880.942765,
+      "gps": "whatsapp-sealed"
+    }
   ]
 }
