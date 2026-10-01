@@ -251,26 +251,26 @@
     {
       "you": 1,
       "city": "Tin Lbaz تين الباز",
-      "lat": 30.131736,
-      "lon": -9.382995,
+      "lat": 30.13,
+      "lon": -9.38,
       "btc": 85019,
       "sunrise": "07:30:40",
       "sunset": "19:23:39",
       "moon": "🌖",
       "ts": 1790876880.942765,
-      "gps": "whatsapp-sealed"
+      "privacy": "2dec+hash"
     },
     {
       "you": 2,
       "city": "Tinkourri تين كوري",
-      "lat": 30.132450000000002,
-      "lon": -9.384044999999999,
+      "lat": 30.13,
+      "lon": -9.38,
       "btc": 84617,
       "sunrise": "07:30:41",
       "sunset": "19:23:40",
       "moon": "🌖",
       "ts": 1790888337.069254,
-      "gps": "termux-auto"
+      "privacy": "2dec+hash"
     }
   ]
 }
