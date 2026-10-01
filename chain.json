@@ -297,6 +297,18 @@
       "sunset": "19:23:40",
       "ts": 1790889944.334518,
       "privacy": "2dec+hash"
+    },
+    {
+      "you": 5,
+      "city": "Tinkourri تين كوري",
+      "lat": 30.13,
+      "lon": -9.38,
+      "hash": "d9ff4b0d8e9947d8",
+      "btc": 84586,
+      "sunrise": "07:30:41",
+      "sunset": "19:23:40",
+      "ts": 1790890026.853154,
+      "privacy": "2dec+hash"
     }
   ]
 }
