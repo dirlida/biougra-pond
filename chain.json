@@ -154,7 +154,7 @@
       "btc": 84029,
       "sun": 16000,
       "moon": 10143,
-      "moonName": "\ud83c\udf16 Waning Gibbous",
+      "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.79",
       "sunset": "18.49"
     },
@@ -165,7 +165,7 @@
       "btc": 83977,
       "sun": 16000,
       "moon": 10166,
-      "moonName": "\ud83c\udf16 Waning Gibbous",
+      "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.79",
       "sunset": "18.49"
     },
@@ -176,7 +176,7 @@
       "btc": 83898,
       "sun": 16000,
       "moon": 10179,
-      "moonName": "\ud83c\udf16 Waning Gibbous",
+      "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.79",
       "sunset": "18.49"
     },
@@ -187,7 +187,7 @@
       "btc": 83630,
       "sun": 16000,
       "moon": 10214,
-      "moonName": "\ud83c\udf16 Waning Gibbous",
+      "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.79",
       "sunset": "18.49"
     },
@@ -198,7 +198,7 @@
       "btc": 83629,
       "sun": 16000,
       "moon": 10219,
-      "moonName": "\ud83c\udf16 Waning Gibbous",
+      "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.79",
       "sunset": "18.49"
     },
@@ -209,7 +209,7 @@
       "btc": 83934,
       "sun": 16000,
       "moon": 10219,
-      "moonName": "\ud83c\udf16 Waning Gibbous",
+      "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.79",
       "sunset": "18.49"
     },
@@ -220,7 +220,7 @@
       "btc": 83932,
       "sun": 11677,
       "moon": 10613,
-      "moonName": "\ud83c\udf16 Waning Gibbous",
+      "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.81",
       "sunset": "18.47"
     },
@@ -231,7 +231,7 @@
       "btc": 84740,
       "sun": 16000,
       "moon": 10718,
-      "moonName": "\ud83c\udf16 Waning Gibbous",
+      "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.81",
       "sunset": "18.47"
     },
@@ -242,7 +242,7 @@
       "btc": 84719,
       "sun": 16000,
       "moon": 10721,
-      "moonName": "\ud83c\udf16 Waning Gibbous",
+      "moonName": "🌖 Waning Gibbous",
       "sunrise": "6.81",
       "sunset": "18.47"
     }
@@ -250,29 +250,41 @@
   "blocks": [
     {
       "you": 1,
-      "city": "Tin Lbaz \u062a\u064a\u0646 \u0627\u0644\u0628\u0627\u0632",
+      "city": "Tin Lbaz تين الباز",
       "lat": 30.13,
       "lon": -9.38,
       "btc": 85019,
       "sunrise": "07:30:40",
       "sunset": "19:23:39",
-      "moon": "\ud83c\udf16",
+      "moon": "🌖",
       "ts": 1790876880.942765,
       "privacy": "2dec+hash",
       "hash": "3cc30ad8"
     },
     {
       "you": 2,
-      "city": "Tinkourri \u062a\u064a\u0646 \u0643\u0648\u0631\u064a",
+      "city": "Tinkourri تين كوري",
       "lat": 30.13,
       "lon": -9.38,
       "btc": 84617,
       "sunrise": "07:30:41",
       "sunset": "19:23:40",
-      "moon": "\ud83c\udf16",
+      "moon": "🌖",
       "ts": 1790888337.069254,
       "privacy": "2dec+hash",
       "hash": "3cc30ad8"
+    },
+    {
+      "you": 3,
+      "city": "Tinkourri تين كوري",
+      "lat": 30.13,
+      "lon": -9.38,
+      "hash": "aabdb6f4ee4590fc",
+      "btc": 84614,
+      "sunrise": "07:30:41",
+      "sunset": "19:23:40",
+      "ts": 1790889879.137668,
+      "privacy": "2dec+hash"
     }
   ]
 }
