@@ -1,1 +1,13 @@
-{"origin":"https://github.com/dirlida/biougra-pond","hq":"Phone-HQ Biougra - Anas + Meta AI","law":"Fork freely, never merge to origin. Main is Anas only."}
+{
+  "pond": "BIOUGRA POND",
+  "ticker": "POND",
+  "mythCity": "Marrakech — THE CITY (tribute & docs origin)",
+  "lab": "Biougra-Agadir 30.12613,-9.37437 — THE LAB (real GPS stamps)",
+  "law": "1% LAW — HTML 100% tribute, never 20.1% shell tax",
+  "genesisStamp": "5844b8fc4274c0b0f36d209b — 2026-10-02T14:59:38Z Biougra Lab",
+  "live": "https://dirlida.github.io/biougra-pond/",
+  "btcAnchor": 969610,
+  "witness": "Sun + GPS + BTC height + double SHA256",
+  "namesForever": ["Biougra Pond", "POND", "Biougra Lab", "Marrakech THE CITY"],
+  "boardMode": "suited, no Katt Williams"
+}
