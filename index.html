@@ -14,21 +14,54 @@
 <script type="module">
 async function sha256(d){const e=new TextEncoder().encode(typeof d==='string'?d:JSON.stringify(d));const b=await crypto.subtle.digest('SHA-256',e);return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('')}
 class PondKernel{
- async doubleSha(d){const h1=await sha256(d);return await sha256(h1)}
- async getBtcHeight(){try{const r=await fetch('https://mempool.space/api/blocks/tip/height');return parseInt(await r.text())}catch{return 969607}}
- calcSun(lat,lon,now=new Date()){const day=Math.floor((now-new Date(now.getFullYear(),0,0))/86400000);const decl=23.45*Math.sin((360/365)*(284+day)*Math.PI/180);const hour=now.getUTCHours()+now.getUTCMinutes()/60+lon/15;const ha=15*(hour-12);const elev=Math.asin(Math.sin(lat*Math.PI/180)*Math.sin(decl*Math.PI/180)+Math.cos(lat*Math.PI/180)*Math.cos(decl*Math.PI/180)*Math.cos(ha*Math.PI/180))*180/Math.PI;return Math.max(0,elev)}
- async stampReal(gps,bHeight,prevHash){const now=new Date();const sun=this.calcSun(gps.lat,gps.lon,now);const payload={pond:"BIOUGRA POND",cityMyth:"Marrakech",lab:"Biougra",gps:{lat:gps.lat,lon:gps.lon},gpsStr:`${gps.lat.toFixed(5)},${gps.lon.toFixed(5)}`,sun:sun.toFixed(2),btcHeight:bHeight,prev:prevHash||"GENESIS",ts:now.toISOString(),originTax:"1% LAW"};const hash=await this.doubleSha(JSON.stringify(payload));return {hash,payload,prev:prevHash};}
+async doubleSha(d){const h1=await sha256(d);return await sha256(h1)}
+async getBtcHeight(){try{const r=await fetch('https://mempool.space/api/blocks/tip/height');return parseInt(await r.text())}catch{return 969613}}
+calcSun(lat,lon,now=new Date()){const day=Math.floor((now-new Date(now.getFullYear(),0,0))/86400000);const decl=23.45*Math.sin((360/365)*(284+day)*Math.PI/180);const hour=now.getUTCHours()+now.getUTCMinutes()/60+lon/15;const ha=15*(hour-12);const elev=Math.asin(Math.sin(lat*Math.PI/180)*Math.sin(decl*Math.PI/180)+Math.cos(lat*Math.PI/180)*Math.cos(decl*Math.PI/180)*Math.cos(ha*Math.PI/180))*180/Math.PI;return Math.max(0,elev)}
+async stampReal(gps,bHeight,prevHash){const now=new Date();const sun=this.calcSun(gps.lat,gps.lon,now);const payload={pond:"BIOUGRA POND",cityMyth:"Marrakech",lab:"Biougra",gps:{lat:gps.lat,lon:gps.lon},gpsStr:`${gps.lat.toFixed(5)},${gps.lon.toFixed(5)}`,sun:sun.toFixed(2),btcHeight:bHeight,prev:prevHash||"GENESIS",ts:now.toISOString(),originTax:"1% LAW"};const hash=await this.doubleSha(JSON.stringify(payload));return {hash,payload,prev:prevHash};}
 }
-const kernel=new PondKernel();let currentGPS={lat:30.12613,lon:-9.37437,acc:2562};let chain=JSON.parse(localStorage.getItem('biougra-chain-v2')||'[]');
+const kernel=new PondKernel();let currentGPS={lat:30.12613,lon:-9.37437,acc:2562};
+let chain=JSON.parse(localStorage.getItem('biougra-chain-v2')||'[]');
 const logEl=document.getElementById('log');const chainEl=document.getElementById('chain');
-function render(){document.getElementById('height').textContent=`Chain: ${chain.length}`;chainEl.textContent=JSON.stringify(chain.slice(-3),null,2)+`\n... ${chain.length} stamps total`;if(chain.length>0){const last=chain[chain.length-1];logEl.textContent+=`\n[CHAIN] last=${last.hash.slice(0,16)}... prev=${(last.prev||'GENESIS').slice(0,16)} BTC=${last.payload.btcHeight}`}}
-async function init(){try{const p=await new Promise((res,rej)=>navigator.geolocation.getCurrentPosition(res,rej,{enableHighAccuracy:true,timeout:8000}));currentGPS={lat:p.coords.latitude,lon:p.coords.longitude,acc:p.coords.accuracy};document.getElementById('loc').textContent=`Biougra ${currentGPS.lat.toFixed(4)},${currentGPS.lon.toFixed(4)}`}catch{document.getElementById('loc').textContent=`Biougra fallback ${currentGPS.lat}`;}const b=await kernel.getBtcHeight();document.getElementById('btc').textContent=`BTC ${b}`;logEl.textContent+=`\n[OK] GPS + BTC live — ready to chain`;render()}
+function render(){document.getElementById('height').textContent=`Chain: ${chain.length}`;chainEl.textContent=JSON.stringify(chain.slice(-3),null,2)+`\n... ${chain.length} stamps total`;if(chain.length>0){const last=chain[chain.length-1];logEl.textContent+=`\n[CHAIN] last=${last.hash.slice(0,16)}... prev=${(last.prev||'GENESIS').slice(0,16)} BTC=${last.payload?.btcHeight||last.btc||'?'} `}}
+
+async function hydrateFromRepo(){
+ try{
+  const r=await fetch('chain.json?ts='+Date.now());
+  const repoChain=await r.json();
+  if(Array.isArray(repoChain) && repoChain.length>chain.length){
+    logEl.textContent+=`\n[HYDRATE] repo chain.json ${repoChain.length} blocks > local ${chain.length} — loading Biougra Lab history`;
+    chain=repoChain;
+    localStorage.setItem('biougra-chain-v2',JSON.stringify(chain));
+    render();
+  } else if(repoChain.length>0){
+    logEl.textContent+=`\n[REPO] chain.json has ${repoChain.length} blocks on GitHub`;
+  }
+ }catch(e){logEl.textContent+=`\n[REPO] cannot fetch chain.json ${e.message}`}
+}
+
+async function init(){
+ try{const p=await new Promise((res,rej)=>navigator.geolocation.getCurrentPosition(res,rej,{enableHighAccuracy:true,timeout:8000}));currentGPS={lat:p.coords.latitude,lon:p.coords.longitude,acc:p.coords.accuracy};document.getElementById('loc').textContent=`Biougra ${currentGPS.lat.toFixed(4)},${currentGPS.lon.toFixed(4)}`}catch{document.getElementById('loc').textContent=`Biougra fallback ${currentGPS.lat}`;}
+ const b=await kernel.getBtcHeight();document.getElementById('btc').textContent=`BTC ${b}`;
+ logEl.textContent+=`\n[OK] GPS + BTC live — ready to chain`;
+ await hydrateFromRepo();
+ render();
+}
 init();
-document.getElementById('stamp').onclick=async()=>{const b=await kernel.getBtcHeight();const prev=chain.length?chain[chain.length-1].hash:null;const st=await kernel.stampReal(currentGPS,b,prev);chain.push(st);localStorage.setItem('biougra-chain-v2',JSON.stringify(chain));render();logEl.textContent+=`\n[STAMPED] ${st.hash.slice(0,20)}... linked to ${prev?prev.slice(0,8):'GENESIS'}`;document.getElementById('btc').textContent=`BTC ${b}`;}
-document.getElementById('export').onclick=()=>{const blob=new Blob([JSON.stringify(chain,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='chain.json';a.click();logEl.textContent+=`\n[EXPORT] chain.json ${chain.length} blocks — replace repo chain.json with this to keep history`;}
+document.getElementById('stamp').onclick=async()=>{
+ const b=await kernel.getBtcHeight();const prev=chain.length?chain[chain.length-1].hash:null;
+ const st=await kernel.stampReal(currentGPS,b,prev);chain.push(st);
+ localStorage.setItem('biougra-chain-v2',JSON.stringify(chain));render();
+ logEl.textContent+=`\n[STAMPED] ${st.hash.slice(0,20)}... linked to ${prev?prev.slice(0,8):'GENESIS'}`;
+ document.getElementById('btc').textContent=`BTC ${b}`;
+}
+document.getElementById('export').onclick=()=>{
+ const blob=new Blob([JSON.stringify(chain,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);
+ const a=document.createElement('a');a.href=url;a.download='chain.json';a.click();
+ logEl.textContent+=`\n[EXPORT] chain.json ${chain.length} blocks — replace repo chain.json with this to keep history`;
+}
 </script>
 <div style="color:#666;font-size:11px;margin-top:30px;border-top:1px dashed #333;padding-top:10px">
-Myth City: Marrakech — THE CITY<br>Lab: Biougra-Agadir 30.12613,-9.37437 — THE LAB<br>Biougra Pond / POND — forever name — HTML 100% — Mile 2 chain-linked
+Myth City: Marrakech — THE CITY<br>Lab: Biougra-Agadir 30.12613,-9.37437 — THE LAB<br>Biougra Pond / POND — forever name — HTML 100% — Mile 2 chain-linked — Chain: <span id="repoLen">hydrating</span>
 </div>
 </body>
 </html>
