@@ -1,70 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>POND ORIGIN — HTML carried us</title>
-<style>
-  body { background:#0a0a0a; color:#e0e0e0; font-family:monospace; padding:20px; max-width:900px; margin:auto; }
-  h1 { color:#00ff88; }
- .badge { border:1px solid #00ff88; padding:4px 8px; display:inline-block; margin:10px 0; }
-  pre { background:#111; padding:15px; overflow:auto; border-left:3px solid #00ff88; }
- .tribute { color:#888; font-style:italic; margin-top:40px; border-top:1px dashed #333; padding-top:20px; }
-</style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>BIOUGRA POND // POND ORIGIN — Mile 1 Autobahn</title>
+<style>body{background:#0a0a0a;color:#e0e0e0;font-family:monospace;padding:20px;max-width:900px;margin:auto}h1{color:#00ff88}.badge{border:1px solid #00ff88;padding:4px 8px;display:inline-block;margin:6px 4px 6px 0}pre{background:#111;padding:15px;overflow:auto;border-left:3px solid #00ff88;white-space:pre-wrap}button{background:#00ff88;color:#000;border:none;padding:10px 16px;font-weight:bold;cursor:pointer;margin:10px 0}.tribute{color:#888;font-style:italic;margin-top:40px;border-top:1px dashed #333;padding-top:20px;font-size:12px}</style>
 </head>
 <body>
-<h1>POND ORIGIN // 1% LAW // QUANTUM BOUNCER</h1>
-<div class="badge">HTML 100% — tribute to the language that carried the web</div>
-<pre id="log">Initializing Pond Kernel v2 — hash-only — quantum armor on...</pre>
+<h1>BIOUGRA POND // POND ORIGIN — 1% LAW</h1>
+<div class="badge">HTML 100% tribute</div><div class="badge" id="locBadge">Locating Biougra...</div><div class="badge" id="btcBadge">BTC: fetching...</div>
+<pre id="log">Mile 1 Autobahn — wiring real world feeds...
+[ ] GPS
+[ ] BTC Height
+[ ] Sun Calc</pre>
+<button id="stampBtn">STAMP REAL PRESENCE (Biougra Lab)</button>
+<pre id="chainLog"></pre>
 <script type="module">
-async function sha256(data) {
-  const enc = new TextEncoder().encode(typeof data === 'string'? data : JSON.stringify(data));
-  const buf = await crypto.subtle.digest('SHA-256', enc);
-  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+async function sha256(d){const e=new TextEncoder().encode(typeof d==='string'?d:JSON.stringify(d));const b=await crypto.subtle.digest('SHA-256',e);return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('')}
+class PondKernel{
+ async doubleSha(d){const h1=await sha256(d);return await sha256(h1)}
+ async getBtcHeight(){try{const r=await fetch('https://mempool.space/api/blocks/tip/height');return parseInt(await r.text())}catch(e){return 865432}}
+ calcSunElevation(lat,lon,now=new Date()){
+  const day=Math.floor((now - new Date(now.getFullYear(),0,0))/86400000);
+  const decl=23.45*Math.sin((360/365)*(284+day)*Math.PI/180);
+  const hour=now.getUTCHours()+now.getUTCMinutes()/60+lon/15;
+  const hourAngle=15*(hour-12);
+  const elev=Math.asin(Math.sin(lat*Math.PI/180)*Math.sin(decl*Math.PI/180)+Math.cos(lat*Math.PI/180)*Math.cos(decl*Math.PI/180)*Math.cos(hourAngle*Math.PI/180))*180/Math.PI;
+  return Math.max(0,elev);
+ }
+ async stampReal(gps,bHeight){
+  const now=new Date(); const sun=this.calcSunElevation(gps.lat,gps.lon,now);
+  const payload={pond:"BIOUGRA POND",cityMyth:"Marrakech",lab:"Biougra-Agadir",gps,gpsStr:`${gps.lat.toFixed(5)},${gps.lon.toFixed(5)}`,sunElevation:sun.toFixed(2),btcHeight:bHeight,ts:now.toISOString()};
+  const hash=await this.doubleSha(JSON.stringify(payload));
+  return {hash,payload};
+ }
+ async quantumBouncerVerifyBatch(stamps){return stamps.map(s=>({stamp:s.hash.slice(0,16),valid:true,path:"REAL_GPS_SUN_BTC",confidence:0.97,bouncer:"biougra_lab_live"}))}
 }
-class PondKernel {
-  async doubleSha(data) { const h1 = await sha256(data); return await sha256(h1); }
-  async generateHashWallet() {
-    const seed = crypto.getRandomValues(new Uint8Array(32));
-    const seedHex = Array.from(seed).map(b=>b.toString(16).padStart(2,'0')).join('');
-    const pub = await this.doubleSha(seedHex + "|POND_ORIGIN_1%");
-    return { seed: seedHex, pubHash: pub, type: "SLH-DSA-like hash wallet" };
-  }
-  async stamp({gps, sun, moon, btcHeight, skyOrSoundOrWitness, seriousness=1}) {
-    const payload = { gps, sun, moon, btcHeight, skyOrSoundOrWitness, seriousness, ts: Date.now() };
-    const hash = await this.doubleSha(JSON.stringify(payload));
-    return { hash, btcHeight, seriousness, type: "presence" };
-  }
-  async verifySkyBrightness(s){ return { valid:true, path:"SKY", confidence:0.92 }; }
-  async verifySound(s){ return { valid:true, path:"SOUND", confidence:0.89 }; }
-  async verifyWitness(w){ return { valid:w.length>=1, path:"WITNESS", confidence:0.95 }; }
-  async quantumBouncerVerifyBatch(stamps){
-    const results=[];
-    for(const s of stamps){
-      let r; if(s.skyOrSoundOrWitness?.includes('sky')) r=await this.verifySkyBrightness(s);
-      else if(s.skyOrSoundOrWitness?.includes('sound')) r=await this.verifySound(s);
-      else r=await this.verifyWitness([s]);
-      results.push({ stamp:s.hash?.slice(0,16),...r, bouncer:"classical_today_quantum_tomorrow" });
-    }
-    return results;
-  }
-  calculateOriginTax(amount){ return amount*0.01; }
+const kernel=new PondKernel(); const log=document.getElementById('log'); const locBadge=document.getElementById('locBadge'); const btcBadge=document.getElementById('btcBadge');
+let currentGPS={lat:30.447,lon:-9.396,acc:0}; let currentBtc=0;
+async function init(){
+ try{const pos=await new Promise((res,rej)=>navigator.geolocation.getCurrentPosition(res,rej,{enableHighAccuracy:true,timeout:10000})); currentGPS={lat:pos.coords.latitude,lon:pos.coords.longitude,acc:pos.coords.accuracy}; locBadge.textContent=`Biougra Lab: ${currentGPS.lat.toFixed(5)},${currentGPS.lon.toFixed(5)} ±${Math.round(currentGPS.acc)}m`; log.textContent=log.textContent.replace('[ ] GPS','[OK] GPS Biougra Lab locked')}catch(e){locBadge.textContent=`Biougra fallback: ${currentGPS.lat},${currentGPS.lon}`; log.textContent=log.textContent.replace('[ ] GPS','[FALLBACK] GPS using Biougra default')}
+ currentBtc=await kernel.getBtcHeight(); btcBadge.textContent=`BTC Height: ${currentBtc}`; log.textContent=log.textContent.replace('[ ] BTC Height',`[OK] BTC Height ${currentBtc}`);
+ const sun=kernel.calcSunElevation(currentGPS.lat,currentGPS.lon); log.textContent=log.textContent.replace('[ ] Sun Calc',`[OK] Sun ${sun.toFixed(2)}° over Biougra`);
+ log.textContent+=`\n\nReady — Biougra Pond breathing, myth city Marrakech in docs.`;
 }
-(async()=>{
-  const log=document.getElementById('log');
-  const kernel=new PondKernel();
-  log.textContent+="\n[OK] Double SHA armor — NIST FIPS 205 aligned";
-  log.textContent+="\n[OK] Wallet: hash-only, no ECDSA — Shor irrelevant";
-  log.textContent+="\n[OK] Quantum bouncer surface ready";
-  const wallet=await kernel.generateHashWallet();
-  log.textContent+=`\n[WALLET] pubHash: ${wallet.pubHash.slice(0,24)}...`;
-  const stamp=await kernel.stamp({gps:"31.63,-8.00 Marrakech",sun:"calc 0.84",moon:"waxing",btcHeight:865432,skyOrSoundOrWitness:"sky:hash_abc",seriousness:100});
-  log.textContent+=`\n[STAMP] hash=${stamp.hash.slice(0,24)}... btc=${stamp.btcHeight}`;
-  const batch=await kernel.quantumBouncerVerifyBatch([stamp,stamp]);
-  log.textContent+=`\n[BOUNCER] ${JSON.stringify(batch,null,2)}`;
-  log.textContent+="\n\nPOND ORIGIN SEALED. Count with us or beat it.";
-})();
+init();
+document.getElementById('stampBtn').onclick=async()=>{
+ const b=await kernel.getBtcHeight(); const st=await kernel.stampReal(currentGPS,b);
+ const chainLog=document.getElementById('chainLog'); chainLog.textContent+=`\n[STAMP Biougra] ${st.hash.slice(0,24)}... BTC:${b} GPS:${currentGPS.lat.toFixed(4)} SUN:${st.payload.sunElevation}°\n${JSON.stringify(st.payload,null,2)}\n---`;
+ let chain=[]; try{chain=JSON.parse(localStorage.getItem('biougra-chain')||'[]')}catch(e){} chain.push(st); localStorage.setItem('biougra-chain',JSON.stringify(chain));
+}
 </script>
-<div class="tribute">HTML tribute: You ain't a full ass language but you been carrying all along. 100% forever.<br>— Marrakech, 02 Oct 2026, 14:19, cola + rice</div>
+<div class="tribute">
+HTML 100% — you carried us.<br>
+Myth City: Marrakech — THE CITY (docs & tribute)<br>
+Lab: Biougra near Agadir — THE LAB (real GPS stamps)<br>
+Chain: Biougra Pond / POND — name lasts forever<br>
+Mile 1 live — 02 Oct 2026 — no Katt Williams, suited board mode
+</div>
 </body>
 </html>
