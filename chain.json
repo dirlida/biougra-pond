@@ -1,310 +1,135 @@
 [
   {
-    "id": "zero-1790773624829",
-    "btc": 113500,
-    "sun": 13216,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "3cc30ad8",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790773624829
+    "hash": "fd1ba898191165087bb759bea2a72905965a10a3c3dee236e1543c80bae6ed18",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "GENESIS",
+      "ts": "2026-10-02T15:25:22.357Z",
+      "originTax": "1% LAW"
+    },
+    "prev": null
   },
   {
-    "id": "zero-1790773626701",
-    "btc": 113500,
-    "sun": 13216,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "3cc30ad8",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790773626701
+    "hash": "b565179f59d9df9ed168e6d4ba25fe0ec94102521525c1d6111f4d6c7c22cf25",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "fd1ba898191165087bb759bea2a72905965a10a3c3dee236e1543c80bae6ed18",
+      "ts": "2026-10-02T15:25:23.650Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "fd1ba898191165087bb759bea2a72905965a10a3c3dee236e1543c80bae6ed18"
   },
   {
-    "id": "zero-1790774024733",
-    "btc": 113500,
-    "sun": 13216,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "aabdb6f4",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790774024733
+    "hash": "7c1f4af4e438f024cabf89cc486a1703ae18a0043b4906a75f6a025d43727aad",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "b565179f59d9df9ed168e6d4ba25fe0ec94102521525c1d6111f4d6c7c22cf25",
+      "ts": "2026-10-02T15:25:24.806Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "b565179f59d9df9ed168e6d4ba25fe0ec94102521525c1d6111f4d6c7c22cf25"
   },
   {
-    "id": "zero-1790774099358",
-    "btc": 113500,
-    "sun": 13216,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "5ea6a7af",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790774099358
+    "hash": "bb887c6a0e190c94e89cd595f4dff443e034991ae59e92204cab357e157827b2",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "7c1f4af4e438f024cabf89cc486a1703ae18a0043b4906a75f6a025d43727aad",
+      "ts": "2026-10-02T15:25:26.730Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "7c1f4af4e438f024cabf89cc486a1703ae18a0043b4906a75f6a025d43727aad"
   },
   {
-    "id": "zero-1790774100193",
-    "btc": 113500,
-    "sun": 13233,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "d9ff4b0d",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790774100193
+    "hash": "389f1f4425f6e595f879183455bed2b5e08da73f1a0446f98558309f30958796",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "bb887c6a0e190c94e89cd595f4dff443e034991ae59e92204cab357e157827b2",
+      "ts": "2026-10-02T15:25:52.239Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "bb887c6a0e190c94e89cd595f4dff443e034991ae59e92204cab357e157827b2"
   },
   {
-    "id": "zero-1790774100930",
-    "btc": 113500,
-    "sun": 13250,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "9a04f94b",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790774100930
+    "hash": "02c939473fed2d5919baf8500fa1fd81762f842374118fb106ee772788230db0",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "389f1f4425f6e595f879183455bed2b5e08da73f1a0446f98558309f30958796",
+      "ts": "2026-10-02T15:25:53.274Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "389f1f4425f6e595f879183455bed2b5e08da73f1a0446f98558309f30958796"
   },
   {
-    "id": "zero-1790774101615",
-    "btc": 113500,
-    "sun": 13250,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "47f93111",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790774101615
-  },
-  {
-    "id": "zero-1790774108056",
-    "btc": 113500,
-    "sun": 13250,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "7d389ff3",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790774108056
-  },
-  {
-    "id": "zero-1790774645178",
-    "btc": 113500,
-    "sun": 13400,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "70417f98",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790774645178
-  },
-  {
-    "id": "zero-1790774646464",
-    "btc": 113500,
-    "sun": 13400,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "ba34a659",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790774646464
-  },
-  {
-    "id": "zero-1790774975616",
-    "btc": 85145,
-    "sun": 13483,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "e9f61b3e",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790774975616
-  },
-  {
-    "id": "zero-1790780977154",
-    "btc": 83857,
-    "sun": 15160,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "6d138a6c",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790780977154
-  },
-  {
-    "id": "zero-1790780982733",
-    "btc": 83857,
-    "sun": 15161,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "a105fd2a",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790780982733
-  },
-  {
-    "id": "zero-1790781997965",
-    "btc": 83934,
-    "sun": 15443,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "dbaf1b76",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790781997965
-  },
-  {
-    "id": "zero-1790782693847",
-    "btc": 83934,
-    "sun": 15636,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "21ac3497",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790782693847
-  },
-  {
-    "id": "zero-1790782696655",
-    "btc": 83934,
-    "sun": 15637,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "9e99cbd2",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790782696655
-  },
-  {
-    "id": "zero-1790788735369",
-    "btc": 83934,
-    "sun": 15637,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "3211bf36",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790788735369
-  },
-  {
-    "id": "zero-1790789430823",
-    "btc": 84029,
-    "sun": 16000,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "3ba3217a",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790789430823
-  },
-  {
-    "id": "zero-1790793082355",
-    "btc": 83977,
-    "sun": 16000,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "f9b46c5d",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790793082355
-  },
-  {
-    "id": "zero-1790795096435",
-    "btc": 83898,
-    "sun": 16000,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "a865e258",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790795096435
-  },
-  {
-    "id": "zero-1790800684664",
-    "btc": 83630,
-    "sun": 16000,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "7ad629cf",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790800684664
-  },
-  {
-    "id": "zero-1790801471315",
-    "btc": 83629,
-    "sun": 16000,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "d4ea53db",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790801471315
-  },
-  {
-    "id": "zero-1790801471316",
-    "btc": 83934,
-    "sun": 16000,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "ce204841",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790801471316
-  },
-  {
-    "id": "zero-1790864360563",
-    "btc": 83932,
-    "sun": 11677,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "3fbe72a2",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790864360563
-  },
-  {
-    "id": "zero-1790881052589",
-    "btc": 84740,
-    "sun": 16000,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "e23133c0",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790881052589
-  },
-  {
-    "id": "zero-1790881488929",
-    "btc": 84719,
-    "sun": 16000,
-    "lat": 30.13,
-    "lon": -9.38,
-    "h": "3da30f3e",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790881488929
-  },
-  {
-    "id": "zero-1790895445415",
-    "btc": 82405,
-    "sun": 16000,
-    "lat": 30.10810810810811,
-    "lon": -9.372663765001048,
-    "h": "b1d2566e",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790895445415
-  },
-  {
-    "id": "zero-1790895584021",
-    "btc": 80086,
-    "sun": 16000,
-    "lat": 30.10810810810811,
-    "lon": -9.372663765001048,
-    "h": "8f49cd33",
-    "city": "Tinkourri",
-    "rise": "6.81",
-    "ts": 1790895584021
+    "hash": "ad3f84690327a4a24b0dc888d78d5c2b398964c3c08aadf5b9e760ca6eade3ef",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "02c939473fed2d5919baf8500fa1fd81762f842374118fb106ee772788230db0",
+      "ts": "2026-10-02T15:25:54.319Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "02c939473fed2d5919baf8500fa1fd81762f842374118fb106ee772788230db0"
   }
 ]
