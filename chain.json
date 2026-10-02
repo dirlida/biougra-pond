@@ -131,5 +131,13 @@
       "originTax": "1% LAW"
     },
     "prev": "02c939473fed2d5919baf8500fa1fd81762f842374118fb106ee772788230db0"
+  },
+  {
+    "gps": "30.12613,-9.37437 Biougra Lab",
+    "city": "Biougra-Agadir THE LAB / Marrakech THE CITY myth",
+    "btc": 969612,
+    "time": "2026-10-02T16:03:22.856572Z",
+    "prev": "ad3f84690327a4a24b0dc888d78d5c2b398964c3c08aadf5b9e760ca6eade3ef",
+    "hash": "3ae3d838f894c251e5c5abe89e4ef1b4898d52eb40dc318f6f6a6193e74a94a8"
   }
 ]
