@@ -1,0 +1,9 @@
+{
+  "type": "qubit_wallet_genesis",
+  "prev_chain": "ab5446ede0c96a930f31307b92dbf386ea371f13774bb187a116412cb303918f",
+  "wallet_seed": "8fcf242b678b44a7e96f8fd9f7ec570be30880338f3890e9940163e5bdeeee05",
+  "angles": {"theta": 1.7648, "phi": 2.5414, "prob0": 0.4036, "prob1": 0.5964},
+  "proof": {"gps": "30.12613,-9.37437", "sun": "36.98", "btc": 969613},
+  "ts": "2026-10-03T14:35:00Z",
+  "lab": "Biougra"
+}
