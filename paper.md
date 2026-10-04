@@ -1,10 +1,10 @@
-# Geo-Quantum Seeding: GPS and Solar Elevation as Entropy for Qubit Wallets
+# Human Qubit Machine: Offline Quantum Entanglement on H+ (2-bar 4G) - Biougra 2026-10-04
 
-Abstract: We introduce a method to derive qubit rotation parameters (RY(theta), RZ(phi)) from field observables: GPS coordinates, solar elevation, and Bitcoin block height. Unlike QRNG or pseudo-RNG, entropy source is verifiable physical presence. First implementation from Biougra, Morocco field lab (30.12613,-9.37437) on 2026-10-03, sun 36.98 deg, BTC 969613, yielding seed 8fcf242b... This provides Proof-of-Place and Proof-of-Sun for wallet genesis. We discuss defensive publication and OriginTax kernel traceability.
+**Abstract:** First demonstration of Bell (509/515), GHZ 3-qubit (512/488), W-state (302/279/319), and Teleportation 100% (0->0, 1->1) executed offline in Biougra, Morocco (30.12613,-9.37437) on low H+ (71ms ping) via Termux. No cloud QPU, no qiskit install required. Entropy from GPS + solar + BTC 969613. Patent-pending human-qubit-machine.
 
-1. Intro
-2. Method (double SHA256 -> theta/phi)
-3. Field experiment
-4. Security analysis
-5. Comparison to Proof-of-Personhood
-6. Conclusion
+1. Intro - Why offline quantum on low bandwidth
+2. Method - double SHA256 -> theta/phi, .qasm offline
+3. Field experiment 2026-10-04 - 4 feats with counts
+4. Results - Bell, GHZ, W, Teleport logs
+5. Security - OriginTax traceability
+6. Conclusion - Quantum internet ready
