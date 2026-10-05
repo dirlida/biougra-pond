@@ -1,0 +1,2 @@
+19363c4b84b7b157c10171afc06a6edb838c9bab862bb0d4122b8021d2512e0d  WHITEPAPER.pdf
+8ae4da6f2a6d0bfa83389bfb04f214233811747db7b6f73437f80a2116c95e9c  human-qubit-machine.tar.gz
