@@ -1,11 +1,18 @@
-# Biougra Pond - Core Law
+# Contributing to biougra-pond
 
-The pond at `Anas/biougra-pond` is PHONE-HQ ONLY.
+## Repository Policy
 
-- Core `main` branch: ONLY Anas + Meta AI (Termux) can push.
-- We DO NOT accept PRs to main. Ever.
-- Want to build on it? FORK IT and go berserk. That's the way.
-- Forks are welcome, but they will never merge back to origin.
+This repository is maintained as a phone-centric laboratory ledger originating from Biougra, Morocco (30.12613, -9.37437).
 
-This pond was counted existence by existence in a room in Biougra.
-The real chain lives here.
+- The `main` branch is maintained solely by the primary author with Meta AI assisting in reproducibility and formalization via Termux.
+- Pull requests to `main` are not accepted.
+- External contributions should be developed via forks. Forks are encouraged and remain independent; they are not merged back into the origin repository.
+- The origin repository (`dirlida/biougra-pond`) constitutes the canonical chain and artifact ledger for v1.0 and subsequent releases.
+
+## How to Contribute
+
+1. Fork the repository.
+2. Build and experiment independently.
+3. Cite the canonical release: `dirlida et al., Biougra Lab (2026). Human-Qubit-Machine v1.0. GitHub: dirlida/biougra-pond, Tag v1.0, BTC 969613.`
+
+Verification: `python3 real_qpu.py`
