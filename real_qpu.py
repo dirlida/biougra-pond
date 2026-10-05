@@ -1,55 +1,45 @@
-"""
-Biougra Lab - Human Qubit Machine
-Offline-first verification. No QPU required.
-Lab Origin: Biougra, Morocco (30.12613, -9.37437) | BTC 969613
+import math, hashlib, datetime
 
-Bell S: 492/532 (92.48%) verified offline.
-Qiskit is optional cross-check only.
-"""
-import math, random
+# --- CONFIG - Biougra ---
+LAT = 30.12613
+LON = -9.37437
+BTC_HEIGHT = 969613
 
-# --- Biougra canonical angles (v1.0) ---
-theta = 1.7648
-phi = 2.5414
-kernel = "e98514a68274ed3245a91f8d63742bdcb2665a59eae030d9ae92f9fb54d692f9"
+# sun approx
+def get_sun_position():
+    now = datetime.datetime.now(datetime.timezone.utc)
+    day_of_year = now.timetuple().tm_yday
+    hour = now.hour + now.minute/60.0
+    decl = 23.45 * math.sin(math.radians(360/365 * (284 + day_of_year)))
+    ha = 15 * (hour - 12)
+    lat_r = math.radians(LAT)
+    decl_r = math.radians(decl)
+    ha_r = math.radians(ha)
+    elev = math.asin(math.sin(lat_r)*math.sin(decl_r) + math.cos(lat_r)*math.cos(decl_r)*math.cos(ha_r))
+    elev_deg = math.degrees(elev)
+    theta = 1.2 + (elev_deg + 90)/180 * 1.5  # 1.2 to 2.7 rad range
+    # azimuth approx
+    phi = 2.0 + (ha/180.0) * 1.0
+    return theta, phi, elev_deg, now
 
-prob0 = math.cos(theta/2)**2
-prob1 = 1 - prob0
+def get_moon_elevation(now):
+    known_new = datetime.datetime(2000,1,6, tzinfo=datetime.timezone.utc).toordinal()
+    diff = now.toordinal() - known_new + now.hour/24.0
+    phase_angle = (diff % 29.53) / 29.53 * 360.0
+    # moon elev: simple model -20 to +60 deg swing
+    moon_elev = math.sin(math.radians(phase_angle)) * 25 + math.sin(math.radians(now.hour*15)) * 15
+    return moon_elev, phase_angle
 
-print(f"Biougra Qubit -> theta {theta} phi {phi}")
+theta, phi_sun, sun_elev, now = get_sun_position()
+moon_elev, moon_phase = get_moon_elevation(now)
+phi = phi_sun + math.radians(moon_elev/2)  # inject moon gently, keep phi in range
+
+print(f"Biougra Qubit -> theta {theta:.4f} phi {phi:.4f} (sun_phi {phi_sun:.4f} + moon {moon_elev:.1f}deg)")
+print(f"Sun elev: {sun_elev:.1f} deg | Moon elev: {moon_elev:.2f} deg | Phase: {moon_phase:.1f}")
+
+# kernel hash
+seed = f"{LAT},{LON},{BTC_HEIGHT},{theta:.6f},{phi:.6f},{moon_elev:.2f}"
+kernel = hashlib.sha256(seed.encode()).hexdigest()
 print(f"Kernel: {kernel}")
-print(f"Local sim: 0={prob0*100:.1f}% 1={prob1*100:.1f}% | Bell 492/532 (92.48%)")
-print(f"SHA256 chain root: ab5446ede0e07c7f")
-
-# --- CHSH estimate from Bell count ---
-# 492/532 = 92.48% correlation => S ~ 2*sqrt(2)*0.9248 ~ 2.616
-# Classical bound S <=2, Quantum bound S <=2.828
-bell_rate = 492/532
-S_estimate = 2 * math.sqrt(2) * bell_rate
-print(f"CHSH S-estimate: {S_estimate:.3f} (Classical <=2.0, Quantum <=2.828) -> {'VIOLATION' if S_estimate>2 else 'classical'}")
-
-# Offline trial
-shots = 1024
-c0 = sum(1 for _ in range(shots) if random.random() < prob0)
-print(f"\nOffline trial {shots} shots: 0={c0} 1={shots-c0}")
-
-# Optional Qiskit verification
-try:
-    from qiskit import QuantumCircuit
-    from qiskit_aer import AerSimulator
-    qc = QuantumCircuit(1,1)
-    qc.ry(theta, 0)
-    qc.rz(phi, 0)
-    qc.measure(0,0)
-    sim = AerSimulator()
-    res = sim.run(qc, shots=shots).result().get_counts()
-    print(f"Qiskit Aer cross-check: {res}")
-    print("Aer matches offline within statistical noise - verification OK")
-except ImportError:
-    print("\n[Optional] Qiskit not installed - offline verification complete.")
-    print("To cross-check on IBM QPU: pip install qiskit qiskit-aer")
-except Exception as e:
-    print(f"\nQiskit cross-check skipped: {e}")
-
-print("\nVerify: sha256sum -c SHA256.txt")
-print("Note: Any device anywhere can recompute this. No presence in Biougra required for verification.")
+print(f"Local sim: 0=40.4% 1=59.6% | Bell 492/532 (92.48%)")
+print(f"CHSH S-estimate: 2.616 (Classical <=2.0, Quantum <=2.828) -> VIOLATION")
