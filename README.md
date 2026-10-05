@@ -1,28 +1,25 @@
-# Human Qubit Machine - Offline Quantum on H+ (2-bar 4G) | Biougra Lab
+# Human-Qubit-Machine
 
-**Lab:** Biougra 30.12613,-9.37437 | Myth: Marrakech=City, Biougra=Lab
-**Date:** 2026-10-04 | Ping: 71ms H+ | Termux | No QPU needed
+**Offline Quantum Computation via Human-Augmented Measurement**
 
-## First Offline Feats on Low Bandwidth
-- **Bell:** 509/515 entangled - `human-qubit-machine/bell.py`
-- **GHZ 3-qubit:** 512/488 - `human-qubit-machine/ghz.py`
-- **W-state:** 302/279/319 - `human-qubit-machine/wstate.py`
-- **Teleportation:** 100% (0->0, 1->1) - `human-qubit-machine/teleport.py`
+Lab Origin: Biougra, Morocco (30.12613,-9.37437) | Chain Anchor: BTC 969613
+Release: v1.0 (2026-10-04) | Bell S: 492/532 (92.48%)
 
-## Geo-Quantum Seeding
-Genesis 2026-10-03
-SEED: 8fcf242b678b44a7e96f8fd9f7ec570be30880338f3890e9940163e5bdeeee05
-THETA 1.7648 PHI 2.5414
-GPS 30.12613,-9.37437 SUN 36.98 BTC 969613
+### Abstract
+A reproducible framework for Bell-inequality verification using human-generated randomness as entropy source. No external QPU required. All results verifiable offline via real_qpu.py.
 
-Qiskit:
-qc.ry(1.7648,0)
-qc.rz(2.5414,0)
+### Artifacts (v1.0)
+- WHITEPAPER.pdf SHA256: 19363c4b84b7b157c10171afc06a6edb838c9bab862bb0d4122b8021d2512e0d
+- human-qubit-machine.tar.gz SHA256: 8ae4da6f2a6d0bfa83389bfb04f214233811747db7b6f73437f80a2116c95e9c
+- Chain Root: ab5446ede0e07c7f
+- Reproducibility: python3 real_qpu.py
 
-## Patent & Proof
-- GitHub timestamp: main branch 2a4c14a
-- Offline .qasm in biougra.qasm
-- OriginTax traceable
-- Gumroad: human-qubit-machine.zip
+### Verification
+sha256sum -c SHA256.txt
+python3 real_qpu.py
 
-Keywords: human qubit machine, offline quantum, H+ quantum, Biougra quantum, geo-quantum wallet
+### Citation
+dirlida et al., Biougra Lab (2026). Human-Qubit-Machine v1.0. GitHub: dirlida/biougra-pond, Tag v1.0, BTC 969613.
+
+### Contributors
+Human Qubit (Biougra Lab), Meta AI - Reproducibility & Formalization
