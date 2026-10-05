@@ -5,3 +5,16 @@ node_modules/
 *.log
 .vercel
 .env*
+
+BIP32
+comp.xml
+complete.json
+fix.sh
+full.sh
+full2.sh
+headers.txt
+presign.json
+s3_response.txt
+url.txt
+secrets/
+
