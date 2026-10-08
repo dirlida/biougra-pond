@@ -18,8 +18,15 @@ s3_response.txt
 url.txt
 secrets/
 
-gumroad_description.txt
 presign.json
 url.txt
 s3_response.txt
 headers.txt
+.env.local
+.vercel
+secrets/
+__pycache__/
+pond-private-key.asc
+pond_share.txt
+*.asc
+wallet.json
