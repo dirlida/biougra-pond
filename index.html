@@ -20,3 +20,4 @@ document.getElementById('qr').src='https://api.qrserver.com/v1/create-qr-code/?s
 function share(){ if(navigator.share) navigator.share({title:'Biougra Pond',url}); else prompt('Share:',url) }
 function dl(){ const a=document.createElement('a'); a.href=document.getElementById('qr').src; a.download='biougra-qr.png'; a.click(); }
 </script>
+<footer style="font-size:9px;text-align:center;opacity:.6;padding:10px">GENESIS f83c70e14a1e5e17 S=2.616 30.07,-9.62 8.4 POND 8897002 PGP SIGNED</footer>
