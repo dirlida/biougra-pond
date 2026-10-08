@@ -1,11 +1,10 @@
 <!doctype html><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Biougra Pond - Global Phone Node</title>
-<style>body{font-family:system-ui;padding:24px;text-align:center} .ok{font-size:64px} .card{border:1px solid #ccc;border-radius:16px;padding:16px;max-width:420px;margin:auto} img{margin:12px auto;display:block} .counter{background:#f0f9ff;padding:8px;border-radius:8px;margin:10px 0;font-weight:bold}</style>
+<style>body{font-family:system-ui;padding:24px;text-align:center} .ok{font-size:64px} .card{border:1px solid #ccc;border-radius:16px;padding:16px;max-width:420px;margin:auto} img{margin:12px auto;display:block}</style>
 <div class="card">
 <div class="ok">✅</div>
 <h2>Biougra Pond Node</h2>
 <p>any phone on earth can verify, gps is tag only</p>
-<div class="counter">🌍 Global verifiers: <span id="count">...</span></div>
 <p><b>Genesis:</b> 4138350 | <b>S:</b> <span id="s"></span> | <b>Balance:</b> <span id="bal"></span></p>
 <p style="font-size:12px;color:#666">gps metadata only: 30.07,-9.62<br>hash: f83c70e14a1e5e17<br>hmac: 389b19b95379fc19...<br>bell: 3f0a3bf51e179e19</p>
 <img id="qr" width="200" src="">
@@ -20,8 +19,4 @@ fetch('wallet.json').then(r=>r.json()).then(w=>{
 document.getElementById('qr').src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data='+encodeURIComponent(url);
 function share(){ if(navigator.share) navigator.share({title:'Biougra Pond',url}); else prompt('Share:',url) }
 function dl(){ const a=document.createElement('a'); a.href=document.getElementById('qr').src; a.download='biougra-qr.png'; a.click(); }
-// live counter - no personal data, just hits
-fetch('https://api.countapi.xyz/hit/biougra-pond/global-verifiers').then(r=>r.json()).then(d=>{
- document.getElementById('count').innerText=d.value;
-}).catch(()=>{ document.getElementById('count').innerText='live'; });
 </script>
