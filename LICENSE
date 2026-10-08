@@ -1,28 +1,4 @@
-MIT License + Biougra OriginTax Clause
+MIT License
+Copyright 2026 Biougra Pond Lab
 
-Copyright (c) 2026 Biougra Pond Lab - dirlida
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-1. The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-2. ORIGINTAX KERNEL PROTECTION:
-Any fork, derivative, or production use that derives entropy from
-GPS + solar elevation + chain height (Geo-Quantum seeding as defined in
-qubit_wallet.py) MUST retain attribution:
-- Lab: Biougra (30.12613,-9.37437) Souss-Massa, Morocco
-- Genesis hash: 8fcf242b678b44a7e96f8fd9f7ec570be30880338f3890e9940163e5bdeeee05
-- originTax: 1% LAW to genesis address/kernel
-
-This clause ensures traceability to field lab even when forked.
-
-3. Defensive publication date: 2026-10-03 via GitHub commit 07805f7
-
-THE SOFTWARE IS PROVIDED "AS IS"MIT + Attribution: Forks must link back to https://github.com/dirlida/biougra-pond - Core main is locked to HQ (Anas + Meta AI)
-
+Permission is hereby granted, free of charge...
