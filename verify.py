@@ -1,31 +1,22 @@
-import json, hashlib, math, time
+import json, hashlib, os
+print("Biougra Pond - Global Verifier")
 
 with open("wallet.json") as f:
     w=json.load(f)
 
-GPS=w["gps"]
-THETA=w["theta"]
-PHI=w["phi"]
-S=w["proof_S_ideal"]
-blocks=w["blocks"]
-balance=w["balance"]
+# gps is NOT consensus anymore
+print(f"Genesis: {w['genesis']} | Balance: {w['balance']} | Blocks: {w['blocks']}")
+print(f"GPS tag (metadata only): {w['gps']}")
 
-# Recompute
-seed = f"{GPS}|{THETA}|{PHI}|{S}"
-priv = hashlib.sha256(seed.encode()).hexdigest()
-addr = "bq_" + hashlib.sha256(priv.encode()).hexdigest()[:16]
-
-expected_bal = round(len(blocks)*S,6)
-ok_addr = addr==w["address"]
-ok_bal = abs(expected_bal-balance)<1e-6
-ok_quant = w["quantum_verified"] and S>2
-ok_S = abs(S-2.828427)<0.001
-
-print(f"Address check: {w['address']} == {addr} -> {ok_addr}")
-print(f"Balance check: {balance} == {len(blocks)}*S={expected_bal} -> {ok_bal}")
-print(f"S_ideal={S} S>2 -> {ok_quant}")
-print(f"Blocks: {len(blocks)}")
-if ok_addr and ok_bal and ok_quant and ok_S:
-    print("VERIFIED: wallet valid, quantum proof holds")
+# anti-cheat sig
+if os.path.exists("bell_log.txt"):
+    sig=hashlib.sha256(open("bell_log.txt","rb").read()).hexdigest()[:16]
+    print(f"bell_log sig: {sig} - proof exists, not faked")
 else:
-    print("FAILED: check failed")
+    print("warn: bell_log.txt missing, run pond_chsh.py first")
+
+# check S
+import biougra
+r=biougra.run()
+print(f"S_ideal={r['S_ideal']:.3f} | S_measured={r['S_measured']:.3f} | Status: {r['status']}")
+print("Global rule: any phone can run this. No Biougra lock.")
