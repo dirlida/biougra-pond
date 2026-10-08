@@ -1,0 +1,18 @@
+{
+  "address": "bq_42903f5fe70454d5",
+  "private_sha": "bac6954daef298f2...",
+  "gps": "30.12613,-9.37437",
+  "theta": 1.7648,
+  "phi": 2.5414,
+  "proof_S_ideal": 2.828427,
+  "proof_S_brisbane": 2.616,
+  "quantum_verified": true,
+  "balance": 8.485281,
+  "blocks": [
+    "cb12b6eab24183bae9eb0d6c66f38e0d6c66f38e0d49431c2c52466be16573f5695d99991b",
+    "30962ae4eacdf206ae5697ffc3de5ca4b4e99ee684bebe9e5a4121ca75773c4f",
+    "2b96880bcec7996af87748941035cf111e31b9e4157bc24e82e101272ba448d4"
+  ],
+  "created": 1791466632,
+  "chain": "biougra-pond"
+}
