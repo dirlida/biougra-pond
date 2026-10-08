@@ -1,6 +1,6 @@
 {
   "address": "bq_42903f5fe70454d5",
-  "private_sha": "bac6954daef298f2...",
+  "private_sha": "bac6954... (demo, not real private)",
   "gps": "30.12613,-9.37437",
   "theta": 1.7648,
   "phi": 2.5414,
@@ -13,6 +13,6 @@
     "30962ae4eacdf206ae5697ffc3de5ca4b4e99ee684bebe9e5a4121ca75773c4f",
     "2b96880bcec7996af87748941035cf111e31b9e4157bc24e82e101272ba448d4"
   ],
-  "created": 1791466632,
+  "created": 1791467574,
   "chain": "biougra-pond"
 }
