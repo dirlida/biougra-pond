@@ -1,22 +1,12 @@
-import json, hashlib, os
-print("Biougra Pond - Global Verifier")
-
-with open("wallet.json") as f:
-    w=json.load(f)
-
-# gps is NOT consensus anymore
-print(f"Genesis: {w['genesis']} | Balance: {w['balance']} | Blocks: {w['blocks']}")
-print(f"GPS tag (metadata only): {w['gps']}")
-
-# anti-cheat sig
+import json, hashlib, hmac, os
+raw=open("wallet.json","rb").read()
+w=json.loads(raw)
+S=w.get("proof",{}).get("S_measured",0)
+if S < 2.0:
+    raise SystemExit("FAIL S<2")
+seed=b"biougra-pond-4138350-genesis"
+extra=b""
 if os.path.exists("bell_log.txt"):
-    sig=hashlib.sha256(open("bell_log.txt","rb").read()).hexdigest()[:16]
-    print(f"bell_log sig: {sig} - proof exists, not faked")
-else:
-    print("warn: bell_log.txt missing, run pond_chsh.py first")
-
-# check S
-import biougra
-r=biougra.run()
-print(f"S_ideal={r['S_ideal']:.3f} | S_measured={r['S_measured']:.3f} | Status: {r['status']}")
-print("Global rule: any phone can run this. No Biougra lock.")
+    extra=open("bell_log.txt","rb").read()[:1024]
+calc=hmac.new(seed+extra, raw, hashlib.sha256).hexdigest()
+print(f"{w['genesis']} {w['balance']} {S} {calc[:24]} {hashlib.sha256(extra).hexdigest()[:16] if extra else 'none'}")
