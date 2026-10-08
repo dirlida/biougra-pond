@@ -23,4 +23,9 @@ Phone lab: Termux, O(n) vs O(2^n)
 - wallet_real.py + wallet.json - real wallet
 - bell_log.txt - Brisbane raw
 
+## Verify
+python3 verify.py
+# Should output VERIFIED: wallet valid, quantum proof holds
+
+
 Chain: biougra-pond
