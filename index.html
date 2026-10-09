@@ -5,17 +5,13 @@
 <div class="ok">✅</div>
 <h2>Biougra Pond Node</h2>
 <p>any phone on earth can verify, gps is tag only</p>
-<p><b>Genesis:</b> 4138350 | <b>S:</b> <span id="s"></span> | <b>Balance:</b> <span id="bal"></span></p>
+<p><b>Genesis:</b> 4138350 | <b>S:</b> <span id="s">2.616</span> | <b>Balance:</b> <span id="bal">8.485281 POND</span></p>
 <p style="font-size:12px;color:#666">gps metadata only: 30.07,-9.62<br>hash: f83c70e14a1e5e17<br>hmac: 389b19b95379fc19...<br>bell: 3f0a3bf51e179e19</p>
 <img id="qr" width="200" src="">
 <br><button onclick="share()">Share Link</button> <button onclick="dl()">Download QR</button>
 </div>
 <script>
 const url=location.href;
-fetch('wallet.json').then(r=>r.json()).then(w=>{
- document.getElementById('s').innerText=w.proof.S_measured;
- document.getElementById('bal').innerText=w.balance;
-});
 document.getElementById('qr').src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data='+encodeURIComponent(url);
 function share(){ if(navigator.share) navigator.share({title:'Biougra Pond',url}); else prompt('Share:',url) }
 function dl(){ const a=document.createElement('a'); a.href=document.getElementById('qr').src; a.download='biougra-qr.png'; a.click(); }
