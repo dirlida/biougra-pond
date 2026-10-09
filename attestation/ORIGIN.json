@@ -1,0 +1,14 @@
+{
+  "protocol": "Biougra Pond Human-Qubit-Machine v1.0",
+  "pond": "8.4",
+  "gps": { "lat": 30.12613, "lon": -9.37437, "str": "30.07,-9.62" },
+  "gpsStr": "30.12613,-9.37437",
+  "timestamp": "2026-10-02T16:12:51.736920Z",
+  "sunElevation": 36.98,
+  "btcHeight": 969613,
+  "entropy": "S=2.616",
+  "genesis": "f83c70e14a1e5e17",
+  "pgp": "8897002",
+  "device": "Android Termux",
+  "locationName": "Biougra, Morocco"
+}

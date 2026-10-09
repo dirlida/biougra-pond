@@ -1,0 +1,10 @@
+I, dirlida (PGP 8897002), attest I was physically at Biougra Pond
+30.12613,-9.37437 on 2026-10-02T16:12:51.736920Z.
+
+I executed Bell state H(0);CX(0,1) on IBM QPU, 1024 shots, result 492/532.
+
+Entropy locked S=2.616 at POND 8.4, GENESIS f83c70e14a1e5e17, BTC 969613.
+
+This attestation is PGP signed and hash-chained in chain.json
+ab5446ede0c96a930f31307b92dbf386ea371f13774bb187a116412cb303918f
+prev 3ae3d838f894c251e5c5abe89e4ef1b4898d52eb40dc318f6f6a6193e74a94a8
