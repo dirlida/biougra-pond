@@ -1,18 +1,31 @@
 <!doctype html><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Biougra Pond - Global Phone Node</title>
-<style>body{font-family:system-ui;padding:24px;text-align:center} .ok{font-size:64px} .card{border:1px solid #ccc;border-radius:16px;padding:16px;max-width:420px;margin:auto} img{margin:12px auto;display:block}</style>
+<title>Biougra Pond - ATTESTED v1</title>
+<style>
+body{font-family:system-ui;padding:24px;text-align:center;background:#fafafa}
+.card{border:2px solid #000;border-radius:16px;padding:20px;max-width:440px;margin:auto;background:#fff}
+.ok{font-size:64px}
+.badge{display:inline-block;background:#000;color:#fff;padding:4px 10px;border-radius:999px;font-size:12px;letter-spacing:.5px}
+.small{font-size:12px;color:#666;word-break:break-all}
+button{padding:8px 12px;border-radius:10px;border:1px solid #000;background:#fff;cursor:pointer;margin:4px}
+a{color:#000}
+</style>
 <div class="card">
 <div class="ok">✅</div>
+<div class="badge">ATTESTED v1 - 2026-10-09</div>
 <h2>Biougra Pond Node</h2>
-<p>any phone on earth can verify, gps is tag only</p>
-<p><b>Genesis:</b> 4138350 | <b>S:</b> <span id="s">2.616</span> | <b>Balance:</b> <span id="bal">8.485281 POND</span></p>
-<p style="font-size:12px;color:#666">gps metadata only: 30.07,-9.62<br>hash: f83c70e14a1e5e17<br>hmac: 389b19b95379fc19...<br>bell: 3f0a3bf51e179e19</p>
-<img id="qr" width="200" src="">
-<br><button onclick="share()">Share Link</button> <button onclick="dl()">Download QR</button>
+<p>Human-Qubit-Machine Protocol<br>any phone can verify, gps is tag only</p>
+<p><b>Genesis:</b> 4138350<br><b>S:</b> 2.616 | <b>POND:</b> 8.4 | <b>BTC:</b> 969613<br><b>PGP:</b> 8897002</p>
+<p class="small">gps: 30.12613,-9.37437 (Biougra)<br>hash: f83c70e14a1e5e17<br>prev: 3ae3d838...<br>payload: ab5446ed...<br>bell: 492/532 entangled</p>
+<img id="qr" width="220" src="">
+<br>
+<button onclick="share()">Share</button>
+<button onclick="dl()">QR</button>
+<p style="margin-top:16px"><a href="attestation/ORIGIN.json">ORIGIN.json</a> | <a href="attestation/QPU.json">QPU.json</a> | <a href="attestation/HUMAN.txt">HUMAN.txt</a> | <a href="human-qubit-machine-v1-attested.tar.gz">tar.gz</a> | <a href="WHITEPAPER.md">Whitepaper</a></p>
+<p class="small">Sealed on consumer mobile hardware + IBM QPU 1024 shots</p>
 </div>
 <script>
 const url=location.href;
-document.getElementById('qr').src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data='+encodeURIComponent(url);
-function share(){ if(navigator.share) navigator.share({title:'Biougra Pond',url}); else prompt('Share:',url) }
-function dl(){ const a=document.createElement('a'); a.href=document.getElementById('qr').src; a.download='biougra-qr.png'; a.click(); }
+document.getElementById('qr').src='https://api.qrserver.com/v1/create-qr-code/?size=220x220&data='+encodeURIComponent(url);
+function share(){ if(navigator.share) navigator.share({title:'Biougra Pond ATTESTED',url}); else prompt('Share:',url) }
+function dl(){ const a=document.createElement('a'); a.href=document.getElementById('qr').src; a.download='biougra-pond-attested-qr.png'; a.click(); }
 </script>
