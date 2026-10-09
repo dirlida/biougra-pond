@@ -2,30 +2,44 @@
 <title>Biougra Pond - ATTESTED v1</title>
 <style>
 body{font-family:system-ui;padding:24px;text-align:center;background:#fafafa}
-.card{border:2px solid #000;border-radius:16px;padding:20px;max-width:440px;margin:auto;background:#fff}
+.card{border:2px solid #000;border-radius:16px;padding:20px;max-width:460px;margin:auto;background:#fff}
 .ok{font-size:64px}
-.badge{display:inline-block;background:#000;color:#fff;padding:4px 10px;border-radius:999px;font-size:12px;letter-spacing:.5px}
-.small{font-size:12px;color:#666;word-break:break-all}
+.badge{display:inline-block;background:#000;color:#fff;padding:4px 10px;border-radius:999px;font-size:12px}
+.small{font-size:12px;color:#666;word-break:break-all;text-align:left;background:#f5f5f5;padding:10px;border-radius:10px}
 button{padding:8px 12px;border-radius:10px;border:1px solid #000;background:#fff;cursor:pointer;margin:4px}
+pre{font-size:11px;text-align:left;overflow:auto}
 a{color:#000}
 </style>
 <div class="card">
 <div class="ok">✅</div>
-<div class="badge">ATTESTED v1 - 2026-10-09</div>
+<div class="badge">ATTESTED v1 - 2026-10-09 - CHAIN VALID</div>
 <h2>Biougra Pond Node</h2>
-<p>Human-Qubit-Machine Protocol<br>any phone can verify, gps is tag only</p>
-<p><b>Genesis:</b> 4138350<br><b>S:</b> 2.616 | <b>POND:</b> 8.4 | <b>BTC:</b> 969613<br><b>PGP:</b> 8897002</p>
-<p class="small">gps: 30.12613,-9.37437 (Biougra)<br>hash: f83c70e14a1e5e17<br>prev: 3ae3d838...<br>payload: ab5446ed...<br>bell: 492/532 entangled</p>
+<p>Human-Qubit-Machine Protocol<br>any phone can verify</p>
+<p><b>Genesis:</b> 4138350 | <b>S:</b> 2.616 | <b>POND:</b> 8.4<br><b>BTC:</b> 969613 | <b>PGP:</b> 8897002</p>
+<pre>OPENQASM 2.0
+h q[0];
+cx q[0],q[1];
+# 492/532 on 1024 shots
+# S=2.828 ideal, 2.616 QPU</pre>
+<div class="small">
+<b>Chain:</b> 9 blocks<br>
+Final: ab5446ed...<br>
+Prev: 3ae3d838...<br>
+GPS: 30.12613,-9.37437<br>
+HMAC: 389b19b95379fc19<br>
+Bell: 3f0a3bf51e179e19<br>
+O(n) not O(2^n)
+</div>
 <img id="qr" width="220" src="">
 <br>
 <button onclick="share()">Share</button>
 <button onclick="dl()">QR</button>
-<p style="margin-top:16px"><a href="attestation/ORIGIN.json">ORIGIN.json</a> | <a href="attestation/QPU.json">QPU.json</a> | <a href="attestation/HUMAN.txt">HUMAN.txt</a> | <a href="human-qubit-machine-v1-attested.tar.gz">tar.gz</a> | <a href="WHITEPAPER.md">Whitepaper</a></p>
-<p class="small">Sealed on consumer mobile hardware + IBM QPU 1024 shots</p>
+<p><a href="attestation/ORIGIN.json">ORIGIN</a> | <a href="attestation/QPU.json">QPU</a> | <a href="docs/STATS.md">STATS.md</a> | <a href="biougra_bell.qasm">Bell QASM</a> | <a href="human-qubit-machine-v1-attested.tar.gz">tar.gz</a></p>
+<p style="font-size:11px">Run: <code>bash RUNME.sh</code> -> ALL GREEN</p>
 </div>
 <script>
 const url=location.href;
 document.getElementById('qr').src='https://api.qrserver.com/v1/create-qr-code/?size=220x220&data='+encodeURIComponent(url);
 function share(){ if(navigator.share) navigator.share({title:'Biougra Pond ATTESTED',url}); else prompt('Share:',url) }
-function dl(){ const a=document.createElement('a'); a.href=document.getElementById('qr').src; a.download='biougra-pond-attested-qr.png'; a.click(); }
+function dl(){ const a=document.createElement('a'); a.href=document.getElementById('qr').src; a.download='biougra-pond-attested.png'; a.click(); }
 </script>
