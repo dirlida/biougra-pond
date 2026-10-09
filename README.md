@@ -23,3 +23,5 @@ index.html with QR - https://dirlida.github.io/biougra-pond/
 - biougra_bell.qasm Bell H(0);CX(0,1)
 - chain.json 9 blocks
 - human-qubit-machine-v1.1-attested.tar.gz 9644eee6...
+
+[![Release v1.1 ATTESTED](https://img.shields.io/badge/release-v1.1--attested-00ff00)](https://github.com/dirlida/biougra-pond/releases/tag/v1.1-attested)
