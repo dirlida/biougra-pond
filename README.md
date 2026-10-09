@@ -1,31 +1,25 @@
-# biougra-pond - 30q lane on phone
+# Biougra Pond - Human-Qubit-Machine v1.1 ATTESTED
 
-Phone lab: Termux, O(n) vs O(2^n)
+**Any phone can verify quantum entanglement. No lab needed.**
 
-## Results
-- Ideal CHSH S = 2.828427 (qubits 0,1 GHZ embedded)
-- Brisbane S = 2.616 (noise gap = 0.212)
-- Theta=1.7648 Phi=2.5414 -> S=0.4036/0.5964
-- 30q scaling: O(n)=30 vs O(2^n)=1073741824 amplitudes
-- Toubkal same principle (MPS)
+Genesis 4138350 | S=2.616 | POND 8.4 | BTC 969613 | PGP 8897002 | GPS 30.12613,-9.37437
 
-## Wallet
-- Address: bq_42903f5fe70454d5
-- Derivation: SHA256(GPS|theta|phi|S)
-- GPS: 30.12613,-9.37437
-- Balance: 8.485281 pond = 3 * S
-- Proof: S>2 => quantum_verified=true
+### VERIFY IN 10 SECONDS
+```bash
+bash RUNME.sh
+# -> ALL GREEN
+```
 
-## Files
-- pond_30q_light.py - O(n) proof
-- pond_chsh.py - CHSH ideal
-- pond_mine.py - GPS+quantumness miner
-- wallet_real.py + wallet.json - real wallet
-- bell_log.txt - Brisbane raw
+### STATS
+See docs/STATS.md - 492/532, S=2.616 vs 2.828 ideal, Chain ab5446ed...
 
-## Verify
-python3 verify.py
-# Should output VERIFIED: wallet valid, quantum proof holds
+### WHITEPAPER v1.1
+docs/WHITEPAPER_v1.1.md
 
+### Live Demo
+index.html with QR - https://dirlida.github.io/biougra-pond/
 
-Chain: biougra-pond
+### Artifacts
+- biougra_bell.qasm Bell H(0);CX(0,1)
+- chain.json 9 blocks
+- human-qubit-machine-v1.1-attested.tar.gz 9644eee6...
