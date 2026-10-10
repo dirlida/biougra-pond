@@ -1,27 +1,19 @@
-# Biougra Pond - Human-Qubit-Machine v1.1 ATTESTED
+# Biougra Pond - Human-Qubit-Machine v1.1 LIVE
 
 **Any phone can verify quantum entanglement. No lab needed.**
 
-Genesis 4138350 | S=2.616 | POND 8.4 | BTC 969613 | PGP 8897002 | GPS 30.12613,-9.37437
+Genesis 30.12613,-9.37437 | S=2.616 raw 2.828 corr | POND 8.4 7.5% | BTC 969609 genesis | Chain 9 blocks VALID | Samsung A13 Termux-only | ALL GREEN
 
-### VERIFY IN 10 SECONDS
-```bash
+### VERIFY IN 10 SECONDS (Termux A13)
+git clone https://github.com/dirlida/biougra-pond.git
+cd biougra-pond
 bash RUNME.sh
-# -> ALL GREEN
-```
 
-### STATS
-See docs/STATS.md - 492/532, S=2.616 vs 2.828 ideal, Chain ab5446ed...
+LIVE https://dirlida.github.io/biougra-pond/ — commit d647e77
+chain.json 9 blocks fd1ba898..ab5446ed FINAL
+verify.py CHAIN VALID, pond_chsh.py S=2.616 VIOLATED
+btc_timestamp.py OP_RETURN ab5446ed ready
+WHITEPAPER.md v1.1 POND 8.4
+STATS.md live
 
-### WHITEPAPER v1.1
-docs/WHITEPAPER_v1.1.md
-
-### Live Demo
-index.html with QR - https://dirlida.github.io/biougra-pond/
-
-### Artifacts
-- biougra_bell.qasm Bell H(0);CX(0,1)
-- chain.json 9 blocks
-- human-qubit-machine-v1.1-attested.tar.gz 9644eee6...
-
-[![Release v1.1 ATTESTED](https://img.shields.io/badge/release-v1.1--attested-00ff00)](https://github.com/dirlida/biougra-pond/releases/tag/v1.1-attested)
+Mantra: Nature is the lab. Fork it, run it, verify it from anywhere.
