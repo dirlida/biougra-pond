@@ -12,7 +12,16 @@
 - **Noise model:** POND 8.4 = 7.5% — see DEFENSE.md
 - **Genesis:** attestation/ + ORIGIN.json + QR attested
 - **Code:** pond_chsh.py, pond_mine.py, biougra.py — all Termux
-- **Commit:** 4b3f273 — REPRODUCIBLE.md live
-- **BTC Anchor:** pending btc_timestamp.py (run today)
+- **Commit:** 422ccbb — index.html + WHITEPAPER v1.1 live
+- **BTC Anchor:** btc_timestamp.py — tip fd1ba89.. OP_RETURN ready
+- **Verifier:** python3 verify.py -> CHAIN VALID 9 blocks 30.12613,-9.37437
 
 ## Chain Health
+`python3 verify.py`
+== Biougra Pond v1.1 Verifier (Termux A13) ==
+Blocks: 9
+[OK] Genesis 30.126126126126128,-9.37437367846481
+[OK] Hash chain 0->8 VALID
+[OK] Bell S raw = 2.616 >2.0 VIOLATED
+
+Mantra: Fork it, run it, verify it from anywhere.
