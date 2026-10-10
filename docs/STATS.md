@@ -12,7 +12,7 @@
 - **Noise model:** POND 8.4 = 7.5% — see DEFENSE.md
 - **Genesis:** attestation/ + ORIGIN.json + QR attested
 - **Code:** pond_chsh.py, pond_mine.py, biougra.py — all Termux
-- **Commit:** 422ccbb — index.html + WHITEPAPER v1.1 live
+- **Commit:** 7f5949d — index.html + WHITEPAPER v1.1 live
 - **BTC Anchor:** btc_timestamp.py — tip fd1ba89.. OP_RETURN ready
 - **Verifier:** python3 verify.py -> CHAIN VALID 9 blocks 30.12613,-9.37437
 
