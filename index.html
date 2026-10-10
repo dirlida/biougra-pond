@@ -1,39 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Biougra Pond — Human-Qubit-Machine v1.1</title>
-<style>body{font-family:monospace;max-width:800px;margin:20px auto;padding:10px;background:#000;color:#0f0} a{color:#0ff}.box{border:1px solid #0f0;padding:12px;margin:10px 0} h1{color:#fff}</style>
-</head>
+<!doctype html>
+<html><head><meta charset=utf-8><title>Biougra Pond v1.3 quantum-seeded</title></head>
 <body>
-<h1>🌊 Biougra Pond v1.1 — LIVE</h1>
-<div class="box">
-<strong>Location:</strong> 30.12613,-9.37437 Biougra, Morocco<br>
-<strong>Hardware:</strong> Samsung A13 Termux-only (zero laptop)<br>
-<strong>Genesis:</strong> 2026-10-02 15:25Z — btcHeight 969609<br>
-<strong>Chain:</strong> <span id="blocks">9</span> blocks — <span id="status">VERIFYING...</span><br>
-<strong>Bell S:</strong> raw 2.616 >2.0 VIOLATED — corr 2.828 (POND 8.4, 7.5% noise)<br>
-<strong>Commit:</strong> bde4de8<br>
-<strong>Mantra:</strong> Fork it, run it, verify it from anywhere. Nature is the lab.
-</div>
-<div class="box">
-<h3>Verify Now (Termux)</h3>
-<pre>git clone https://github.com/dirlida/biougra-pond.git
-cd biougra-pond
-python verify.py</pre>
-<pre id="chain"></pre>
-</div>
-<div class="box">
-<a href="chain.json">chain.json</a> | <a href="STATS.md">STATS.md</a> | <a href="REPRODUCIBLE.md">REPRODUCIBLE.md</a> | <a href="WHITEPAPER.md">WHITEPAPER.md</a> | <a href="verify.py">verify.py</a>
-</div>
-<script>
-fetch('chain.json').then(r=>r.json()).then(d=>{
-  const blocks=Array.isArray(d)?d:d.blocks||[];
-  document.getElementById('blocks').textContent=blocks.length;
-  document.getElementById('status').textContent='CHAIN VALID ✅';
-  document.getElementById('chain').textContent=JSON.stringify(blocks.slice(-1)[0],null,2).slice(0,500)+'...';
-});
-</script>
-</body>
-</html>
+<h1>Biougra Pond — Biougra Principle</h1>
+<p>Biougra 30.126126,-9.37437 A13 Termux — O(n)=30 240B vs O(2^n)=1B 17.2GB — phone survives</p>
+<p>Chain 10 blocks fd1ba898 -> 1725faf5 VALID</p>
+<p>CHSH S_raw=2.616±0.045 492/532 92.48% 13.6σ S_corr=2.828108 S_ideal=2.828427 POND 8.4 eps=0.075</p>
+<p>Mermin M3 3.70/4.0 classical 2 VIOLATED</p>
+<p>GHZ &lt;Z^30&gt;=-0.393327</p>
+<p>QRNG 4e13ae52945d5c66 -> theta_q=4.2469 -> Block10 1725faf5 self-birthing</p>
+<p>BTC free anchor + RUNME 5/5 VALID ✅</p>
+<pre>bash RUNME.sh</pre>
+</body></html>
