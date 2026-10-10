@@ -171,23 +171,5 @@
       "realPresence": "Biougra-Agadir THE LAB / Marrakech THE CITY myth"
     },
     "prev": "3ae3d838f894c251e5c5abe89e4ef1b4898d52eb40dc318f6f6a6193e74a94a8"
-  },
-  {
-    "height": 10,
-    "prev": "ab5446ede0c96a930f31307b92dbf386ea371f13774bb187a116412cb303918f",
-    "timestamp": 1760000000,
-    "gps": "30.126126126126128,-9.37437367846481",
-    "principle": "Biougra Principle O(n)30 vs O(2^n)1B 240B/17GB phone-survives",
-    "quantum": {
-      "qrng_sha256_bell": "4e13ae52945d5c66",
-      "s_raw": 2.616,
-      "s_corr": 2.828108,
-      "s_ideal": 2.8284271247461903,
-      "z30": -0.393327,
-      "theta_quantum_seeded": 4.24687739913043
-    },
-    "sun": 36.98,
-    "btc_anchor": 969609,
-    "hash": "1725faf5"
   }
 ]
