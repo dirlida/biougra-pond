@@ -1,7 +1,5 @@
-* { opacity:1 !important; }
-body, div, span, p, h1, h2, h3, pre, code {
-  color:#00ff88 !important;
-  opacity:1 !important;
-  text-shadow: 0 0 8px #00ff88 !important;
-}
-canvas { opacity:0.15 !important; }
+body{background:#0a0f14 !important;color:#e0ffe0 !important;opacity:1 !important}
+.card{background:#121a23 !important;border:1px solid #1e2d3d;color:#e8fff0 !important;opacity:1 !important}
+.ok{color:#33ff88 !important}
+.cyan{color:#2ef0ff !important}
+pre, b, div, h1, h3{color:#e0ffe0 !important;opacity:1 !important}
