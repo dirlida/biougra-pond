@@ -1,2 +1,7 @@
-
-.block,.char,.quantum-char{opacity:1 !important;color:#00ff88 !important;text-shadow:0 0 8px #00ff88;-webkit-text-fill-color:#00ff88}
+* { opacity:1 !important; }
+body, div, span, p, h1, h2, h3, pre, code {
+  color:#00ff88 !important;
+  opacity:1 !important;
+  text-shadow: 0 0 8px #00ff88 !important;
+}
+canvas { opacity:0.15 !important; }
