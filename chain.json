@@ -1,0 +1,493 @@
+[
+  {
+    "hash": "fd1ba898191165087bb759bea2a72905965a10a3c3dee236e1543c80bae6ed18",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "GENESIS",
+      "ts": "2026-10-02T15:25:22.357Z",
+      "originTax": "1% LAW"
+    },
+    "prev": null
+  },
+  {
+    "hash": "b565179f59d9df9ed168e6d4ba25fe0ec94102521525c1d6111f4d6c7c22cf25",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "fd1ba898191165087bb759bea2a72905965a10a3c3dee236e1543c80bae6ed18",
+      "ts": "2026-10-02T15:25:23.650Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "fd1ba898191165087bb759bea2a72905965a10a3c3dee236e1543c80bae6ed18"
+  },
+  {
+    "hash": "7c1f4af4e438f024cabf89cc486a1703ae18a0043b4906a75f6a025d43727aad",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "b565179f59d9df9ed168e6d4ba25fe0ec94102521525c1d6111f4d6c7c22cf25",
+      "ts": "2026-10-02T15:25:24.806Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "b565179f59d9df9ed168e6d4ba25fe0ec94102521525c1d6111f4d6c7c22cf25"
+  },
+  {
+    "hash": "bb887c6a0e190c94e89cd595f4dff443e034991ae59e92204cab357e157827b2",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "7c1f4af4e438f024cabf89cc486a1703ae18a0043b4906a75f6a025d43727aad",
+      "ts": "2026-10-02T15:25:26.730Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "7c1f4af4e438f024cabf89cc486a1703ae18a0043b4906a75f6a025d43727aad"
+  },
+  {
+    "hash": "389f1f4425f6e595f879183455bed2b5e08da73f1a0446f98558309f30958796",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "bb887c6a0e190c94e89cd595f4dff443e034991ae59e92204cab357e157827b2",
+      "ts": "2026-10-02T15:25:52.239Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "bb887c6a0e190c94e89cd595f4dff443e034991ae59e92204cab357e157827b2"
+  },
+  {
+    "hash": "02c939473fed2d5919baf8500fa1fd81762f842374118fb106ee772788230db0",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "389f1f4425f6e595f879183455bed2b5e08da73f1a0446f98558309f30958796",
+      "ts": "2026-10-02T15:25:53.274Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "389f1f4425f6e595f879183455bed2b5e08da73f1a0446f98558309f30958796"
+  },
+  {
+    "hash": "ad3f84690327a4a24b0dc888d78d5c2b398964c3c08aadf5b9e760ca6eade3ef",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "02c939473fed2d5919baf8500fa1fd81762f842374118fb106ee772788230db0",
+      "ts": "2026-10-02T15:25:54.319Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "02c939473fed2d5919baf8500fa1fd81762f842374118fb106ee772788230db0"
+  },
+  {
+    "hash": "3ae3d838f894c251e5c5abe89e4ef1b4898d52eb40dc318f6f6a6193e74a94a8",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437 Biougra Lab",
+      "sun": "Biougra-Agadir THE LAB / Marrakech THE CITY myth",
+      "btcHeight": 969612,
+      "prev": "ad3f84690327a4a24b0dc888d78d5c2b398964c3c08aadf5b9e760ca6eade3ef",
+      "ts": "2026-10-02T16:03:22.856572Z",
+      "originTax": "1% LAW",
+      "realStamp": true
+    },
+    "prev": "ad3f84690327a4a24b0dc888d78d5c2b398964c3c08aadf5b9e760ca6eade3ef"
+  },
+  {
+    "hash": "ab5446ede0c96a930f31307b92dbf386ea371f13774bb187a116412cb303918f",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969613,
+      "prev": "3ae3d838f894c251e5c5abe89e4ef1b4898d52eb40dc318f6f6a6193e74a94a8",
+      "ts": "2026-10-02T16:12:51.736920Z",
+      "originTax": "1% LAW",
+      "realPresence": "Biougra-Agadir THE LAB / Marrakech THE CITY myth"
+    },
+    "prev": "3ae3d838f894c251e5c5abe89e4ef1b4898d52eb40dc318f6f6a6193e74a94a8"
+  },
+  {
+    "height": 10,
+    "prev": "ab5446ede0c96a930f31307b92dbf386ea371f13774bb187a116412cb303918f",
+    "timestamp": 1760000000,
+    "gps": "30.126126126126128,-9.37437367846481",
+    "principle": "Biougra Principle O(n)30 vs O(2^n)1B 240B/17GB phone-survives",
+    "quantum": {
+      "qrng_sha256_bell": "4e13ae52945d5c66",
+      "s_raw": 2.616,
+      "s_corr": 2.828108,
+      "s_ideal": 2.8284271247461903,
+      "z30": -0.393327,
+      "theta_quantum_seeded": 4.24687739913043
+    },
+    "sun": 36.98,
+    "btc_anchor": 969609,
+    "hash": "1725faf5"
+  },
+  {
+    "index": 10,
+    "prev_hash": "1725faf5",
+    "hash": "7cd773a511ba8fc0ee7f10d2fc7b6ff6402456277115a0a3045363a0887a9e30",
+    "timestamp": "2026-10-11T15:35:20.240484",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 11,
+    "prev_hash": "7cd773a511ba8fc0ee7f10d2fc7b6ff6402456277115a0a3045363a0887a9e30",
+    "hash": "31710d989c8aa67592a30331d0f6d0aff590f828abec45890253a18539a8f984",
+    "timestamp": "2026-10-11T16:08:12.849747",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 12,
+    "prev_hash": "31710d989c8aa67592a30331d0f6d0aff590f828abec45890253a18539a8f984",
+    "hash": "a054ec3aef9b93f0d691acc5dbabbcfe6b5b58d85acd5e7b9f91b2dd0274f3f2",
+    "timestamp": "2026-10-11T16:12:02.945044",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 13,
+    "prev_hash": "a054ec3aef9b93f0d691acc5dbabbcfe6b5b58d85acd5e7b9f91b2dd0274f3f2",
+    "hash": "415f5e8a00c4543b9832ea1dd2c70dab770d08934a767c4e4ad6fb9804b03562",
+    "timestamp": "2026-10-11T16:20:10.127535",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 14,
+    "prev_hash": "415f5e8a00c4543b9832ea1dd2c70dab770d08934a767c4e4ad6fb9804b03562",
+    "hash": "a3338ebf4ad6934925a72663580c6f711fa3461fae1049a570f15f39b1d21ab8",
+    "timestamp": "2026-10-11T16:22:45.480537",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 15,
+    "prev_hash": "a3338ebf4ad6934925a72663580c6f711fa3461fae1049a570f15f39b1d21ab8",
+    "hash": "c768c24f1ff990ed747437afc85333839a30fc93ab7ed0f58b94c488c572c8d8",
+    "timestamp": "2026-10-11T16:42:07.137670",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 16,
+    "prev_hash": "c768c24f1ff990ed747437afc85333839a30fc93ab7ed0f58b94c488c572c8d8",
+    "hash": "42bbf0d5434130c0a38dbb81a69a708636b159cd6f6bef9dae137480562421ee",
+    "timestamp": "2026-10-11T16:50:15.254811",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 17,
+    "prev_hash": "42bbf0d5434130c0a38dbb81a69a708636b159cd6f6bef9dae137480562421ee",
+    "hash": "760463229dd51308d38dd19073cd9faaacddf887c7e653d4bca6937d1b12f0fa",
+    "timestamp": "2026-10-11T16:52:49.129848",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 18,
+    "prev_hash": "760463229dd51308d38dd19073cd9faaacddf887c7e653d4bca6937d1b12f0fa",
+    "hash": "42d0d345c884a7e3cb92577f9eb92727908c2fa6366d693d21d0716dd2e80e0b",
+    "timestamp": "2026-10-11T17:12:10.133396",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 19,
+    "prev_hash": "42d0d345c884a7e3cb92577f9eb92727908c2fa6366d693d21d0716dd2e80e0b",
+    "hash": "6fc12fc26e878ddb89f02fdc8aa004bad66c85beaef6574272780c79cd76ad92",
+    "timestamp": "2026-10-11T17:20:18.244579",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 20,
+    "prev_hash": "6fc12fc26e878ddb89f02fdc8aa004bad66c85beaef6574272780c79cd76ad92",
+    "hash": "2adca1123f01a47063a1e792aaf3f3f936c6a68d07cc6706f8246760283058e0",
+    "timestamp": "2026-10-11T17:22:51.929834",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 21,
+    "prev_hash": "2adca1123f01a47063a1e792aaf3f3f936c6a68d07cc6706f8246760283058e0",
+    "hash": "7e490d575f8e0e6027c42cfe5a1bf1f51c2b3e0b7822739d549e4abb3e1a3bfe",
+    "timestamp": "2026-10-11T17:38:34.810615",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 22,
+    "prev_hash": "7e490d575f8e0e6027c42cfe5a1bf1f51c2b3e0b7822739d549e4abb3e1a3bfe",
+    "hash": "d7c9dbcbf9e4f90eb4e678442fbd461c3c8b924c142f889186ec092552662c7a",
+    "timestamp": "2026-10-11T17:38:59.967417",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 23,
+    "prev_hash": "d7c9dbcbf9e4f90eb4e678442fbd461c3c8b924c142f889186ec092552662c7a",
+    "hash": "a10dee2ca7a9b324f7cb95115ee2f012b1e4da9fa22760c455d8152fa91b0f41",
+    "timestamp": "2026-10-11T17:41:02.438822",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  },
+  {
+    "index": 24,
+    "prev_hash": "a10dee2ca7a9b324f7cb95115ee2f012b1e4da9fa22760c455d8152fa91b0f41",
+    "hash": "33013d60700d8914e912d01ef9970320d2ece669d84b417536df81ed1786aaa0",
+    "timestamp": "2026-10-11T18:11:05.074772",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
+  }
+]
