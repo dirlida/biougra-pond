@@ -189,5 +189,25 @@
     "sun": 36.98,
     "btc_anchor": 969609,
     "hash": "1725faf5"
+  },
+  {
+    "index": 10,
+    "prev_hash": "1725faf5",
+    "hash": "7cd773a511ba8fc0ee7f10d2fc7b6ff6402456277115a0a3045363a0887a9e30",
+    "timestamp": "2026-10-11T15:35:20.240484",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
   }
 ]
