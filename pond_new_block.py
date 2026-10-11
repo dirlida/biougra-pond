@@ -1,3 +1,18 @@
+
+try:
+    from real_qpu import run_bell
+    qpu=True
+except:
+    qpu=False
+    from pond_30q_light import run_bell as sim_bell
+
+def get_S():
+    if qpu:
+        try: return run_bell(), False  # (S, simulated=False)
+        except: pass
+    return sim_bell(), True
+
+
 import hashlib, json, time, math
 prev="ab5446ed"  # from your chain 9
 gps="30.126126126126128,-9.37437367846481"

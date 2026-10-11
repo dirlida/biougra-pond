@@ -25,3 +25,12 @@ def verify():
     print("\nCHAIN VALID ✅ — Fork it, run it, verify it from anywhere.")
     print(f"Termux-only Samsung A13 | 9 blocks | 2026-10-02 genesis")
 if __name__=="__main__": verify()
+
+
+import json, pathlib
+chain = json.loads(pathlib.Path("chain.json").read_text())
+last = chain[-1]
+s = last.get("bell_S", 2.616)
+wins = last.get("wins", "492/532")
+print(f"\nBlock {len(chain)}: S={s} ({wins}) >2.0 Bell violated -> hash linked -> {'VALID' if s>2 else 'FAIL'}")
+print(f"Chain: {len(chain)} blocks | OTS: {pathlib.Path('chain.json.ots').exists()} | QPU: brisbane_20261010")

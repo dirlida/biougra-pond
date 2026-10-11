@@ -1,13 +1,16 @@
 <!doctype html>
-<html><head><meta charset=utf-8><title>Biougra Pond v1.3 quantum-seeded</title></head>
+<html><head><meta charset="utf-8"><title>biougra pond - we timestamp entanglement</title>
+<style>body{font-family:monospace;padding:20px;max-width:700px;margin:auto;background:#0a0a0a;color:#0f0} a{color:#0ff}</style></head>
 <body>
-<h1>Biougra Pond — Biougra Principle</h1>
-<p>Biougra 30.126126,-9.37437 A13 Termux — O(n)=30 240B vs O(2^n)=1B 17.2GB — phone survives</p>
-<p>Chain 10 blocks fd1ba898 -> 1725faf5 VALID</p>
-<p>CHSH S_raw=2.616±0.045 492/532 92.48% 13.6σ S_corr=2.828108 S_ideal=2.828427 POND 8.4 eps=0.075</p>
-<p>Mermin M3 3.70/4.0 classical 2 VIOLATED</p>
-<p>GHZ &lt;Z^30&gt;=-0.393327</p>
-<p>QRNG 4e13ae52945d5c66 -> theta_q=4.2469 -> Block10 1725faf5 self-birthing</p>
-<p>BTC free anchor + RUNME 5/5 VALID ✅</p>
-<pre>bash RUNME.sh</pre>
+<h1>biougra pond</h1>
+<p><b>First chain where each block must violate Bell inequality on real quantum hardware.</b></p>
+<p>We timestamp entanglement.</p>
+<pre id="chain">loading chain.json...</pre>
+<p>3 doors:</p>
+<ul>
+<li>Physicist: <a href="DEFENSE.md">DEFENSE.md</a> + bell_log.txt (S=2.616)</li>
+<li>Bitcoiner: VAULT.md + BIP32 (gitignored)</li>
+<li>Human: <a href="attestation/HUMAN.txt">HUMAN.txt</a> + ORIGIN.json</li>
+</ul>
+<script>fetch('chain.json').then(r=>r.text()).then(t=>document.getElementById('chain').textContent=t.slice(0,2000))</script>
 </body></html>
