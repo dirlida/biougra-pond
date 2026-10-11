@@ -229,5 +229,25 @@
       "qpu": "sim_30q_light"
     },
     "ots": true
+  },
+  {
+    "index": 12,
+    "prev_hash": "31710d989c8aa67592a30331d0f6d0aff590f828abec45890253a18539a8f984",
+    "hash": "a054ec3aef9b93f0d691acc5dbabbcfe6b5b58d85acd5e7b9f91b2dd0274f3f2",
+    "timestamp": "2026-10-11T16:12:02.945044",
+    "payload": {
+      "bell_S": 2.616,
+      "bell_S_corr": 2.828,
+      "bell_total": 532,
+      "bell_corr": 492,
+      "noise": 0.075,
+      "theta": 2.1763,
+      "phi": 2.2512,
+      "sun_phi": 2.2889,
+      "sun_elev": 27.2,
+      "moon_elev": -4.32,
+      "qpu": "sim_30q_light"
+    },
+    "ots": true
   }
 ]
