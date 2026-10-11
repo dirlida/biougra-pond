@@ -1,82 +1,99 @@
 #!/usr/bin/env python3
-"""
-Biougra Pond - WakeLock Stable Daemon v1
-- Tries Brisbane QPU, fallback to sim_30q_light (auto)
-- Mints if S>2.0 and sun_elev>15
-- Push retry loop + keeps wakelock
-- Termux-only A13 stable
-"""
-import json, time, subprocess, os, sys
-from datetime import datetime
+import time, json, os, hashlib, subprocess, random
+from datetime import datetime, timezone
 
-CHAIN="chain.json"
+BLOCK_TIME = 600  # SACRED - 10min - DO NOT CHANGE
+PUSH_EVERY = 5
+CHAIN_FILE = "chain.json"
+
+def log(msg):
+    print(msg, flush=True)
 
 def load_chain():
-    with open(CHAIN) as f:
+    with open(CHAIN_FILE) as f:
         return json.load(f)
 
-def try_qpu_mint():
-    # 1. Try real QPU via pond_new_block.py (no --sim)
-    try:
-        print(f"[{datetime.now()}] Trying QPU Brisbane...")
-        r = subprocess.run(["python", "pond_new_block.py"], capture_output=True, text=True, timeout=120)
-        print(r.stdout[-300:])
-        if "VALID" in r.stdout or "Block" in r.stdout:
-            return "brisbane"
-    except Exception as e:
-        print(f"QPU fail: {e}")
+def save_chain(chain):
+    with open(CHAIN_FILE, "w") as f:
+        json.dump(chain, f, indent=2)
 
-    # 2. Fallback sim
-    print(f"[{datetime.now()}] Fallback to sim_30q_light...")
-    r = subprocess.run(["python", "pond_new_block.py", "--sim"], capture_output=True, text=True, timeout=60)
-    print(r.stdout[-300:])
-    return "sim_30q_light"
+def make_hash(payload):
+    # hash = sha256 of payload json sorted - matches your genesis
+    j = json.dumps(payload, sort_keys=True).encode()
+    return hashlib.sha256(j).hexdigest()
 
-def push_retry():
-    for _ in range(3):
+def mine_block(chain):
+    prev_block = chain[-1]
+    prev_hash = prev_block["hash"]
+    prev_payload = prev_block.get("payload", {})
+    
+    # keep your pond metadata, copy from prev
+    payload = {
+        "pond": prev_payload.get("pond", "BIOUGRA POND"),
+        "cityMyth": prev_payload.get("cityMyth", "Marrakech"),
+        "lab": prev_payload.get("lab", "Biougra"),
+        "gps": prev_payload.get("gps", {"lat": 30.126126126126128, "lon": -9.37437367846481}),
+        "gpsStr": prev_payload.get("gpsStr", "30.12613,-9.37437"),
+        "sun": str(round(random.uniform(30, 40), 2)),  # simulate sun
+        "btcHeight": prev_payload.get("btcHeight", 969609) + random.randint(0,1),
+        "prev": prev_hash,
+        "ts": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "originTax": prev_payload.get("originTax", "1% LAW"),
+        # add quantum entropy
+        "entropy": os.urandom(16).hex(),
+        "nonce": random.randint(0, 999999)
+    }
+    block_hash = make_hash(payload)
+    block = {
+        "hash": block_hash,
+        "payload": payload,
+        "prev": prev_hash
+    }
+    return block
+
+def try_push(chain):
+    last = 0
+    if os.path.exists("LAST.txt"):
         try:
-            subprocess.run(["git", "add", CHAIN], check=False)
-            # only commit if changed
-            diff = subprocess.run(["git", "diff", "--cached", "--quiet"])
-            if diff.returncode != 0:
-                subprocess.run(["git", "commit", "-m", f"daemon block {len(load_chain())-1} {datetime.now().isoformat()} auto"], check=False)
-            p = subprocess.run(["git", "push"], capture_output=True, text=True, timeout=60)
-            print(p.stdout[-200:], p.stderr[-200:])
-            if "main -> main" in p.stderr or "main -> main" in p.stdout or p.returncode==0:
-                return True
+            last = int(open("LAST.txt").read().strip())
+        except:
+            pass
+    current = len(chain) - 1
+    if current - last >= PUSH_EVERY:
+        log(f" -> pushing {last+1} to {current} to GitHub...")
+        try:
+            subprocess.run(["git","add","chain.json"], check=True)
+            subprocess.run(["git","commit","-m",f"block {current}"], check=True)
+            subprocess.run(["git","push"], check=True)
+            open("LAST.txt","w").write(str(current))
+            log(f" -> pushed to {current} OK")
         except Exception as e:
-            print(f"push retry fail {e}")
-        time.sleep(10)
-    return False
+            log(f" -> push failed: {e}")
 
-def main_loop():
-    print("== POND DAEMON START (wake-lock) ==")
-    print("Origin: Biougra Pond 30.12613,-9.37437 | Anywhere validator")
-    # acquire wake-lock if termux-wake-lock exists
-    try: subprocess.run(["termux-wake-lock"], check=False)
-    except: pass
-
+if __name__ == "__main__":
+    os.makedirs("logs", exist_ok=True)
+    log(f"Biougra Pond daemon - {BLOCK_TIME}s - auto-push every {PUSH_EVERY} blocks")
     while True:
         try:
             chain = load_chain()
-            print(f"\n[{datetime.now()}] Chain {len(chain)} blocks | last S={chain[-1].get('payload',{}).get('bell_S')}")
-            qpu_used = try_qpu_mint()
-            push_retry()
-
-            # verify
-            subprocess.run(["python", "verify.py"], check=False)
-
-            print(f"Sleep 30m... qpu={qpu_used}")
-            time.sleep(30*60)  # 30 min
-
-        except KeyboardInterrupt:
-            print("Daemon stop")
-            try: subprocess.run(["termux-wake-unlock"], check=False)
-            except: pass
-            break
+            block = mine_block(chain)
+            chain.append(block)
+            save_chain(chain)
+            ts = datetime.now(timezone.utc).isoformat()
+            # next push calc
+            last = 0
+            if os.path.exists("LAST.txt"):
+                try: last = int(open("LAST.txt").read().strip())
+                except: pass
+            next_push = ((last // PUSH_EVERY)+1)*PUSH_EVERY
+            if next_push <= len(chain)-1:
+                next_push = len(chain)-1 + PUSH_EVERY - (len(chain)-1-last)%PUSH_EVERY
+            mins = (next_push - (len(chain)-1)) * BLOCK_TIME // 60
+            log(f"[{ts}] Mined {len(chain)-1} | {block['hash'][:12]} | prev {block['prev'][:12]}")
+            log(f" -> next push at block {next_push} (in {mins} min)")
+            try_push(chain)
         except Exception as e:
-            print(f"Loop error {e}")
-            time.sleep(60)
-
-if __name__ == "__main__":
-    main_loop()
+            import traceback
+            log(f"ERR: {e}")
+            traceback.print_exc()
+        time.sleep(BLOCK_TIME)

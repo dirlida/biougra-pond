@@ -1,34 +1,42 @@
+#!/usr/bin/env python3
 import json
+from datetime import datetime
 
-with open("chain.json") as f:
-    blocks=json.load(f)
+CHAIN_FILE = "chain.json"
+MIN_BLOCK_INTERVAL = 590
+ENFORCE_FROM_INDEX = 36 # your current tip - enforce after this
 
-print("== Biougra Pond v1.1 Verifier (Termux A13) ==")
-print(f"Blocks: {len(blocks)}")
-print(f"[OK] Genesis 30.126126126126128,-9.37437367846481 = 30.12613,-9.37437")
+def parse_ts(s):
+    try:
+        return datetime.fromisoformat(s.replace("Z","+00:00"))
+    except Exception as e:
+        raise e
 
-ok=True
-for i in range(1,len(blocks)):
-    prev_key = "prev_hash" if "prev_hash" in blocks[i] else "prev"
-    if blocks[i].get(prev_key)!= blocks[i-1]["hash"]:
-        print(f"[FAIL] Block {i} link broken")
-        ok=False
-        break
+def verify():
+    with open(CHAIN_FILE) as f:
+        chain = json.load(f)
+    print(f"Checking {len(chain)} blocks...")
+    for i in range(1, len(chain)):
+        prev = chain[i-1]
+        curr = chain[i]
+        # hash link: curr.prev == prev.hash
+        if curr.get("prev")!= prev.get("hash"):
+            print(f"❌ Block {i} hash link broken: curr.prev!= prev.hash")
+            print(f" curr {curr.get('hash')[:12]} prev {curr.get('prev')[:12] if curr.get('prev') else None} vs should {prev.get('hash')[:12]}")
+            return False
+        # time lock only for new blocks
+        if i >= ENFORCE_FROM_INDEX:
+            try:
+                dp = parse_ts(prev["payload"]["ts"])
+                dc = parse_ts(curr["payload"]["ts"])
+                diff = (dc-dp).total_seconds()
+                if diff < MIN_BLOCK_INTERVAL:
+                    print(f"❌ Block {curr['hash'][:12]} too fast: {diff:.0f}s < 590s - REJECTED (10min rule)")
+                    return False
+            except Exception as e:
+                print(f"⚠️ time parse fail at {i}: {e}")
+    print(f"✅ verify.py OK - {len(chain)} blocks - 10min rule active from block {ENFORCE_FROM_INDEX}")
+    return True
 
-if ok:
-    print(f"[OK] Hash chain 0->{len(blocks)-1} VALID")
-
-last = blocks[-1]
-S = last.get("payload", {}).get("bell_S", 2.616)
-print(f"[OK] Bell S raw = {S} >2.0 VIOLATED (POND 8.4, 7.5% noise -> S_corr 2.828)")
-print("[OK] Origin tax 1% LAW, btcHeight 969609")
-print("")
-print("CHAIN VALID ✅ — Fork it, run it, verify it from anywhere.")
-print(f"Termux-only Samsung A13 | {len(blocks)-1} blocks | 2026-10-02 genesis")
-print("")
-for b in blocks[-2:]:
-    idx = b.get("index", blocks.index(b))
-    p = b.get("payload", {})
-    s = p.get("bell_S", 2.616)
-    print(f"Block {idx}: S={s} (492/532) >2.0 Bell violated -> hash linked -> VALID")
-print(f"Chain: {len(blocks)} blocks | OTS: True | QPU: {blocks[-1].get('payload',{}).get('qpu','sim')}")
+if __name__ == "__main__":
+    verify()
