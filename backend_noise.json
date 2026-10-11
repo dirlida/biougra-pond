@@ -1,0 +1,2 @@
+# Then block 10:
+python3 pond_new_block.py --prev ab5446ed --s_raw 2.616 --s_corr 2.828 --mermin 3.70 --shots 1024 --backend ibm_brisbane

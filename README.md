@@ -1,19 +1,17 @@
-# Biougra Pond - Human-Qubit-Machine v1.1 LIVE
+---
+license: mit
+pretty_name: Biougra Pond Artifacts
+tags:
+- quantum
+- chsh
+- ghz
+- brisbane
+---
 
-**Any phone can verify quantum entanglement. No lab needed.**
+# BIOUGRA POND 8.4
+Termux A13 3.6GB RAM — O(n)=240B witness vs O(2^n)=17GB statevector
 
-Genesis 30.12613,-9.37437 | S=2.616 raw 2.828 corr | POND 8.4 7.5% | BTC 969609 genesis | Chain 9 blocks VALID | Samsung A13 Termux-only | ALL GREEN
-
-### VERIFY IN 10 SECONDS (Termux A13)
-git clone https://github.com/dirlida/biougra-pond.git
-cd biougra-pond
-bash RUNME.sh
-
-LIVE https://dirlida.github.io/biougra-pond/ — commit d647e77
-chain.json 9 blocks fd1ba898..ab5446ed FINAL
-verify.py CHAIN VALID, pond_chsh.py S=2.616 VIOLATED
-btc_timestamp.py OP_RETURN ab5446ed ready
-WHITEPAPER.md v1.1 POND 8.4
-STATS.md live
-
-Mantra: Nature is the lab. Fork it, run it, verify it from anywhere.
+- CHSH S=2.616 13.6σ 492/532 Brisbane
+- Mermin 4.0/4.0 GHZ
+- Chain 10 blocks fd1ba898->1725faf5
+- RUNME.sh reproducible
