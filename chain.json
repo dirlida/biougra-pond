@@ -1872,5 +1872,131 @@
       "nonce": 910850
     },
     "prev": "46281c21fd4646c4c3d64b57cadfaa31ab920d4422c4e8e1c93dbe4409e2c26b"
+  },
+  {
+    "hash": "96b4da713094279f527e4b945ae0dc13ed68214b7e02c6988473d661a5d55ef2",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "32.52",
+      "btcHeight": 969663,
+      "prev": "5c040af473f48abd75c322d2844b3f71ddd58f2aa33146f87d568897016d228b",
+      "ts": "2026-10-12T10:19:00.054932Z",
+      "originTax": "1% LAW",
+      "entropy": "27b4b0f75f437dd812636de9026d8ca9",
+      "nonce": 646093
+    },
+    "prev": "5c040af473f48abd75c322d2844b3f71ddd58f2aa33146f87d568897016d228b"
+  },
+  {
+    "hash": "69c0ccf6206f4dd7d3bd58b0dd39acfd385d95cdee578624458b0e28b082e11f",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.33",
+      "btcHeight": 969663,
+      "prev": "96b4da713094279f527e4b945ae0dc13ed68214b7e02c6988473d661a5d55ef2",
+      "ts": "2026-10-12T10:29:00.103668Z",
+      "originTax": "1% LAW",
+      "entropy": "065c3968c509ee45cfd8ff24c74ba676",
+      "nonce": 164897
+    },
+    "prev": "96b4da713094279f527e4b945ae0dc13ed68214b7e02c6988473d661a5d55ef2"
+  },
+  {
+    "hash": "6b02f4ecc5989b5a6d8ab6abb0f83a285d91fc444c07498a58b78d9b5d50798b",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "35.34",
+      "btcHeight": 969664,
+      "prev": "69c0ccf6206f4dd7d3bd58b0dd39acfd385d95cdee578624458b0e28b082e11f",
+      "ts": "2026-10-12T10:39:00.177782Z",
+      "originTax": "1% LAW",
+      "entropy": "75b3dbe2a53a8148bb57a7c194738433",
+      "nonce": 829840
+    },
+    "prev": "69c0ccf6206f4dd7d3bd58b0dd39acfd385d95cdee578624458b0e28b082e11f"
+  },
+  {
+    "hash": "567287c7be53a16a3ed9a80b082ec537a42f5316bf0fe2bca9740fb90795575c",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.1",
+      "btcHeight": 969665,
+      "prev": "6b02f4ecc5989b5a6d8ab6abb0f83a285d91fc444c07498a58b78d9b5d50798b",
+      "ts": "2026-10-12T10:49:00.274175Z",
+      "originTax": "1% LAW",
+      "entropy": "ea5aed45ff8e693ac33b7f63b895b6f1",
+      "nonce": 313464
+    },
+    "prev": "6b02f4ecc5989b5a6d8ab6abb0f83a285d91fc444c07498a58b78d9b5d50798b"
+  },
+  {
+    "hash": "97b3b39405727c60c0a0eb1551dabd4612ca92728f6dc5f2d20c96a8248a8eef",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.81",
+      "btcHeight": 969665,
+      "prev": "567287c7be53a16a3ed9a80b082ec537a42f5316bf0fe2bca9740fb90795575c",
+      "ts": "2026-10-12T10:59:00.328628Z",
+      "originTax": "1% LAW",
+      "entropy": "1ee68b4549b379aa51554510717d0c93",
+      "nonce": 573018
+    },
+    "prev": "567287c7be53a16a3ed9a80b082ec537a42f5316bf0fe2bca9740fb90795575c"
+  },
+  {
+    "hash": "2267907374cd3c824d7d9bbc419439f2479ae7ac61b946a948de0d1d39a94899",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.4",
+      "btcHeight": 969665,
+      "prev": "97b3b39405727c60c0a0eb1551dabd4612ca92728f6dc5f2d20c96a8248a8eef",
+      "ts": "2026-10-12T11:09:00.369577Z",
+      "originTax": "1% LAW",
+      "entropy": "f7a32961df3cedcc14fcaf0052e2eae6",
+      "nonce": 381877
+    },
+    "prev": "97b3b39405727c60c0a0eb1551dabd4612ca92728f6dc5f2d20c96a8248a8eef"
   }
 ]
