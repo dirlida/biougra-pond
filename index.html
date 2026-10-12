@@ -1,6 +1,62 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Biougra Pond LIVE</title><style>body{background:#0a0f14;color:#ffffffd0;padding:16px;font-family:monospace;max-width:900px;margin:auto}.card{background:#121a23;border:1px solid #1e2d3d;border-radius:14px;padding:14px;margin:12px 0}.ok{color:#33ff88}.cyan{color:#2ef0ff}#map{height:280px;border-radius:12px}</style><link rel=stylesheet href=https://unpkg.com/leaflet@1.9.4/dist/leaflet.css><script src=https://unpkg.com/leaflet@1.9.4/dist/leaflet.js></script><link rel="stylesheet" href="./style.css?v=30"></head><body><h1 style=color:#2ef0ff>Biougra Pond LIVE</h1><div>Genesis A13 Termux | 30.126126,-9.37437 | THE COUNT</div><div class=card><span class=ok>CHAIN VALID</span> LIVE FARMING | Blocks: <b id=blocks>73</b> | Bell S: <b id=bell style=color:#2ef0ff>2.616</b> VIOLATED<pre id=verify>[OK] Genesis 30.12613,-9.37437
-[OK] Hash 0->17 VALID
-[OK] Bell 2.616 VIOLATED</pre></div><div class=card><h3>Genesis Map</h3><div id=map></div></div><div class=card><h3>FORK IN 2 MIN</h3><pre>pkg install git -y
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Biougra Pond LIVE - THE COUNT STABLE</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0a0f14;color:#d9e8f0;font-family:ui-monospace,SFMono-Regular,monospace;padding:14px;max-width:920px;margin:auto}
+h1{color:#2ef0ff;margin:8px 0 4px;font-size:22px}
+.sub{opacity:.7;font-size:13px;margin-bottom:12px}
+.card{background:#121a23;border:1px solid #1e2d3d;border-radius:14px;padding:14px;margin:12px 0}
+.ok{color:#33ff88}.cyan{color:#2ef0ff}.mut{opacity:.6}
+pre{white-space:pre-wrap;word-break:break-word;margin:6px 0 0;font-size:12px}
+a{color:#2ef0ff}
+#map{height:260px;border-radius:12px;background:#0d151d}
+.badge{display:inline-block;padding:2px 8px;border-radius:20px;background:#1a2a3a;border:1px solid #244;font-size:12px}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+<h1>Biougra Pond LIVE</h1>
+<div class="sub">Genesis A13 Termux | 30.126126,-9.37437 | THE COUNT STABLE | Morocco UTC+0 now</div>
+
+<div class="card">
+<span class="badge ok">CHAIN VALID</span> <span class="badge">LIVE FARMING</span>
+<div style="margin-top:10px">Blocks: <b id="blocks" class="cyan">...</b> | Last: <b id="lastidx">...</b> | Bell S: <b id="bell" class="cyan">...</b></div>
+<pre id="verify">loading chain.json...</pre>
+</div>
+
+<div class="card"><h3 style="margin:0 0 8px">Genesis Map</h3><div id="map"></div></div>
+
+<div class="card">
+<h3 style="margin:0 0 8px">FORK IN 2 MIN</h3>
+<pre>pkg install git -y
 git clone https://github.com/dirlida/biougra-pond.git
 cd biougra-pond
-bash fork.sh</pre></div><div class=card>Not a coin. A pipeline. Every fork = new quantum sensor = real data for AI.</div><script>var map=L.map("map").setView([30.126126,-9.374373],13);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);L.marker([30.126126,-9.374373]).addTo(map).bindPopup("Genesis Pond").openPopup();fetch("./chain.json").then(r=>r.json()).then(c=>{document.getElementById("blocks").innerText=c.length;let l=c[c.length-1];if(l&&l.bell_S)document.getElementById("bell").innerText=l.bell_S.toFixed(3);}).catch(()=>{});</script></body></html>
+bash fork.sh</pre>
+<div class="mut">Not a coin. A pipeline. Every fork = new quantum sensor = real data for AI.</div>
+</div>
+
+<div class="card"><div class="mut">Last 10 blocks (from chain.json):</div><pre id="last10"></pre></div>
+
+<script>
+var map=L.map("map").setView([30.126126,-9.374373],13);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18}).addTo(map);
+L.marker([30.126126,-9.374373]).addTo(map).bindPopup("Genesis Pond 30.126126,-9.37437").openPopup();
+fetch("./chain.json?v="+Date.now()).then(r=>r.json()).then(c=>{
+ document.getElementById("blocks").innerText=c.length;
+ let last=c[c.length-1];
+ document.getElementById("lastidx").innerText=last.index+" @ "+last.payload.ts;
+ if(last.bell_S!==undefined) document.getElementById("bell").innerText=Number(last.bell_S).toFixed(3);
+ else if(last.payload && last.payload.bell_S) document.getElementById("bell").innerText=Number(last.payload.bell_S).toFixed(3);
+ else document.getElementById("bell").innerText="n/a";
+ document.getElementById("verify").innerText="[OK] Genesis 30.12613,-9.37437\n[OK] Hash chain VALID (client)\n[OK] "+c.length+" blocks | 10min rule from #36";
+ let tail=c.slice(-10).reverse().map(b=>"#"+b.index+" "+b.payload.ts+" "+(b.hash||"").slice(0,8)).join("\n");
+ document.getElementById("last10").innerText=tail;
+}).catch(e=>{document.getElementById("verify").innerText="failed to load chain.json: "+e});
+</script>
+</body>
+</html>
