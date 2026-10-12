@@ -2124,5 +2124,77 @@
       "nonce": 14976
     },
     "prev": "2d5b0e6911f2db687f00f86d6aebd90f68447cca700b3a2f118ea847a8055e74"
+  },
+  {
+    "hash": "7077b144fa49de75d40513913b0d3423012a0b298162dc4d80edaa181c5cba41",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.63",
+      "btcHeight": 969668,
+      "prev": "96908bf60f8dca94645999204684deca7727398ac07dd4c8d86516e35f50258d",
+      "ts": "2026-10-12T12:26:52.371536Z",
+      "originTax": "1% LAW",
+      "entropy": "b04346ab0fc773419f21c3c8bd3fb60c",
+      "nonce": 12025
+    },
+    "prev": "96908bf60f8dca94645999204684deca7727398ac07dd4c8d86516e35f50258d"
+  },
+  {
+    "hash": "b4eb3e06a907f42e9cd42bb22d1a1bc8125e9819efb6f3dccecd2a95ce010a8e",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "30.13",
+      "btcHeight": 969668,
+      "prev": "7077b144fa49de75d40513913b0d3423012a0b298162dc4d80edaa181c5cba41",
+      "ts": "2026-10-12T12:38:34.986549Z",
+      "originTax": "1% LAW",
+      "entropy": "bb4e3db084478436f7102788630e4ab2",
+      "nonce": 12268
+    },
+    "prev": "7077b144fa49de75d40513913b0d3423012a0b298162dc4d80edaa181c5cba41"
+  },
+  {
+    "hash": "c8cdab838c1c45117477c0341789fb0dbb52f94f1a0f5aea664784f2bd87b421",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.42",
+      "btcHeight": 969669,
+      "prev": "b4eb3e06a907f42e9cd42bb22d1a1bc8125e9819efb6f3dccecd2a95ce010a8e",
+      "ts": "2026-10-12T12:48:27.062665Z",
+      "originTax": "1% LAW",
+      "entropy": "843597860cb55a0072f821e194ee2d49",
+      "nonce": 961251
+    },
+    "prev": "b4eb3e06a907f42e9cd42bb22d1a1bc8125e9819efb6f3dccecd2a95ce010a8e"
+  },
+  {
+    "index": 105,
+    "prev": "c8cdab838c1c45117477c0341789fb0dbb52f94f1a0f5aea664784f2bd87b421",
+    "hash": "14e6babdfb87ec4c93627a0bdf710526d2fcc49c748d54d11385f7c60cb1993e",
+    "payload": {
+      "ts": "2026-10-12T12:58:21.963698Z",
+      "note": "block 105"
+    }
   }
 ]
