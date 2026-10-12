@@ -1,102 +1,79 @@
-#!/usr/bin/env python3
-import time, json, os, hashlib, subprocess, random
+import json, hashlib, time, subprocess, random, os
 from datetime import datetime, timezone
+from pathlib import Path
 
-BLOCK_TIME = 600
-PUSH_EVERY = 5
-CHAIN_FILE = "chain.json"
+CHAIN="chain.json"
+LAST="LAST.txt"
 
-def log(msg):
-    print(msg, flush=True)
+def log(m): print(f"[{datetime.now(timezone.utc).isoformat()}] {m}", flush=True)
 
 def load_chain():
-    with open(CHAIN_FILE) as f:
-        return json.load(f)
+    return json.loads(Path(CHAIN).read_text())
 
-def save_chain(chain):
-    with open(CHAIN_FILE, "w") as f:
-        json.dump(chain, f, indent=2)
+def save_chain(c):
+    Path(CHAIN).write_text(json.dumps(c, indent=2))
+    Path(LAST).write_text(str(len(c)-1))
 
-def make_hash(payload):
-    j = json.dumps(payload, sort_keys=True).encode()
-    return hashlib.sha256(j).hexdigest()
-
-def mine_block(chain):
-    prev_block = chain[-1]
-    prev_hash = prev_block["hash"]
-    prev_payload = prev_block.get("payload", {})
-    payload = {
-        "pond": prev_payload.get("pond", "BIOUGRA POND"),
-        "cityMyth": prev_payload.get("cityMyth", "Marrakech"),
-        "lab": prev_payload.get("lab", "Biougra"),
-        "gps": prev_payload.get("gps", {"lat": 30.126126126126128, "lon": -9.37437367846481}),
-        "gpsStr": prev_payload.get("gpsStr", "30.12613,-9.37437"),
-        "sun": str(round(random.uniform(30, 40), 2)),
-        "btcHeight": prev_payload.get("btcHeight", 969609) + random.randint(0,1),
+def mine_real_block(chain):
+    prev_block=chain[-1]
+    prev_hash=prev_block['hash']
+    ts=datetime.now(timezone.utc).isoformat().replace("+00:00","Z")
+    # keep SAME structure as your valid block 16
+    payload={
+        "pond": "BIOUGRA POND",
+        "cityMyth": "Marrakech",
+        "lab": "Biougra",
+        "gps": {"lat": 30.12613, "lon": -9.37437},
+        "gpsStr": "30.12613,-9.37437",
+        "sun": f"{38.97 + random.uniform(-0.5,0.5):.2f}",
+        "btcHeight": prev_block['payload'].get('btcHeight',969619)+1,
         "prev": prev_hash,
-        "ts": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "originTax": prev_payload.get("originTax", "1% LAW"),
-        "entropy": os.urandom(16).hex(),
-        "nonce": random.randint(0, 999999)
+        "ts": ts,
+        "originTax": "1% LAW",
+        "entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],
+        "nonce": random.randint(100000, 9999999)
     }
-    return {
-        "hash": make_hash(payload),
-        "payload": payload,
-        "prev": prev_hash
-    }
+    # hash = sha256(prev + json(payload))
+    raw=f"{prev_hash}{json.dumps(payload, sort_keys=True)}"
+    h=hashlib.sha256(raw.encode()).hexdigest()
+    block={"hash": h, "payload": payload, "prev": prev_hash}
+    return block
 
-def get_pushed():
-    for f in ["PUSHED.txt", "LAST.txt"]:
-        if os.path.exists(f):
-            try: return int(open(f).read().strip())
-            except: pass
-    return 0
-
-def try_push(chain):
-    pushed = get_pushed()
-    current = len(chain) - 1
-    if current - pushed < PUSH_EVERY:
-        return
-    log(f" -> trying push {pushed+1} to {current}...")
+while True:
     try:
-        subprocess.run(["git","add","chain.json","LAST.txt","PUSHED.txt"], check=False, timeout=5)
-        subprocess.run(["git","commit","-m",f"block {current}"], check=False, timeout=5, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        result = subprocess.run(["git","push","origin","main"], timeout=15, capture_output=True, text=True)
-        if result.returncode == 0:
-            open("PUSHED.txt","w").write(str(current))
-            log(f" -> pushed to {current} OK")
-        else:
-            log(f" -> push failed (no net): {result.stderr[:120]}")
-            log(f" -> queued, will retry next block")
-    except subprocess.TimeoutExpired:
-        log(f" -> push timeout - queued")
-    except Exception as e:
-        log(f" -> push error {e} - queued")
+        chain=load_chain()
+        # ---- 10min RULE ENFORCER (never mine too fast) ----
+        if len(chain)>=1 and len(chain)>=10:
+            try:
+                last_ts=chain[-1]['payload']['ts']
+                dp=datetime.fromisoformat(last_ts.replace('Z','+00:00'))
+                dc=datetime.now(timezone.utc)
+                diff=(dc-dp).total_seconds()
+                if diff < 615:  # 615s safe >590
+                    wait=int(615-diff)+2
+                    log(f" -> too fast {diff:.0f}s <615 - waiting {wait}s")
+                    time.sleep(wait)
+                    continue
+            except Exception as e:
+                log(f"time check err {e}")
 
-if __name__ == "__main__":
-    os.makedirs("logs", exist_ok=True)
-    log(f"Biougra Pond daemon - {BLOCK_TIME}s - OFFLINE FIRST - auto-push every {PUSH_EVERY}")
-    while True:
-        try:
-            chain = load_chain()
-            block = mine_block(chain)
-            chain.append(block)
-            save_chain(chain)
-            current = len(chain)-1
-            # CRASH SAFE: always update LAST.txt every block
-            open("LAST.txt","w").write(str(current))
-            ts = datetime.now(timezone.utc).isoformat()
-            pushed = get_pushed()
-            next_push = pushed + PUSH_EVERY
-            if next_push <= current:
-                next_push = current + (PUSH_EVERY - (current-pushed)%PUSH_EVERY)%PUSH_EVERY
-                if next_push==current: next_push+=PUSH_EVERY
-            mins = max(0, (next_push - current) * BLOCK_TIME // 60)
-            log(f"[{ts}] Mined {current} | {block['hash'][:12]} | prev {block['prev'][:12]}")
-            log(f" -> next push at block {next_push} (in {mins} min) | last pushed {pushed}")
-            try_push(chain)
-        except Exception as e:
-            import traceback
-            log(f"ERR: {e}")
-            traceback.print_exc()
-        time.sleep(BLOCK_TIME)
+        block=mine_real_block(chain)
+        chain.append(block)
+        save_chain(chain)
+        log(f"Mined {len(chain)-1} | {block['hash'][:12]} | prev {block['prev'][:12]} | ts {block['payload']['ts']}")
+
+        if (len(chain)-1) % 5 == 0:
+            try:
+                subprocess.run(["git","add",CHAIN,LAST], timeout=10)
+                subprocess.run(["git","commit","-m",f"block {len(chain)-1}"], timeout=10)
+                subprocess.run(["git","push"], timeout=30)
+                log(f" -> pushed {len(chain)-1}")
+            except Exception as e:
+                log(f"push fail {e}")
+
+        time.sleep(615)
+
+    except Exception as e:
+        log(f"ERROR {e}")
+        import traceback; traceback.print_exc()
+        time.sleep(30)
