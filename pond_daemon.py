@@ -2,7 +2,7 @@
 import time, json, os, hashlib, subprocess, random
 from datetime import datetime, timezone
 
-BLOCK_TIME = 600  # SACRED - 10min
+BLOCK_TIME = 600
 PUSH_EVERY = 5
 CHAIN_FILE = "chain.json"
 
@@ -45,35 +45,33 @@ def mine_block(chain):
         "prev": prev_hash
     }
 
+def get_pushed():
+    for f in ["PUSHED.txt", "LAST.txt"]:
+        if os.path.exists(f):
+            try: return int(open(f).read().strip())
+            except: pass
+    return 0
+
 def try_push(chain):
-    last = 0
-    if os.path.exists("LAST.txt"):
-        try: last = int(open("LAST.txt").read().strip())
-        except: pass
+    pushed = get_pushed()
     current = len(chain) - 1
-    if current - last < PUSH_EVERY:
+    if current - pushed < PUSH_EVERY:
         return
-    
-    log(f" -> trying push {last+1} to {current}...")
+    log(f" -> trying push {pushed+1} to {current}...")
     try:
-        # these work offline
-        subprocess.run(["git","add","chain.json","LAST.txt"], check=False, timeout=5)
-        # commit - may fail if nothing to commit, that's ok
+        subprocess.run(["git","add","chain.json","LAST.txt","PUSHED.txt"], check=False, timeout=5)
         subprocess.run(["git","commit","-m",f"block {current}"], check=False, timeout=5, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        # push - IAM PROOF, 15s max, never crash daemon
         result = subprocess.run(["git","push","origin","main"], timeout=15, capture_output=True, text=True)
         if result.returncode == 0:
-            open("LAST.txt","w").write(str(current))
+            open("PUSHED.txt","w").write(str(current))
             log(f" -> pushed to {current} OK")
-            # try push v29 fix too if pending
-            subprocess.run(["git","push","origin","main"], timeout=15, capture_output=True)
         else:
             log(f" -> push failed (no net): {result.stderr[:120]}")
-            log(f" -> queued, will retry next block, mining continues")
+            log(f" -> queued, will retry next block")
     except subprocess.TimeoutExpired:
-        log(f" -> push timeout (iam data dead) - queued, mining continues")
+        log(f" -> push timeout - queued")
     except Exception as e:
-        log(f" -> push error {e} - queued, mining continues")
+        log(f" -> push error {e} - queued")
 
 if __name__ == "__main__":
     os.makedirs("logs", exist_ok=True)
@@ -84,17 +82,18 @@ if __name__ == "__main__":
             block = mine_block(chain)
             chain.append(block)
             save_chain(chain)
+            current = len(chain)-1
+            # CRASH SAFE: always update LAST.txt every block
+            open("LAST.txt","w").write(str(current))
             ts = datetime.now(timezone.utc).isoformat()
-            last = 0
-            if os.path.exists("LAST.txt"):
-                try: last = int(open("LAST.txt").read().strip())
-                except: pass
-            next_push = last + PUSH_EVERY
-            if next_push <= len(chain)-1:
-                next_push = len(chain)-1 + (PUSH_EVERY - (len(chain)-1-last)%PUSH_EVERY)%PUSH_EVERY
-            mins = max(0, (next_push - (len(chain)-1)) * BLOCK_TIME // 60)
-            log(f"[{ts}] Mined {len(chain)-1} | {block['hash'][:12]} | prev {block['prev'][:12]}")
-            log(f" -> next push at block {next_push} (in {mins} min)")
+            pushed = get_pushed()
+            next_push = pushed + PUSH_EVERY
+            if next_push <= current:
+                next_push = current + (PUSH_EVERY - (current-pushed)%PUSH_EVERY)%PUSH_EVERY
+                if next_push==current: next_push+=PUSH_EVERY
+            mins = max(0, (next_push - current) * BLOCK_TIME // 60)
+            log(f"[{ts}] Mined {current} | {block['hash'][:12]} | prev {block['prev'][:12]}")
+            log(f" -> next push at block {next_push} (in {mins} min) | last pushed {pushed}")
             try_push(chain)
         except Exception as e:
             import traceback
