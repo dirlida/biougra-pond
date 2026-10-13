@@ -2460,5 +2460,68 @@
       "nonce": 386708
     },
     "prev": "fefaf74d3981dc5c52bc6cac714ba8bd17f3987efda2b05dbe29dc28b6b127db"
+  },
+  {
+    "hash": "da5d6feb905c021c9bc407443e8c9ed09a02a902e43e3f836723a421ae08eb86",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.32",
+      "btcHeight": 969721,
+      "prev": "134ff242f498a1907e446cc806d418cecbec499eb879946a2fb671092b93b34e",
+      "ts": "2026-10-13T17:57:58.355060Z",
+      "originTax": "1% LAW",
+      "entropy": "d451295d40de3bef041e10d76b1eace4",
+      "nonce": 2540371
+    },
+    "prev": "134ff242f498a1907e446cc806d418cecbec499eb879946a2fb671092b93b34e"
+  },
+  {
+    "hash": "b765b6210f548800b265045a11fe129600906f5ca6f62cebed1f38f0c9eedb8d",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "38.57",
+      "btcHeight": 969722,
+      "prev": "da5d6feb905c021c9bc407443e8c9ed09a02a902e43e3f836723a421ae08eb86",
+      "ts": "2026-10-13T18:08:13.377244Z",
+      "originTax": "1% LAW",
+      "entropy": "c351741c559a17f3471ce995780c9f3c",
+      "nonce": 5391984
+    },
+    "prev": "da5d6feb905c021c9bc407443e8c9ed09a02a902e43e3f836723a421ae08eb86"
+  },
+  {
+    "hash": "31606d30cbcad69a0af6e5a1f03c9e9a5485bf70f532194ea9b9c94ffe70479b",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "38.95",
+      "btcHeight": 969723,
+      "prev": "b765b6210f548800b265045a11fe129600906f5ca6f62cebed1f38f0c9eedb8d",
+      "ts": "2026-10-13T18:18:29.705235Z",
+      "originTax": "1% LAW",
+      "entropy": "a8f3425b2183439b6e055bf094ce2f30",
+      "nonce": 5099327
+    },
+    "prev": "b765b6210f548800b265045a11fe129600906f5ca6f62cebed1f38f0c9eedb8d"
   }
 ]
