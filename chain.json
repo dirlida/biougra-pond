@@ -402,5 +402,26 @@
       "nonce": 2273612
     },
     "prev": "b512baaafb5b01edca36dd0efc4c36dcc7bff3ae91b1a38edcc5f25200fa6e40"
+  },
+  {
+    "hash": "02b9fc8afb7db2f1381ec849daffda03a0e60bbe9f99efa8a0cb811958de3c8b",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.08",
+      "btcHeight": 969623,
+      "prev": "5209c1d0d8f5379372b8e00fa3fbdae1ed4a03831207b0d43e5d9b32ec2d0658",
+      "ts": "2026-10-13T01:06:54.403506Z",
+      "originTax": "1% LAW",
+      "entropy": "8215ad7b97c05e824c915d5514494db0",
+      "nonce": 6997109
+    },
+    "prev": "5209c1d0d8f5379372b8e00fa3fbdae1ed4a03831207b0d43e5d9b32ec2d0658"
   }
 ]
