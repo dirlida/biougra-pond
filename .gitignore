@@ -28,3 +28,7 @@ LAST.txt
 trying/
 wallet.json.asc
 brisbane_*.json
+.trash/
+daemon.log*
+*CORRUPTED*
+*backup_*
