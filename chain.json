@@ -4623,5 +4623,110 @@
       "nonce": 777306
     },
     "prev": "4b12b06cb7a5ba8ca9ffc6c228988dd6331e23ed64e95bcea1850af2418626ee"
+  },
+  {
+    "hash": "685af7b5687f989480dd0233af1d4866e104d98d850907ae4fda7568f4c6707b",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.35",
+      "btcHeight": 969824,
+      "prev": "a31562b6cd6a8c76ef6a820f719a4ee44dfa3a55884a3bfd55b675e5770422fd",
+      "ts": "2026-10-14T11:35:35.557125Z",
+      "originTax": "1% LAW",
+      "entropy": "81c112d23bddc755b1ed6ac6d4770da5",
+      "nonce": 9367670
+    },
+    "prev": "a31562b6cd6a8c76ef6a820f719a4ee44dfa3a55884a3bfd55b675e5770422fd"
+  },
+  {
+    "hash": "888efe3e7e712b8a879568b66d51a195a80f1917d5ce14b4661327d9ce5f117c",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.02",
+      "btcHeight": 969825,
+      "prev": "685af7b5687f989480dd0233af1d4866e104d98d850907ae4fda7568f4c6707b",
+      "ts": "2026-10-14T11:45:50.683183Z",
+      "originTax": "1% LAW",
+      "entropy": "c3165e80f9f1f67d8c563059a05b5b90",
+      "nonce": 395219
+    },
+    "prev": "685af7b5687f989480dd0233af1d4866e104d98d850907ae4fda7568f4c6707b"
+  },
+  {
+    "hash": "3ff7644e77a1f3308abc1a447e508724961c74cc472fad620d8174fd73d0e9b8",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.13",
+      "btcHeight": 969826,
+      "prev": "888efe3e7e712b8a879568b66d51a195a80f1917d5ce14b4661327d9ce5f117c",
+      "ts": "2026-10-14T11:56:05.805974Z",
+      "originTax": "1% LAW",
+      "entropy": "c124fae1a63cffed1dfaa417b042e59d",
+      "nonce": 9923899
+    },
+    "prev": "888efe3e7e712b8a879568b66d51a195a80f1917d5ce14b4661327d9ce5f117c"
+  },
+  {
+    "hash": "d062446393e8414f1c20128c82fbcd51485f1662f391da2fc75040d0d54efce0",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.21",
+      "btcHeight": 969827,
+      "prev": "3ff7644e77a1f3308abc1a447e508724961c74cc472fad620d8174fd73d0e9b8",
+      "ts": "2026-10-14T12:06:21.007608Z",
+      "originTax": "1% LAW",
+      "entropy": "456575d708fa976bf3ca1f587ebd80b5",
+      "nonce": 9992011
+    },
+    "prev": "3ff7644e77a1f3308abc1a447e508724961c74cc472fad620d8174fd73d0e9b8"
+  },
+  {
+    "hash": "0edf875b139fab0f81129c1f9c7f615863b158e47ee01c8c87484613bff67f20",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.12613,
+        "lon": -9.37437
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "39.36",
+      "btcHeight": 969828,
+      "prev": "d062446393e8414f1c20128c82fbcd51485f1662f391da2fc75040d0d54efce0",
+      "ts": "2026-10-14T12:16:36.196065Z",
+      "originTax": "1% LAW",
+      "entropy": "b10b794fdf06532e959926d733059c36",
+      "nonce": 5860219
+    },
+    "prev": "d062446393e8414f1c20128c82fbcd51485f1662f391da2fc75040d0d54efce0"
   }
 ]
