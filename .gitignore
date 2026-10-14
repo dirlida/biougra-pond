@@ -5,8 +5,10 @@ push
 trying
 BIP32
 __pycache__/
-daemon.log
-immortal.log
-pond.log
 *.log
 *.tmp
+.env
+.env.example
+.trash/
+wallet.json.asc
+wallet.json
