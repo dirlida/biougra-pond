@@ -14,7 +14,8 @@ try:
         chain = json.load(f)
     print(f"[BLOCKS] found {len(chain)} blocks in chain.json")
     print(f"[STORAGE] chain.json size: {os.path.getsize('chain.json')/1024:.1f} KB")
-    print(f"[LAST] last block: {chain[-1]['index']} at {chain[-1]['timestamp']}")
+    last = chain[-1]
+    print(f"[LAST] last block: {last}")
 except Exception as e:
     print(f"[BLOCKS] error: {e}")
 
