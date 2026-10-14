@@ -11,8 +11,20 @@ def load_chain():
     return json.loads(Path(CHAIN).read_text())
 
 def save_chain(c):
-    Path(CHAIN).write_text(json.dumps(c, indent=2))
-    Path(LAST).write_text(str(len(c)-1))
+    data = json.dumps(c, indent=2)
+    tmp = CHAIN + ".tmp"
+    with open(tmp, "w") as f:
+        f.write(data)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, CHAIN)
+    tmp2 = LAST + ".tmp"
+    with open(tmp2, "w") as f:
+        f.write(str(len(c)-1))
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp2, LAST)
+    os.sync()
 
 def mine_real_block(chain):
     prev_block=chain[-1]
