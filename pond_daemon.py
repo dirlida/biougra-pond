@@ -1,3 +1,4 @@
+# FORWARD FIX 231 - GPS only in genesis block 0, no GPS in blocks 231+ - chain.json history untouched
 import json, hashlib, time, subprocess, random, os
 from datetime import datetime, timezone
 from pathlib import Path
@@ -35,8 +36,8 @@ def mine_real_block(chain):
         "pond": "BIOUGRA POND",
         "cityMyth": "Marrakech",
         "lab": "Biougra",
-        "gps": {"lat": 30.12613, "lon": -9.37437},
-        "gpsStr": "30.12613,-9.37437",
+        # GPS removed for blocks >0 - forward fix from 231
+        # gpsStr removed for blocks >0
         "sun": f"{38.97 + random.uniform(-0.5,0.5):.2f}",
         "btcHeight": prev_block['payload'].get('btcHeight',969619)+1,
         "prev": prev_hash,
