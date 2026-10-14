@@ -1,42 +1,52 @@
-#!/usr/bin/env python3
-import json
-from datetime import datetime
+# KERNEL LAW v1 ENFORCEMENT
+# Block 1eeff99 onward - hammered
+import json, sys
+from datetime import datetime, timezone
 
-CHAIN_FILE = "chain.json"
-MIN_BLOCK_INTERVAL = 590
-ENFORCE_FROM_INDEX = 36 # your current tip - enforce after this
+CANONICAL_FILE = "chain.json"
+APPROVAL_THRESHOLD = 615
+TIME_RULE_START = 36
 
-def parse_ts(s):
+def parse_utc_z(ts: str):
+    if not ts.endswith("Z"):
+        raise ValueError(f"ts must be UTC Z, got: {ts}")
     try:
-        return datetime.fromisoformat(s.replace("Z","+00:00"))
+        if "." in ts:
+            dt = datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S.%fZ")
+        else:
+            dt = datetime.strptime(ts, "%Y-%m-%dT%H:%M:%SZ")
+        return dt.replace(tzinfo=timezone.utc)
     except Exception as e:
-        raise e
+        raise ValueError(f"Invalid canonical time format: {ts} - {e}")
 
 def verify():
-    with open(CHAIN_FILE) as f:
-        chain = json.load(f)
-    print(f"Checking {len(chain)} blocks...")
-    for i in range(1, len(chain)):
-        prev = chain[i-1]
-        curr = chain[i]
-        # hash link: curr.prev == prev.hash
-        if curr.get("prev")!= prev.get("hash"):
-            print(f"❌ Block {i} hash link broken: curr.prev!= prev.hash")
-            print(f" curr {curr.get('hash')[:12]} prev {curr.get('prev')[:12] if curr.get('prev') else None} vs should {prev.get('hash')[:12]}")
-            return False
-        # time lock only for new blocks
-        if i >= ENFORCE_FROM_INDEX:
-            try:
-                dp = parse_ts(prev["payload"]["ts"])
-                dc = parse_ts(curr["payload"]["ts"])
-                diff = (dc-dp).total_seconds()
-                if diff < MIN_BLOCK_INTERVAL:
-                    print(f"❌ Block {curr['hash'][:12]} too fast: {diff:.0f}s < 590s - REJECTED (10min rule)")
-                    return False
-            except Exception as e:
-                print(f"⚠️ time parse fail at {i}: {e}")
-    print(f"✅ verify.py OK - {len(chain)} blocks - 10min rule active from block {ENFORCE_FROM_INDEX}")
-    return True
+    try:
+        data = json.load(open(CANONICAL_FILE))
+    except Exception as e:
+        print(f"FAIL: cannot read {CANONICAL_FILE}: {e}")
+        sys.exit(1)
+    if not data:
+        print("OK: empty chain")
+        return
+    for i in range(1, len(data)):
+        prev = data[i-1]
+        cur = data[i]
+        try:
+            prev_t = parse_utc_z(prev["ts"])
+            cur_t = parse_utc_z(cur["ts"])
+        except Exception as e:
+            print(f"FAIL at block {cur.get('index', i)}: {e}")
+            sys.exit(1)
+        if cur.get("index", i) >= TIME_RULE_START:
+            diff = (cur_t - prev_t).total_seconds()
+            if diff < APPROVAL_THRESHOLD:
+                print(f"FAIL at block {cur.get('index', i)}: REFUSED - only {diff}s since last, need {APPROVAL_THRESHOLD}s - KERNEL LAW RULE 4")
+                sys.exit(1)
+        if "prev_hash" in cur and "hash" in prev:
+            if cur["prev_hash"]!= prev["hash"]:
+                print(f"FAIL at block {i}: prev_hash mismatch")
+                sys.exit(1)
+    print(f"OK: {len(data)} blocks - KERNEL LAW v1 verified - 615 hammer active")
 
 if __name__ == "__main__":
     verify()

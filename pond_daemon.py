@@ -1,4 +1,12 @@
-# FORWARD FIX 231 - GPS only in genesis block 0, no GPS in blocks 231+ - chain.json history untouched
+
+# KERNEL LAW v1 - RULE 4 ENFORCEMENT
+from datetime import timezone
+def kernel_stamp():
+    now_utc = datetime.now(timezone.utc)
+    ts_z = now_utc.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
+    local_tag = now_utc.astimezone().isoformat()
+    return ts_z, local_tag
+\n# FORWARD FIX 231 - GPS only in genesis block 0, no GPS in blocks 231+ - chain.json history untouched
 import json, hashlib, time, subprocess, random, os
 from datetime import datetime, timezone
 from pathlib import Path
