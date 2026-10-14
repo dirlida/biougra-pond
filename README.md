@@ -1,39 +1,34 @@
-# Biougra Pond - Phone-Farmed Quantum Proof
+# THE COUNT — Biougra Pond
 
-**Genesis: A13 Termux | 30.126126, -9.37437 (Biougra, Morocco)**
-**The first phone that farms Bell violations to feed AI.**
+A time-counting chain born in Biougra, Souss-Massa, Morocco.
 
-### FORK THIS POND IN 2 MIN (Any Android)
+Not a coin. Not a token. Just proof that time passed, and we were there to count it.
 
-pkg install git -y
-git clone https://github.com/dirlida/biougra-pond.git
-cd biougra-pond
-bash fork.sh
+## How It Works
 
-Your phone will print:
-[OK] Genesis 30.12613,-9.37437
-[OK] Hash chain 0->24 VALID
-[OK] Bell S raw = 2.616 >2.0 VIOLATED
-CHAIN VALID - Fork it, run it, verify it.
+- Daemon creates a new block every 10 minutes
+- Each block contains: index, timestamp, previous hash, hash
+- verify.py checks the whole chain — hash links + timing
 
----
-### What is this?
+Rule active from block 36: Every block must be at least 10 minutes after the previous block. No exceptions.
 
-Not a coin. A pipeline.
-- pond_daemon.py farms entangled pairs (sim_30q_light) every 10m
-- verify.py checks Bell S > 2.0 + hash chain + OTS + 1% LAW
-- Chain append-only, offline, phone-native
-- Noise 7.5% -> S_corr 2.828
+Run: python verify.py
 
-We linked Sun, Crypto, Earth and proved it runs on a $120 phone.
+## Genesis & Location Disclaimer
 
-Current: 24+ blocks | 2026-10-02 genesis | A13
+THE COUNT genesis block contains an approximate GPS coordinate for symbolic birthplace purposes only.
 
-Verify: python verify.py
-Boot: cp pond-boot.sh ~/.termux/boot/
+- This coordinate is approximate and falls within the general farm area in Biougra, Souss-Massa. It is not a precise location, not a building, and not a claim to any specific structure.
+- This is NOT a land deed, NOT a property claim, NOT a title (titre foncier / melkia). Land in this area is under traditional Melkia indivision with multiple heirs, and no single individual holds clean sole ownership.
+- THE COUNT is an independent time-counting experiment. It does not belong to any landowner, farm, or family. Location of genesis does not equal ownership.
+- Blocks after genesis contain no location data — only time and hash.
 
-Why phones? Quantum hardware scarce. Phones everywhere. Every fork = new sensor = real data for AI.
+## Portability
 
-Fork it. Farm it. Verify it.
+THE COUNT is already portable and already location-free after genesis.
 
-Genesis by @dirlida | Biougra Pond v1.2
+- Block 0 has GPS. Blocks after genesis have no GPS.
+- The chain continues counting regardless of where it runs.
+- Moving location does not stop THE COUNT, and does not transfer ownership to anyone.
+
+Born in Biougra. Lives wherever it runs.
