@@ -1,4 +1,4 @@
-# biougra-pond / human-qubit-machine
+# pond-embassy / human-qubit-machine
 Built on H+ in Tiznit, Morocco - phone only.
 
 ## Results (real runs)

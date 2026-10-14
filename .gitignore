@@ -12,3 +12,6 @@ __pycache__/
 .trash/
 wallet.json.asc
 wallet.json
+bsh
+0.json
+shell/

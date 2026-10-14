@@ -1,18 +1,18 @@
-# Biougra Pond: Human-Qubit-Machine Protocol
+# Pond Pond: Human-Qubit-Machine Protocol
 Version 1.1 - October 10, 2026 — LIVE CHAIN VALID
 
 ## Abstract
-Biougra Pond is a minimal quantum-anchored timestamping protocol that binds a geographic coordinate (30.12613,-9.37437 Biougra), a Bitcoin block height (969609+), and a verifiable Bell-state CHSH violation (S=2.616 raw, 2.828 corrected, POND 8.4 7.5% noise) into a hash chain mined entirely on Samsung A13 via Termux — zero laptop.
+Pond Pond is a minimal quantum-anchored timestamping protocol that binds a geographic coordinate (30.12613,-9.37437 Pond), a Bitcoin block height (969609+), and a verifiable Bell-state CHSH violation (S=2.616 raw, 2.828 corrected, POND 8.4 7.5% noise) into a hash chain mined entirely on Samsung A13 via Termux — zero laptop.
 
 ## 1. Origin Coordinate
-- Location: 30.12613,-9.37437 (Biougra, Morocco) — payload.gps.lat/lon
+- Location: 30.12613,-9.37437 (Pond, Morocco) — payload.gps.lat/lon
 - Sun elevation: 36.98 at timestamp
 - Time: 2026-10-02T15:25:22.357Z genesis (chain.json)
 - BTC Height: 969609 (genesis) — 969613 in v1.0 myth
 - Attestation: attestation/ QR + ORIGIN.json
 
 ## 2. Quantum Proof v1.1
-- Circuit: biougra.qasm - Bell state H(0); CX(0,1)
+- Circuit: pond.qasm - Bell state H(0); CX(0,1)
 - Execution: real_qpu.py + pond_chsh.py on IBM QPU / POND simulation
 - Shots: 1024 -> counts {'00': 492, '11': 532}
 - CHSH: S raw = 2.616 >2.0 VIOLATED, S corrected = 2.828 after POND 8.4 noise model (7.5%)
@@ -26,7 +26,7 @@ Biougra Pond is a minimal quantum-anchored timestamping protocol that binds a ge
 - Hardware: Samsung A13 Termux-only — all code authored collaboratively with MetaBoi, run manually on phone
 
 ## 4. Artifacts v1.1
-- biougra.qasm, real_qpu.py, qubit_wallet.py
+- pond.qasm, real_qpu.py, qubit_wallet.py
 - pond_chsh.py — CHSH measurement
 - pond_mine.py — mining
 - chain.json (9 blocks), verify.py (dynamic 10-ready), verify_chain.py
@@ -37,7 +37,7 @@ Biougra Pond is a minimal quantum-anchored timestamping protocol that binds a ge
 - See REPRODUCIBLE.md — Termux-only flow
 - Requirements: Python3, Termux, Android
 - Commands:
-  git clone https://github.com/dirlida/biougra-pond.git
+  git clone https://github.com/dirlida/pond-embassy.git
   python verify.py # CHAIN VALID 9 blocks
   python pond_chsh.py --pond 8.4
 - Expected: S=2.616 raw, 2.828 corrected, CHAIN VALID
@@ -49,4 +49,4 @@ Biougra Pond is a minimal quantum-anchored timestamping protocol that binds a ge
 ## 7. Conclusion v1.1
 Protocol demonstrates low-resource quantum anchoring achievable on consumer mobile hardware (Samsung A13) with cloud QPUs and natural POND channel (8.4). Fork it, run it, verify it from anywhere. Nature is the lab.
 
-Commit: c28bdc5 -> next 2bf9eee lineage. Live at https://dirlida.github.io/biougra-pond/
+Commit: c28bdc5 -> next 2bf9eee lineage. Live at https://dirlida.github.io/pond-embassy/

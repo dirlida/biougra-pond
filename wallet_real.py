@@ -32,7 +32,7 @@ wallet = {
  "balance": round(balance,6),
  "blocks": mined,
  "created": int(time.time()),
- "chain": "biougra-pond"
+ "chain": "pond-embassy"
 }
 
 with open("wallet.json","w") as f:

@@ -1,5 +1,5 @@
 import json, hashlib, hmac, os, time, base64
-SECRET_SEED = "biougra-pond-4138350-genesis"
+SECRET_SEED = "pond-embassy-4138350-genesis"
 def load_wallet():
     with open("wallet.json","rb") as f:
         data=f.read()
