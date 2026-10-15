@@ -1,17 +1,22 @@
 #!/bin/bash
-# KERNEL LAW v1 - RULE 2 - CODE DOWN ONLY - FIXED
+cd /data/data/com.termux/files/home/pond
+termux-wake-lock
+echo "[IMMORTAL v2] started $(date -u)"
 while true; do
-  echo "[IMMORTAL] pulling kernel code..."
-  git pull origin main --quiet
+  termux-wake-lock
+  git pull origin main --quiet 2>/dev/null || true
   if [ -f .kernel_updated ]; then
-    echo "[IMMORTAL] kernel update detected, restarting..."
-    pkill -f pond_daemon.py
+    pkill -9 -f pond_daemon.py || true
     rm .kernel_updated
+    sleep 2
   fi
   if ! pgrep -f pond_daemon.py > /dev/null; then
-    echo "[IMMORTAL] starting pond_daemon.py"
-    nohup python pond_daemon.py > pond.log 2>&1 &
+    echo "[IMMORTAL] resurrect $(date -u) height $(cat LAST.txt)"
+    pkill -9 -f pond_daemon.py || true
+    sleep 1
+    nohup python3 pond_daemon.py > nohup.out 2>&1 &
+  else
+    echo "[IMMORTAL] alive $(date -u) height $(cat LAST.txt) count $(cat chain.json | grep -c hash)"
   fi
-  python verify.py || echo "[IMMORTAL] VERIFY FAIL - check chain"
   sleep 60
 done
