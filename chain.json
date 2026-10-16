@@ -7117,5 +7117,16 @@
       "originTax": "1% LAW"
     },
     "prev": "325c19c2649c11a100b9df7c00857ede8b6796bd930b785f56bc81faf329eb7f"
+  },
+  {
+    "index": 559,
+    "hash": "1241945c5b123f7f73831eeebb372f1bb27f8d2389f366fa537e6284321c52f8",
+    "prev": "3de7b78076254215e9e166c73711100909100a25f956c4fdc530856f5b17ee56",
+    "payload": {
+      "index": 559,
+      "ts": "2026-10-16T21:28:35.203740Z",
+      "prev": "3de7b78076254215e9e166c73711100909100a25f956c4fdc530856f5b17ee56",
+      "entropy": "fbf014ea5a7cada585e06131ccb047a4"
+    }
   }
 ]
