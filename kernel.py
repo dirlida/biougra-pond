@@ -44,7 +44,7 @@ def mine_and_save(ts_override=None):
 def auto_push(block_index):
     try:
         subprocess.run(["git","add","-f","chain.json","LAST.txt","kernel.py"], capture_output=True, timeout=10)
-        msg = f"hammer {datetime.now(timezone.utc).isoformat()}Z - block {block_index} LIVE - v2.3"
+        msg = f"pond_daemon v3 LIVE - beacon"
         r = subprocess.run(["git","commit","-m",msg], capture_output=True, text=True, timeout=10)
         if "nothing to commit" in (r.stdout + r.stderr):
             return False
