@@ -1,16 +1,16 @@
 import os, subprocess
 
-law = """# BIOUGRA POND - KERNEL LAW v1
+law = """# POND EMBASSY - KERNEL LAW v1
 Effective: Block 247 onward - 2026-10-14
 Status: SEALED - Immutable from this point
 
 ## PURPOSE
-This document defines the canonical structure of the BIOUGRA POND network.
+This document defines the canonical structure of the POND EMBASSY network.
 It separates kernel responsibilities from worker responsibilities and establishes
 a single source of truth for THE COUNT and for time.
 
 ## DEFINITIONS
-1. GENESIS / KERNEL: This repository (biougra-pond), hosted on this device,
+1. GENESIS / KERNEL: This repository (pond-embassy), hosted on this device,
     is the genesis and kernel. Its `main` branch contains the canonical chain
     and the canonical code.
 

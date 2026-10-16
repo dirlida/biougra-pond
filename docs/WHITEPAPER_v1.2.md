@@ -1,6 +1,6 @@
-# Biougra Pond v1.2 - THE COUNT STABLE
+# Pond Embassy v1.2 - THE COUNT STABLE
 
-Genesis: A13 Termux | 30.126126,-9.37437 | Biougra, Morocco
+Genesis: A13 Termux | 30.12, -9.37 | Biougra, Morocco
 Chain: 151+ blocks LIVE | 10min rule from #36
 
 ### Phase 1: Bell Phase (0-35)

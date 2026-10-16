@@ -1,4 +1,4 @@
-# THE COUNT — Biougra Pond
+# THE COUNT — Pond Embassy
 
 A time-counting chain born in Biougra, Souss-Massa, Morocco.
 

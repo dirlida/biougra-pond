@@ -1,6 +1,0 @@
-.env
-*.token
-__pycache__/
-*.pyc
-ibm_real.py
-secrets/

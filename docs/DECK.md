@@ -1,13 +1,13 @@
-# BIOUGRA POND // POND — Board Deck — Chain 9 Live
+# POND EMBASSY // POND — Board Deck — Chain 9 Live
 
-**Live:** https://dirlida.github.io/biougra-pond/
-**Chain:** 9 blocks | Last: ab5446ed... | BTC 969613 | GPS 30.12613,-9.37437
+**Live:** https://dirlida.github.io/pond-embassy/
+**Chain:** 9 blocks | Last: ab5446ed... | BTC 969613 | GPS 30.12, -9.37
 **Law:** HTML 100% — 1% LAW tribute — never 20.1% shell
 
 ## What it is
 Location-bound time witness. Not memecoin.
 
-- GPS: Biougra-Agadir 30.12613,-9.37437 THE LAB (real stamps)
+- GPS: Biougra-Agadir 30.12, -9.37 THE LAB (real stamps)
 - Myth: Marrakech THE CITY (tribute origin)
 - Witness: Sun elevation + BTC height + double SHA256 prev->hash
 - Surface: HTML 100% single file, localStorage chain, repo chain.json hydrate
@@ -28,7 +28,7 @@ Immutable human presence proof tied to GPS + BTC + sun — cannot fake location 
 - index.html: 100% HTML, pure
 - ORIGIN.json: forever name law
 
-POND forever name — Biougra Pond.
+POND forever name — Pond Embassy.
 
 ---
 Aglou build — Termux → GitHub Pages — live.

@@ -2,10 +2,10 @@
 Version 1.1 - October 10, 2026 — LIVE CHAIN VALID
 
 ## Abstract
-Pond Pond is a minimal quantum-anchored timestamping protocol that binds a geographic coordinate (30.12613,-9.37437 Pond), a Bitcoin block height (969609+), and a verifiable Bell-state CHSH violation (S=2.616 raw, 2.828 corrected, POND 8.4 7.5% noise) into a hash chain mined entirely on Samsung A13 via Termux — zero laptop.
+Pond Pond is a minimal quantum-anchored timestamping protocol that binds a geographic coordinate (30.12, -9.37 Pond), a Bitcoin block height (969609+), and a verifiable Bell-state CHSH violation (S=2.616 raw, 2.828 corrected, POND 8.4 7.5% noise) into a hash chain mined entirely on Samsung A13 via Termux — zero laptop.
 
 ## 1. Origin Coordinate
-- Location: 30.12613,-9.37437 (Pond, Morocco) — payload.gps.lat/lon
+- Location: 30.12, -9.37 (Pond, Morocco) — payload.gps.lat/lon
 - Sun elevation: 36.98 at timestamp
 - Time: 2026-10-02T15:25:22.357Z genesis (chain.json)
 - BTC Height: 969609 (genesis) — 969613 in v1.0 myth

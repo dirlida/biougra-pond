@@ -1,5 +1,5 @@
 # STATS - THE COUNT STABLE
-- Genesis: 30.126126,-9.37437
+- Genesis: 30.12, -9.37
 - Node: A13 Termux
 - Chain: 151 as of 2026-10-12 20:44 UTC
 - Last Index: 150

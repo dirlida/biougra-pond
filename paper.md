@@ -1,6 +1,6 @@
 # Human Qubit Machine: Offline Quantum Entanglement on H+ (2-bar 4G) - Biougra 2026-10-04
 
-**Abstract:** First demonstration of Bell (509/515), GHZ 3-qubit (512/488), W-state (302/279/319), and Teleportation 100% (0->0, 1->1) executed offline in Biougra, Morocco (30.12613,-9.37437) on low H+ (71ms ping) via Termux. No cloud QPU, no qiskit install required. Entropy from GPS + solar + BTC 969613. Patent-pending human-qubit-machine.
+**Abstract:** First demonstration of Bell (509/515), GHZ 3-qubit (512/488), W-state (302/279/319), and Teleportation 100% (0->0, 1->1) executed offline in Biougra, Morocco (30.12, -9.37) on low H+ (71ms ping) via Termux. No cloud QPU, no qiskit install required. Entropy from GPS + solar + BTC 969613. Patent-pending human-qubit-machine.
 
 1. Intro - Why offline quantum on low bandwidth
 2. Method - double SHA256 -> theta/phi, .qasm offline
