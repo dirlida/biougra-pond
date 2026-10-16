@@ -5577,5 +5577,101 @@
       "prev": "069e1f841666409b70534107efffdecfff6ba2af3ec4ef372875d7c0f2a003bf",
       "entropy": "b5c99f5c7cf76a22680254723a61697c"
     }
+  },
+  {
+    "index": 475,
+    "hash": "bc6a2b218cb20314621353c8d03bbc27cf81f9bde6752d2c5ee2b9cb66b8cfb9",
+    "prev": "4cf904147351168d4394bb6465725418e2de746ce012e4b7ae11001c1b967388",
+    "payload": {
+      "index": 475,
+      "ts": "2026-10-16T06:52:11.857245Z",
+      "prev": "4cf904147351168d4394bb6465725418e2de746ce012e4b7ae11001c1b967388",
+      "entropy": "ecdf1f2a4ae4e160d866188ec4584676"
+    }
+  },
+  {
+    "index": 476,
+    "hash": "47ddc8c614cee666a0832d79e8ba9a26722cab7e53aaf234509a10009570c889",
+    "prev": "bc6a2b218cb20314621353c8d03bbc27cf81f9bde6752d2c5ee2b9cb66b8cfb9",
+    "payload": {
+      "index": 476,
+      "ts": "2026-10-16T07:02:26.857245Z",
+      "prev": "bc6a2b218cb20314621353c8d03bbc27cf81f9bde6752d2c5ee2b9cb66b8cfb9",
+      "entropy": "94b489d1316ed600cba77a378d0695f6"
+    }
+  },
+  {
+    "index": 477,
+    "hash": "8aa035a86621fe7bac9625be6b8e3d5abad8a868ecf87cfb25ec06b58d7c40e5",
+    "prev": "47ddc8c614cee666a0832d79e8ba9a26722cab7e53aaf234509a10009570c889",
+    "payload": {
+      "index": 477,
+      "ts": "2026-10-16T07:12:41.857245Z",
+      "prev": "47ddc8c614cee666a0832d79e8ba9a26722cab7e53aaf234509a10009570c889",
+      "entropy": "fffff3ceb5c0afd0646d605b7b4b75d4"
+    }
+  },
+  {
+    "index": 478,
+    "hash": "95cc71452321a03d18eb8b5548cafcc6bf51ec93478b8b723d032dc83767c76a",
+    "prev": "8aa035a86621fe7bac9625be6b8e3d5abad8a868ecf87cfb25ec06b58d7c40e5",
+    "payload": {
+      "index": 478,
+      "ts": "2026-10-16T07:22:56.857245Z",
+      "prev": "8aa035a86621fe7bac9625be6b8e3d5abad8a868ecf87cfb25ec06b58d7c40e5",
+      "entropy": "8806c2cc4eea622f2dec0ce173c326fa"
+    }
+  },
+  {
+    "index": 479,
+    "hash": "0ca07c6bbc72fa6930140a1174fd23a94293269abae98f112dcddef9ed56a3ec",
+    "prev": "95cc71452321a03d18eb8b5548cafcc6bf51ec93478b8b723d032dc83767c76a",
+    "payload": {
+      "index": 479,
+      "ts": "2026-10-16T07:33:11.857245Z",
+      "prev": "95cc71452321a03d18eb8b5548cafcc6bf51ec93478b8b723d032dc83767c76a",
+      "entropy": "6c0a8dc9f2c70943c5abce205644c334"
+    }
+  },
+  {
+    "index": 480,
+    "hash": "5ed496d3688b6136e9d56d1dc5f3cef78f6897e70738fa37e67a387c48c95ded",
+    "prev": "0ca07c6bbc72fa6930140a1174fd23a94293269abae98f112dcddef9ed56a3ec",
+    "payload": {
+      "index": 480,
+      "ts": "2026-10-16T07:43:26.857245Z",
+      "prev": "0ca07c6bbc72fa6930140a1174fd23a94293269abae98f112dcddef9ed56a3ec",
+      "entropy": "f84b40bb089e0d740894dd690600e300"
+    }
+  },
+  {
+    "index": 481,
+    "hash": "5b94299e11443a2de281ef1c200fab3ccfd0abf04ddff8bc87199d41a4da84f0",
+    "prev": "5ed496d3688b6136e9d56d1dc5f3cef78f6897e70738fa37e67a387c48c95ded",
+    "payload": {
+      "index": 481,
+      "ts": "2026-10-16T07:53:41.857245Z",
+      "prev": "5ed496d3688b6136e9d56d1dc5f3cef78f6897e70738fa37e67a387c48c95ded",
+      "entropy": "8d995d24830058a0538fbf237ba788d5"
+    }
+  },
+  {
+    "hash": "505ff26461ec9fba7a773ba674fc1232af1f7daebc0aea0ec5d64ee74cdf8e2c",
+    "payload": {
+      "pond": "BIOUGRA POND",
+      "cityMyth": "Marrakech",
+      "lab": "Biougra",
+      "gps": {
+        "lat": 30.126126126126128,
+        "lon": -9.37437367846481
+      },
+      "gpsStr": "30.12613,-9.37437",
+      "sun": "36.98",
+      "btcHeight": 969609,
+      "prev": "5b94299e11443a2de281ef1c200fab3ccfd0abf04ddff8bc87199d41a4da84f0",
+      "ts": "2026-10-16T08:01:34.947656Z",
+      "originTax": "1% LAW"
+    },
+    "prev": "5b94299e11443a2de281ef1c200fab3ccfd0abf04ddff8bc87199d41a4da84f0"
   }
 ]
