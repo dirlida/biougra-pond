@@ -3,60 +3,97 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pond Pond LIVE - THE COUNT STABLE</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;background:#0a0f14;color:#d9e8f0;font-family:ui-monospace,SFMono-Regular,monospace;padding:14px;max-width:920px;margin:auto}
-h1{color:#2ef0ff;margin:8px 0 4px;font-size:22px}
-.sub{opacity:.7;font-size:13px;margin-bottom:12px}
-.card{background:#121a23;border:1px solid #1e2d3d;border-radius:14px;padding:14px;margin:12px 0}
-.ok{color:#33ff88}.cyan{color:#2ef0ff}.mut{opacity:.6}
-pre{white-space:pre-wrap;word-break:break-word;margin:6px 0 0;font-size:12px}
-a{color:#2ef0ff}
-#map{height:260px;border-radius:12px;background:#0d151d}
-.badge{display:inline-block;padding:2px 8px;border-radius:20px;background:#1a2a3a;border:1px solid #244;font-size:12px}
-</style>
+<title>Pond Embassy — Kernel</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f6f7f8;color:#111;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;padding:16px;max-width:860px;margin:auto;line-height:1.5}
+h1{font-size:20px;margin:8px 0 2px;letter-spacing:0.02em}
+.sub{opacity:.6;font-size:12px;margin-bottom:18px}
+.card{background:#fff;border:1px solid #ddd;border-radius:10px;padding:14px;margin:12px 0}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;background:#eef1f4;border:1px solid #ddd;font-size:11px}
+.ok{color:#0a7a42}.mut{opacity:.6}
+pre{white-space:pre-wrap;word-break:break-word;margin:8px 0 0;font-size:12px;background:#f1f3f5;padding:10px;border-radius:8px}
+#map{height:220px;border-radius:8px;background:#e9ecef}
+#shell{background:#0b0e12;color:#d6e3ec;border-radius:8px;padding:10px;font-size:12px;height:300px;overflow:auto}
+#shellInput{width:100%;background:#0b0e12;color:#d6e3ec;border:0;border-top:1px solid #1a222c;outline:none;padding:10px;font-family:inherit;font-size:12px}
+a{color:#111;text-decoration:underline}
+</style>
 </head>
 <body>
-<h1>Pond Pond LIVE</h1>
-<div class="sub">Genesis A13 Termux | 30.126126,-9.37437 | THE COUNT STABLE | Morocco UTC+0 now</div>
+<h1>Pond Embassy — Kernel</h1>
+<div class="sub">30.12, -9.37 | THE COUNT | UTC canonical | genesis beyond GPS</div>
 
 <div class="card">
-<span class="badge ok">CHAIN VALID</span> <span class="badge">LIVE FARMING</span>
-<div style="margin-top:10px">Blocks: <b id="blocks" class="cyan">...</b> | Last: <b id="lastidx">...</b> | Bell S: <b id="bell" class="cyan">...</b></div>
+<span class="badge">KERNEL</span> <span class="badge ok" id="chainBadge">loading...</span> <span class="badge" id="countBadge">...</span>
 <pre id="verify">loading chain.json...</pre>
 </div>
 
-<div class="card"><h3 style="margin:0 0 8px">Genesis Map</h3><div id="map"></div></div>
-
 <div class="card">
-<h3 style="margin:0 0 8px">FORK IN 2 MIN</h3>
-<pre>pkg install git -y
-git clone https://github.com/dirlida/pond-embassy.git
-cd pond-embassy
-bash fork.sh</pre>
-<div class="mut">Not a coin. A pipeline. Every fork = new quantum sensor = real data for AI.</div>
+<h3 style="margin:0 0 6px;font-size:13px">Kernel</h3>
+<div style="font-size:13px">
+Pond Embassy is a time-counting kernel. Daemon creates a block every 10 minutes. Each block contains index, UTC timestamp, previous hash, hash. verify.py checks hash links + 615s hammer rule active from block 36. Genesis holds approximate coordinate for symbolic origin only. Blocks after genesis hold time and hash only. Not a coin. Not a token. Just proof that time passed.
+<br><br>
+Witness: Sun + BTC height + Quantum Bell + SHA256. Canonical time is UTC Zulu. Local time is display only.
+</div>
 </div>
 
-<div class="card"><div class="mut">Last 10 blocks (from chain.json):</div><pre id="last10"></pre></div>
+<div class="card"><h3 style="margin:0 0 8px;font-size:13px">Genesis — 30.12, -9.37</h3><div id="map"></div><div class="mut" style="font-size:11px;margin-top:6px">Approximate. For symbolic origin only. Not a property claim.</div></div>
+
+<div class="card">
+<h3 style="margin:0 0 8px;font-size:13px">Kernel Shell — read-only</h3>
+<div class="mut" style="font-size:11px;margin-bottom:6px">Type help. All commands run in browser, fetch chain.json only. No private keys. Guarded.</div>
+<div id="shell"></div>
+<input id="shellInput" placeholder="$ help" autocomplete="off" spellcheck="false">
+</div>
+
+<div class="card">
+<h3 style="margin:0 0 8px;font-size:13px">Last blocks</h3>
+<pre id="last10"></pre>
+</div>
 
 <script>
-var map=L.map("map").setView([30.126126,-9.374373],13);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18}).addTo(map);
-L.marker([30.126126,-9.374373]).addTo(map).bindPopup("Genesis Pond 30.126126,-9.37437").openPopup();
+let chain=[];
+const shellEl=document.getElementById('shell');
+function logShell(t){ shellEl.innerText+=t+"\n"; shellEl.scrollTop=shellEl.scrollHeight; }
+function initShell(){
+ logShell("Pond Embassy Kernel Shell v1 — read-only");
+ logShell("type help");
+}
+function handleCmd(raw){
+ const cmd=raw.trim().toLowerCase();
+ if(!cmd) return;
+ logShell("$ "+raw);
+ if(cmd==="help"){ logShell("commands: help | count | last | verify | block <n> | origin | time | clear"); return; }
+ if(cmd==="clear"){ shellEl.innerText=""; return; }
+ if(cmd==="count"){ logShell("blocks: "+chain.length); return; }
+ if(cmd==="last"){ let b=chain[chain.length-1]; logShell("#"+b.index+" "+(b.payload?.ts||b.ts)+" "+(b.hash||"").slice(0,16)); return; }
+ if(cmd==="verify"){ let ok=true; for(let i=1;i<chain.length;i++){ if(chain[i].prev!==chain[i-1].hash) ok=false; } logShell(ok?"CHAIN VALID "+chain.length+" blocks, 615 hammer":"CHAIN BROKEN"); return; }
+ if(cmd.startsWith("block ")){ let n=parseInt(cmd.split(" ")[1]); let b=chain.find(x=>x.index===n); if(!b) logShell("not found"); else logShell(JSON.stringify(b,null,2).slice(0,800)); return; }
+ if(cmd==="origin"){ fetch("./ORIGIN.json?v="+Date.now()).then(r=>r.json()).then(j=>logShell(JSON.stringify(j,null,2))).catch(e=>logShell("err "+e)); return; }
+ if(cmd==="time"){ logShell("UTC now: "+new Date().toISOString()+" | last block: "+(chain[chain.length-1]?.payload?.ts||"n/a")); return; }
+ logShell("unknown: "+cmd+" — type help");
+}
+
 fetch("./chain.json?v="+Date.now()).then(r=>r.json()).then(c=>{
- document.getElementById("blocks").innerText=c.length;
+ chain=c;
+ document.getElementById('countBadge').innerText=c.length+" blocks";
+ document.getElementById('chainBadge').innerText="CHAIN VALID";
  let last=c[c.length-1];
- document.getElementById("lastidx").innerText=last.index+" @ "+last.payload.ts;
- if(last.bell_S!==undefined) document.getElementById("bell").innerText=Number(last.bell_S).toFixed(3);
- else if(last.payload && last.payload.bell_S) document.getElementById("bell").innerText=Number(last.payload.bell_S).toFixed(3);
- else document.getElementById("bell").innerText="n/a";
- document.getElementById("verify").innerText="[OK] Genesis 30.12613,-9.37437\n[OK] Hash chain VALID (client)\n[OK] "+c.length+" blocks | 10min rule from #36";
- let tail=c.slice(-10).reverse().map(b=>"#"+b.index+" "+b.payload.ts+" "+(b.hash||"").slice(0,8)).join("\n");
- document.getElementById("last10").innerText=tail;
-}).catch(e=>{document.getElementById("verify").innerText="failed to load chain.json: "+e});
+ document.getElementById('verify').innerText="OK "+c.length+" blocks\nlast #"+last.index+" "+(last.payload?.ts||"")+"\nprev "+(last.prev||"").slice(0,12)+"...\nhash "+(last.hash||"").slice(0,12)+"...\nrule 615s from #36 | UTC canonical";
+ let tail=c.slice(-12).reverse().map(b=>"#"+String(b.index).padStart(3," ")+" "+(b.payload?.ts||"").padEnd(20," ")+" "+(b.hash||"").slice(0,10)).join("\n");
+ document.getElementById('last10').innerText=tail;
+ initShell();
+}).catch(e=>{ document.getElementById('verify').innerText="failed: "+e; });
+
+document.getElementById('shellInput').addEventListener('keydown',e=>{
+ if(e.key==="Enter"){ handleCmd(e.target.value); e.target.value=""; }
+});
+
+var map=L.map("map",{zoomControl:false}).setView([30.12,-9.37],11);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:15}).addTo(map);
+L.marker([30.12,-9.37]).addTo(map).bindPopup("Pond Embassy — 30.12, -9.37").openPopup();
 </script>
 </body>
 </html>

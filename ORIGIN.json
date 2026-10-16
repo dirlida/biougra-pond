@@ -1,13 +1,15 @@
 {
-  "pond": "BIOUGRA POND",
+  "pond": "POND EMBASSY",
   "ticker": "POND",
-  "mythCity": "Marrakech — THE CITY (tribute & docs origin)",
-  "lab": "Biougra-Agadir 30.12613,-9.37437 — THE LAB (real GPS stamps)",
-  "law": "1% LAW — HTML 100% tribute, never 20.1% shell tax",
-  "genesisStamp": "5844b8fc4274c0b0f36d209b — 2026-10-02T14:59:38Z Biougra Lab",
-  "live": "https://dirlida.github.io/biougra-pond/",
+  "genesis": "30.12, -9.37 — Souss-Massa, Morocco",
+  "lab": "Pond Embassy — 30.12, -9.37 — THE LAB (Sun + BTC + Quantum)",
+  "mythCity": "Marrakech — THE CITY (tribute)",
+  "law": "1% LAW — KERNEL 100%",
+  "genesisStamp": "5844b8fc4274c0b0f36d209b — 2026-10-02T14:59:38Z",
+  "live": "https://dirlida.github.io/pond-embassy/",
   "btcAnchor": 969610,
-  "witness": "Sun + GPS + BTC height + double SHA256",
-  "namesForever": ["Biougra Pond", "POND", "Biougra Lab", "Marrakech THE CITY"],
-  "boardMode": "suited, no Katt Williams"
+  "witness": "Sun + 30.12,-9.37 + BTC height + Quantum Bell + SHA256",
+  "namesForever": ["Pond Embassy", "POND", "Biougra Lab", "Marrakech THE CITY"],
+  "boardMode": "Embassy — Beyond GPS",
+  "version": "S=5 — Embassy Era — Block 478+"
 }
