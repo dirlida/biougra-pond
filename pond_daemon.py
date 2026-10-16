@@ -1,9 +1,21 @@
-import time
+import time, os, requests
 from datetime import datetime, timezone
 from kernel import safe_load_chain, mine_and_save, auto_push, log
 
+def post_beacon(height, h):
+    try:
+        tok = os.getenv("TG_TOKEN")
+        ch = os.getenv("TG_CHANNEL")
+        if not tok or not ch:
+            return
+        msg = f"🔵 *POND BEACON v3* | Height: `{height}` | Hash: `{h[:16]}` | Alive"
+        requests.post(f"https://api.telegram.org/bot{tok}/sendMessage",
+                      data={"chat_id": ch, "text": msg, "parse_mode": "Markdown"}, timeout=10)
+    except Exception as e:
+        log(f"beacon fail: {e}")
+
 def main():
-    log("Pond daemon v2.3 - single kernel + FileLock - immortal-safe")
+    log("Pond daemon v3 - single kernel + FileLock + TG beacon - immortal-safe")
     last_pushed = -1
     while True:
         try:
@@ -21,6 +33,11 @@ def main():
                     log(f"External block {actual} detected, pushing")
                     if auto_push(actual):
                         last_pushed = actual
+                        # beacon on external push too
+                        try:
+                            post_beacon(actual, chain[-1]['hash'])
+                        except:
+                            pass
 
             if diff < 615:
                 wait = int(615 - diff) + 2
@@ -31,6 +48,7 @@ def main():
             log(f"time to mine: {diff:.0f}s since last")
             block = mine_and_save()
             log(f"Mined {block['index']} | {block['hash'][:12]}")
+            post_beacon(block['index'], block['hash'])
             if auto_push(block['index']):
                 last_pushed = block['index']
             time.sleep(615)
