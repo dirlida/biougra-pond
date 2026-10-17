@@ -5,6 +5,4 @@
 - 698 bare transition ATTESTED (9e07)
 - 699 v4 first HARDENED ATTESTED (729d sun+btc)
 - 700+ STRICT: 590-900s + sunAltitude@Biougra 30.12613,-9.37437 + btcHeight + pondId 27ef008c31aec59f + sha_sorted
-- Tip: 729d679c1b43
-- btc: 971907
-- sun: -37.2873 night Biougra
+- Tip: 729d679c1b43 btc 971907 sun -37.2873
