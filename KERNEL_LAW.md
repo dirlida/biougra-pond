@@ -1,10 +1,11 @@
-# KERNEL LAW - BIOUGRA POND
+# KERNEL LAW - BIOUGRA POND v4
 - 0-35 bootstrap OK (free, genesis)
 - 36 transition a82424e1dbf0 attested
-- 37-697 historical attested (2 fast scars 505ff264 473s, 3ba5d223 386s grandfathered)
-- 698+ STRICT: 590-900s, payload.prev + prev + sha_sorted
-- Sun calc: Biougra GPS 30.12613,-9.37437 required
+- 37-697 historical attested (2 fast scars grandfathered)
+- 698 ATTESTED bare (transition to v4)
+- 699+ STRICT v4: 590-900s, payload.prev + prev + sha_sorted + sunAltitude@Biougra + btcHeight + pondId 27ef008c31aec59f
+- GPS 30.12613,-9.37437 required
+- Sun calc NOAA required
 - btcHeight external anchor required
-- Public Pond ID: 27ef008c31aec59f
-- Tip: 7b9211d2fc2f
-- SHA256: auto updates via auto_last.py
+- Tip: 9e07e713ddee
+- SHA auto via kernel
