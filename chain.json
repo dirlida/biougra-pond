@@ -8856,5 +8856,20 @@
       "btcHeight": 971915,
       "pondId": "27ef008c31aec59f"
     }
+  },
+  {
+    "index": 712,
+    "hash": "434810d1f48fd80a08d184969ccdbe92745fe46ad804800090ecb9a70445e3dd",
+    "prev": "5248d1f9c17e720e4dc4e69505e7600a68c246b3789471035295ad54ad0a8c6e",
+    "payload": {
+      "index": 712,
+      "ts": "2026-10-17T23:33:34.989233Z",
+      "prev": "5248d1f9c17e720e4dc4e69505e7600a68c246b3789471035295ad54ad0a8c6e",
+      "entropy": "dd8f59edacab9f2b0ce161127b4db26d",
+      "sunAltitude": -65.2285,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971916,
+      "pondId": "27ef008c31aec59f"
+    }
   }
 ]
