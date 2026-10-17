@@ -7348,5 +7348,16 @@
       "prev": "61abe296d5f37256fa7f0efe862ec01dbf241cf167b0a91765aaaa046fd08399",
       "entropy": "8f67ce9b9ef8def2b47fe62190dd63a3"
     }
+  },
+  {
+    "index": 580,
+    "hash": "5310bb90c3c0dbd6c59762178b9d5c1e213e19b0e05e3e4837b4f8e4dea43c31",
+    "prev": "c4a265b47428df2c3e4bfe3b3a1e038df8f8eeef1cb34a895cb7913e0498f625",
+    "payload": {
+      "index": 580,
+      "ts": "2026-10-17T01:04:24.512370Z",
+      "prev": "c4a265b47428df2c3e4bfe3b3a1e038df8f8eeef1cb34a895cb7913e0498f625",
+      "entropy": "27f47eb237818482b595e60685bd4a78"
+    }
   }
 ]
