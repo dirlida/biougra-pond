@@ -8646,5 +8646,20 @@
       "prev": "7b9211d2fc2f4198dcfe9e38900ada85f2397114b29f98177b5e0addca5f2b1b",
       "entropy": "01e1ffd775d657fff7517c1f710fdd02"
     }
+  },
+  {
+    "index": 698,
+    "hash": "729d679c1b434cd901c44e29e2bdae9e2ba7cd41e1f163d913fbbcaa0c26236f",
+    "prev": "9e07e713ddeeeb4307502490a93ecb6604668579b4fe21ffa66c2317f7c95759",
+    "payload": {
+      "index": 698,
+      "ts": "2026-10-17T21:06:46.260212Z",
+      "prev": "9e07e713ddeeeb4307502490a93ecb6604668579b4fe21ffa66c2317f7c95759",
+      "entropy": "667c1ec5f5f1765c096e2af5e279990f",
+      "sunAltitude": -37.2873,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971907,
+      "pondId": "27ef008c31aec59f"
+    }
   }
 ]
