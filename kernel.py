@@ -53,8 +53,6 @@ def get_btc_height():
     return None
 
 def get_btc_anchor():
-    # robust hash + height with fallbacks for Termux
-    # Try mempool hash+height
     try:
         r = requests.get("https://mempool.space/api/blocks/tip/hash", timeout=7, headers={"User-Agent":"Pond/v4"})
         if r.ok and len(r.text.strip())==64:
@@ -64,8 +62,6 @@ def get_btc_anchor():
                 return h_hash, r2.text.strip()
     except Exception as e:
         log(f"[anchor mempool] fail {e}")
-
-    # blockstream hash
     try:
         r = requests.get("https://blockstream.info/api/blocks/tip/hash", timeout=7, headers={"User-Agent":"Pond/v4"})
         if r.ok and len(r.text.strip())==64:
@@ -76,21 +72,16 @@ def get_btc_anchor():
             return h_hash, None
     except Exception as e:
         log(f"[anchor blockstream] fail {e}")
-
-    # blockchain.info latesthash
     try:
         r = requests.get("https://blockchain.info/q/latesthash", timeout=7, headers={"User-Agent":"Pond/v4"})
         if r.ok and len(r.text.strip())==64:
             h_hash = r.text.strip()
-            # get height via blockchain.info
             r2 = requests.get("https://blockchain.info/q/getblockcount", timeout=7)
             if r2.ok:
                 return h_hash, r2.text.strip()
             return h_hash, None
     except Exception as e:
         log(f"[anchor blockchain.info] fail {e}")
-
-    # blockchair
     try:
         r = requests.get("https://api.blockchair.com/bitcoin/stats", timeout=7, headers={"User-Agent":"Pond/v4"})
         if r.ok:
@@ -101,7 +92,6 @@ def get_btc_anchor():
                 return h, str(ht)
     except Exception as e:
         log(f"[anchor blockchair] fail {e}")
-
     return None, None
 
 def sync_embassy():
@@ -113,6 +103,26 @@ def sync_embassy():
         Path("embassy/public/blocks.json").write_text(json.dumps(blocks, indent=2))
     except Exception as e:
         log(f"sync_embassy fail: {e}")
+
+def hard_anchor_freeze(height):
+    """Called every 100 blocks - freeze + stamp + background upgrade"""
+    try:
+        frozen = f"chain-{height}-FROZEN.json"
+        if not Path(frozen).exists():
+            shutil.copy(str(CHAIN_FILE), frozen)
+            log(f"FROZEN {frozen} for hard anchor")
+            # stamp
+            subprocess.Popen(["ots", "stamp", frozen], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            # try ipfs if available
+            try:
+                r = subprocess.run(["ipfs", "add", "-q", frozen], capture_output=True, text=True, timeout=20)
+                if r.returncode==0 and r.stdout.strip():
+                    cid = r.stdout.strip()
+                    Path(f"{frozen}.cid").write_text(cid)
+                    log(f"IPFS CID {cid} for {height}")
+            except: pass
+    except Exception as e:
+        log(f"hard_anchor_freeze fail {e}")
 
 def mine_and_save(ts_override=None):
     with FileLock(str(LOCK_FILE), timeout=15):
@@ -133,23 +143,33 @@ def mine_and_save(ts_override=None):
         btc_h = get_btc_height()
         sun_alt = sun_altitude(ts_dt)
         btc_anchor_hash, btc_anchor_height = get_btc_anchor()
-        # prefer numeric btcHeight from height fetch, but anchor height from anchor if missing
         if not btc_h and btc_anchor_height:
             try: btc_h = int(btc_anchor_height)
             except: pass
-        payload = {"index": len(chain),"ts": ts,"prev": prev.get("hash"),"entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],"sunAltitude": sun_alt,"gps": f"{GPS_LAT},{GPS_LON}","btcHeight": btc_h,"btc_anchor_hash": btc_anchor_hash,"btc_anchor_height": btc_anchor_height,"pondId": "27ef008c31aec59f"}
-        # --- PATH B FREE OTS (file method) ---
+
+        # CHECKPOINT: load last confirmed BTC TXID if exists
+        btc_txid_checkpoint = None
         try:
-            import subprocess as _sp
-            from pathlib import Path as _P
+            if Path("chain_anchored.info").exists():
+                txt = Path("chain_anchored.info").read_text()
+                # parse txid from info if present
+                import re
+                m = re.search(r"[a-f0-9]{64}", txt)
+                if m: btc_txid_checkpoint = m.group(0)
+        except: pass
+
+        payload = {"index": len(chain),"ts": ts,"prev": prev.get("hash"),"entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],"sunAltitude": sun_alt,"gps": f"{GPS_LAT},{GPS_LON}","btcHeight": btc_h,"btc_anchor_hash": btc_anchor_hash,"btc_anchor_height": btc_anchor_height,"btc_checkpoint_txid": btc_txid_checkpoint,"pondId": "27ef008c31aec59f"}
+
+        # per-block tmp OTS (light) - keep your existing
+        try:
             _h = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
             _tmp = f"/data/data/com.termux/files/home/pond/.ots_tmp_{_h[:8]}"
-            _P(_tmp).write_text(_h)
-            _sp.run(["ots", "stamp", _tmp], capture_output=True, timeout=20)
-            if _P(_tmp + ".ots").exists():
-                _P(f"{_h[:16]}.ots").write_bytes(_P(_tmp + ".ots").read_bytes())
-                _P(_tmp + ".ots").unlink(missing_ok=True)
-            _P(_tmp).unlink(missing_ok=True)
+            Path(_tmp).write_text(_h)
+            subprocess.run(["ots", "stamp", _tmp], capture_output=True, timeout=20)
+            if Path(_tmp + ".ots").exists():
+                Path(f"{_h[:16]}.ots").write_bytes(Path(_tmp + ".ots").read_bytes())
+                Path(_tmp + ".ots").unlink(missing_ok=True)
+            Path(_tmp).unlink(missing_ok=True)
             payload["ots_queued"] = True
             payload["ots_hash"] = _h
             payload["ots_time"] = ts
@@ -157,7 +177,7 @@ def mine_and_save(ts_override=None):
         except Exception as _e:
             payload["ots_queued"] = False
             payload["ots_error"] = str(_e)[:200]
-        # --- END B ---
+
         block_hash = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
         block = {"index": len(chain),"hash": block_hash,"prev": prev.get("hash"),"payload": payload}
         chain.append(block)
@@ -168,14 +188,19 @@ def mine_and_save(ts_override=None):
         sha = hashlib.sha256(CHAIN_FILE.read_bytes()).hexdigest()
         SHA_FILE.write_text(f"{sha}  chain.json\n")
         sync_embassy()
-        log(f"MINED {block['index']} {block_hash[:12]} sun {sun_alt} btc {btc_h} anchor {btc_anchor_height} {str(btc_anchor_hash)[:12]}")
+        log(f"MINED {block['index']} {block_hash[:12]} sun {sun_alt} btc {btc_h} anchor {btc_anchor_height} {str(btc_anchor_hash)[:12]} chk {str(btc_txid_checkpoint)[:8]}")
+
+        # HARD ANCHOR EVERY 100
+        if block['index'] % 100 == 0:
+            hard_anchor_freeze(block['index'])
+
         return block
 
 def auto_push(block_index):
     try:
         sync_embassy()
         subprocess.run(["git","add","-f","chain.json","LAST.txt","SHA256.txt","KERNEL_LAW.md","DUPE_PROOF.md","kernel.py","embassy/public/chain.json","embassy/public/blocks.json"], capture_output=True, timeout=10)
-        msg = f"pond v4 WORLD MIRRORS SUN+BTC {block_index} {datetime.now(timezone.utc).isoformat()}"
+        msg = f"pond v4.1 HARD-ANCHOR-CHECKPOINT SUN+BTC {block_index} {datetime.now(timezone.utc).isoformat()}"
         r = subprocess.run(["git","commit","-m",msg], capture_output=True, text=True, timeout=10)
         if "nothing to commit" in (r.stdout + r.stderr):
             return False
