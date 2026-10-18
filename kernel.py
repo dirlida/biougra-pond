@@ -1,14 +1,5 @@
 import json, hashlib, random, subprocess, math, time, shutil, os
-
 import requests
-def get_btc_anchor():
-    try:
-        h = requests.get("https://mempool.space/api/blocks/tip/hash", timeout=5).text.strip()
-        ht = requests.get("https://mempool.space/api/blocks/tip/height", timeout=5).text.strip()
-        return h, ht
-    except:
-        return None, None
-
 from datetime import datetime, timezone
 from pathlib import Path
 from filelock import FileLock
@@ -24,12 +15,6 @@ GPS_LON=-9.37437
 
 def log(m): print(f"[{datetime.now(timezone.utc).isoformat()}] {m}", flush=True)
 
-def safe_load_chain():
-    with FileLock(str(LOCK_FILE), timeout=15):
-        txt = CHAIN_FILE.read_text().strip()
-        if not txt: raise ValueError("empty chain.json")
-        return json.loads(txt)
-
 def sun_altitude(dt: datetime):
     day = dt.timetuple().tm_yday
     hour = dt.hour + dt.minute/60 + dt.second/3600
@@ -40,19 +25,16 @@ def sun_altitude(dt: datetime):
     return round(math.degrees(alt), 4)
 
 def get_btc_height():
-    import requests
     providers = [
         ("mempool.space US", "https://mempool.space/api/blocks/tip/height", lambda r: int(r.text.strip())),
         ("blockstream.info", "https://blockstream.info/api/blocks/tip/height", lambda r: int(r.text.strip())),
         ("blockchain.info q", "https://blockchain.info/q/getblockcount", lambda r: int(r.text.strip())),
         ("mempool.emzy", "https://mempool.emzy.de/api/blocks/tip/height", lambda r: int(r.text.strip())),
-        ("mempool.space backup", "https://mempool.space/api/blocks/tip/height", lambda r: int(r.text.strip())),
     ]
     for name, url, parser in providers:
         try:
             r = requests.get(url, timeout=7, headers={"User-Agent": "Pond/v4-world"})
-            if not r.ok:
-                continue
+            if not r.ok: continue
             h = parser(r)
             if h and 700000 < h < 2000000:
                 log(f"BTC {h} via {name} ✅")
@@ -66,16 +48,69 @@ def get_btc_height():
         if last:
             log(f"BTC fallback chain {last}")
             return last
-    except:
-        pass
+    except: pass
     log("BTC all mirrors failed")
     return None
+
+def get_btc_anchor():
+    # robust hash + height with fallbacks for Termux
+    # Try mempool hash+height
+    try:
+        r = requests.get("https://mempool.space/api/blocks/tip/hash", timeout=7, headers={"User-Agent":"Pond/v4"})
+        if r.ok and len(r.text.strip())==64:
+            h_hash = r.text.strip()
+            r2 = requests.get("https://mempool.space/api/blocks/tip/height", timeout=7, headers={"User-Agent":"Pond/v4"})
+            if r2.ok:
+                return h_hash, r2.text.strip()
+    except Exception as e:
+        log(f"[anchor mempool] fail {e}")
+
+    # blockstream hash
+    try:
+        r = requests.get("https://blockstream.info/api/blocks/tip/hash", timeout=7, headers={"User-Agent":"Pond/v4"})
+        if r.ok and len(r.text.strip())==64:
+            h_hash = r.text.strip()
+            r2 = requests.get("https://blockstream.info/api/blocks/tip/height", timeout=7)
+            if r2.ok:
+                return h_hash, r2.text.strip()
+            return h_hash, None
+    except Exception as e:
+        log(f"[anchor blockstream] fail {e}")
+
+    # blockchain.info latesthash
+    try:
+        r = requests.get("https://blockchain.info/q/latesthash", timeout=7, headers={"User-Agent":"Pond/v4"})
+        if r.ok and len(r.text.strip())==64:
+            h_hash = r.text.strip()
+            # get height via blockchain.info
+            r2 = requests.get("https://blockchain.info/q/getblockcount", timeout=7)
+            if r2.ok:
+                return h_hash, r2.text.strip()
+            return h_hash, None
+    except Exception as e:
+        log(f"[anchor blockchain.info] fail {e}")
+
+    # blockchair
+    try:
+        r = requests.get("https://api.blockchair.com/bitcoin/stats", timeout=7, headers={"User-Agent":"Pond/v4"})
+        if r.ok:
+            data = r.json()
+            h = data.get('data',{}).get('best_block_hash')
+            ht = data.get('data',{}).get('best_block_height')
+            if h and ht:
+                return h, str(ht)
+    except Exception as e:
+        log(f"[anchor blockchair] fail {e}")
+
+    return None, None
 
 def sync_embassy():
     try:
         os.makedirs('embassy/public', exist_ok=True)
-        shutil.copy2('chain.json','embassy/public/chain.json')
-        shutil.copy2('chain.json','embassy/public/blocks.json')
+        chain=json.loads(Path("chain.json").read_text())
+        blocks=chain[-500:]
+        Path("embassy/public/chain.json").write_text(json.dumps(chain, indent=2))
+        Path("embassy/public/blocks.json").write_text(json.dumps(blocks, indent=2))
     except Exception as e:
         log(f"sync_embassy fail: {e}")
 
@@ -98,6 +133,10 @@ def mine_and_save(ts_override=None):
         btc_h = get_btc_height()
         sun_alt = sun_altitude(ts_dt)
         btc_anchor_hash, btc_anchor_height = get_btc_anchor()
+        # prefer numeric btcHeight from height fetch, but anchor height from anchor if missing
+        if not btc_h and btc_anchor_height:
+            try: btc_h = int(btc_anchor_height)
+            except: pass
         payload = {"index": len(chain),"ts": ts,"prev": prev.get("hash"),"entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],"sunAltitude": sun_alt,"gps": f"{GPS_LAT},{GPS_LON}","btcHeight": btc_h,"btc_anchor_hash": btc_anchor_hash,"btc_anchor_height": btc_anchor_height,"pondId": "27ef008c31aec59f"}
         block_hash = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
         block = {"index": len(chain),"hash": block_hash,"prev": prev.get("hash"),"payload": payload}
@@ -109,7 +148,7 @@ def mine_and_save(ts_override=None):
         sha = hashlib.sha256(CHAIN_FILE.read_bytes()).hexdigest()
         SHA_FILE.write_text(f"{sha}  chain.json\n")
         sync_embassy()
-        log(f"MINED {block['index']} {block_hash[:12]} sun {sun_alt} btc {btc_h}")
+        log(f"MINED {block['index']} {block_hash[:12]} sun {sun_alt} btc {btc_h} anchor {btc_anchor_height} {str(btc_anchor_hash)[:12]}")
         return block
 
 def auto_push(block_index):
@@ -130,3 +169,10 @@ def auto_push(block_index):
     except Exception as e:
         log(f"auto_push err {e}")
         return False
+
+def safe_load_chain():
+    with FileLock(str(LOCK_FILE), timeout=15):
+        txt = CHAIN_FILE.read_text().strip()
+        if not txt:
+            raise ValueError("empty chain.json")
+        return json.loads(txt)
