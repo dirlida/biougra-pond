@@ -1,16 +1,5 @@
 [
   {
-    "index": 307,
-    "hash": "aff94398f8b0e406325b34d42fcc17157e7985364a5701143ef33d5ae0c4a7c5",
-    "prev": "360d10fa5edda64d3c9afa4e2640172b75f9a8b96136ad0da38446622f71c3a4",
-    "payload": {
-      "index": 307,
-      "ts": "2026-10-15T02:10:11.857245Z",
-      "prev": "360d10fa5edda64d3c9afa4e2640172b75f9a8b96136ad0da38446622f71c3a4",
-      "entropy": "30112aea3dd70f5f63629808a2290d40"
-    }
-  },
-  {
     "index": 308,
     "hash": "8dd3d45e5783a4719049e7007c057698d3b08eac16292d7882406dbddb35fd2c",
     "prev": "aff94398f8b0e406325b34d42fcc17157e7985364a5701143ef33d5ae0c4a7c5",
@@ -6552,6 +6541,23 @@
       "btcHeight": 972020,
       "btc_anchor_hash": "00000000000000000001c1036452054d47450b8ea0679ac1e2445b373bebaddc",
       "btc_anchor_height": "972020",
+      "pondId": "27ef008c31aec59f"
+    }
+  },
+  {
+    "index": 807,
+    "hash": "c1eb64f86fe79da28a992f3073919c6f62da35cfef264864dff23e4fa0ca4cc5",
+    "prev": "e2cd0c63f9b66209f96860bd75619fc4233a191aaa6c21f0aee13c34602b6c0e",
+    "payload": {
+      "index": 807,
+      "ts": "2026-10-18T16:00:45.301766Z",
+      "prev": "e2cd0c63f9b66209f96860bd75619fc4233a191aaa6c21f0aee13c34602b6c0e",
+      "entropy": "229cbf0707e2d6171ee8bf33ea807386",
+      "sunAltitude": 26.3564,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972021,
+      "btc_anchor_hash": "00000000000000000001856021f53167cfd5b7be94d6b3618c59f2f8c296e951",
+      "btc_anchor_height": "972021",
       "pondId": "27ef008c31aec59f"
     }
   }
