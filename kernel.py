@@ -98,7 +98,7 @@ def mine_and_save(ts_override=None):
         btc_h = get_btc_height()
         sun_alt = sun_altitude(ts_dt)
         btc_anchor_hash, btc_anchor_height = get_btc_anchor()
-    payload = {"index": len(chain),"ts": ts,"prev": prev.get("hash"),"entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],"sunAltitude": sun_alt,"gps": f"{GPS_LAT},{GPS_LON}","btcHeight": btc_h,"pondId": "27ef008c31aec59f"}
+        payload = {"index": len(chain),"ts": ts,"prev": prev.get("hash"),"entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],"sunAltitude": sun_alt,"gps": f"{GPS_LAT},{GPS_LON}","btcHeight": btc_h,"btc_anchor_hash": btc_anchor_hash,"btc_anchor_height": btc_anchor_height,"pondId": "27ef008c31aec59f"}
         block_hash = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
         block = {"index": len(chain),"hash": block_hash,"prev": prev.get("hash"),"payload": payload}
         chain.append(block)
