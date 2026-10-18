@@ -1,4 +1,14 @@
 import json, hashlib, random, subprocess, math, time, shutil, os
+
+import requests
+def get_btc_anchor():
+    try:
+        h = requests.get("https://mempool.space/api/blocks/tip/hash", timeout=5).text.strip()
+        ht = requests.get("https://mempool.space/api/blocks/tip/height", timeout=5).text.strip()
+        return h, ht
+    except:
+        return None, None
+
 from datetime import datetime, timezone
 from pathlib import Path
 from filelock import FileLock
@@ -87,7 +97,8 @@ def mine_and_save(ts_override=None):
                 raise ValueError(f"too fast {diff}")
         btc_h = get_btc_height()
         sun_alt = sun_altitude(ts_dt)
-        payload = {"index": len(chain),"ts": ts,"prev": prev.get("hash"),"entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],"sunAltitude": sun_alt,"gps": f"{GPS_LAT},{GPS_LON}","btcHeight": btc_h,"pondId": "27ef008c31aec59f"}
+        btc_anchor_hash, btc_anchor_height = get_btc_anchor()
+    payload = {"index": len(chain),"ts": ts,"prev": prev.get("hash"),"entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],"sunAltitude": sun_alt,"gps": f"{GPS_LAT},{GPS_LON}","btcHeight": btc_h,"pondId": "27ef008c31aec59f"}
         block_hash = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
         block = {"index": len(chain),"hash": block_hash,"prev": prev.get("hash"),"payload": payload}
         chain.append(block)
