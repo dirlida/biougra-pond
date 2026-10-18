@@ -1,4 +1,4 @@
-import json, hashlib, random, subprocess, math, time
+import json, hashlib, random, subprocess, math, time, shutil, os
 from datetime import datetime, timezone
 from pathlib import Path
 from filelock import FileLock
@@ -30,19 +30,44 @@ def sun_altitude(dt: datetime):
     return round(math.degrees(alt), 4)
 
 def get_btc_height():
+    import requests
+    providers = [
+        ("mempool.space US", "https://mempool.space/api/blocks/tip/height", lambda r: int(r.text.strip())),
+        ("blockstream.info", "https://blockstream.info/api/blocks/tip/height", lambda r: int(r.text.strip())),
+        ("blockchain.info q", "https://blockchain.info/q/getblockcount", lambda r: int(r.text.strip())),
+        ("mempool.emzy", "https://mempool.emzy.de/api/blocks/tip/height", lambda r: int(r.text.strip())),
+        ("mempool.space backup", "https://mempool.space/api/blocks/tip/height", lambda r: int(r.text.strip())),
+    ]
+    for name, url, parser in providers:
+        try:
+            r = requests.get(url, timeout=7, headers={"User-Agent": "Pond/v4-world"})
+            if not r.ok:
+                continue
+            h = parser(r)
+            if h and 700000 < h < 2000000:
+                log(f"BTC {h} via {name} ✅")
+                return h
+        except Exception as e:
+            log(f"[{name}] fail {e}")
+            continue
     try:
-        import requests
-        r=requests.get("https://blockchain.info/q/getblockcount", timeout=5)
-        if r.ok:
-            return int(r.text.strip())
-    except: pass
-    try:
-        import requests
-        r=requests.get("https://mempool.space/api/blocks/tip/height", timeout=5)
-        if r.ok:
-            return int(r.text.strip())
-    except: pass
+        chain=json.loads(Path("chain.json").read_text())
+        last=chain[-1]['payload'].get('btcHeight')
+        if last:
+            log(f"BTC fallback chain {last}")
+            return last
+    except:
+        pass
+    log("BTC all mirrors failed")
     return None
+
+def sync_embassy():
+    try:
+        os.makedirs('embassy/public', exist_ok=True)
+        shutil.copy2('chain.json','embassy/public/chain.json')
+        shutil.copy2('chain.json','embassy/public/blocks.json')
+    except Exception as e:
+        log(f"sync_embassy fail: {e}")
 
 def mine_and_save(ts_override=None):
     with FileLock(str(LOCK_FILE), timeout=15):
@@ -60,8 +85,6 @@ def mine_and_save(ts_override=None):
             if diff < 590:
                 log(f"TOO FAST {diff}s <590 - WAIT")
                 raise ValueError(f"too fast {diff}")
-            if diff > 900:
-                log(f"WARNING late {diff}s >900 but mining")
         btc_h = get_btc_height()
         sun_alt = sun_altitude(ts_dt)
         payload = {"index": len(chain),"ts": ts,"prev": prev.get("hash"),"entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],"sunAltitude": sun_alt,"gps": f"{GPS_LAT},{GPS_LON}","btcHeight": btc_h,"pondId": "27ef008c31aec59f"}
@@ -74,13 +97,15 @@ def mine_and_save(ts_override=None):
         LAST_FILE.write_text(block_hash+"\n")
         sha = hashlib.sha256(CHAIN_FILE.read_bytes()).hexdigest()
         SHA_FILE.write_text(f"{sha}  chain.json\n")
+        sync_embassy()
         log(f"MINED {block['index']} {block_hash[:12]} sun {sun_alt} btc {btc_h}")
         return block
 
 def auto_push(block_index):
     try:
-        subprocess.run(["git","add","-f","chain.json","LAST.txt","SHA256.txt","KERNEL_LAW.md","DUPE_PROOF.md","kernel.py"], capture_output=True, timeout=10)
-        msg = f"pond v4 SUN+BTC ATTESTED {block_index} {datetime.now(timezone.utc).isoformat()}"
+        sync_embassy()
+        subprocess.run(["git","add","-f","chain.json","LAST.txt","SHA256.txt","KERNEL_LAW.md","DUPE_PROOF.md","kernel.py","embassy/public/chain.json","embassy/public/blocks.json"], capture_output=True, timeout=10)
+        msg = f"pond v4 WORLD MIRRORS SUN+BTC {block_index} {datetime.now(timezone.utc).isoformat()}"
         r = subprocess.run(["git","commit","-m",msg], capture_output=True, text=True, timeout=10)
         if "nothing to commit" in (r.stdout + r.stderr):
             return False
