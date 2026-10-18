@@ -138,16 +138,25 @@ def mine_and_save(ts_override=None):
             try: btc_h = int(btc_anchor_height)
             except: pass
         payload = {"index": len(chain),"ts": ts,"prev": prev.get("hash"),"entropy": hashlib.sha256(f"{ts}{random.random()}".encode()).hexdigest()[:32],"sunAltitude": sun_alt,"gps": f"{GPS_LAT},{GPS_LON}","btcHeight": btc_h,"btc_anchor_hash": btc_anchor_hash,"btc_anchor_height": btc_anchor_height,"pondId": "27ef008c31aec59f"}
-        # --- PATH B FREE OTS ---
+        # --- PATH B FREE OTS (file method) ---
         try:
             import subprocess as _sp
+            from pathlib import Path as _P
             _h = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
-            _sp.run(["ots", "stamp"], input=_h.encode(), capture_output=True, timeout=15)
+            _tmp = f"/data/data/com.termux/files/home/pond/.ots_tmp_{_h[:8]}"
+            _P(_tmp).write_text(_h)
+            _sp.run(["ots", "stamp", _tmp], capture_output=True, timeout=20)
+            if _P(_tmp + ".ots").exists():
+                _P(f"{_h[:16]}.ots").write_bytes(_P(_tmp + ".ots").read_bytes())
+                _P(_tmp + ".ots").unlink(missing_ok=True)
+            _P(_tmp).unlink(missing_ok=True)
             payload["ots_queued"] = True
             payload["ots_hash"] = _h
             payload["ots_time"] = ts
+            payload["ots_file"] = f"{_h[:16]}.ots"
         except Exception as _e:
             payload["ots_queued"] = False
+            payload["ots_error"] = str(_e)[:200]
         # --- END B ---
         block_hash = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
         block = {"index": len(chain),"hash": block_hash,"prev": prev.get("hash"),"payload": payload}
