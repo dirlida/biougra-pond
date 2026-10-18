@@ -1,9 +1,1 @@
-{
-  "circuit": "biougra.qasm",
-  "circuitDef": "H(0); CX(0,1)",
-  "backend": "IBM Quantum QPU",
-  "shots": 1024,
-  "result": { "00": 492, "11": 532 },
-  "verification": "Correlated counts confirm Bell entanglement, ~50/50 non-classical",
-  "script": "real_qpu.py"
-}
+{"circuit":"pond_embassy.qasm","pondId":"27ef008c31aec59f"}

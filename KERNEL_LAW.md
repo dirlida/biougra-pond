@@ -13,5 +13,5 @@ Law is kernel.py:
 - TG beacon v3
 - embassy/public sync
 
-No Biougra Pond Lab. Only POND EMBASSY.
+No POND EMBASSY. Only POND EMBASSY.
 
