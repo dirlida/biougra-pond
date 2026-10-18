@@ -16,3 +16,5 @@ bsh
 shell/
 .pond.lock
 logs/
+POND_ID.key
+POND_SIG.txt
