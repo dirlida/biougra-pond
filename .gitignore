@@ -18,3 +18,5 @@ shell/
 logs/
 POND_ID.key
 POND_SIG.txt
+.vercel
+.env*

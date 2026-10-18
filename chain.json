@@ -9666,5 +9666,140 @@
       "btcHeight": 971961,
       "pondId": "27ef008c31aec59f"
     }
+  },
+  {
+    "index": 766,
+    "hash": "05367207d7d651c78533ecd24cf3c01567702eb19c390f893fb8d08e55389bcb",
+    "prev": "56e57648fdfb282f1efd8c790bb31647fe9be25b4dea7b14e31c014b47ea0da3",
+    "payload": {
+      "index": 766,
+      "ts": "2026-10-18T08:52:23.272434Z",
+      "prev": "56e57648fdfb282f1efd8c790bb31647fe9be25b4dea7b14e31c014b47ea0da3",
+      "entropy": "4e7b530f122cb6f4ff5dd488ac9bff4e",
+      "sunAltitude": 22.2574,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971962,
+      "pondId": "27ef008c31aec59f"
+    }
+  },
+  {
+    "index": 767,
+    "hash": "481f4923e6842548b51dc63bbc60a9b92598ef418ec573ff6e77fa99f8ebaa43",
+    "prev": "05367207d7d651c78533ecd24cf3c01567702eb19c390f893fb8d08e55389bcb",
+    "payload": {
+      "index": 767,
+      "ts": "2026-10-18T09:02:41.267512Z",
+      "prev": "05367207d7d651c78533ecd24cf3c01567702eb19c390f893fb8d08e55389bcb",
+      "entropy": "35ec3d521b9df52823d9fe10c817ae50",
+      "sunAltitude": 24.2081,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971963,
+      "pondId": "27ef008c31aec59f"
+    }
+  },
+  {
+    "index": 768,
+    "hash": "477602458a6e1d1ae617061005008fd8dda4824a851d022f9527a6774f0d00bf",
+    "prev": "481f4923e6842548b51dc63bbc60a9b92598ef418ec573ff6e77fa99f8ebaa43",
+    "payload": {
+      "index": 768,
+      "ts": "2026-10-18T09:13:01.422330Z",
+      "prev": "481f4923e6842548b51dc63bbc60a9b92598ef418ec573ff6e77fa99f8ebaa43",
+      "entropy": "6301ba9b06cf7cf5df9b40b95a66354e",
+      "sunAltitude": 26.1304,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971965,
+      "pondId": "27ef008c31aec59f"
+    }
+  },
+  {
+    "index": 769,
+    "hash": "f6621a20fce58f705daa2a38e6379381ea83cf6118d7bcdf154c71e260fc5ebd",
+    "prev": "477602458a6e1d1ae617061005008fd8dda4824a851d022f9527a6774f0d00bf",
+    "payload": {
+      "index": 769,
+      "ts": "2026-10-18T09:23:28.130061Z",
+      "prev": "477602458a6e1d1ae617061005008fd8dda4824a851d022f9527a6774f0d00bf",
+      "entropy": "7c9b4cf8903b92549e160dac1746600d",
+      "sunAltitude": 28.0356,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971966,
+      "pondId": "27ef008c31aec59f"
+    }
+  },
+  {
+    "index": 770,
+    "hash": "9e09da20f3aa5177caf5985f5b7bd80413e604e15d9834df416f5dbd666f24ec",
+    "prev": "f6621a20fce58f705daa2a38e6379381ea83cf6118d7bcdf154c71e260fc5ebd",
+    "payload": {
+      "index": 770,
+      "ts": "2026-10-18T09:34:29.245198Z",
+      "prev": "f6621a20fce58f705daa2a38e6379381ea83cf6118d7bcdf154c71e260fc5ebd",
+      "entropy": "bd54743ad5a2dd22394c19009617fd6d",
+      "sunAltitude": 29.9973,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971968,
+      "pondId": "27ef008c31aec59f"
+    }
+  },
+  {
+    "index": 771,
+    "hash": "ddf67cbbb57be4073c0e5af2962454729e1d1c4de3f04172cc73e95d2301e8fd",
+    "prev": "9e09da20f3aa5177caf5985f5b7bd80413e604e15d9834df416f5dbd666f24ec",
+    "payload": {
+      "index": 771,
+      "ts": "2026-10-18T09:44:50.693278Z",
+      "prev": "9e09da20f3aa5177caf5985f5b7bd80413e604e15d9834df416f5dbd666f24ec",
+      "entropy": "9f3f749dd7946272e491c6970d163f5b",
+      "sunAltitude": 31.7922,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971970,
+      "pondId": "27ef008c31aec59f"
+    }
+  },
+  {
+    "index": 772,
+    "hash": "32bbcd56b3f3749595e64bae701f422c8f801e927e0b358b95c42d96dac42f8c",
+    "prev": "ddf67cbbb57be4073c0e5af2962454729e1d1c4de3f04172cc73e95d2301e8fd",
+    "payload": {
+      "index": 772,
+      "ts": "2026-10-18T09:55:08.807860Z",
+      "prev": "ddf67cbbb57be4073c0e5af2962454729e1d1c4de3f04172cc73e95d2301e8fd",
+      "entropy": "8afd7e67fa16f7f18ac492690167db2a",
+      "sunAltitude": 33.5275,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971971,
+      "pondId": "27ef008c31aec59f"
+    }
+  },
+  {
+    "index": 773,
+    "hash": "251d6e115a4c96e2416046ca2465cffce7693da09e3882c67e0caff7b17b8d79",
+    "prev": "32bbcd56b3f3749595e64bae701f422c8f801e927e0b358b95c42d96dac42f8c",
+    "payload": {
+      "index": 773,
+      "ts": "2026-10-18T10:05:30.576600Z",
+      "prev": "32bbcd56b3f3749595e64bae701f422c8f801e927e0b358b95c42d96dac42f8c",
+      "entropy": "ab22bbc8fc9c99ff201fedcbec01567a",
+      "sunAltitude": 35.2176,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971975,
+      "pondId": "27ef008c31aec59f"
+    }
+  },
+  {
+    "index": 774,
+    "hash": "7f18e267c7632cb7be185cc537af473f4d11f4b8ed18861331b1a6352373486d",
+    "prev": "251d6e115a4c96e2416046ca2465cffce7693da09e3882c67e0caff7b17b8d79",
+    "payload": {
+      "index": 774,
+      "ts": "2026-10-18T10:15:50.000930Z",
+      "prev": "251d6e115a4c96e2416046ca2465cffce7693da09e3882c67e0caff7b17b8d79",
+      "entropy": "a4eff335dbfa9c39f14bf27678aa4a1b",
+      "sunAltitude": 36.8403,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 971976,
+      "pondId": "27ef008c31aec59f"
+    }
   }
 ]
