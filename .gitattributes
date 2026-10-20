@@ -1,0 +1,6 @@
+*.md linguist-documentation=true
+*.json linguist-documentation=true
+*.sh linguist-vendored=true
+*.txt linguist-documentation=true
+package.json linguist-documentation=true
+LICENSE linguist-documentation=true

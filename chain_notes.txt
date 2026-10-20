@@ -1,0 +1,2 @@
+#1007 4.9h gap - daemon deadlock 2026-10-19 night - attested, not backfilled
+btc 972244->972279 (+35) sun -59.17->2.67 sunrise validated - chain honest

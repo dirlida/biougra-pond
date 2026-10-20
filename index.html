@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pond Embassy</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0e1114;color:#d7dde3;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;padding:16px;max-width:860px;margin:auto;line-height:1.5}
+h1{font-size:22px;margin:8px 0 2px;letter-spacing:0.04em;color:#fff}
+.sub{opacity:.55;font-size:12px;margin-bottom:18px}
+.card{background:#171b20;border:1px solid #242b33;border-radius:12px;padding:14px;margin:12px 0}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;background:#1f272f;border:1px solid #2a3440;font-size:11px;color:#9fb0c0}
+.ok{color:#5ee6a8;border-color:#2e4a3e}
+.mut{opacity:.5}
+pre{white-space:pre-wrap;word-break:break-word;margin:8px 0 0;font-size:12px;background:#0e1217;padding:10px;border-radius:8px;border:1px solid #1e262f;color:#c5d3df}
+#map{height:220px;border-radius:10px;background:#0e1217;filter:grayscale(0.2) brightness(0.9)}
+#shell{background:#090b0e;color:#cfe1ee;border-radius:8px;padding:10px;font-size:12px;height:320px;overflow:auto;border:1px solid #1e262f}
+#shellInput{width:100%;background:#090b0e;color:#cfe1ee;border:0;border-top:1px solid #1e262f;outline:none;padding:10px;font-family:inherit;font-size:12px;border-radius:0 0 8px 8px}
+a{color:#8bb6d9;text-decoration:none}
+h3{color:#e8eef4}
+</style>
+</head>
+<body>
+<h1>Pond Embassy</h1>
+<div class="sub">30.12, -9.37 | THE COUNT | UTC</div>
+
+<div class="card">
+<span class="badge ok" id="chainBadge">loading...</span> <span class="badge" id="countBadge">...</span>
+<pre id="verify">loading chain.json...</pre>
+</div>
+
+<div class="card">
+<div style="font-size:13px;color:#b8c5d1">
+Pond Embassy counts time. Every 10 minutes a new block. Each block holds UTC time, previous hash, hash. Origin at 30.12, -9.37 is symbolic.
+<br><br>
+Witness: Sun + BTC + Quantum Bell + SHA256. UTC is canonical.
+</div>
+</div>
+
+<div class="card"><h3 style="margin:0 0 8px;font-size:13px">Origin — 30.12, -9.37</h3><div id="map"></div><div class="mut" style="font-size:11px;margin-top:6px">Approximate. Symbolic only.</div></div>
+
+<div class="card">
+<h3 style="margin:0 0 8px;font-size:13px">Pond Shell</h3>
+<div id="shell"></div>
+<input id="shellInput" placeholder="$ help" autocomplete="off" spellcheck="false">
+</div>
+
+<div class="card">
+<h3 style="margin:0 0 8px;font-size:13px">Recent</h3>
+<pre id="last10"></pre>
+</div>
+
+<script>
+let chain=[];
+const shellEl=document.getElementById('shell');
+function logShell(t){ shellEl.innerText+=t+"\n"; shellEl.scrollTop=shellEl.scrollHeight; }
+function initShell(){ logShell("Pond Shell v1"); logShell("type help"); }
+function handleCmd(raw){
+ const cmd=raw.trim().toLowerCase();
+ if(!cmd) return;
+ logShell("$ "+raw);
+ if(cmd==="help"){ logShell("help | count | last | verify | block <n> | origin | time | clear"); return; }
+ if(cmd==="clear"){ shellEl.innerText=""; return; }
+ if(cmd==="count"){ logShell("blocks: "+chain.length); return; }
+ if(cmd==="last"){ let b=chain[chain.length-1]; logShell("#"+b.index+" "+(b.payload?.ts||b.ts)+" "+(b.hash||"").slice(0,16)); return; }
+ if(cmd==="verify"){ let ok=true; for(let i=1;i<chain.length;i++){ if(chain[i].prev!==chain[i-1].hash) ok=false; } logShell(ok?"VALID "+chain.length+" blocks":"BROKEN"); return; }
+ if(cmd.startsWith("block ")){ let n=parseInt(cmd.split(" ")[1]); let b=chain.find(x=>x.index===n); if(!b) logShell("not found"); else logShell(JSON.stringify(b,null,2).slice(0,800)); return; }
+ if(cmd==="origin"){ fetch("./ORIGIN.json?v="+Date.now()).then(r=>r.json()).then(j=>logShell(JSON.stringify(j,null,2))).catch(e=>logShell("err "+e)); return; }
+ if(cmd==="time"){ logShell("UTC now: "+new Date().toISOString()+" | last: "+(chain[chain.length-1]?.payload?.ts||"n/a")); return; }
+ logShell("unknown: "+cmd);
+}
+fetch("./chain.json?v="+Date.now()).then(r=>r.json()).then(c=>{
+ chain=c;
+ document.getElementById('countBadge').innerText=c.length+" blocks";
+ document.getElementById('chainBadge').innerText="VALID";
+ let last=c[c.length-1];
+ document.getElementById('verify').innerText="OK "+c.length+" blocks\nlast #"+last.index+" "+(last.payload?.ts||"")+"\nprev "+(last.prev||"").slice(0,12)+"...\nhash "+(last.hash||"").slice(0,12)+"...";
+ let tail=c.slice(-12).reverse().map(b=>"#"+String(b.index).padStart(3," ")+" "+(b.payload?.ts||"").padEnd(20," ")+" "+(b.hash||"").slice(0,10)).join("\n");
+ document.getElementById('last10').innerText=tail;
+ initShell();
+}).catch(e=>{ document.getElementById('verify').innerText="failed: "+e; });
+document.getElementById('shellInput').addEventListener('keydown',e=>{ if(e.key==="Enter"){ handleCmd(e.target.value); e.target.value=""; } });
+var map=L.map("map",{zoomControl:false}).setView([30.12,-9.37],11);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:15}).addTo(map);
+L.marker([30.12,-9.37]).addTo(map).bindPopup("Pond Embassy — 30.12, -9.37");
+</script>
+</body>
+</html>
