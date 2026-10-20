@@ -25,6 +25,7 @@ def sun_altitude(dt: datetime):
     return round(math.degrees(alt), 4)
 
 def get_btc_height():
+    # patched with fallback
     providers = [
         ("mempool.space US", "https://mempool.space/api/blocks/tip/height", lambda r: int(r.text.strip())),
         ("blockstream.info", "https://blockstream.info/api/blocks/tip/height", lambda r: int(r.text.strip())),
@@ -50,6 +51,12 @@ def get_btc_height():
             return last
     except: pass
     log("BTC all mirrors failed")
+    try:
+        import json
+        chain=json.loads(Path("chain.json").read_text())
+        last=chain[-1]['payload'].get('btcHeight')
+        if last: return last
+    except: pass
     return None
 
 def get_btc_anchor():
