@@ -1,24 +1,5 @@
 [
   {
-    "hash": "c06b4c60b6d0e9a8974d06245c65abbc44abe886836d76022eaa44e06b59123d",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "682bba82d2dbd0be2da30d07dff399006a51fb38344e2ed2da9c761185996302",
-      "ts": "2026-10-16T17:01:37.286433Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "682bba82d2dbd0be2da30d07dff399006a51fb38344e2ed2da9c761185996302"
-  },
-  {
     "hash": "17abaae25b74239f2dc23b9739c251bfcb9d0911459e4adaa968a7fc732e6c54",
     "payload": {
       "pond": "BIOUGRA POND",
@@ -8560,6 +8541,28 @@
       "ots_hash": "529574f2447a3e3df622799593546f82ed3f0d2e4d5f261b1b4538c73077fef8",
       "ots_time": "2026-10-20T11:25:36.770755Z",
       "ots_file": "529574f2447a3e3d.ots"
+    }
+  },
+  {
+    "index": 1031,
+    "hash": "40bdb5b62efecf74d0089dd992459a970f029c2d4b4e40371be098eb96a97010",
+    "prev": "af22fffe38e34e9db26ef0cc12c0cd1a2c2932b4f8285e63eec75f8547dc0176",
+    "payload": {
+      "index": 1031,
+      "ts": "2026-10-20T11:36:05.411991Z",
+      "prev": "af22fffe38e34e9db26ef0cc12c0cd1a2c2932b4f8285e63eec75f8547dc0176",
+      "entropy": "d74554ba998a390c46ea07e8ec14d3c3",
+      "sunAltitude": 45.9237,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972312,
+      "btc_anchor_hash": "000000000000000000018e0199ebfa293d5eabbc766f05d1d7d2265025911b8f",
+      "btc_anchor_height": "972312",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "563f19e4fab887dc0a246cc98b498be537e42e255d0ff6e80b0cf16fe2a473ff",
+      "ots_time": "2026-10-20T11:36:05.411991Z",
+      "ots_file": "563f19e4fab887dc.ots"
     }
   }
 ]
