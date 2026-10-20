@@ -146,7 +146,10 @@ def mine_and_save(ts_override=None):
             diff = (ts_dt - last_ts).total_seconds()
             if diff < 590:
                 log(f"TOO FAST {diff}s <590 - WAIT")
-                raise ValueError(f"too fast {diff}")
+                # patched - no raise
+                time.sleep(615 - diff)
+                ts_dt = __import__("datetime").datetime.now(__import__("datetime").timezone.utc)
+                ts = ts_dt.isoformat().replace("+00:00","Z")
         btc_h = get_btc_height()
         sun_alt = sun_altitude(ts_dt)
         btc_anchor_hash, btc_anchor_height = get_btc_anchor()
