@@ -1,556 +1,5 @@
 [
   {
-    "hash": "50f419719406f7d25500561c0b97713c5e691a24a47a947f7f12b5eb38abe924",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "5679d8fde4f6da4bc546086fa1802e275b6640437625db3b90aaeb0bfe310046",
-      "ts": "2026-10-16T13:03:56.675096Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "5679d8fde4f6da4bc546086fa1802e275b6640437625db3b90aaeb0bfe310046"
-  },
-  {
-    "hash": "b7a3c85035d33cecf1df959b8a454532b7af05342ad4d8b4b04a787fa6b0e4ba",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "50f419719406f7d25500561c0b97713c5e691a24a47a947f7f12b5eb38abe924",
-      "ts": "2026-10-16T13:13:27.120254Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "50f419719406f7d25500561c0b97713c5e691a24a47a947f7f12b5eb38abe924"
-  },
-  {
-    "hash": "dcf328abf5ecd0026ac167ede6dfaac2450cfa748254c4eb8e442d8bac6440fa",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "b7a3c85035d33cecf1df959b8a454532b7af05342ad4d8b4b04a787fa6b0e4ba",
-      "ts": "2026-10-16T13:22:57.549499Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "b7a3c85035d33cecf1df959b8a454532b7af05342ad4d8b4b04a787fa6b0e4ba"
-  },
-  {
-    "hash": "e7c820c3e3d6e2dcb7e57d45fa221de46aa570103975ffc72848ca070c1f0a3c",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "dcf328abf5ecd0026ac167ede6dfaac2450cfa748254c4eb8e442d8bac6440fa",
-      "ts": "2026-10-16T13:32:27.951742Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "dcf328abf5ecd0026ac167ede6dfaac2450cfa748254c4eb8e442d8bac6440fa"
-  },
-  {
-    "hash": "8364a3fef383ec64112a1b6c9d5d8319a5780bb35ed72c48e2373cd8dea9c96c",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "e7c820c3e3d6e2dcb7e57d45fa221de46aa570103975ffc72848ca070c1f0a3c",
-      "ts": "2026-10-16T13:41:58.337722Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "e7c820c3e3d6e2dcb7e57d45fa221de46aa570103975ffc72848ca070c1f0a3c"
-  },
-  {
-    "hash": "ac943bc737cc9ccaf1525ac953bef60d5b746085bb1c0f36d7cda0fb3b210cf3",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "8364a3fef383ec64112a1b6c9d5d8319a5780bb35ed72c48e2373cd8dea9c96c",
-      "ts": "2026-10-16T13:51:28.749893Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "8364a3fef383ec64112a1b6c9d5d8319a5780bb35ed72c48e2373cd8dea9c96c"
-  },
-  {
-    "hash": "352cf2adc854115d2dcf0d66afcaa8ddb503a0d0cb3f5f382ccd1b3098bedbbe",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "ac943bc737cc9ccaf1525ac953bef60d5b746085bb1c0f36d7cda0fb3b210cf3",
-      "ts": "2026-10-16T14:00:59.127245Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "ac943bc737cc9ccaf1525ac953bef60d5b746085bb1c0f36d7cda0fb3b210cf3"
-  },
-  {
-    "hash": "8c7ccdc407caa8f79fb982c4687719a1d013d8ed15e56ed5d12c21faaa4a169f",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "352cf2adc854115d2dcf0d66afcaa8ddb503a0d0cb3f5f382ccd1b3098bedbbe",
-      "ts": "2026-10-16T14:10:29.530989Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "352cf2adc854115d2dcf0d66afcaa8ddb503a0d0cb3f5f382ccd1b3098bedbbe"
-  },
-  {
-    "hash": "06b094ede5f6c1c8e147d62f39de41c14052f827fe3435f6263969089aed3a63",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "8c7ccdc407caa8f79fb982c4687719a1d013d8ed15e56ed5d12c21faaa4a169f",
-      "ts": "2026-10-16T14:19:59.896899Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "8c7ccdc407caa8f79fb982c4687719a1d013d8ed15e56ed5d12c21faaa4a169f"
-  },
-  {
-    "hash": "e1b5676fa7e5538130b65e7b4a1d4c3814933496f782b941bae6c17ebf0d8dad",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "06b094ede5f6c1c8e147d62f39de41c14052f827fe3435f6263969089aed3a63",
-      "ts": "2026-10-16T14:29:30.327452Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "06b094ede5f6c1c8e147d62f39de41c14052f827fe3435f6263969089aed3a63"
-  },
-  {
-    "hash": "98b7224bd62020d3658f1d68454943e17d83ea188b84c8a2b2110b7695d8522e",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "e1b5676fa7e5538130b65e7b4a1d4c3814933496f782b941bae6c17ebf0d8dad",
-      "ts": "2026-10-16T14:39:00.751745Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "e1b5676fa7e5538130b65e7b4a1d4c3814933496f782b941bae6c17ebf0d8dad"
-  },
-  {
-    "hash": "335d6eb7f3d21e9a25b4e7b2065350d534fa6f51e3e821f46550d7297943ab4c",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "98b7224bd62020d3658f1d68454943e17d83ea188b84c8a2b2110b7695d8522e",
-      "ts": "2026-10-16T14:48:31.242907Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "98b7224bd62020d3658f1d68454943e17d83ea188b84c8a2b2110b7695d8522e"
-  },
-  {
-    "hash": "be4dbe5b9d25056cb070696f3c95be12cb2dbb03c2b1dc9b36dd0453cdc75351",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "335d6eb7f3d21e9a25b4e7b2065350d534fa6f51e3e821f46550d7297943ab4c",
-      "ts": "2026-10-16T14:58:01.644461Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "335d6eb7f3d21e9a25b4e7b2065350d534fa6f51e3e821f46550d7297943ab4c"
-  },
-  {
-    "hash": "f4eb17ad57a62a1cc5fe530971f8d8e75e44fcf3542507e0b650d6d920e6f4e4",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "be4dbe5b9d25056cb070696f3c95be12cb2dbb03c2b1dc9b36dd0453cdc75351",
-      "ts": "2026-10-16T15:07:32.012195Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "be4dbe5b9d25056cb070696f3c95be12cb2dbb03c2b1dc9b36dd0453cdc75351"
-  },
-  {
-    "hash": "0e6583ab49875467f5cde1ccad7375b504be79ceb44fac5ce6317390d1c0b122",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "f4eb17ad57a62a1cc5fe530971f8d8e75e44fcf3542507e0b650d6d920e6f4e4",
-      "ts": "2026-10-16T15:17:02.478699Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "f4eb17ad57a62a1cc5fe530971f8d8e75e44fcf3542507e0b650d6d920e6f4e4"
-  },
-  {
-    "hash": "3a0ddd4638e636d58199c915d39889855d58bdf8489437082525387f3ee96e60",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "0e6583ab49875467f5cde1ccad7375b504be79ceb44fac5ce6317390d1c0b122",
-      "ts": "2026-10-16T15:26:32.921928Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "0e6583ab49875467f5cde1ccad7375b504be79ceb44fac5ce6317390d1c0b122"
-  },
-  {
-    "hash": "889c76b5671d6820ac3f653a08bb527af83bc75e3eb4e02fbc5a8cc729a3e03e",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "3a0ddd4638e636d58199c915d39889855d58bdf8489437082525387f3ee96e60",
-      "ts": "2026-10-16T15:36:03.333853Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "3a0ddd4638e636d58199c915d39889855d58bdf8489437082525387f3ee96e60"
-  },
-  {
-    "hash": "e2325cb9178d2deed981887b79b8b0b2af6c9cc975a257ca5db190751b768f81",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "889c76b5671d6820ac3f653a08bb527af83bc75e3eb4e02fbc5a8cc729a3e03e",
-      "ts": "2026-10-16T15:45:33.724183Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "889c76b5671d6820ac3f653a08bb527af83bc75e3eb4e02fbc5a8cc729a3e03e"
-  },
-  {
-    "hash": "e915f00d42d55c2fe8290bdd57a92c2e310006c62b3ecc77adfd286aa82c2dd0",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "e2325cb9178d2deed981887b79b8b0b2af6c9cc975a257ca5db190751b768f81",
-      "ts": "2026-10-16T15:55:04.167153Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "e2325cb9178d2deed981887b79b8b0b2af6c9cc975a257ca5db190751b768f81"
-  },
-  {
-    "hash": "a2dd059e7dd4b7b36d054859cb0fdae74b65c864e9fa6e95ea0c8ca843209530",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "e915f00d42d55c2fe8290bdd57a92c2e310006c62b3ecc77adfd286aa82c2dd0",
-      "ts": "2026-10-16T16:04:34.718805Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "e915f00d42d55c2fe8290bdd57a92c2e310006c62b3ecc77adfd286aa82c2dd0"
-  },
-  {
-    "hash": "dabb593e6e139b2c7f5a0eac9ad3d5b065466f1f7583b8d9ae3aa76465712e05",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "a2dd059e7dd4b7b36d054859cb0fdae74b65c864e9fa6e95ea0c8ca843209530",
-      "ts": "2026-10-16T16:14:05.164013Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "a2dd059e7dd4b7b36d054859cb0fdae74b65c864e9fa6e95ea0c8ca843209530"
-  },
-  {
-    "hash": "54f48032d9e45336c052cf75a774dc6aea2ca73d51c5b2fda1005f855032a69e",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "dabb593e6e139b2c7f5a0eac9ad3d5b065466f1f7583b8d9ae3aa76465712e05",
-      "ts": "2026-10-16T16:23:35.618965Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "dabb593e6e139b2c7f5a0eac9ad3d5b065466f1f7583b8d9ae3aa76465712e05"
-  },
-  {
-    "hash": "9ff688ca4cbe8c87bafa21831d7c7bde1423b6ebcb94a09b0fcfe9fafb29f0d4",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "54f48032d9e45336c052cf75a774dc6aea2ca73d51c5b2fda1005f855032a69e",
-      "ts": "2026-10-16T16:33:06.056920Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "54f48032d9e45336c052cf75a774dc6aea2ca73d51c5b2fda1005f855032a69e"
-  },
-  {
-    "hash": "4b931578069f4cadc95113c2882f13958b414b636b74bf549463a44643706ae7",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "9ff688ca4cbe8c87bafa21831d7c7bde1423b6ebcb94a09b0fcfe9fafb29f0d4",
-      "ts": "2026-10-16T16:42:36.468040Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "9ff688ca4cbe8c87bafa21831d7c7bde1423b6ebcb94a09b0fcfe9fafb29f0d4"
-  },
-  {
-    "hash": "682bba82d2dbd0be2da30d07dff399006a51fb38344e2ed2da9c761185996302",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "4b931578069f4cadc95113c2882f13958b414b636b74bf549463a44643706ae7",
-      "ts": "2026-10-16T16:52:06.876480Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "4b931578069f4cadc95113c2882f13958b414b636b74bf549463a44643706ae7"
-  },
-  {
-    "hash": "c06b4c60b6d0e9a8974d06245c65abbc44abe886836d76022eaa44e06b59123d",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "682bba82d2dbd0be2da30d07dff399006a51fb38344e2ed2da9c761185996302",
-      "ts": "2026-10-16T17:01:37.286433Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "682bba82d2dbd0be2da30d07dff399006a51fb38344e2ed2da9c761185996302"
-  },
-  {
-    "hash": "17abaae25b74239f2dc23b9739c251bfcb9d0911459e4adaa968a7fc732e6c54",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "c06b4c60b6d0e9a8974d06245c65abbc44abe886836d76022eaa44e06b59123d",
-      "ts": "2026-10-16T17:11:07.674579Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "c06b4c60b6d0e9a8974d06245c65abbc44abe886836d76022eaa44e06b59123d"
-  },
-  {
-    "hash": "b5172177ba50dc14c715eb7fe70e8fe79766d9d6b7d9d680ee4c8ee72ad5553a",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "17abaae25b74239f2dc23b9739c251bfcb9d0911459e4adaa968a7fc732e6c54",
-      "ts": "2026-10-16T17:20:38.063540Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "17abaae25b74239f2dc23b9739c251bfcb9d0911459e4adaa968a7fc732e6c54"
-  },
-  {
-    "hash": "2704244690d518ae995106079992772c4f04610c3e95f87eb079a7d3fb2c815f",
-    "payload": {
-      "pond": "BIOUGRA POND",
-      "cityMyth": "Marrakech",
-      "lab": "Biougra",
-      "gps": {
-        "lat": 30.126126126126128,
-        "lon": -9.37437367846481
-      },
-      "gpsStr": "30.12613,-9.37437",
-      "sun": "36.98",
-      "btcHeight": 969609,
-      "prev": "b5172177ba50dc14c715eb7fe70e8fe79766d9d6b7d9d680ee4c8ee72ad5553a",
-      "ts": "2026-10-16T17:30:08.438207Z",
-      "originTax": "1% LAW"
-    },
-    "prev": "b5172177ba50dc14c715eb7fe70e8fe79766d9d6b7d9d680ee4c8ee72ad5553a"
-  },
-  {
     "hash": "bb50b586e61ae1dce317901614e41942a8ee5869950f6c18f204c180537e2248",
     "payload": {
       "pond": "BIOUGRA POND",
@@ -8485,6 +7934,644 @@
       "ots_hash": "180259cfc38b3643a946d3ff7f5fe1fda6b2ae4711cbdd665fbfcf8b32488a7e",
       "ots_time": "2026-10-20T02:12:54.931526Z",
       "ots_file": "180259cfc38b3643.ots"
+    }
+  },
+  {
+    "index": 1006,
+    "hash": "1fddbbb5fc304f4ecd56dcee8f76afb85c5d2e03c682833426c5c24fae22f04f",
+    "prev": "46714e8f407e3b23908a4874b6b1fc101a13ebdf94d4a831c6b2f583e20e2d47",
+    "payload": {
+      "index": 1006,
+      "ts": "2026-10-20T02:23:02.359180Z",
+      "prev": "46714e8f407e3b23908a4874b6b1fc101a13ebdf94d4a831c6b2f583e20e2d47",
+      "entropy": "70f3d78a5f3137c4fd8aa2fe784e8913",
+      "sunAltitude": -59.1751,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972244,
+      "btc_anchor_hash": "00000000000000000001e1b206020714a18bf8e44a25829bd8080769f2aa1bc1",
+      "btc_anchor_height": "972244",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "92bd0642d7516f1f2ab7420f2fccefb894c54d83ae7affea4a7fcb63b4c26e9b",
+      "ots_time": "2026-10-20T02:23:02.359180Z",
+      "ots_file": "92bd0642d7516f1f.ots"
+    }
+  },
+  {
+    "index": 1007,
+    "hash": "487620f6a570d0e1a35bafabb1478e86d0e9bbc8b7adeee809ca7d6071426770",
+    "prev": "1fddbbb5fc304f4ecd56dcee8f76afb85c5d2e03c682833426c5c24fae22f04f",
+    "payload": {
+      "index": 1007,
+      "ts": "2026-10-20T02:33:09.926734Z",
+      "prev": "1fddbbb5fc304f4ecd56dcee8f76afb85c5d2e03c682833426c5c24fae22f04f",
+      "entropy": "59942f9a23f3c55c5aa0a340001d2144",
+      "sunAltitude": -57.2852,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972244,
+      "btc_anchor_hash": "00000000000000000001e1b206020714a18bf8e44a25829bd8080769f2aa1bc1",
+      "btc_anchor_height": "972244",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "f4e6042cdcefbb31fc47b201a4bf9968beaf3d8c726b3e5cbd867c907e96d127",
+      "ots_time": "2026-10-20T02:33:09.926734Z",
+      "ots_file": "f4e6042cdcefbb31.ots"
+    }
+  },
+  {
+    "index": 1008,
+    "hash": "0fdc8562313f619af43cde525e627a00351cfeadce4697a98464d2876281543e",
+    "prev": "487620f6a570d0e1a35bafabb1478e86d0e9bbc8b7adeee809ca7d6071426770",
+    "payload": {
+      "index": 1008,
+      "ts": "2026-10-20T02:43:16.764032Z",
+      "prev": "487620f6a570d0e1a35bafabb1478e86d0e9bbc8b7adeee809ca7d6071426770",
+      "entropy": "37c478592d1a44f4702be86f751c3e0e",
+      "sunAltitude": -55.3418,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972246,
+      "btc_anchor_hash": "00000000000000000000c56a68e1e73bbe4e5d39271116ccca3212b8e3123684",
+      "btc_anchor_height": "972246",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "cc2899aa7238ded32e5e458cfeba5eb3855d87a074d6443a6c3096d71ffe2e2d",
+      "ots_time": "2026-10-20T02:43:16.764032Z",
+      "ots_file": "cc2899aa7238ded3.ots"
+    }
+  },
+  {
+    "index": 1009,
+    "hash": "90f5304441b143fdd9cf807c0948b4325bf184bb1562a291919cfa829da824c6",
+    "prev": "0fdc8562313f619af43cde525e627a00351cfeadce4697a98464d2876281543e",
+    "payload": {
+      "index": 1009,
+      "ts": "2026-10-20T02:53:24.656272Z",
+      "prev": "0fdc8562313f619af43cde525e627a00351cfeadce4697a98464d2876281543e",
+      "entropy": "3911e3fcfafeb883d5c79ac5924938ba",
+      "sunAltitude": -53.3506,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972247,
+      "btc_anchor_hash": "00000000000000000001299a0ca39e0afb749b9284061709693ee237c6cc5b30",
+      "btc_anchor_height": "972247",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "67060471c00af21ef1e2a92b06ed496c12b7bfc7ab8035841ad4a542e130f46e",
+      "ots_time": "2026-10-20T02:53:24.656272Z",
+      "ots_file": "67060471c00af21e.ots"
+    }
+  },
+  {
+    "index": 1010,
+    "hash": "ea7ef17bf73744d03f634583c0d5ee5f68abc3bcfe2a7b20a8220ea19ea5565f",
+    "prev": "90f5304441b143fdd9cf807c0948b4325bf184bb1562a291919cfa829da824c6",
+    "payload": {
+      "index": 1010,
+      "ts": "2026-10-20T03:03:32.542070Z",
+      "prev": "90f5304441b143fdd9cf807c0948b4325bf184bb1562a291919cfa829da824c6",
+      "entropy": "0be9a89824069403964b68c160b4569c",
+      "sunAltitude": -51.3222,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972249,
+      "btc_anchor_hash": "0000000000000000000024ad12cf86fabfdac7a6cbe1c070c6fa65a1bcac080d",
+      "btc_anchor_height": "972249",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "c31e743a1f8265fc473155f2fc4110759308720b105b7e1f24464e5666518f99",
+      "ots_time": "2026-10-20T03:03:32.542070Z",
+      "ots_file": "c31e743a1f8265fc.ots"
+    }
+  },
+  {
+    "index": 1011,
+    "hash": "67be8df4a86cc5fddb8b1e4c9d6e9c9681c84daec6ecab77dd8f63f195bd6e5d",
+    "prev": "ea7ef17bf73744d03f634583c0d5ee5f68abc3bcfe2a7b20a8220ea19ea5565f",
+    "payload": {
+      "index": 1011,
+      "ts": "2026-10-20T03:13:48.877751Z",
+      "prev": "ea7ef17bf73744d03f634583c0d5ee5f68abc3bcfe2a7b20a8220ea19ea5565f",
+      "entropy": "47ad9725b54651be3d9aa3398312aab7",
+      "sunAltitude": -49.2355,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972250,
+      "btc_anchor_hash": "000000000000000000014252b215a2a492b1beb5093b818b87ed4e0e4caecbc3",
+      "btc_anchor_height": "972250",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "c42faed6c521ea012078cef97ad49a66ec16d486899b405d6c5614765f0fc2c3",
+      "ots_time": "2026-10-20T03:13:48.877751Z",
+      "ots_file": "c42faed6c521ea01.ots"
+    }
+  },
+  {
+    "index": 1012,
+    "hash": "8bd0d98835ad99625545f04a4f082b161b3cb7487234fc59c10cf2f36bdd4046",
+    "prev": "67be8df4a86cc5fddb8b1e4c9d6e9c9681c84daec6ecab77dd8f63f195bd6e5d",
+    "payload": {
+      "index": 1012,
+      "ts": "2026-10-20T03:24:05.865830Z",
+      "prev": "67be8df4a86cc5fddb8b1e4c9d6e9c9681c84daec6ecab77dd8f63f195bd6e5d",
+      "entropy": "471dda4e662c5bc27e5002f4957ef76f",
+      "sunAltitude": -47.1187,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972251,
+      "btc_anchor_hash": "0000000000000000000086415853c8ad3426118653b976c5ca094b4965a267da",
+      "btc_anchor_height": "972251",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "7b688f97748bdc28fd755437753a1bc9cd1d3103e726561d2bed44299badd25b",
+      "ots_time": "2026-10-20T03:24:05.865830Z",
+      "ots_file": "7b688f97748bdc28.ots"
+    }
+  },
+  {
+    "index": 1013,
+    "hash": "fabea3c705eee661c9f235c1c5da94570966f228225a3e0b2a0186f5964ca328",
+    "prev": "8bd0d98835ad99625545f04a4f082b161b3cb7487234fc59c10cf2f36bdd4046",
+    "payload": {
+      "index": 1013,
+      "ts": "2026-10-20T03:34:22.854830Z",
+      "prev": "8bd0d98835ad99625545f04a4f082b161b3cb7487234fc59c10cf2f36bdd4046",
+      "entropy": "dd6bc8685f1430ba024db481ed426121",
+      "sunAltitude": -44.9795,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972252,
+      "btc_anchor_hash": "000000000000000000016cb75b843dbb072fca2c60e276e419037de11f16facf",
+      "btc_anchor_height": "972252",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "9e10ecc572a37264ed8c92340acadba7dbda96918df65dad3b221148c3379059",
+      "ots_time": "2026-10-20T03:34:22.854830Z",
+      "ots_file": "9e10ecc572a37264.ots"
+    }
+  },
+  {
+    "index": 1014,
+    "hash": "99f82060e3da8e34b12b4401223bc03fc9a34ea0ef2ee261aefdf1988a24dd3e",
+    "prev": "fabea3c705eee661c9f235c1c5da94570966f228225a3e0b2a0186f5964ca328",
+    "payload": {
+      "index": 1014,
+      "ts": "2026-10-20T03:44:39.332533Z",
+      "prev": "fabea3c705eee661c9f235c1c5da94570966f228225a3e0b2a0186f5964ca328",
+      "entropy": "82a49f6ad53f6d7c5c72a799a19ec5f3",
+      "sunAltitude": -42.8218,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972254,
+      "btc_anchor_hash": "0000000000000000000012cc128fc4799f26464b050d757070ecf793f8c93abc",
+      "btc_anchor_height": "972254",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "a1b36d1f6bc85f76f422a4a6f07b8022b1e788abcb7b198cb6e4ea8a070114b4",
+      "ots_time": "2026-10-20T03:44:39.332533Z",
+      "ots_file": "a1b36d1f6bc85f76.ots"
+    }
+  },
+  {
+    "index": 1015,
+    "hash": "09bff36480328efef298df71f9401a59162378c2c20d4c7de2cefe0af54902b1",
+    "prev": "99f82060e3da8e34b12b4401223bc03fc9a34ea0ef2ee261aefdf1988a24dd3e",
+    "payload": {
+      "index": 1015,
+      "ts": "2026-10-20T03:54:56.350474Z",
+      "prev": "99f82060e3da8e34b12b4401223bc03fc9a34ea0ef2ee261aefdf1988a24dd3e",
+      "entropy": "02a786e1aeef06d651a486c28e2e8b91",
+      "sunAltitude": -40.6487,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972254,
+      "btc_anchor_hash": "0000000000000000000012cc128fc4799f26464b050d757070ecf793f8c93abc",
+      "btc_anchor_height": "972254",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "135692beb72c4c33eb6a1399015de4710f5e449983e9b975e1d93c508e0aa079",
+      "ots_time": "2026-10-20T03:54:56.350474Z",
+      "ots_file": "135692beb72c4c33.ots"
+    }
+  },
+  {
+    "index": 1016,
+    "hash": "4854e7ecebea40c45bd8eb236588a104276f5e759cadb339e44b2a4017971c21",
+    "prev": "09bff36480328efef298df71f9401a59162378c2c20d4c7de2cefe0af54902b1",
+    "payload": {
+      "index": 1016,
+      "ts": "2026-10-20T04:05:12.993217Z",
+      "prev": "09bff36480328efef298df71f9401a59162378c2c20d4c7de2cefe0af54902b1",
+      "entropy": "c7505eb89c14813d35a912ce5f7257c9",
+      "sunAltitude": -38.4663,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972255,
+      "btc_anchor_hash": "00000000000000000000f98764fbb947bd5256008725a21a4be12c41cd095f8e",
+      "btc_anchor_height": "972255",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "88f79bc22e1db0a9c46a0723ac3af5485a20c9440832ae88deeb0d4cb587aa60",
+      "ots_time": "2026-10-20T04:05:12.993217Z",
+      "ots_file": "88f79bc22e1db0a9.ots"
+    }
+  },
+  {
+    "index": 1017,
+    "hash": "87859f38c81848ea1a7ffcd592fc2c43f1a1e4308d95fb4569aa48db4521b387",
+    "prev": "4854e7ecebea40c45bd8eb236588a104276f5e759cadb339e44b2a4017971c21",
+    "payload": {
+      "index": 1017,
+      "ts": "2026-10-20T04:15:21.062026Z",
+      "prev": "4854e7ecebea40c45bd8eb236588a104276f5e759cadb339e44b2a4017971c21",
+      "entropy": "fe11903ce66c31d9128399e96a1a7738",
+      "sunAltitude": -36.2984,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972255,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "9141d211f2a4b7dfdf6cac485bf8a1b24aa7944a99c72903eb134bb866a001be",
+      "ots_time": "2026-10-20T04:15:21.062026Z",
+      "ots_file": "9141d211f2a4b7df.ots"
+    }
+  },
+  {
+    "index": 1018,
+    "hash": "54be0cb0104561716a4812ebc422b34c538939a0cc13e7343387ebace0fa5564",
+    "prev": "87859f38c81848ea1a7ffcd592fc2c43f1a1e4308d95fb4569aa48db4521b387",
+    "payload": {
+      "index": 1018,
+      "ts": "2026-10-20T04:25:36.698369Z",
+      "prev": "87859f38c81848ea1a7ffcd592fc2c43f1a1e4308d95fb4569aa48db4521b387",
+      "entropy": "8ea2c3013d9f4ee4a0afa14da90469a0",
+      "sunAltitude": -34.1009,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972260,
+      "btc_anchor_hash": "00000000000000000001461f08250791a37ccf69a13f62439c6748ee4c3940d6",
+      "btc_anchor_height": "972260",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "221e68eb7ca681eebea1e540794360d49b18c8d9bf8df4a842ef5cd44f6b886f",
+      "ots_time": "2026-10-20T04:25:36.698369Z",
+      "ots_file": "221e68eb7ca681ee.ots"
+    }
+  },
+  {
+    "index": 1019,
+    "hash": "c8449645ac114e07c150216891701fd5b585178c1ab007494da04f2dbe7aabd8",
+    "prev": "54be0cb0104561716a4812ebc422b34c538939a0cc13e7343387ebace0fa5564",
+    "payload": {
+      "index": 1019,
+      "ts": "2026-10-20T04:35:43.479939Z",
+      "prev": "54be0cb0104561716a4812ebc422b34c538939a0cc13e7343387ebace0fa5564",
+      "entropy": "1061af169fc943ee9bd5f6ece8976f8d",
+      "sunAltitude": -31.9254,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972261,
+      "btc_anchor_hash": "0000000000000000000129da6d8ea843e78d589c38a8a8f2956d3bf04d2e76ce",
+      "btc_anchor_height": "972261",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "c6199616ca411a80297fc0bb7fc65fd3972ddffdbd7b5f02a92707013b15b423",
+      "ots_time": "2026-10-20T04:35:43.479939Z",
+      "ots_file": "c6199616ca411a80.ots"
+    }
+  },
+  {
+    "index": 1020,
+    "hash": "e1b3fd74725e5c25f89843dc946df92bfc6232368ffc2da582ba4eb7df5e58b8",
+    "prev": "c8449645ac114e07c150216891701fd5b585178c1ab007494da04f2dbe7aabd8",
+    "payload": {
+      "index": 1020,
+      "ts": "2026-10-20T04:45:50.364371Z",
+      "prev": "c8449645ac114e07c150216891701fd5b585178c1ab007494da04f2dbe7aabd8",
+      "entropy": "505b55fff2e52732630685a84557ee1d",
+      "sunAltitude": -29.745,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972262,
+      "btc_anchor_hash": "000000000000000000008903601a1d77bb76314892bf307eac92ac5558bd5a27",
+      "btc_anchor_height": "972262",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "5f0abdf286018187970de8db0294632cd61e404b93321b53d28747dcad41492d",
+      "ots_time": "2026-10-20T04:45:50.364371Z",
+      "ots_file": "5f0abdf286018187.ots"
+    }
+  },
+  {
+    "index": 1021,
+    "hash": "79b7b52ed0739450bca3af463ac9a45f34c85aaf3d4303ac73eca755a8a9b821",
+    "prev": "e1b3fd74725e5c25f89843dc946df92bfc6232368ffc2da582ba4eb7df5e58b8",
+    "payload": {
+      "index": 1021,
+      "ts": "2026-10-20T04:55:56.877946Z",
+      "prev": "e1b3fd74725e5c25f89843dc946df92bfc6232368ffc2da582ba4eb7df5e58b8",
+      "entropy": "b35469aec132b910cf197ba986817808",
+      "sunAltitude": -27.5646,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972262,
+      "btc_anchor_hash": "000000000000000000008903601a1d77bb76314892bf307eac92ac5558bd5a27",
+      "btc_anchor_height": "972262",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "585e180307fc6156104f58de052746b8546464516027e07d8832666727a001b1",
+      "ots_time": "2026-10-20T04:55:56.877946Z",
+      "ots_file": "585e180307fc6156.ots"
+    }
+  },
+  {
+    "index": 1022,
+    "hash": "a464710b3d881b09f96afce0b94265c94185c19accd4a2a7b362091292be774c",
+    "prev": "79b7b52ed0739450bca3af463ac9a45f34c85aaf3d4303ac73eca755a8a9b821",
+    "payload": {
+      "index": 1022,
+      "ts": "2026-10-20T05:06:03.360824Z",
+      "prev": "79b7b52ed0739450bca3af463ac9a45f34c85aaf3d4303ac73eca755a8a9b821",
+      "entropy": "a1527404c2004deee5e824ab0d1b8889",
+      "sunAltitude": -25.3784,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972262,
+      "btc_anchor_hash": "000000000000000000008903601a1d77bb76314892bf307eac92ac5558bd5a27",
+      "btc_anchor_height": "972262",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "bdcaccfee9c4b07975f163b0e144a5c4f94f2a15051cb662feb2c1b99910d3ad",
+      "ots_time": "2026-10-20T05:06:03.360824Z",
+      "ots_file": "bdcaccfee9c4b079.ots"
+    }
+  },
+  {
+    "index": 1023,
+    "hash": "0bb14b4b9c1dcf4108376b8bfdd03fea7e948f7772bce4e98f7dac513d45af4f",
+    "prev": "a464710b3d881b09f96afce0b94265c94185c19accd4a2a7b362091292be774c",
+    "payload": {
+      "index": 1023,
+      "ts": "2026-10-20T05:16:10.045587Z",
+      "prev": "a464710b3d881b09f96afce0b94265c94185c19accd4a2a7b362091292be774c",
+      "entropy": "7b2a869a1cad45e89b32a37be59885b4",
+      "sunAltitude": -23.191,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972265,
+      "btc_anchor_hash": "00000000000000000001d202bb9c8a948704b4b54425dcd5372ffaeab955d9a0",
+      "btc_anchor_height": "972265",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "9391323456a3f6aa53f514f1df6367dcf9e43247da04716eae663b11574b107a",
+      "ots_time": "2026-10-20T05:16:10.045587Z",
+      "ots_file": "9391323456a3f6aa.ots"
+    }
+  },
+  {
+    "index": 1024,
+    "hash": "991e36a7586b939d8b694805be506fb1904996553d1ea2ae05fcbe045729c0af",
+    "prev": "0bb14b4b9c1dcf4108376b8bfdd03fea7e948f7772bce4e98f7dac513d45af4f",
+    "payload": {
+      "index": 1024,
+      "ts": "2026-10-20T05:26:18.983659Z",
+      "prev": "0bb14b4b9c1dcf4108376b8bfdd03fea7e948f7772bce4e98f7dac513d45af4f",
+      "entropy": "6149823936afd2d96591821919236227",
+      "sunAltitude": -21.0001,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972267,
+      "btc_anchor_hash": "00000000000000000001f4fd06158c5c06cff88cd615c09815fd3cec4bd231a5",
+      "btc_anchor_height": "972267",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "39db03e5e85139bef5f0eedf085b21dae4f0df301d0e12e6d25c96cd858a2965",
+      "ots_time": "2026-10-20T05:26:18.983659Z",
+      "ots_file": "39db03e5e85139be.ots"
+    }
+  },
+  {
+    "index": 1025,
+    "hash": "5bfdf41178f16af8d6be7cb056b167c67031a1ec971d7d986d86c1851c5696ff",
+    "prev": "991e36a7586b939d8b694805be506fb1904996553d1ea2ae05fcbe045729c0af",
+    "payload": {
+      "index": 1025,
+      "ts": "2026-10-20T05:36:26.158294Z",
+      "prev": "991e36a7586b939d8b694805be506fb1904996553d1ea2ae05fcbe045729c0af",
+      "entropy": "2b52db3901ffe670740fd64ce53e0c65",
+      "sunAltitude": -18.8102,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972267,
+      "btc_anchor_hash": "00000000000000000001f4fd06158c5c06cff88cd615c09815fd3cec4bd231a5",
+      "btc_anchor_height": "972267",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "bd15a4004a892e1ca55cb8a9c5f057a3c335512f2e0f280807ad636de198af8e",
+      "ots_time": "2026-10-20T05:36:26.158294Z",
+      "ots_file": "bd15a4004a892e1c.ots"
+    }
+  },
+  {
+    "index": 1026,
+    "hash": "f7922d38eadeb5f423576806fafe14b3266580b87acb785d03ed8b35bf4c76e7",
+    "prev": "5bfdf41178f16af8d6be7cb056b167c67031a1ec971d7d986d86c1851c5696ff",
+    "payload": {
+      "index": 1026,
+      "ts": "2026-10-20T05:46:33.214405Z",
+      "prev": "5bfdf41178f16af8d6be7cb056b167c67031a1ec971d7d986d86c1851c5696ff",
+      "entropy": "f847a38972f16c5e28085b70bd5fccac",
+      "sunAltitude": -16.6259,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972269,
+      "btc_anchor_hash": "0000000000000000000065183876895c25e50d15bc9f81a1a7ed70527ff5d0ae",
+      "btc_anchor_height": "972269",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "e55fadfd5fc0e2f7c8a3450963b7ceee46b99b65c910dda397144b0fac9f5a37",
+      "ots_time": "2026-10-20T05:46:33.214405Z",
+      "ots_file": "e55fadfd5fc0e2f7.ots"
+    }
+  },
+  {
+    "index": 1027,
+    "hash": "ddfb0f5aede7f182f103ec3062442657412b8a087681f6ce608e3bf70bc3d9e3",
+    "prev": "f7922d38eadeb5f423576806fafe14b3266580b87acb785d03ed8b35bf4c76e7",
+    "payload": {
+      "index": 1027,
+      "ts": "2026-10-20T05:56:40.740549Z",
+      "prev": "f7922d38eadeb5f423576806fafe14b3266580b87acb785d03ed8b35bf4c76e7",
+      "entropy": "93c12d2b44a9e92d2c2ddc382b0f6161",
+      "sunAltitude": -14.4447,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972269,
+      "btc_anchor_hash": "0000000000000000000065183876895c25e50d15bc9f81a1a7ed70527ff5d0ae",
+      "btc_anchor_height": "972269",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "c3070f01a8a37224e1e1f24192c0d92ce36d713cb5853e3ec92bb694e3d3df72",
+      "ots_time": "2026-10-20T05:56:40.740549Z",
+      "ots_file": "c3070f01a8a37224.ots"
+    }
+  },
+  {
+    "index": 1028,
+    "hash": "7de7787601bfe8d7489d19801a4f11d3dd6eb2224310a4a0f37b8ad2a002bdb1",
+    "prev": "ddfb0f5aede7f182f103ec3062442657412b8a087681f6ce608e3bf70bc3d9e3",
+    "payload": {
+      "index": 1028,
+      "ts": "2026-10-20T06:06:47.764182Z",
+      "prev": "ddfb0f5aede7f182f103ec3062442657412b8a087681f6ce608e3bf70bc3d9e3",
+      "entropy": "a673d69d35a5fa9a7ee685973306d817",
+      "sunAltitude": -12.2676,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972272,
+      "btc_anchor_hash": "000000000000000000010c435f8763301b9e662e131d4aa4093a7b59ccc02c9f",
+      "btc_anchor_height": "972272",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "a274cc4804b468fb533a72afc61efcc30526c1a2eca7d876c49c43103336d434",
+      "ots_time": "2026-10-20T06:06:47.764182Z",
+      "ots_file": "a274cc4804b468fb.ots"
+    }
+  },
+  {
+    "index": 1029,
+    "hash": "7c9e73a99a39f2386fecb69865b6f4f66421a86a1963ac8617f5be4458ffcbb0",
+    "prev": "7de7787601bfe8d7489d19801a4f11d3dd6eb2224310a4a0f37b8ad2a002bdb1",
+    "payload": {
+      "index": 1029,
+      "ts": "2026-10-20T06:16:55.673049Z",
+      "prev": "7de7787601bfe8d7489d19801a4f11d3dd6eb2224310a4a0f37b8ad2a002bdb1",
+      "entropy": "c3d8529dc80af1545c18c0bbb5341023",
+      "sunAltitude": -10.0918,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972274,
+      "btc_anchor_hash": "00000000000000000001af44ce60b0bcad5b822b12a825d9a0668c0899793317",
+      "btc_anchor_height": "972274",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "03c8cabd34c5ae86712dc64946450f5f033909ecb5e326886f10c09e45056c07",
+      "ots_time": "2026-10-20T06:16:55.673049Z",
+      "ots_file": "03c8cabd34c5ae86.ots"
+    }
+  },
+  {
+    "index": 1030,
+    "hash": "a61ff66eb6af95bf082056569d93c370ab4c216d26acf4d372e7f462f5bcd14c",
+    "prev": "7c9e73a99a39f2386fecb69865b6f4f66421a86a1963ac8617f5be4458ffcbb0",
+    "payload": {
+      "index": 1030,
+      "ts": "2026-10-20T06:27:04.651833Z",
+      "prev": "7c9e73a99a39f2386fecb69865b6f4f66421a86a1963ac8617f5be4458ffcbb0",
+      "entropy": "31dda6e32a54babd193900d31a22d9b2",
+      "sunAltitude": -7.9186,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972275,
+      "btc_anchor_hash": "00000000000000000001fbc4e1fe7d03693d5ce5c00603180ee1b8bb22f99fd3",
+      "btc_anchor_height": "972275",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "5c6a5fadf3dc044599df409298136e1d611cd056c49274f19fff2f61af892bb4",
+      "ots_time": "2026-10-20T06:27:04.651833Z",
+      "ots_file": "5c6a5fadf3dc0445.ots"
+    }
+  },
+  {
+    "index": 1031,
+    "hash": "b0b185a350270c3611d5545d91a0184b0f81a56e7670627e2aa5e33c2f5549fe",
+    "prev": "a61ff66eb6af95bf082056569d93c370ab4c216d26acf4d372e7f462f5bcd14c",
+    "payload": {
+      "index": 1031,
+      "ts": "2026-10-20T06:37:17.630973Z",
+      "prev": "a61ff66eb6af95bf082056569d93c370ab4c216d26acf4d372e7f462f5bcd14c",
+      "entropy": "38042cc4d2c14053006dd88b943d3907",
+      "sunAltitude": -5.7382,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972277,
+      "btc_anchor_hash": "000000000000000000004caf799d60e17489f12dcdef9376a0b8d309e6f56724",
+      "btc_anchor_height": "972277",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "15bf1d3147cdcb2392bf21f3897e6e069045c77e53e1a474edc946181bee4383",
+      "ots_time": "2026-10-20T06:37:17.630973Z",
+      "ots_file": "15bf1d3147cdcb23.ots"
+    }
+  },
+  {
+    "index": 1032,
+    "hash": "3a6702eeedddc905bdbd5ae8e4594a46a96addbbba2306ab1490d9ce91f3af3a",
+    "prev": "b0b185a350270c3611d5545d91a0184b0f81a56e7670627e2aa5e33c2f5549fe",
+    "payload": {
+      "index": 1032,
+      "ts": "2026-10-20T06:47:31.800872Z",
+      "prev": "b0b185a350270c3611d5545d91a0184b0f81a56e7670627e2aa5e33c2f5549fe",
+      "entropy": "62ab1561a05f27c0d6cf10928373d998",
+      "sunAltitude": -3.5624,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972277,
+      "btc_anchor_hash": "000000000000000000004caf799d60e17489f12dcdef9376a0b8d309e6f56724",
+      "btc_anchor_height": "972277",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "2375c003205a442f90deb6157529318601d09a517095c9fed8e0808fd8596da9",
+      "ots_time": "2026-10-20T06:47:31.800872Z",
+      "ots_file": "2375c003205a442f.ots"
+    }
+  },
+  {
+    "index": 1033,
+    "hash": "38adf938be196a809d733d26dd8c3172a03b77962efd48a4167b9497784d7f2a",
+    "prev": "3a6702eeedddc905bdbd5ae8e4594a46a96addbbba2306ab1490d9ce91f3af3a",
+    "payload": {
+      "index": 1033,
+      "ts": "2026-10-20T06:57:39.687659Z",
+      "prev": "3a6702eeedddc905bdbd5ae8e4594a46a96addbbba2306ab1490d9ce91f3af3a",
+      "entropy": "ae034db26cbf1da0167e12c5d3b04632",
+      "sunAltitude": -1.4172,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972278,
+      "btc_anchor_hash": "00000000000000000001a92fe1d6031506560b6c39bd425e0d257d29d07056f7",
+      "btc_anchor_height": "972278",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "e8815575db6fa490435c7a0144d2ef72ed95b4fdc9c5d755eee69c924e509583",
+      "ots_time": "2026-10-20T06:57:39.687659Z",
+      "ots_file": "e8815575db6fa490.ots"
+    }
+  },
+  {
+    "index": 1034,
+    "hash": "383bdbf2e3abb8555ad41e5a621f77b9cccacc6176537f8543013342f33ca375",
+    "prev": "38adf938be196a809d733d26dd8c3172a03b77962efd48a4167b9497784d7f2a",
+    "payload": {
+      "index": 1034,
+      "ts": "2026-10-20T07:07:56.231146Z",
+      "prev": "38adf938be196a809d733d26dd8c3172a03b77962efd48a4167b9497784d7f2a",
+      "entropy": "4dcf779ae4173fb7c2db8aec3753ceb3",
+      "sunAltitude": 0.7493,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972279,
+      "btc_anchor_hash": "00000000000000000001adb68cf08bed3680a459fb53a2237ddfe2c74c7f2487",
+      "btc_anchor_height": "972279",
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "d16c72bb65076b1cb8642dc4cb1ff3c399475b9dee74e16a10d9c9bb481758c7",
+      "ots_time": "2026-10-20T07:07:56.231146Z",
+      "ots_file": "d16c72bb65076b1c.ots"
     }
   }
 ]
