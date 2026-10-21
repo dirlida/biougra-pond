@@ -16798,5 +16798,27 @@
       "ots_time": "2026-10-21T01:32:10.895799Z",
       "ots_file": "9b052d9c1f34239b.ots"
     }
+  },
+  {
+    "index": 1106,
+    "hash": "51d0c5531ac20afbc6a71fdcd2cf9be6cd144311d450fae0372c675c45cba121",
+    "prev": "6f31e3709f7f0110141cb5a385349e1cc41909852e1d6a6a49396932af55c242",
+    "payload": {
+      "index": 1106,
+      "ts": "2026-10-21T01:44:11.956701Z",
+      "prev": "6f31e3709f7f0110141cb5a385349e1cc41909852e1d6a6a49396932af55c242",
+      "entropy": "3823d48b294ccc2e4c3179cb4c05a927",
+      "sunAltitude": -65.9806,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972385,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "3ae9169bac125e61378f629d66a9dae1d28f7dcb014d6700c8210543719b544c",
+      "ots_time": "2026-10-21T01:44:11.956701Z",
+      "ots_file": "3ae9169bac125e61.ots"
+    }
   }
 ]
