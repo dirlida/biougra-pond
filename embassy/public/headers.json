@@ -1,35 +1,5 @@
 [
   {
-    "index": 845,
-    "hash": "e0db61cd2bc0f4627fc3e40490b913b9ca664bddd0b9b3643f4ea872c37b7334",
-    "prev": "4c242e55ab5f95908c8f95d20df038ab1538f973bdceaf4ff22ecf1078b223de",
-    "nonce": 0,
-    "difficulty": 0,
-    "merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
-    "ts": "2026-10-18T22:44:09.818117Z",
-    "btcHeight": 972068
-  },
-  {
-    "index": 846,
-    "hash": "bfdb2c8481531aa56d7c38a357a906dbec57e9542e1a45265a6b40e89118c34f",
-    "prev": "e0db61cd2bc0f4627fc3e40490b913b9ca664bddd0b9b3643f4ea872c37b7334",
-    "nonce": 0,
-    "difficulty": 0,
-    "merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
-    "ts": "2026-10-18T22:54:26.749528Z",
-    "btcHeight": 972069
-  },
-  {
-    "index": 847,
-    "hash": "2a1830beb504bdd62471057d0eea9fe13198a8a22876c967007a2f83f542dc28",
-    "prev": "bfdb2c8481531aa56d7c38a357a906dbec57e9542e1a45265a6b40e89118c34f",
-    "nonce": 0,
-    "difficulty": 0,
-    "merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
-    "ts": "2026-10-18T23:04:49.338519Z",
-    "btcHeight": 972070
-  },
-  {
     "index": 848,
     "hash": "afa6db480a19c5053d4e7c1471bbdf8c9ab4f6d6883335bf23b117027eedf9a2",
     "prev": "2a1830beb504bdd62471057d0eea9fe13198a8a22876c967007a2f83f542dc28",
@@ -4997,6 +4967,36 @@
     "difficulty": 3,
     "merkle_root": "f78aca8cad4f757d108380b45988752ac619a132159ecbe0fb7c7910252a87a8",
     "ts": "2026-10-22T19:14:19.001169+00:00",
+    "btcHeight": 972583
+  },
+  {
+    "index": 1345,
+    "hash": "000265abea43e69e836d0349ce0ebd2c304794b267d5c5fd464b380cb801b08f",
+    "prev": "00078cadfb34bc1959748a903da53f75b8ec1d274d224ae8e2fe474fe08eb7a1",
+    "nonce": 2457,
+    "difficulty": 3,
+    "merkle_root": "6ce904cb0f65c2af476cae8b2790bc377063adb925dd3de358c317f8eb9feb6c",
+    "ts": "2026-10-22T19:24:19.235380+00:00",
+    "btcHeight": 972583
+  },
+  {
+    "index": 1346,
+    "hash": "000400f106d19e66f95c7ea6e32edf63d7a2c8a42aa7011702518b8a841502e8",
+    "prev": "000265abea43e69e836d0349ce0ebd2c304794b267d5c5fd464b380cb801b08f",
+    "nonce": 5228,
+    "difficulty": 3,
+    "merkle_root": "b4a5ec8c3dfe89265e9a17bc6f84e3cc464e6734b8a473158d571063f5a46f1f",
+    "ts": "2026-10-22T19:34:19.487821+00:00",
+    "btcHeight": 972583
+  },
+  {
+    "index": 1347,
+    "hash": "000142beef657c06855d400a3eaaef01a0c48805b16181c6a877297a7d9e3f1b",
+    "prev": "000400f106d19e66f95c7ea6e32edf63d7a2c8a42aa7011702518b8a841502e8",
+    "nonce": 7448,
+    "difficulty": 3,
+    "merkle_root": "77e4a6c3a3b10ad87c8408359161a35887cbe8901d564cab7d3c002c2da45843",
+    "ts": "2026-10-22T19:44:19.805766+00:00",
     "btcHeight": 972583
   }
 ]

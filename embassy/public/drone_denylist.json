@@ -1,0 +1,10 @@
+{
+  "version": "0.1-public",
+  "legal": "PASSIVE_NOTARY_ONLY",
+  "note": "Hashes from public HUR reports, no raw intel",
+  "denylist": [
+    {"name": "S-71M_Monochrome_Jetson", "sha256": "hur_public_s71m_2025_08_12", "source": "HUR War&Sanctions portal"},
+    {"name": "V2U_Orin", "sha256": "hur_public_v2u_2026_01", "source": "HUR"},
+    {"name": "Geran-5_2024_2025", "sha256": "hur_public_geran5_2026_01", "source": "Kyiv Independent Jan 2026"}
+  ]
+}

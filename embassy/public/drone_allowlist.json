@@ -1,0 +1,11 @@
+{
+  "version": "0.1-public",
+  "legal": "PASSIVE_NOTARY_ONLY",
+  "allowlist": [
+    {"name": "agri_yolo_v1", "sha256": "clean_placeholder_agri_001", "purpose": "AGRI"},
+    {"name": "sar_thermal_v1", "sha256": "clean_placeholder_sar_001", "purpose": "SAR"}
+  ],
+  "min_version": 1,
+  "btc_anchor": 972583,
+  "sun_reference": 36.0609
+}
