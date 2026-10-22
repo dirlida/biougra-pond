@@ -21173,7 +21173,9 @@
       "pondId": "27ef008c31aec59f",
       "ots_queued": false,
       "ots_offline": true
-    }
+    },
+    "offline_proof": "Biougra A13 zero-data fix 1851s SLOW attested child=fork b29b vs 2b89 resolved LIVE",
+    "attested_note": "OFFLINE_PROOF_1304.md"
   },
   {
     "index": 1305,
@@ -21217,6 +21219,28 @@
       "ots_hash": "2d62d630ef146842797d5e422f98fab027a514e57e2bdc9e4100aaecf54541c9",
       "ots_time": "2026-10-22T16:54:29.070473Z",
       "ots_file": "2d62d630ef146842.ots"
+    }
+  },
+  {
+    "index": 1307,
+    "hash": "4b466a7f82bbd4d1ddeb3a03cdf6df26e525c19bafaee38b167bec82f756bd09",
+    "prev": "f8246a270dec78377c9ddc1c482dc6362bf1c53ddb46dc012706a5505a84baf8",
+    "payload": {
+      "index": 1307,
+      "ts": "2026-10-22T17:04:45.215748Z",
+      "prev": "f8246a270dec78377c9ddc1c482dc6362bf1c53ddb46dc012706a5505a84baf8",
+      "entropy": "70e8c55369b529e1a81aacb20e3aa241",
+      "sunAltitude": 13.168,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "780b2f4fc6e96678fcf394e5c92536714981c948f3ea47921769bd92459f431d",
+      "ots_time": "2026-10-22T17:04:45.215748Z",
+      "ots_file": "780b2f4fc6e96678.ots"
     }
   }
 ]
