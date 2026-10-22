@@ -1,1 +1,10 @@
-{"version":"v4.5","status":"LIVE","height":1309,"writer":"single pond.py","law":"kernel/paths.py"}
+{
+  "height": 1349,
+  "last_hash": "000fe974245ecf4f2110996669fd718e5834ca6b859678734391bc7c685bbfba",
+  "last_index": 1348,
+  "sha256_short": "235f87f3319ecb6b",
+  "time": "2026-10-22T21:16:28.029372+00:00",
+  "valid": true,
+  "cap": 3,
+  "block_time_target": 600
+}
