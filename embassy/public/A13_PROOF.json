@@ -1,0 +1,17 @@
+{
+  "node": "did:pond:biougra-a13",
+  "device": "Samsung A13 4GB one-phone sovereign",
+  "pow_blocks": [
+    {"index": 1322, "hash": "00720e7547f07f145c5898f9cb60829469c0a98aa1b5f786cbfa3fd0d8b7e636", "nonce": 132, "diff": 2},
+    {"index": 1323, "hash": "00c6ad0fac481f194a5e972a3727c9e40909392aadb0688d44def7e113c6ceac", "nonce": 135, "diff": 2},
+    {"index": 1324, "hash": "007e034688d315cef436bcdef804e86aaec5dba639f3d94c517e127f0109fa6b", "nonce": 365, "diff": 2},
+    {"index": 1325, "hash": "006498ff785b2128a46071d40bdbe110ee361cee33046e34e825e89185583704", "nonce": 42, "diff": 2}
+  ],
+  "avg_time": "66.2s",
+  "drift": "60s",
+  "finalized": 819,
+  "chain_size_kb": 688,
+  "headers_size_kb": 188,
+  "ram": "4GB A13",
+  "law": "never load full chain, tail only, prune after wifi"
+}
