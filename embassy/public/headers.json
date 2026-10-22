@@ -1,25 +1,5 @@
 [
   {
-    "index": 842,
-    "hash": "b187eae356982adf1905764b9575c9ea63513f89b4412b71a0bee6de65d20079",
-    "prev": "3eb6c44baf5e9a33dfef3234659fc69ea6e147878654718e003bf42219e920cb",
-    "nonce": 0,
-    "difficulty": 0,
-    "merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
-    "ts": "2026-10-18T22:13:50.428462Z",
-    "btcHeight": 972065
-  },
-  {
-    "index": 843,
-    "hash": "ffcc91740497c4d9371f87e4c15febd09e66fe6de3f9f2fac3e90ff97e0deb04",
-    "prev": "b187eae356982adf1905764b9575c9ea63513f89b4412b71a0bee6de65d20079",
-    "nonce": 0,
-    "difficulty": 0,
-    "merkle_root": "0000000000000000000000000000000000000000000000000000000000000000",
-    "ts": "2026-10-18T22:23:56.620805Z",
-    "btcHeight": 972066
-  },
-  {
     "index": 844,
     "hash": "4c242e55ab5f95908c8f95d20df038ab1538f973bdceaf4ff22ecf1078b223de",
     "prev": "ffcc91740497c4d9371f87e4c15febd09e66fe6de3f9f2fac3e90ff97e0deb04",
@@ -4997,6 +4977,26 @@
     "difficulty": 3,
     "merkle_root": "0000362823766e0c3fd1a886a728dd44a1915df1debac2a106b369fa5d738fac",
     "ts": "2026-10-22T18:50:49.181814+00:00",
+    "btcHeight": 972583
+  },
+  {
+    "index": 1342,
+    "hash": "000017d93c9972f2b0099f8cc8517287563e157c7828fd29695466d22a16916f",
+    "prev": "0006a160a768622cf01b4c8b0ac65c6d0172501f36e4918e0c195282a944a79c",
+    "nonce": 76384,
+    "difficulty": 4,
+    "merkle_root": "2b20200ef97312b2c5b84581d92d40bd106c59be1dbb50e10ccc52b08bdd5b5b",
+    "ts": "2026-10-22T19:00:49.576414+00:00",
+    "btcHeight": 972583
+  },
+  {
+    "index": 1343,
+    "hash": "0003722d0b6546e19d78ccc7efb96e8fbecd2e118da50530a1ab523333f43586",
+    "prev": "000017d93c9972f2b0099f8cc8517287563e157c7828fd29695466d22a16916f",
+    "nonce": 4674,
+    "difficulty": 3,
+    "merkle_root": "393e4d2165616a2bb6d9f29f7f12def0131bbe8aba3d2fb59162da132dd18f8c",
+    "ts": "2026-10-22T19:04:18.703831+00:00",
     "btcHeight": 972583
   }
 ]
