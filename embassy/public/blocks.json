@@ -1,230 +1,5 @@
 [
   {
-    "index": 789,
-    "hash": "61fc6431d25b571c5e2644250900ad172ccb30f0a846b2a0c41741c47335c149",
-    "prev": "19e874cdf30c42988fa57a93cf360173cb37f4ddb76ffa9bfa066e18e03fd1e5",
-    "payload": {
-      "index": 789,
-      "ts": "2026-10-18T12:53:22.584855Z",
-      "prev": "19e874cdf30c42988fa57a93cf360173cb37f4ddb76ffa9bfa066e18e03fd1e5",
-      "entropy": "7402b06abab47d348b032b813572d480",
-      "sunAltitude": 49.0092,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 971994,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 790,
-    "hash": "352cae890ea12764f0216248514591e44ede3647c3766b5602b117e1ca8b57c7",
-    "prev": "61fc6431d25b571c5e2644250900ad172ccb30f0a846b2a0c41741c47335c149",
-    "payload": {
-      "index": 790,
-      "ts": "2026-10-18T13:03:47.971618Z",
-      "prev": "61fc6431d25b571c5e2644250900ad172ccb30f0a846b2a0c41741c47335c149",
-      "entropy": "d4ab28955870bfaa64f4a2e0b39a6a30",
-      "sunAltitude": 48.7003,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 971996,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 791,
-    "hash": "00c0cc34cba9a2c5816bb3c2b10bd48828163bce78f4c8009bd6f536c8533663",
-    "prev": "352cae890ea12764f0216248514591e44ede3647c3766b5602b117e1ca8b57c7",
-    "payload": {
-      "index": 791,
-      "ts": "2026-10-18T13:14:08.958541Z",
-      "prev": "352cae890ea12764f0216248514591e44ede3647c3766b5602b117e1ca8b57c7",
-      "entropy": "89a49a232991d1b1fd8bab8652e93f44",
-      "sunAltitude": 48.2464,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 971998,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 792,
-    "hash": "59d2d79fc5ebf09c23138eb5de5bed36ee991ba0a9e157bc0d078b6d2d4dc18a",
-    "prev": "00c0cc34cba9a2c5816bb3c2b10bd48828163bce78f4c8009bd6f536c8533663",
-    "payload": {
-      "index": 792,
-      "ts": "2026-10-18T13:24:31.782827Z",
-      "prev": "00c0cc34cba9a2c5816bb3c2b10bd48828163bce78f4c8009bd6f536c8533663",
-      "entropy": "a3b7778037ef3802d69e27ada2806a2c",
-      "sunAltitude": 47.6486,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 971999,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 793,
-    "hash": "66d99525e9224b1e81ea5954e2705ccba3a08fd7276223f760a41c9dacc0ff80",
-    "prev": "59d2d79fc5ebf09c23138eb5de5bed36ee991ba0a9e157bc0d078b6d2d4dc18a",
-    "payload": {
-      "index": 793,
-      "ts": "2026-10-18T13:35:00.829450Z",
-      "prev": "59d2d79fc5ebf09c23138eb5de5bed36ee991ba0a9e157bc0d078b6d2d4dc18a",
-      "entropy": "01f6b65c2fac35122db1082fc77b60a5",
-      "sunAltitude": 46.9065,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972000,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 794,
-    "hash": "eb725b76704aadad0b01baec3c5fa1d60950b5a7a4b22b7e238aa123aec5a39a",
-    "prev": "66d99525e9224b1e81ea5954e2705ccba3a08fd7276223f760a41c9dacc0ff80",
-    "payload": {
-      "index": 794,
-      "ts": "2026-10-18T13:45:21.096940Z",
-      "prev": "66d99525e9224b1e81ea5954e2705ccba3a08fd7276223f760a41c9dacc0ff80",
-      "entropy": "32125144456ac1aada9e4fa4fcc154c5",
-      "sunAltitude": 46.0441,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972000,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 795,
-    "hash": "38ebc7d8139f40c56d67cbe87f5347ae96070959bc701c601f35ddbc3358aeff",
-    "prev": "eb725b76704aadad0b01baec3c5fa1d60950b5a7a4b22b7e238aa123aec5a39a",
-    "payload": {
-      "index": 795,
-      "ts": "2026-10-18T13:55:43.082584Z",
-      "prev": "eb725b76704aadad0b01baec3c5fa1d60950b5a7a4b22b7e238aa123aec5a39a",
-      "entropy": "343b9c6a37a844c84c168ac3fbb68318",
-      "sunAltitude": 45.0586,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972001,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 796,
-    "hash": "c163d93ec359165705c17ef76fb43398a0c5a977a341b24f7fd0480fe5e480bb",
-    "prev": "38ebc7d8139f40c56d67cbe87f5347ae96070959bc701c601f35ddbc3358aeff",
-    "payload": {
-      "index": 796,
-      "ts": "2026-10-18T14:06:17.953879Z",
-      "prev": "38ebc7d8139f40c56d67cbe87f5347ae96070959bc701c601f35ddbc3358aeff",
-      "entropy": "7ff0de42fc982ec21ad38889876ef62a",
-      "sunAltitude": 43.937,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972003,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 797,
-    "hash": "edf6493fb4d6153c09a7c653fd3a9ccb353351216649d619cf1e7078c6f50434",
-    "prev": "c163d93ec359165705c17ef76fb43398a0c5a977a341b24f7fd0480fe5e480bb",
-    "payload": {
-      "index": 797,
-      "ts": "2026-10-18T14:16:39.119697Z",
-      "prev": "c163d93ec359165705c17ef76fb43398a0c5a977a341b24f7fd0480fe5e480bb",
-      "entropy": "297bb10932c67a1411d4a6171e3e441b",
-      "sunAltitude": 42.7299,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972004,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 798,
-    "hash": "b4040395ea0ec700d03248bdaa322a76ba814f4e639df37a8c36593c64558c9e",
-    "prev": "edf6493fb4d6153c09a7c653fd3a9ccb353351216649d619cf1e7078c6f50434",
-    "payload": {
-      "index": 798,
-      "ts": "2026-10-18T14:27:09.510565Z",
-      "prev": "edf6493fb4d6153c09a7c653fd3a9ccb353351216649d619cf1e7078c6f50434",
-      "entropy": "500cd782f399aefe4284af8aa1c9b67b",
-      "sunAltitude": 41.4078,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972007,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 799,
-    "hash": "c8deab5616005d7bf6c0a153e4e62550dfb961baa228dbfa26e81c8cf41c9004",
-    "prev": "b4040395ea0ec700d03248bdaa322a76ba814f4e639df37a8c36593c64558c9e",
-    "payload": {
-      "index": 799,
-      "ts": "2026-10-18T14:37:37.011935Z",
-      "prev": "b4040395ea0ec700d03248bdaa322a76ba814f4e639df37a8c36593c64558c9e",
-      "entropy": "68efe1663270d14694ca4cac3d51fcf7",
-      "sunAltitude": 39.9981,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972008,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 800,
-    "hash": "73c907fcc28aaddabda2d900f3fdbe96bd4f48911a9da42eb8057c3b2fafe172",
-    "prev": "c8deab5616005d7bf6c0a153e4e62550dfb961baa228dbfa26e81c8cf41c9004",
-    "payload": {
-      "index": 800,
-      "ts": "2026-10-18T14:47:58.604802Z",
-      "prev": "c8deab5616005d7bf6c0a153e4e62550dfb961baa228dbfa26e81c8cf41c9004",
-      "entropy": "0ef8f682dd1298e14dc819013c9d1209",
-      "sunAltitude": 38.5216,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972008,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 801,
-    "hash": "a9897cc41844941d4b48c732ac0ae138d18409f5ff3552a92bf528da6ecd87c9",
-    "prev": "73c907fcc28aaddabda2d900f3fdbe96bd4f48911a9da42eb8057c3b2fafe172",
-    "payload": {
-      "index": 801,
-      "ts": "2026-10-18T14:58:21.810222Z",
-      "prev": "73c907fcc28aaddabda2d900f3fdbe96bd4f48911a9da42eb8057c3b2fafe172",
-      "entropy": "7307263fdc1fa808371d36496c924365",
-      "sunAltitude": 36.965,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972010,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 802,
-    "hash": "0cdda1f98087bff3fbefe9a4b5033cdb457a5be56f20d0d515e01b9710361e37",
-    "prev": "a9897cc41844941d4b48c732ac0ae138d18409f5ff3552a92bf528da6ecd87c9",
-    "payload": {
-      "index": 802,
-      "ts": "2026-10-18T15:08:42.429239Z",
-      "prev": "a9897cc41844941d4b48c732ac0ae138d18409f5ff3552a92bf528da6ecd87c9",
-      "entropy": "ad27c26d82e611ceb91b75392819a0ad",
-      "sunAltitude": 35.3447,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972013,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
-    "index": 803,
-    "hash": "294779f27e24e0058324e141c1a0034f7181daa76ec6c9725ce44119e343790c",
-    "prev": "0cdda1f98087bff3fbefe9a4b5033cdb457a5be56f20d0d515e01b9710361e37",
-    "payload": {
-      "index": 803,
-      "ts": "2026-10-18T15:19:36.758319Z",
-      "prev": "0cdda1f98087bff3fbefe9a4b5033cdb457a5be56f20d0d515e01b9710361e37",
-      "entropy": "17425ef13edcfaa3c8e3011f3b0c4ec4",
-      "sunAltitude": 33.5709,
-      "gps": "30.12613,-9.37437",
-      "btcHeight": 972014,
-      "pondId": "27ef008c31aec59f"
-    }
-  },
-  {
     "index": 804,
     "hash": "f01866cf4722af84238c7b7e9917844363e0f9c3865648c32fb8a333bb7d32bf",
     "prev": "294779f27e24e0058324e141c1a0034f7181daa76ec6c9725ce44119e343790c",
@@ -10810,6 +10585,336 @@
       "ots_hash": "a21fcf4bdc97e5d1d6ff8cdb7e8fd5072a032edfdb2e15c4efa228ff07b0b458",
       "ots_time": "2026-10-22T12:05:14.190896Z",
       "ots_file": "a21fcf4bdc97e5d1.ots"
+    }
+  },
+  {
+    "index": 1289,
+    "hash": "e69c3663012bb324f2231ceb2e3bac2ec2d93ae07ca61710d241dbcbaa2119fd",
+    "prev": "55b9f3318e3bd1916c73ebc0584bb502ef0d8000e27498e02a2f1c187f8c175e",
+    "payload": {
+      "index": 1289,
+      "ts": "2026-10-22T12:22:26.400935Z",
+      "prev": "55b9f3318e3bd1916c73ebc0584bb502ef0d8000e27498e02a2f1c187f8c175e",
+      "entropy": "2dbd07bb44cf88c18788083cb21e781d",
+      "sunAltitude": 47.6219,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "fcca1c59e17cde271f302d49aa7726b11f6469984c3ca34b8b0f8950acafe9ad",
+      "ots_time": "2026-10-22T12:22:26.400935Z",
+      "ots_file": "fcca1c59e17cde27.ots"
+    }
+  },
+  {
+    "index": 1290,
+    "hash": "4a029f8bfd65d5e25e5dcbbdd74d5dc665fa2c67deebd83d57e331d8ca853134",
+    "prev": "e69c3663012bb324f2231ceb2e3bac2ec2d93ae07ca61710d241dbcbaa2119fd",
+    "payload": {
+      "index": 1290,
+      "ts": "2026-10-22T12:35:14.502518Z",
+      "prev": "e69c3663012bb324f2231ceb2e3bac2ec2d93ae07ca61710d241dbcbaa2119fd",
+      "entropy": "498c4b202579c224ac76e2ac739a2501",
+      "sunAltitude": 47.7738,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "e887af37d6a290975739213ae44d7c59fcf5e5de7501f24b3127f3750712de70",
+      "ots_time": "2026-10-22T12:35:14.502518Z",
+      "ots_file": "e887af37d6a29097.ots"
+    }
+  },
+  {
+    "index": 1291,
+    "hash": "f01d872b51abbbd1a570f1d880851fdae207b289e55023a9acfe98c49094d769",
+    "prev": "4a029f8bfd65d5e25e5dcbbdd74d5dc665fa2c67deebd83d57e331d8ca853134",
+    "payload": {
+      "index": 1291,
+      "ts": "2026-10-22T12:51:53.334830Z",
+      "prev": "4a029f8bfd65d5e25e5dcbbdd74d5dc665fa2c67deebd83d57e331d8ca853134",
+      "entropy": "a1bf313d0431110ed6020857150b108f",
+      "sunAltitude": 47.6356,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "e6961a095e1507ecd7afbe8e3af65d680ed5772127a9bc013789e3d6caca4f2b",
+      "ots_time": "2026-10-22T12:51:53.334830Z",
+      "ots_file": "e6961a095e1507ec.ots"
+    }
+  },
+  {
+    "index": 1292,
+    "hash": "b0e21d03c02a669aff0f674e8c4accb74f975d55acd8f82c2618f2cf49da00b9",
+    "prev": "f01d872b51abbbd1a570f1d880851fdae207b289e55023a9acfe98c49094d769",
+    "payload": {
+      "index": 1292,
+      "ts": "2026-10-22T13:08:23.223350Z",
+      "prev": "f01d872b51abbbd1a570f1d880851fdae207b289e55023a9acfe98c49094d769",
+      "entropy": "4e4100396cd64a96c96ee8ada336c388",
+      "sunAltitude": 47.1276,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "98006e920783e420813059df870fc0cfd91a250abcf9ea2aeda424f5167bfa19",
+      "ots_time": "2026-10-22T13:08:23.223350Z",
+      "ots_file": "98006e920783e420.ots"
+    }
+  },
+  {
+    "index": 1293,
+    "hash": "5e21a8865f4caa7ae3e35346f5acef899f725fc601cdc37edb3acae04d234f2e",
+    "prev": "b0e21d03c02a669aff0f674e8c4accb74f975d55acd8f82c2618f2cf49da00b9",
+    "payload": {
+      "index": 1293,
+      "ts": "2026-10-22T13:23:25.915499Z",
+      "prev": "b0e21d03c02a669aff0f674e8c4accb74f975d55acd8f82c2618f2cf49da00b9",
+      "entropy": "68d97523439ed24cbbdb2b15b6bcd516",
+      "sunAltitude": 46.3542,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "7794d5d780512b7c5c8c6d0591b9bc4065baf73360427e6cfc5985800ba2a641",
+      "ots_time": "2026-10-22T13:23:25.915499Z",
+      "ots_file": "7794d5d780512b7c.ots"
+    }
+  },
+  {
+    "index": 1294,
+    "hash": "a55c70a5f1e7f217959eb1e5b7afabbd048acdbb1e2655afad15893e90ad4036",
+    "prev": "5e21a8865f4caa7ae3e35346f5acef899f725fc601cdc37edb3acae04d234f2e",
+    "payload": {
+      "index": 1294,
+      "ts": "2026-10-22T13:34:17.045272Z",
+      "prev": "5e21a8865f4caa7ae3e35346f5acef899f725fc601cdc37edb3acae04d234f2e",
+      "entropy": "46575b29eba2a20c7eb427a314e2bd35",
+      "sunAltitude": 45.6196,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "07fbec8c686abb5202f7fa4bf79393009add1dfa8491e9a13f391af80e2ad740",
+      "ots_time": "2026-10-22T13:34:17.045272Z",
+      "ots_file": "07fbec8c686abb52.ots"
+    }
+  },
+  {
+    "index": 1295,
+    "hash": "f45c1794a2b6c06c5236d259b2f8b59d4bfd6cbed21dde3c9daa441db4a0c42d",
+    "prev": "a55c70a5f1e7f217959eb1e5b7afabbd048acdbb1e2655afad15893e90ad4036",
+    "payload": {
+      "index": 1295,
+      "ts": "2026-10-22T13:50:54.149852Z",
+      "prev": "a55c70a5f1e7f217959eb1e5b7afabbd048acdbb1e2655afad15893e90ad4036",
+      "entropy": "775fc420db52012ba2cdab1531205ab6",
+      "sunAltitude": 44.2294,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "0f8892eb4baf823308628adc8ea556a1b92776f736d155e578aba7f85da71170",
+      "ots_time": "2026-10-22T13:50:54.149852Z",
+      "ots_file": "0f8892eb4baf8233.ots"
+    }
+  },
+  {
+    "index": 1296,
+    "hash": "68c29afcee6bfd88ee8d2060a0e890a5305499a9c25878986e3cb125ffed6683",
+    "prev": "f45c1794a2b6c06c5236d259b2f8b59d4bfd6cbed21dde3c9daa441db4a0c42d",
+    "payload": {
+      "index": 1296,
+      "ts": "2026-10-22T14:07:25.482765Z",
+      "prev": "f45c1794a2b6c06c5236d259b2f8b59d4bfd6cbed21dde3c9daa441db4a0c42d",
+      "entropy": "671ef2d1c6522d32e9f2fd8168026bc1",
+      "sunAltitude": 42.5534,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "5917804cbb1b39cbcacb766f8cbc493a71858b3a6f2238cbd78b3f22e727bbe3",
+      "ots_time": "2026-10-22T14:07:25.482765Z",
+      "ots_file": "5917804cbb1b39cb.ots"
+    }
+  },
+  {
+    "index": 1297,
+    "hash": "617b19f14174c5c4c62a88aac3e9b65a9cfa8621882c2747263b7fca4821a770",
+    "prev": "68c29afcee6bfd88ee8d2060a0e890a5305499a9c25878986e3cb125ffed6683",
+    "payload": {
+      "index": 1297,
+      "ts": "2026-10-22T14:23:59.548197Z",
+      "prev": "68c29afcee6bfd88ee8d2060a0e890a5305499a9c25878986e3cb125ffed6683",
+      "entropy": "d1d1043b850fabb1d9d510dd28817fee",
+      "sunAltitude": 40.6081,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "98536edf0e8f9ff3a387559421af551310b7beda0011b1473d732e69cf04d99b",
+      "ots_time": "2026-10-22T14:23:59.548197Z",
+      "ots_file": "98536edf0e8f9ff3.ots"
+    }
+  },
+  {
+    "index": 1298,
+    "hash": "3cd2cc6bfaf0b2833c7f1d51fead84179295d55c606296ede911841001926c87",
+    "prev": "617b19f14174c5c4c62a88aac3e9b65a9cfa8621882c2747263b7fca4821a770",
+    "payload": {
+      "index": 1298,
+      "ts": "2026-10-22T14:40:28.463461Z",
+      "prev": "617b19f14174c5c4c62a88aac3e9b65a9cfa8621882c2747263b7fca4821a770",
+      "entropy": "945c9b2632df45ba7957b8dc57ac3e7b",
+      "sunAltitude": 38.44,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "5c43b7c2cbfe1d4d7e04dcc9dffdfcc803a38627e4e4148f2aad6ac163ddc24b",
+      "ots_time": "2026-10-22T14:40:28.463461Z",
+      "ots_file": "5c43b7c2cbfe1d4d.ots"
+    }
+  },
+  {
+    "index": 1299,
+    "hash": "85cc489effae65e5856bc09a07a54a907cc519fdb3b203ccdee920fea79d0bdb",
+    "prev": "3cd2cc6bfaf0b2833c7f1d51fead84179295d55c606296ede911841001926c87",
+    "payload": {
+      "index": 1299,
+      "ts": "2026-10-22T14:57:00.356374Z",
+      "prev": "3cd2cc6bfaf0b2833c7f1d51fead84179295d55c606296ede911841001926c87",
+      "entropy": "32870be2aea3c353b1d7b1267f0de8ca",
+      "sunAltitude": 36.0609,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "69e17bec9b03aad363df62b1ceb273820714d0e23c0d59aebbf31aa3168fb750",
+      "ots_time": "2026-10-22T14:57:00.356374Z",
+      "ots_file": "69e17bec9b03aad3.ots"
+    }
+  },
+  {
+    "index": 1300,
+    "hash": "8720c43d3bfd74070ac092d587ce0c915d0dae8ff8454e267c4f56bdd81bd354",
+    "prev": "85cc489effae65e5856bc09a07a54a907cc519fdb3b203ccdee920fea79d0bdb",
+    "payload": {
+      "index": 1300,
+      "ts": "2026-10-22T15:13:42.337240Z",
+      "prev": "85cc489effae65e5856bc09a07a54a907cc519fdb3b203ccdee920fea79d0bdb",
+      "entropy": "834d450e5fc969f0077e0a237f2beffb",
+      "sunAltitude": 33.4766,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "8a7204adf3c68591c90c0d11de0ad745199794f826c09ac724d1724414051c61",
+      "ots_time": "2026-10-22T15:13:42.337240Z",
+      "ots_file": "8a7204adf3c68591.ots"
+    }
+  },
+  {
+    "index": 1301,
+    "hash": "6300f7a86c22ca0614feb8dba82c26d6e138c55a6f2bd1a6eb4255a53df985fa",
+    "prev": "8720c43d3bfd74070ac092d587ce0c915d0dae8ff8454e267c4f56bdd81bd354",
+    "payload": {
+      "index": 1301,
+      "ts": "2026-10-22T15:30:10.749504Z",
+      "prev": "8720c43d3bfd74070ac092d587ce0c915d0dae8ff8454e267c4f56bdd81bd354",
+      "entropy": "418fb89f8c3d2266b199c206b0d3cf72",
+      "sunAltitude": 30.774,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "f6de87262ec8dcc9ae6059afb15648679abe83b8b314dae803fd7de2aaaeab16",
+      "ots_time": "2026-10-22T15:30:10.749504Z",
+      "ots_file": "f6de87262ec8dcc9.ots"
+    }
+  },
+  {
+    "index": 1302,
+    "hash": "b29b7d9c73075849e73edfad92d24bd6c7c68ec5cef0be1a7e5a6995a33846fc",
+    "prev": "6300f7a86c22ca0614feb8dba82c26d6e138c55a6f2bd1a6eb4255a53df985fa",
+    "payload": {
+      "index": 1302,
+      "ts": "2026-10-22T15:46:41.162275Z",
+      "prev": "6300f7a86c22ca0614feb8dba82c26d6e138c55a6f2bd1a6eb4255a53df985fa",
+      "entropy": "9aa7667b8e14ab5cc6bacb242c13f1b3",
+      "sunAltitude": 27.9299,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "899dc8ab3eb386afc627470fb9654c26bbbefa3818f3665ec8829e5484cc4a8c",
+      "ots_time": "2026-10-22T15:46:41.162275Z",
+      "ots_file": "899dc8ab3eb386af.ots"
+    }
+  },
+  {
+    "index": 1303,
+    "hash": "7c9f871c4e9c79ed8c80a32fd3dfb024f5876bf3a8722cd552449cee232b1bac",
+    "prev": "b29b7d9c73075849e73edfad92d24bd6c7c68ec5cef0be1a7e5a6995a33846fc",
+    "payload": {
+      "index": 1303,
+      "ts": "2026-10-22T16:03:05.842159Z",
+      "prev": "b29b7d9c73075849e73edfad92d24bd6c7c68ec5cef0be1a7e5a6995a33846fc",
+      "entropy": "ccb769d607e9b07b3fa865489cd2be49",
+      "sunAltitude": 24.9918,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "de73bfb19076691b0b87e14dd34a415375819182c60fa684108188a2e65bcfa4",
+      "ots_time": "2026-10-22T16:03:05.842159Z",
+      "ots_file": "de73bfb19076691b.ots"
     }
   }
 ]
