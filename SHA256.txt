@@ -1,1 +1,1 @@
-3e2256a2852eec70152f531fc90d5e5f6fa56731775c19a05db416baa59b9c6e  chain.json
+235f87f3319ecb6b  chain.json
