@@ -1,11 +1,11 @@
 {
-  "height": 1405,
-  "last": "000ddf3d6e369c003127565a6330b0b991ab7b649f94d749b846049c7dc4179a",
-  "last_short": "000ddf3d6e369c00",
-  "diff": 3,
-  "min_diff": 3,
-  "policy": "000 MINIMUM - never below",
-  "verify": "OK",
-  "legends": "000017d9 first 0000 A13 historic",
-  "note": "Biougra POND locked 000, first 0000 legend preserved"
+  "height": 1408,
+  "index": 1407,
+  "last_hash": "0004eb48ab3a0c9f1b44a4e79dcacb61c15e9651d1c3c134ff815c2d31c62e60",
+  "verify": "5c3aaed64049dbd26afa9f7b7ff56f61e3e3ba8aa8e893652284123c0ae0d5a5",
+  "blocks": 1408,
+  "live": true,
+  "sun": 15.2,
+  "btc": 972583,
+  "ts": "2026-10-23T08:38:46.040417+00:00"
 }

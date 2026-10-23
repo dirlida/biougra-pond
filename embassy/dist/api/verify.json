@@ -1,1 +1,5 @@
-{"verify": "OK", "sha256": "65d08e1b59a3bdc2... full", "policy": "000 MINIMUM - never below", "min_diff": 3}
+{
+  "verify": "5c3aaed64049dbd26afa9f7b7ff56f61e3e3ba8aa8e893652284123c0ae0d5a5",
+  "ok": true,
+  "hash": "5c3aaed64049dbd26afa9f7b7ff56f61e3e3ba8aa8e893652284123c0ae0d5a5"
+}
