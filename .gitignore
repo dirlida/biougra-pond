@@ -23,3 +23,5 @@ __pycache__/
 *.pyc
 pond.log
 health.log
+keys/*.key
+keys/*.backup
