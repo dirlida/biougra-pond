@@ -1,12 +1,12 @@
 {
-  "height": 1409,
-  "index": 1408,
-  "last_hash": "000b28da1b2c0cbc3f11f05d54426aa4b871f8308269c5b25d31a5cdbf4d494a",
-  "verify": "00d165d63cd5cb4856bedcf25611e6ecb85a606ed463734388292e0e0ac9fdf6",
-  "blocks": 1409,
+  "height": 1417,
+  "index": 1416,
+  "last_hash": "00019adea5da01383f1c7056e33e6fae9f0073b6b195deca143872ffe8af2727",
+  "verify": "0c0c72b7daa420c134fa2a0420355599ac9a27bbeb37b446796a3f38650dc028",
+  "blocks": 1417,
   "live": true,
   "sun": 15.2,
   "btc": 972583,
-  "ts": "2026-10-23T08:48:46.456943+00:00",
-  "sha": "00d165d63cd5cb4856bedcf25611e6ecb85a606ed463734388292e0e0ac9fdf6"
+  "ts": "2026-10-23T10:08:49.187979+00:00",
+  "sha": "0c0c72b7daa420c134fa2a0420355599ac9a27bbeb37b446796a3f38650dc028"
 }
