@@ -18,3 +18,8 @@ attic/scripts/chain.json
 *.tmp
 chain.json.ots.*
 *.ots.pending
+tmp/
+__pycache__/
+*.pyc
+pond.log
+health.log
