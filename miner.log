@@ -1,0 +1,58 @@
+nohup: ignoring input
+POND START v5.4 count=1457 prev=0004cc0be033 CAP3 LIVE MIN=600s = 10min blocks
+10MIN RULE: 349.0s elapsed, sleeping 251.0s until next block... #1458
+10MIN RULE: 409.0s elapsed, sleeping 191.0s until next block... #1458
+10MIN RULE: 469.0s elapsed, sleeping 131.0s until next block... #1458
+10MIN RULE: 529.0s elapsed, sleeping 71.0s until next block... #1458
+10MIN RULE: 589.0s elapsed, sleeping 11.0s until next block... #1458
+MINING v5 #1457 diff3 after 600.0s...
+BLOCK #1457 00029dabebdab4f2 diff3 nonce640016 elapsed=600.0s
+10MIN RULE: 1.0s elapsed, sleeping 599.0s until next block... #1459
+10MIN RULE: 61.0s elapsed, sleeping 539.0s until next block... #1459
+10MIN RULE: 121.0s elapsed, sleeping 479.0s until next block... #1459
+10MIN RULE: 181.0s elapsed, sleeping 419.0s until next block... #1459
+10MIN RULE: 241.0s elapsed, sleeping 359.0s until next block... #1459
+10MIN RULE: 301.0s elapsed, sleeping 299.0s until next block... #1459
+10MIN RULE: 361.0s elapsed, sleeping 239.0s until next block... #1459
+10MIN RULE: 421.0s elapsed, sleeping 179.0s until next block... #1459
+10MIN RULE: 481.0s elapsed, sleeping 119.0s until next block... #1459
+10MIN RULE: 541.0s elapsed, sleeping 59.0s until next block... #1459
+MINING v5 #1458 diff3 after 600.0s...
+BLOCK #1458 000e86912899e9c8 diff3 nonce306013 elapsed=600.0s
+10MIN RULE: 1.0s elapsed, sleeping 599.0s until next block... #1460
+10MIN RULE: 61.0s elapsed, sleeping 539.0s until next block... #1460
+10MIN RULE: 121.1s elapsed, sleeping 478.9s until next block... #1460
+10MIN RULE: 181.1s elapsed, sleeping 418.9s until next block... #1460
+10MIN RULE: 241.6s elapsed, sleeping 358.4s until next block... #1460
+10MIN RULE: 301.6s elapsed, sleeping 298.4s until next block... #1460
+10MIN RULE: 361.7s elapsed, sleeping 238.3s until next block... #1460
+10MIN RULE: 421.7s elapsed, sleeping 178.3s until next block... #1460
+10MIN RULE: 481.7s elapsed, sleeping 118.3s until next block... #1460
+10MIN RULE: 541.7s elapsed, sleeping 58.3s until next block... #1460
+MINING v5 #1459 diff3 after 600.0s...
+BLOCK #1459 000616162828ad5d diff3 nonce317294 elapsed=600.0s
+10MIN RULE: 1.0s elapsed, sleeping 599.0s until next block... #1461
+10MIN RULE: 61.0s elapsed, sleeping 539.0s until next block... #1461
+10MIN RULE: 121.0s elapsed, sleeping 479.0s until next block... #1461
+10MIN RULE: 181.1s elapsed, sleeping 418.9s until next block... #1461
+10MIN RULE: 241.3s elapsed, sleeping 358.7s until next block... #1461
+10MIN RULE: 301.4s elapsed, sleeping 298.6s until next block... #1461
+10MIN RULE: 361.4s elapsed, sleeping 238.6s until next block... #1461
+10MIN RULE: 421.4s elapsed, sleeping 178.6s until next block... #1461
+10MIN RULE: 481.4s elapsed, sleeping 118.6s until next block... #1461
+10MIN RULE: 541.4s elapsed, sleeping 58.6s until next block... #1461
+MINING v5 #1460 diff3 after 600.0s...
+BLOCK #1460 0004ca6beea1eb38 diff3 nonce891004 elapsed=600.0s
+10MIN RULE: 1.0s elapsed, sleeping 599.0s until next block... #1462
+10MIN RULE: 61.0s elapsed, sleeping 539.0s until next block... #1462
+10MIN RULE: 121.0s elapsed, sleeping 479.0s until next block... #1462
+10MIN RULE: 181.0s elapsed, sleeping 419.0s until next block... #1462
+10MIN RULE: 241.0s elapsed, sleeping 359.0s until next block... #1462
+10MIN RULE: 301.1s elapsed, sleeping 298.9s until next block... #1462
+10MIN RULE: 361.1s elapsed, sleeping 238.9s until next block... #1462
+10MIN RULE: 421.1s elapsed, sleeping 178.9s until next block... #1462
+10MIN RULE: 481.1s elapsed, sleeping 118.9s until next block... #1462
+10MIN RULE: 541.1s elapsed, sleeping 58.9s until next block... #1462
+MINING v5 #1461 diff3 after 600.0s...
+BLOCK #1461 0003b1ab169c3ff4 diff3 nonce21695 elapsed=600.0s
+10MIN RULE: 1.0s elapsed, sleeping 599.0s until next block... #1463

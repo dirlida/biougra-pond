@@ -1,6 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/python3
 import os, json, time, hashlib, fcntl, random
 from datetime import datetime, timezone
+
+def get_last_mining(chain):
+    f=[b for b in chain if b.get("type")!="thesis" and b.get("hash")]
+    return f[-1] if f else get_last_mining(chain)
 from kernel.consensus.pow import hash_header
 from kernel.consensus.difficulty import get_difficulty
 try:
@@ -59,8 +63,8 @@ def get_prev_time(block):
 
 chain,chain_path=load_chain()
 prev_count=len(chain)
-prev_hash=chain[-1]['hash'] if chain else "0"*64
-prev_time=get_prev_time(chain[-1] if chain else None)
+prev_hash=get_last_mining(chain)['hash'] if chain else "0"*64
+prev_time=get_prev_time(get_last_mining(chain) if chain else None)
 print(f"POND START v5.4 count={prev_count} prev={prev_hash[:12]} CAP3 LIVE MIN={MIN_BLOCK_TIME}s = 10min blocks", flush=True)
 
 while True:

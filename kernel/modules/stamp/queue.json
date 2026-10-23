@@ -1,7 +1,7 @@
 {
-  "latest_index": 1325,
-  "latest_hash": "006498ff785b2128a46071d40bdbe110ee361cee33046e34e825e89185583704",
-  "queued_at": 1792694245,
+  "latest_index": 1453,
+  "latest_hash": "00012fa8f9462bb873ea87fe446316e28ab83e76e84509b1da601f851f07966b",
+  "queued_at": 1792771680,
   "ready_for_push": true,
-  "note": "v5.2 PoW 00 block, wifi pending"
+  "note": "v5.4 ghoul 1453"
 }
