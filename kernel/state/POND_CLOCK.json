@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "height": 1424,
+    "index": 1423,
+    "ts": "2026-10-23T11:27:00Z",
+    "sha": "a0f0813b69dc",
+    "git_commit": "5d8feba",
+    "avg_block_sec": 600
+  },
+  "current_index": 1423,
+  "blocks_since_baseline": 0,
+  "pond_now_iso": "2026-10-23T11:27:00+00:00",
+  "real_now_iso": "2026-10-23T11:27:46.974472+00:00",
+  "pond_elapsed_sec": 0,
+  "drift_sec": 46.974472,
+  "drift_min": 0.8,
+  "is_cuckoo": false,
+  "status": "SYNCED",
+  "note": "POND clock uses block height as wall clock - survives LLM resets"
+}
