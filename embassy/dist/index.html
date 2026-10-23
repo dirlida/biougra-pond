@@ -1,14 +1,33 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>embassy</title>
-    <script type="module" crossorigin src="/assets/index-BchzvGAd.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DiM28JTf.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<html>
+<head><meta charset=utf-8><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pond Embassy - Biougra</title>
+<style>body{font-family:monospace;padding:16px;background:#0a0a0a;color:#0f0} .card{border:1px solid #0f0;padding:12px;margin:8px 0} button{background:#0f0;color:#000;border:0;padding:8px 12px;cursor:pointer}</style>
+</head>
+<body>
+<h1>Pond Embassy — A13 Biougra Chain</h1>
+<div id="status" class="card">Loading 76KB headers...</div>
+<div id="legends" class="card"></div>
+<div id="chain" class="card" style="display:none"></div>
+<button onclick="loadFullChain()">Load full chain (779KB) — only if fast WiFi</button>
+
+<script>
+async function loadHeaders(){
+  const h = await fetch('./headers.json').then(r=>r.json());
+  const s = await fetch('./status.json').then(r=>r.json());
+  document.getElementById('status').innerHTML = `Height ${s.height}<br>Last ${s.last}<br>Policy ${s.policy}<br>Verify ${s.verify}<br>MinDiff ${s.min_diff}<br>Headers ${h.length} (76KB)`;
+  document.getElementById('legends').innerHTML = `Legends: ${s.legends}<br>Last header: ${h[h.length-1].hash}`;
+  window.headers = h;
+}
+async function loadFullChain(){
+  const btn = document.querySelector('button');
+  btn.textContent = 'Loading 779KB...';
+  const c = await fetch('./chain.json').then(r=>r.json());
+  document.getElementById('chain').style.display='block';
+  document.getElementById('chain').innerHTML = `Full chain loaded: ${c.length} blocks<br>Last 3:<br>${c.slice(-3).map(b=>b.hash+' #'+b.height).join('<br>')}`;
+  btn.textContent = 'Full chain loaded';
+}
+loadHeaders();
+</script>
+</body>
 </html>
