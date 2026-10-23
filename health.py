@@ -2,7 +2,12 @@ import json,os,subprocess,datetime
 CHAIN="chain.json"
 chain=json.load(open(CHAIN))
 # v4.2 attested breaks - known, documented, not errors
-ATTESTED = {1007: "2026-10-20 hard-reset GPS-drift 17646s Biougra attested"}
+ATTESTED = {
+  1007: "2026-10-20 hard-reset GPS-drift 17646s Biougra attested",
+  1304: "2026-10-21 GPS-drift 1850s Biougra attested",
+  1348: "2026-10-21 GPS-drift 5528s Biougra attested",
+  1402: "2026-10-23 GPS-drift 6119s Biougra attested"
+}
 slow=[]
 attested_found=[]
 for i in range(1,len(chain)):
