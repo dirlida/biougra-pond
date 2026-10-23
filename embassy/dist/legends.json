@@ -1,0 +1,17 @@
+{
+  "first_0000_phone": {
+    "hash": "000017d9",
+    "full": "from commit 83f27f2 v5.4 DIFF4 #1342 nonce76384 quad zero A13 4GB historic",
+    "commit": "83f27f2",
+    "index": 1342,
+    "note": "First ever 0000 on Biougra A13 phone - 16bit PoW, Termux, no ASIC. BTC needs 19 zeros."
+  },
+  "first_000_v54": {
+    "hash": "00011bc80253fba9",
+    "index": 1403,
+    "nonce": 127903,
+    "diff": 3,
+    "note": "First 000 on v5.4 stable chain, 10min rule, A13 live"
+  },
+  "policy": "MIN_DIFF=3 MAX_DIFF=3 - never drop to 00 again"
+}
