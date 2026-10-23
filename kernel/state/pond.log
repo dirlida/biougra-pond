@@ -1,0 +1,29 @@
+=== POND v5.4 PoW 10MIN PRECISION ===
+finalized 819 - 10min blocks - A13 law
+[DIFF 10min A13 CAP3] h=1343 avg=98s target=600s last=4 -> 3
+[1343] diff=3 mem=0 mr=393e4d21 btc=972583 drift=209s target=600s
+light headers 500 -> /data/data/com.termux/files/home/pond/embassy/public/headers.json 188574 bytes
+✅ PoW v5.4 10MIN #1343 0003722d0b6546e19d78ccc7efb96e8fbecd2e118da50530a1ab523333f43586 nonce=4674 diff=3 next in 10min
+[SLEEP] 600s - next block ~10min - A13 battery save
+[DIFF 10min A13 CAP3] h=1344 avg=111s target=600s last=3 -> 3
+[1344] diff=3 mem=0 mr=f78aca8c btc=972583 drift=600s target=600s
+light headers 500 -> /data/data/com.termux/files/home/pond/embassy/public/headers.json 188583 bytes
+✅ PoW v5.4 10MIN #1344 00078cadfb34bc1959748a903da53f75b8ec1d274d224ae8e2fe474fe08eb7a1 nonce=1728 diff=3 next in 10min
+[SLEEP] 600s - next block ~10min - A13 battery save
+[DIFF 10min A13 CAP3] h=1345 avg=160s target=600s last=3 -> 3
+[1345] diff=3 mem=0 mr=6ce904cb btc=972583 drift=600s target=600s
+light headers 500 -> /data/data/com.termux/files/home/pond/embassy/public/headers.json 188592 bytes
+✅ PoW v5.4 10MIN #1345 000265abea43e69e836d0349ce0ebd2c304794b267d5c5fd464b380cb801b08f nonce=2457 diff=3 next in 10min
+[SLEEP] 600s - next block ~10min - A13 battery save
+[DIFF 10min A13 CAP3] h=1346 avg=210s target=600s last=3 -> 3
+[1346] diff=3 mem=0 mr=b4a5ec8c btc=972583 drift=600s target=600s
+light headers 500 -> /data/data/com.termux/files/home/pond/embassy/public/headers.json 188601 bytes
+✅ PoW v5.4 10MIN #1346 000400f106d19e66f95c7ea6e32edf63d7a2c8a42aa7011702518b8a841502e8 nonce=5228 diff=3 next in 10min
+[SLEEP] 600s - next block ~10min - A13 battery save
+[DIFF 10min A13 CAP3] h=1347 avg=259s target=600s last=3 -> 3
+[1347] diff=3 mem=0 mr=77e4a6c3 btc=972583 drift=600s target=600s
+light headers 500 -> /data/data/com.termux/files/home/pond/embassy/public/headers.json 188610 bytes
+✅ PoW v5.4 10MIN #1347 000142beef657c06855d400a3eaaef01a0c48805b16181c6a877297a7d9e3f1b nonce=7448 diff=3 next in 10min
+[SLEEP] 600s - next block ~10min - A13 battery save
+[DIFF 10min A13 CAP3] h=1348 avg=312s target=600s last=3 -> 3
+[PANIC] drift 601s >600 stop

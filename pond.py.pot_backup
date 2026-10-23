@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+import json, pathlib, time, hashlib, os, shutil, fcntl, sys
+from datetime import datetime, timezone
+from kernel.paths import ROOT, CHAIN, STATE, PUBLIC, LOCK, LOG, LAST, SHA
+INTERVAL=600
+LOG.parent.mkdir(parents=True, exist_ok=True)
+def log(msg):
+    ts=datetime.now(timezone.utc).isoformat()
+    line=f"[{ts}] {msg}"
+    print(line)
+    try:
+        with open(LOG,"a") as f: f.write(line+"\n")
+    except: pass
+def atomic_write(path,data):
+    p=pathlib.Path(path)
+    tmp=p.with_suffix('.tmp')
+    tmp.write_text(json.dumps(data,indent=2))
+    tmp.rename(p)
+def fork_guard_check(chain):
+    LOCK.parent.mkdir(parents=True, exist_ok=True)
+    lf=open(LOCK,"w")
+    try:
+        fcntl.flock(lf, fcntl.LOCK_EX|fcntl.LOCK_NB)
+    except:
+        log("FORK_GUARD: another daemon running — ABORT")
+        sys.exit(1)
+    for i in range(1,len(chain)):
+        if chain[i].get('prev') != chain[i-1].get('hash'):
+            log(f"FORK_GUARD: BROKEN LINK at {i} HALT")
+            sys.exit(2)
+    return lf
+def load_chain():
+    return json.loads(CHAIN.read_text()) if CHAIN.exists() else []
+def save_chain(chain):
+    for i in range(1,len(chain)):
+        assert chain[i]['prev'] == chain[i-1]['hash'], f"FORK PREVENTED at {i}"
+    atomic_write(CHAIN, chain)
+    shutil.copy(CHAIN, STATE)
+    try: shutil.copy(CHAIN, PUBLIC)
+    except: pass
+    LAST.write_text(chain[-1]['hash']+"\n")
+    SHA.write_text(f"{hashlib.sha256(CHAIN.read_bytes()).hexdigest()}  chain.json\n")
+def mine_next(chain):
+    last=chain[-1]; prev=last['hash']; height=len(chain)
+    payload={"index":height,"ts":datetime.now(timezone.utc).isoformat(),"sunAltitude":15.2,"btcHeight":972583}
+    new_block={"hash":hashlib.sha256(f"{prev}{json.dumps(payload)}".encode()).hexdigest(),"prev":prev,"payload":payload,"index":height}
+    assert new_block['prev'] == chain[-1]['hash']
+    chain.append(new_block); save_chain(chain)
+    log(f"MINED {height} {new_block['hash'][:12]} prev={prev[:12]}")
+    return new_block
+def main():
+    log("Pond daemon v4.4 SINGLE-PATH PROOF - Biougra A13")
+    while True:
+        chain=load_chain(); lf=fork_guard_check(chain)
+        last_time=chain[-1]['payload'].get('ts') if isinstance(chain[-1].get('payload'),dict) else None
+        try: age=(datetime.now(timezone.utc)-datetime.fromisoformat(last_time)).total_seconds() if last_time else 0
+        except: age=0
+        wait=max(0,INTERVAL-age)
+        log(f"on-time {len(chain)-1} {int(age)}s ago wait {int(wait)}s")
+        if wait<5:
+            try: mine_next(chain)
+            except AssertionError as e: log(f"FORK BLOCKED: {e}")
+            except Exception as e: log(f"mine error {e}")
+        try: fcntl.flock(lf,fcntl.LOCK_UN); lf.close()
+        except: pass
+        time.sleep(30)
+if __name__=="__main__": main()

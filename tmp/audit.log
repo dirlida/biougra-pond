@@ -1,0 +1,595 @@
+=== TREE kernel ===
+kernel/anchors/btc_anchor.json
+kernel/anchors/sun_anchor.json
+kernel/chain.json
+kernel/consensus/atomic_write.py
+kernel/consensus/fork_guard.py
+kernel/consensus/health.py
+kernel/state/DUPE_PROOF.md
+kernel/state/EMBASSY_STATUS.txt
+kernel/state/GENESIS.json
+kernel/state/KERNEL_LAW.md
+kernel/state/LAST.txt
+kernel/state/LICENSE
+kernel/state/ORIGIN.json
+kernel/state/README.md
+kernel/state/SHA256.txt
+kernel/state/chain.json
+kernel/state/pond.log
+
+=== TREE attic ===
+attic/chain.json
+attic/frozen/chain-1000-FROZEN.json
+attic/frozen/chain-1100-FROZEN.json
+attic/frozen/chain-1200-FROZEN.json
+attic/frozen/chain-1300-FROZEN.json
+attic/frozen/chain-FROZEN-2026-10-18-1748.json
+attic/health-loop.log
+attic/immortal.log
+attic/legacy/ALERTS_OFF
+attic/legacy/DUPE_PROOF.md
+attic/legacy/EMBASSY_STATUS.txt
+attic/legacy/GENESIS.json
+attic/legacy/KERNEL_LAW.md
+attic/legacy/LAST.txt
+attic/legacy/LICENSE
+attic/legacy/ORIGIN.json
+attic/legacy/PRUNED
+attic/legacy/README.md
+attic/legacy/SHA256.txt
+attic/legacy/attestation/2026-10-20/20b305880b4869c4.ots
+attic/legacy/attestation/2026-10-20/34011d1f66ffc6ff.ots
+attic/legacy/attestation/2026-10-20/42c32bfec9fe4873.ots
+attic/legacy/attestation/2026-10-20/78d72274de004cf6.ots
+attic/legacy/attestation/2026-10-20/9d1cc5d66f3438c9.ots
+attic/legacy/attestation/ATTESTATION.md
+attic/legacy/attestation/HUMAN.txt
+attic/legacy/attestation/ORIGIN.json
+attic/legacy/attestation/QPU.json
+attic/legacy/attestation/c444ee26342751ca.ots
+attic/legacy/attestation/ots-archive/03c8cabd34c5ae86.ots
+attic/legacy/attestation/ots-archive/052695c623da747a.ots
+attic/legacy/attestation/ots-archive/052695c623da747a.ots.bak
+attic/legacy/attestation/ots-archive/0f811dfd798b169e.ots
+attic/legacy/attestation/ots-archive/1319a721faded81c.ots
+attic/legacy/attestation/ots-archive/1319a721faded81c.ots.bak
+attic/legacy/attestation/ots-archive/135692beb72c4c33.ots
+attic/legacy/attestation/ots-archive/15bf1d3147cdcb23.ots
+attic/legacy/attestation/ots-archive/180259cfc38b3643.ots
+attic/legacy/attestation/ots-archive/180259cfc38b3643.ots.bak
+attic/legacy/attestation/ots-archive/1c79a8650a2d7281.ots
+attic/legacy/attestation/ots-archive/1c79a8650a2d7281.ots.bak
+attic/legacy/attestation/ots-archive/221e68eb7ca681ee.ots
+attic/legacy/attestation/ots-archive/2375c003205a442f.ots
+attic/legacy/attestation/ots-archive/2c8dec0365c7a2ea.ots
+attic/legacy/attestation/ots-archive/2ca7218477e94c06.ots
+attic/legacy/attestation/ots-archive/2cf72232557e2452.ots
+attic/legacy/attestation/ots-archive/323fe9ed4c456110.ots
+attic/legacy/attestation/ots-archive/382027404a80ab17.ots
+attic/legacy/attestation/ots-archive/382027404a80ab17.ots.bak
+attic/legacy/attestation/ots-archive/39db03e5e85139be.ots
+attic/legacy/attestation/ots-archive/3c0397435f35f2b9.ots
+attic/legacy/attestation/ots-archive/3c0397435f35f2b9.ots.bak
+attic/legacy/attestation/ots-archive/3ecb409c47865224.ots
+attic/legacy/attestation/ots-archive/3ecb409c47865224.ots.bak
+attic/legacy/attestation/ots-archive/414242c57de213cf.ots
+attic/legacy/attestation/ots-archive/438c00b0d725aaf7.ots
+attic/legacy/attestation/ots-archive/438c00b0d725aaf7.ots.bak
+attic/legacy/attestation/ots-archive/43dadc6f96e212e2.ots
+attic/legacy/attestation/ots-archive/44df1146f9792776.ots
+attic/legacy/attestation/ots-archive/44df1146f9792776.ots.bak
+attic/legacy/attestation/ots-archive/45e480bb805b0476.ots
+attic/legacy/attestation/ots-archive/45e480bb805b0476.ots.bak
+attic/legacy/attestation/ots-archive/497535c61eef69a8.ots
+attic/legacy/attestation/ots-archive/4ab8c4fab4795e4a.ots
+attic/legacy/attestation/ots-archive/4bcfac30a7d4cd1a.ots
+attic/legacy/attestation/ots-archive/4c9f3b21b4c8eeef.ots
+attic/legacy/attestation/ots-archive/4c9f3b21b4c8eeef.ots.bak
+attic/legacy/attestation/ots-archive/51adfd96679f45c3.ots
+attic/legacy/attestation/ots-archive/51adfd96679f45c3.ots.bak
+attic/legacy/attestation/ots-archive/529574f2447a3e3d.ots
+attic/legacy/attestation/ots-archive/563f19e4fab887dc.ots
+attic/legacy/attestation/ots-archive/5725225a5bd21da5.ots
+attic/legacy/attestation/ots-archive/585e180307fc6156.ots
+attic/legacy/attestation/ots-archive/5c6a5fadf3dc0445.ots
+attic/legacy/attestation/ots-archive/5c9ec90607640b1a.ots
+attic/legacy/attestation/ots-archive/5d42fdade35892bb.ots
+attic/legacy/attestation/ots-archive/5f0abdf286018187.ots
+attic/legacy/attestation/ots-archive/5f542b17c0ab689f.ots
+attic/legacy/attestation/ots-archive/602cb764c69c6124.ots
+attic/legacy/attestation/ots-archive/602cb764c69c6124.ots.bak
+attic/legacy/attestation/ots-archive/67060471c00af21e.ots
+attic/legacy/attestation/ots-archive/67060471c00af21e.ots.bak
+attic/legacy/attestation/ots-archive/71653d15f1f9053a.ots
+attic/legacy/attestation/ots-archive/71653d15f1f9053a.ots.bak
+attic/legacy/attestation/ots-archive/760a1e06fd696278.ots
+attic/legacy/attestation/ots-archive/760a1e06fd696278.ots.bak
+attic/legacy/attestation/ots-archive/7925ade7696f45cc.ots
+attic/legacy/attestation/ots-archive/7b688f97748bdc28.ots
+attic/legacy/attestation/ots-archive/8183dd4f9ef96a4a.ots
+attic/legacy/attestation/ots-archive/85db9b0522485719.ots
+attic/legacy/attestation/ots-archive/85db9b0522485719.ots.bak
+attic/legacy/attestation/ots-archive/86a4d836e7fc5565.ots
+attic/legacy/attestation/ots-archive/86a4d836e7fc5565.ots.bak
+attic/legacy/attestation/ots-archive/88f79bc22e1db0a9.ots
+attic/legacy/attestation/ots-archive/8e131caf688ec312.ots
+attic/legacy/attestation/ots-archive/904b094e977b5bc3.ots
+attic/legacy/attestation/ots-archive/92bd0642d7516f1f.ots
+attic/legacy/attestation/ots-archive/92bd0642d7516f1f.ots.bak
+attic/legacy/attestation/ots-archive/9391323456a3f6aa.ots
+attic/legacy/attestation/ots-archive/964d28b3f8b18407.ots
+attic/legacy/attestation/ots-archive/99c903845cd80aed.ots
+attic/legacy/attestation/ots-archive/99c903845cd80aed.ots.bak
+attic/legacy/attestation/ots-archive/9b713a7a9bebf989.ots
+attic/legacy/attestation/ots-archive/9e10ecc572a37264.ots
+attic/legacy/attestation/ots-archive/a1b36d1f6bc85f76.ots
+attic/legacy/attestation/ots-archive/a274cc4804b468fb.ots
+attic/legacy/attestation/ots-archive/a7f6a18742acf1c7.ots
+attic/legacy/attestation/ots-archive/a7f6a18742acf1c7.ots.bak
+attic/legacy/attestation/ots-archive/a9084969fd1c590d.ots
+attic/legacy/attestation/ots-archive/acbb579d200ea7a2.ots
+attic/legacy/attestation/ots-archive/b066e0c60ed2d3cd.ots
+attic/legacy/attestation/ots-archive/b52a267c1d013f53.ots
+attic/legacy/attestation/ots-archive/b93c237c05f097e7.ots
+attic/legacy/attestation/ots-archive/bd15a4004a892e1c.ots
+attic/legacy/attestation/ots-archive/bdcaccfee9c4b079.ots
+attic/legacy/attestation/ots-archive/be9fd1d5d7f943c3.ots
+attic/legacy/attestation/ots-archive/c0858b9739085844.ots
+attic/legacy/attestation/ots-archive/c0858b9739085844.ots.bak
+attic/legacy/attestation/ots-archive/c1887383654a0c40.ots
+attic/legacy/attestation/ots-archive/c3070f01a8a37224.ots
+attic/legacy/attestation/ots-archive/c31e743a1f8265fc.ots
+attic/legacy/attestation/ots-archive/c42faed6c521ea01.ots
+attic/legacy/attestation/ots-archive/c444ee26342751ca.ots
+attic/legacy/attestation/ots-archive/c444ee26342751ca.ots.bak
+attic/legacy/attestation/ots-archive/c6199616ca411a80.ots
+attic/legacy/attestation/ots-archive/c9cae2f4bcd0136b.ots
+attic/legacy/attestation/ots-archive/cb131c29ddf75458.ots
+attic/legacy/attestation/ots-archive/cbc1340c5a7dbf44.ots
+attic/legacy/attestation/ots-archive/cc2899aa7238ded3.ots
+attic/legacy/attestation/ots-archive/cc2899aa7238ded3.ots.bak
+attic/legacy/attestation/ots-archive/chain-1000-FROZEN.json.ots
+attic/legacy/attestation/ots-archive/chain-1000-FROZEN.json.ots.bak
+attic/legacy/attestation/ots-archive/chain-FROZEN-2026-10-18-1748.json.ots
+attic/legacy/attestation/ots-archive/d0c63b24d8c421ec.ots
+attic/legacy/attestation/ots-archive/d0c63b24d8c421ec.ots.bak
+attic/legacy/attestation/ots-archive/d16c72bb65076b1c.ots
+attic/legacy/attestation/ots-archive/d4b96d2683413268.ots
+attic/legacy/attestation/ots-archive/d7aad80ac11af13e.ots
+attic/legacy/attestation/ots-archive/d7aad80ac11af13e.ots.bak
+attic/legacy/attestation/ots-archive/e545a8eb105f76c2.ots
+attic/legacy/attestation/ots-archive/e55fadfd5fc0e2f7.ots
+attic/legacy/attestation/ots-archive/e8815575db6fa490.ots
+attic/legacy/attestation/ots-archive/f4e6042cdcefbb31.ots
+attic/legacy/attestation/ots-archive/f4e6042cdcefbb31.ots.bak
+attic/legacy/attestation/ots-archive/f9d7caaaa87d697c.ots
+attic/legacy/attestation/ots-archive/fafcd8252c0b5518.ots
+attic/legacy/attestation/ots-archive/fef06a79502fc8b0.ots
+attic/legacy/attestation/ots-archive/fef06a79502fc8b0.ots.bak
+attic/legacy/attestation/ots-archive/ffa0f3409051a259.ots
+attic/legacy/attestation/ots-archive/ffa0f3409051a259.ots.bak
+attic/legacy/chain_notes.txt
+attic/legacy/last_tunnel.txt
+attic/logs/anchor_upgrade.log
+attic/logs/beacon.log
+attic/logs/embassy_truth.log
+attic/logs/health.log
+attic/logs/mine.log
+attic/logs/ots-batch.log
+attic/logs/pond.log
+attic/logs/watchdog.log
+attic/old/anchor_upgrade.log
+attic/old/auto_last.log
+attic/old/beacon.log
+attic/old/daemon.log
+attic/old/tick.log
+attic/old/vite.log
+attic/ots/019142358f0461d2.ots
+attic/ots/07c45d1a03535f70.ots
+attic/ots/0ddd83d03273dcec.ots
+attic/ots/0de2b2ee6e348492.ots
+attic/ots/0e237a433748e9a6.ots
+attic/ots/128ac21e659783bc.ots
+attic/ots/1409e6528f4449a2.ots
+attic/ots/1aec65fd2d4308ad.ots
+attic/ots/1d2f4ff592eb0d81.ots
+attic/ots/1ec0087f1813fe5f.ots
+attic/ots/1ed1f954ec3fee58.ots
+attic/ots/1ef694576d40828b.ots
+attic/ots/1f3d40b6ad5b996d.ots
+attic/ots/1f9d33d4145e1f06.ots
+attic/ots/203550630b96f3ab.ots
+attic/ots/209790c7d41e982e.ots
+attic/ots/21c9943d8e4975f2.ots
+attic/ots/22710fd50839058a.ots
+attic/ots/239f7e2491945cfe.ots
+attic/ots/254b0272b6613dbc.ots
+attic/ots/25c1c3cd9f2bd95d.ots
+attic/ots/264db12b1c0a8ef7.ots
+attic/ots/26cd09a8a889021a.ots
+attic/ots/27cedb444924379b.ots
+attic/ots/2922856ffaff1030.ots
+attic/ots/2c26bc0faf1aaa34.ots
+attic/ots/301f99e86cc35817.ots
+attic/ots/3179739feaaebb12.ots
+attic/ots/3297d8377ed36357.ots
+attic/ots/3298a7751c3c9396.ots
+attic/ots/34698d3283efc8e2.ots
+attic/ots/38ccf4b0ed27442e.ots
+attic/ots/392e89342e158c26.ots
+attic/ots/3df61d9dbc178c5e.ots
+attic/ots/3edefaac1edc5804.ots
+attic/ots/41f61c85e640887e.ots
+attic/ots/460b548f5dfe77ad.ots
+attic/ots/4acd999d8fa4d0d4.ots
+attic/ots/4adfd63820b734db.ots
+attic/ots/4b3f94d770864e69.ots
+attic/ots/4f19d21488636e1f.ots
+attic/ots/563cd5febd4afe8f.ots
+attic/ots/567abc4b4f348207.ots
+attic/ots/572f4a737bdcdde5.ots
+attic/ots/5764050ec7ddbabf.ots
+attic/ots/5c1eadf5a6ccb6b0.ots
+attic/ots/5d5039e945bd94e9.ots
+attic/ots/60ce0b6561dde811.ots
+attic/ots/64cb5e6d60ab403b.ots
+attic/ots/65f33e59143cacbe.ots
+attic/ots/67be902c7ceae353.ots
+attic/ots/6bccde91a2b9055b.ots
+attic/ots/6c6664bb5d352ed5.ots
+attic/ots/6d6cb94139aa5f8e.ots
+attic/ots/6dcc7bbd3abf6d57.ots
+attic/ots/6df1ff9fa9245b02.ots
+attic/ots/6e7409f103bc323e.ots
+attic/ots/74658c1915c57501.ots
+attic/ots/74df759d08719d61.ots
+attic/ots/823aa0d10f99515e.ots
+attic/ots/83573b3c15cf3b09.ots
+attic/ots/84097de9847b011f.ots
+attic/ots/85459e64bedc9aed.ots
+attic/ots/85868f57918844cc.ots
+attic/ots/858c1106b9d929cf.ots
+attic/ots/85cb8c20e05453e9.ots
+attic/ots/874790bbe51341b6.ots
+attic/ots/8d790efad19fca19.ots
+attic/ots/8f206d97d7748496.ots
+attic/ots/8f5e3999be420a0c.ots
+attic/ots/91bc65c7055f7d8b.ots
+attic/ots/91becfe75689a6c7.ots
+attic/ots/930e0d35d10c53eb.ots
+attic/ots/9343f49ac154b631.ots
+attic/ots/957358f579199c54.ots
+attic/ots/978a6959574cc429.ots
+attic/ots/9b3a50c44a56b175.ots
+attic/ots/9bb3ce54bdbe60e1.ots
+attic/ots/a10c36a0656e76a5.ots
+attic/ots/a328e9eea1a8b1a0.ots
+attic/ots/a4633854245672a0.ots
+attic/ots/a4aff7ff8767c48c.ots
+attic/ots/a7f9df2c9e2bd172.ots
+attic/ots/abe0013dd2d02235.ots
+attic/ots/adfcff766ace5315.ots
+attic/ots/ae79f5fd0f3ed377.ots
+attic/ots/aebf880efa9b2746.ots
+attic/ots/b187a44306367dae.ots
+attic/ots/b1905cd9ac250ab6.ots
+attic/ots/b680057f228e5a70.ots
+attic/ots/b68900808b0e5f7c.ots
+attic/ots/b8d2e82a904fb979.ots
+attic/ots/bb7a5a6c05d53216.ots
+attic/ots/bd28f3c324a3ab24.ots
+attic/ots/bd3ef622b3e90493.ots
+attic/ots/c3a11ceda0eee763.ots
+attic/ots/c68cd43e96d39689.ots
+attic/ots/c6faaa13307abac7.ots
+attic/ots/c8cc0a925bf02807.ots
+attic/ots/ca4c189d159c82f8.ots
+attic/ots/cbb1c03ca6df3682.ots
+attic/ots/cd517a0fccb4f848.ots
+attic/ots/cdb5c470e3af4331.ots
+attic/ots/cef10e751a0fd150.ots
+attic/ots/chain-1000-FROZEN.json.ots
+attic/ots/chain-1200-FROZEN.json.ots
+attic/ots/chain-FROZEN-2026-10-18-1748.json.ots
+attic/ots/chain.json.ots.pending
+attic/ots/chain.json.ots.tmp
+attic/ots/d2dedc42071dccca.ots
+attic/ots/d5190b22e55c7eab.ots
+attic/ots/d5caccfef353dfdb.ots
+attic/ots/d9a1f29bb7f9c28b.ots
+attic/ots/da48228f50731791.ots
+attic/ots/ddb3e78c095e5b14.ots
+attic/ots/e051a077def571c9.ots
+attic/ots/e089d19bd13f8430.ots
+attic/ots/e0f7ce4724eccb61.ots
+attic/ots/e3f651dd09e7fbe9.ots
+attic/ots/e5227f7aca383005.ots
+attic/ots/e8855e24c6d0e906.ots
+attic/ots/eeb0b19e65c1e5ce.ots
+attic/ots/ef948737e696a548.ots
+attic/ots/f2fd118f7f627560.ots
+attic/ots/f4ad5415a72956e1.ots
+attic/ots/f517844a24a7e6c3.ots
+attic/ots/f702fe3fc3757dc2.ots
+attic/ots/fa80a622ac6cc6db.ots
+attic/ots/fd26e0b2dd14fe76.ots
+attic/ots/ffe9854cc6166b84.ots
+attic/ots_guard.sh
+attic/pond.lock
+attic/pond.log
+attic/scripts/__pycache__/kernel.cpython-314.pyc
+attic/scripts/__pycache__/pond.cpython-314.pyc
+attic/scripts/alert_guard.sh
+attic/scripts/anti_dupe.py
+attic/scripts/beacon.py
+attic/scripts/check.sh
+attic/scripts/check_anchor.py
+attic/scripts/check_slow.py
+attic/scripts/dns.py
+attic/scripts/fly-witness/.dockerignore
+attic/scripts/fly-witness/Dockerfile
+attic/scripts/fly-witness/app.py
+attic/scripts/fly-witness/chain.json
+attic/scripts/fly-witness/daemon.log
+attic/scripts/fly-witness/daemon.pid
+attic/scripts/fly-witness/fly.toml
+attic/scripts/fly-witness/requirements.txt
+attic/scripts/health-loop.sh
+attic/scripts/kernel.py
+attic/scripts/mine_auto.sh
+attic/scripts/ots-retry.sh
+attic/scripts/pond-watchdog.sh
+attic/scripts/pond.py
+attic/scripts/pond.py.bak
+attic/scripts/pond.py.bak.offline
+attic/scripts/pond_daemon.py
+attic/scripts/proxy.py
+attic/scripts/push.py
+attic/scripts/tick.py
+attic/scripts/verify.py
+attic/scripts/verify_chain.py
+attic/scripts/watchdog-loop.sh
+attic/watchdog-loop.log
+
+=== CHAIN WRITERS ===
+kernel/consensus/health.py:2:CHAIN="chain.json"
+kernel/consensus/health.py:3:chain=json.load(open(CHAIN))
+kernel/consensus/atomic_write.py:1:def atomic_write(path, data):
+pond.py:5:CHAIN=ROOT/"chain.json"
+pond.py:6:STATE=ROOT/"kernel/state/chain.json"
+pond.py:7:PUBLIC=ROOT/"embassy/public/chain.json"
+pond.py:23:def atomic_write(path,data):
+pond.py:48:def save_chain(chain):
+pond.py:54:    atomic_write(CHAIN, chain)
+pond.py:59:    SHA.write_text(f"{hashlib.sha256(CHAIN.read_bytes()).hexdigest()}  chain.json\n")
+pond.py:72:    save_chain(chain)
+attic/scripts/beacon.py:19:        chain = json.load(open("chain.json"))
+attic/scripts/check_anchor.py:29:if os.path.exists("chain.json"):
+attic/scripts/check_anchor.py:31:        with open("chain.json") as f:
+attic/scripts/check_slow.py:3:with open('chain.json') as f:
+attic/scripts/check_slow.py:4:    chain=json.load(f)
+attic/scripts/anti_dupe.py:2:chain=json.load(open("chain.json"))
+attic/scripts/verify.py:8:c=json.loads(Path("chain.json").read_text())
+attic/scripts/verify_chain.py:2:chain=json.load(open("chain.json"))
+attic/scripts/tick.py:5:CHAIN = "chain.json"
+attic/scripts/mine_auto.sh:33:    git add chain.json 2>&1 | tee -a $LOG
+attic/scripts/mine_auto.sh:34:    git commit -m "$bnum btc $(python -c 'import json; print(json.load(open("chain.json"))[-1].get("btc_height",0))') truth" 2>&1 | tee -a $LOG
+attic/scripts/pond.py:8:CHAIN_FILE = Path("kernel/state/chain.json")
+attic/scripts/pond.py:48:        chain=json.loads(Path("kernel/state/chain.json").read_text())
+attic/scripts/pond.py:57:        chain=json.loads(Path("kernel/state/chain.json").read_text())
+attic/scripts/pond.py:108:        chain=json.loads(Path("kernel/state/chain.json").read_text())
+attic/scripts/pond.py:110:        Path("embassy/public/chain.json").write_text(json.dumps(chain, indent=2))
+attic/scripts/pond.py:140:            subprocess.run(["git","checkout","HEAD","--","kernel/state/chain.json"], capture_output=True)
+attic/scripts/pond.py:200:        SHA_FILE.write_text(f"{sha}  chain.json\n")
+attic/scripts/pond.py:213:        subprocess.run(["git","add","-f","kernel/state/chain.json","LAST.txt","SHA256.txt","KERNEL_LAW.md","DUPE_PROOF.md","kernel.py","embassy/public/chain.json","embassy/public/blocks.json"], capture_output=True, timeout=10)
+attic/scripts/pond.py:233:            raise ValueError("empty chain.json")
+attic/scripts/pond_daemon.py:10:        subprocess.Popen(["bash","-c", f"cd ~/pond && timeout 8 git add chain.json LAST.txt >/dev/null 2>&1; timeout 8 git commit -m '{h} offline Biougra' >/dev/null 2>&1; timeout 12 git push >/dev/null 2>&1 &"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+attic/scripts/kernel.py:7:CHAIN_FILE = Path("chain.json")
+attic/scripts/kernel.py:49:        chain=json.loads(Path("chain.json").read_text())
+attic/scripts/kernel.py:58:        chain=json.loads(Path("chain.json").read_text())
+attic/scripts/kernel.py:111:        chain=json.loads(Path("chain.json").read_text())
+attic/scripts/kernel.py:113:        Path("embassy/public/chain.json").write_text(json.dumps(chain, indent=2))
+attic/scripts/kernel.py:143:            subprocess.run(["git","checkout","HEAD","--","chain.json"], capture_output=True)
+attic/scripts/kernel.py:203:        SHA_FILE.write_text(f"{sha}  chain.json\n")
+attic/scripts/kernel.py:216:        subprocess.run(["git","add","-f","chain.json","LAST.txt","SHA256.txt","KERNEL_LAW.md","DUPE_PROOF.md","kernel.py","embassy/public/chain.json","embassy/public/blocks.json"], capture_output=True, timeout=10)
+attic/scripts/kernel.py:236:            raise ValueError("empty chain.json")
+attic/scripts/push.py:3:shutil.copy2('chain.json','embassy/public/chain.json')
+attic/scripts/push.py:4:shutil.copy2('chain.json','embassy/public/blocks.json')
+attic/scripts/push.py:5:print(f"Chain: {len(json.load(open('chain.json')))} blocks - synced to embassy/public/")
+attic/scripts/push.py:6:subprocess.run(["git","add","chain.json","embassy/public/"])
+attic/scripts/pond-watchdog.sh:2:CHAIN="$HOME/pond/chain.json"
+attic/scripts/pond-watchdog.sh:5:AGE=$(python3 -c "import json,datetime; c=json.load(open('$HOME/pond/chain.json'))[-1]; dt=datetime.datetime.fromisoformat(c['payload']['ts'].replace('Z','+00:00')); print(int((datetime.datetime.now(datetime.timezone.utc)-dt).total_seconds()))")
+attic/scripts/fly-witness/app.py:7:CHAIN_PATH = os.path.join(os.path.dirname(__file__), "chain.json")
+attic/scripts/fly-witness/app.py:20:        return JSONResponse({"error": "chain.json not found"}, status_code=404)
+attic/scripts/fly-witness/app.py:23:@app.get("/chain.json")
+attic/scripts/fly-witness/app.py:24:def chain_json():
+attic/ots_guard.sh:7:  mv -n "$POND_DIR"/chain.json.ots.* "$ATTIC"/ 2>/dev/null
+attic/ots_guard.sh:8:  mv -n "$POND_DIR"/chain.json.ots.pending "$ATTIC"/ 2>/dev/null
+attic/ots_guard.sh:9:  mv -n "$POND_DIR"/chain.json.ots.tmp "$ATTIC"/ 2>/dev/null
+
+=== CRONTAB ===
+/data/data/com.termux/files/home/pond/tmp/kernel_audit.sh: line 12: crontab: command not found
+cat: attic/cron.txt: No such file or directory
+
+=== OTS GUARD ===
+#!/data/data/com.termux/files/usr/bin/bash
+POND_DIR="$HOME/pond"
+ATTIC="$POND_DIR/attic/ots"
+mkdir -p "$ATTIC"
+while true; do
+  mv -n "$POND_DIR"/*.ots "$ATTIC"/ 2>/dev/null
+  mv -n "$POND_DIR"/chain.json.ots.* "$ATTIC"/ 2>/dev/null
+  mv -n "$POND_DIR"/chain.json.ots.pending "$ATTIC"/ 2>/dev/null
+  mv -n "$POND_DIR"/chain.json.ots.tmp "$ATTIC"/ 2>/dev/null
+  sleep 15
+done
+
+=== FORK_GUARD ===
+-rwx------. 1 u0_a279 u0_a279 1577 Oct 22 16:25 attic/scripts/pond_daemon.py
+-rw-------. 1 u0_a279 u0_a279   18 Oct 22 17:04 kernel/consensus/fork_guard.py
+-rw-------. 1 u0_a279 u0_a279 2041 Oct 22 16:03 kernel/consensus/health.py
+-rwx------. 1 u0_a279 u0_a279 3575 Oct 22 17:04 pond.py
+--- fork_guard.py ---
+def check(): pass
+--- pond.py head ---
+#!/usr/bin/env python3
+import json, pathlib, time, hashlib, os, shutil, fcntl, sys
+from datetime import datetime, timezone
+ROOT=pathlib.Path(".")
+CHAIN=ROOT/"chain.json"
+STATE=ROOT/"kernel/state/chain.json"
+PUBLIC=ROOT/"embassy/public/chain.json"
+LOG=ROOT/"attic/logs/pond.log"
+LOCK=ROOT/"attic/pond.lock"
+LAST=ROOT/"LAST.txt"
+SHA=ROOT/"SHA256.txt"
+INTERVAL=600
+LOG.parent.mkdir(parents=True, exist_ok=True)
+
+def log(msg):
+    ts=datetime.now(timezone.utc).isoformat()
+    line=f"[{ts}] {msg}"
+    print(line)
+    try:
+        with open(LOG,"a") as f: f.write(line+"\n")
+    except: pass
+
+def atomic_write(path,data):
+    p=pathlib.Path(path)
+    tmp=p.with_suffix('.tmp')
+    tmp.write_text(json.dumps(data,indent=2))
+    tmp.rename(p)
+
+def fork_guard_check(chain):
+    LOCK.parent.mkdir(parents=True, exist_ok=True)
+    lf=open(LOCK,"w")
+    try:
+        fcntl.flock(lf, fcntl.LOCK_EX|fcntl.LOCK_NB)
+    except:
+        log("FORK_GUARD: another daemon running — ABORT")
+        sys.exit(1)
+    # REAL fork check: prev must match previous hash
+    for i in range(1,len(chain)):
+        if chain[i].get('prev') != chain[i-1].get('hash'):
+            log(f"FORK_GUARD: BROKEN LINK at {i} {chain[i-1]['hash'][:12]} != prev {chain[i].get('prev','')[:12]} HALT")
+            pathlib.Path("embassy/public/FORK_ALERT.md").write_text(f"BROKEN LINK at {i}\n")
+            sys.exit(2)
+    return lf
+
+def load_chain():
+    return json.loads(CHAIN.read_text()) if CHAIN.exists() else []
+
+def save_chain(chain):
+    # assert prev == tip before write (your request)
+    for i in range(1,len(chain)):
+        assert chain[i]['prev'] == chain[i-1]['hash'], f"FORK PREVENTED: prev != tip at {i}"
+    # height collision: payload index or len check
+    assert chain[-1]['prev'] == chain[-2]['hash'] if len(chain)>1 else True, "HEIGHT COLLISION"
+    atomic_write(CHAIN, chain)
+    shutil.copy(CHAIN, STATE)
+    try: shutil.copy(CHAIN, PUBLIC)
+    except: pass
+    LAST.write_text(chain[-1]['hash']+"\n")
+    SHA.write_text(f"{hashlib.sha256(CHAIN.read_bytes()).hexdigest()}  chain.json\n")
+
+def mine_next(chain):
+    from kernel.consensus.fork_guard import check
+    check()
+    last=chain[-1]
+    prev=last['hash']
+    height=len(chain)
+    payload={"index":height,"timestamp":datetime.now(timezone.utc).isoformat(),"sun":15.2,"btc":972583}
+    new_block={"hash":hashlib.sha256(f"{prev}{json.dumps(payload)}".encode()).hexdigest(),"prev":prev,"payload":payload}
+    assert new_block['prev'] == chain[-1]['hash'], "FORK PREVENTED: prev != tip"
+    assert new_block['payload']['index'] == len(chain), "HEIGHT COLLISION"
+    chain.append(new_block)
+    save_chain(chain)
+    log(f"MINED {height} {new_block['hash'][:12]} prev={prev[:12]}")
+    return new_block
+
+def main():
+    log("Pond daemon v4.3 FORK-SAFE OFFLINE PROOF - Biougra A13")
+    while True:
+        chain=load_chain()
+        lf=fork_guard_check(chain)
+        last_time=chain[-1]['payload'].get('timestamp') if isinstance(chain[-1].get('payload'),dict) else None
+        try:
+            age=(datetime.now(timezone.utc)-datetime.fromisoformat(last_time)).total_seconds() if last_time else 0
+        except: age=0
+        wait=max(0,INTERVAL-age)
+        log(f"on-time {len(chain)-1} {int(age)}s ago wait {int(wait)}s")
+        if wait<5:
+            try: mine_next(chain)
+            except AssertionError as e: log(f"FORK BLOCKED: {e}")
+            except Exception as e: log(f"mine error {e}")
+        try: fcntl.flock(lf,fcntl.LOCK_UN); lf.close()
+        except: pass
+        time.sleep(30)
+
+if __name__=="__main__": main()
+
+=== LOCKS ===
+ls: cannot access 'attic/**/*.lock': No such file or directory
+-rw-------. 1 u0_a279 u0_a279 0 Oct 22 17:13 attic/pond.lock
+ls: cannot access '*.lock': No such file or directory
+-rw-------. 1 u0_a279 u0_a279 0 Oct 22 17:13 attic/pond.lock
+
+=== STATE PATHS ===
+-rw-------. 1 u0_a279 u0_a279 809393 Oct 22 17:04 chain.json
+-rw-------. 1 u0_a279 u0_a279 809393 Oct 22 17:04 embassy/public/chain.json
+-rw-------. 1 u0_a279 u0_a279 808556 Oct 22 16:56 kernel/state/chain.json
+/data/data/com.termux/files/home/pond/chain.json
+/data/data/com.termux/files/home/pond/kernel/state/chain.json
+/data/data/com.termux/files/home/pond/embassy/public/chain.json
+/data/data/com.termux/files/home/pond/kernel/state/chain.json
+/data/data/com.termux/files/home/pond/embassy/public/chain.json
+
+=== HEALTH ===
+import json,os,subprocess,datetime
+CHAIN="chain.json"
+chain=json.load(open(CHAIN))
+# v4.2 attested breaks - known, documented, not errors
+ATTESTED = {1007: "2026-10-20 hard-reset GPS-drift 17646s Biougra attested"}
+slow=[]
+attested_found=[]
+for i in range(1,len(chain)):
+ try:
+  t1=datetime.datetime.fromisoformat(chain[i-1]['payload']['ts'].replace('Z','+00:00'))
+  t2=datetime.datetime.fromisoformat(chain[i]['payload']['ts'].replace('Z','+00:00'))
+  d=(t2-t1).total_seconds()
+  if d>1200:
+    if chain[i]['index'] in ATTESTED:
+      attested_found.append((chain[i]['index'],int(d),ATTESTED[chain[i]['index']]))
+    else:
+      slow.append((chain[i]['index'],int(d)))
+ except: pass
+print("SLOW:",slow[-3:] if slow else "OK")
+if attested_found:
+  print("ATTESTED:",attested_found)
+reorg=[]
+for i in range(1,len(chain)):
+ try:
+  b1=chain[i-1]['payload']['btcHeight']; b2=chain[i]['payload']['btcHeight']
+  if b2 < b1-1: reorg.append((chain[i]['index'],b1,b2))
+ except: pass
+print("BTC REORG:",reorg[-3:] if reorg else "OK")
+jump=[]
+for i in range(1,len(chain)):
+ try:
+  s1=chain[i-1]['payload']['sunAltitude']; s2=chain[i]['payload']['sunAltitude']
+  if abs(s2-s1)>10 and chain[i]['index']!=36 and chain[i]['index'] not in ATTESTED:
+    jump.append((chain[i]['index'],s1,s2))
+ except: pass
+print("SUN:",jump[-3:] if jump else "OK")
+try:
+ out=subprocess.check_output(["git","log","-1","--format=%ct"],text=True).strip()
+ last=datetime.datetime.fromtimestamp(int(out),tz=datetime.timezone.utc)
+ age=(datetime.datetime.now(datetime.timezone.utc)-last).total_seconds()
+ print(f"Git push age: {age/60:.1f}m")
+except Exception as e:
+ print("Git err",e)
+last=chain[-1]
+age2=(datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.fromisoformat(last['payload']['ts'].replace('Z','+00:00'))).total_seconds()
+size=os.path.getsize(CHAIN)/1024
+stat="LIVE" if age2<1200 else "STALE"
+print(f"blocks {len(chain)} last #{last['index']} sun={last['payload']['sunAltitude']} btc={last['payload']['btcHeight']} age {age2/60:.1f}m {size:.1f}KB {stat}")

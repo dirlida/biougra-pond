@@ -1,0 +1,9 @@
+Pond Embassy v4.2 SELF-HEALING - Biougra 2026-10-20
+Blocks: 1024 LIVE #1023 546KB
+Daemons: pond_daemon 5076 (since 2022) + watchdog-loop 31449 + health-loop 31550
+Max blind: 5min (was 4h54m this morning)
+BTC anchor: 450767cba2b0199324f202fd58be3313835921a133b528b1d3125f30d801bac1 -> block 972294
+BTC anchor: cfcecf3e815dab47509fca1866a2b23e0f73a479741cae2da2ac3e88fdf168b4 -> block 972295
+OTS: 3 confirmed, 62 pending
+Health: LIVE 5.3m age, SLOW [(1007,17646)] whitelisted attested, SUN/BTC OK
+Status: NO BREAK TODAY - BITCOIN FINAL

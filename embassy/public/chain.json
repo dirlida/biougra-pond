@@ -21330,5 +21330,3264 @@
       "btcHeight": 972583
     },
     "index": 1315
+  },
+  {
+    "hash": "00af26343b1733fdbc6a5c2bd8407aad6d292dc45f5bdb4751899ca9b9c15d35",
+    "prev": "f247ee46f3392436fa6c4fb7a758bcccf31be0afa341869d49b500358cf62389",
+    "index": 1316,
+    "nonce": 8,
+    "difficulty": 2,
+    "merkle_root": "0e6d1b85b8dbdd64b54bd1d9b8f793a3ec82db4ead973e6489839f7d38625cf6",
+    "payload": {
+      "index": 1316,
+      "ts": "2026-10-22T18:26:59.958379+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1316,
+      "merkle_root": "0e6d1b85b8dbdd64b54bd1d9b8f793a3ec82db4ead973e6489839f7d38625cf6"
+    }
+  },
+  {
+    "hash": "0692c61fe91b3700832f152654ed19d9cc5e7325b693f34b6f2f12fdd3bd3c61",
+    "prev": "00af26343b1733fdbc6a5c2bd8407aad6d292dc45f5bdb4751899ca9b9c15d35",
+    "index": 1317,
+    "nonce": 16,
+    "difficulty": 1,
+    "merkle_root": "9b5c5b22a85fd77ca3f438642750ff9dc759e4ce2ea190f5b4d490c9f5e7130b",
+    "payload": {
+      "index": 1317,
+      "ts": "2026-10-22T18:28:00.111734+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1317,
+      "merkle_root": "9b5c5b22a85fd77ca3f438642750ff9dc759e4ce2ea190f5b4d490c9f5e7130b"
+    }
+  },
+  {
+    "hash": "03887d65b420637576525b297b751c07dd5ad4662f539fec023a2ed7d6c10294",
+    "prev": "0692c61fe91b3700832f152654ed19d9cc5e7325b693f34b6f2f12fdd3bd3c61",
+    "index": 1318,
+    "nonce": 5,
+    "difficulty": 1,
+    "merkle_root": "6bd517938592ceed3e0734301dd4eec52c8a5096cdb91d3872348bf3cab9760e",
+    "payload": {
+      "index": 1318,
+      "ts": "2026-10-22T18:29:00.263937+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1318,
+      "merkle_root": "6bd517938592ceed3e0734301dd4eec52c8a5096cdb91d3872348bf3cab9760e"
+    }
+  },
+  {
+    "hash": "074c43df0a972436fa0495d3614cf375b7cfa251889c093da8e458176a6b2b8e",
+    "prev": "03887d65b420637576525b297b751c07dd5ad4662f539fec023a2ed7d6c10294",
+    "index": 1319,
+    "nonce": 6,
+    "difficulty": 1,
+    "merkle_root": "a53aab742e2992384195bb7d24230f76ac164d265f3a8747b6191551bf9de6a9",
+    "payload": {
+      "index": 1319,
+      "ts": "2026-10-22T18:30:00.402793+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1319,
+      "merkle_root": "a53aab742e2992384195bb7d24230f76ac164d265f3a8747b6191551bf9de6a9"
+    }
+  },
+  {
+    "hash": "02ae7b222446f9fcdb0ef2b3da6481c572fae5409f41b179ef66739867833f30",
+    "prev": "074c43df0a972436fa0495d3614cf375b7cfa251889c093da8e458176a6b2b8e",
+    "index": 1320,
+    "nonce": 34,
+    "difficulty": 1,
+    "merkle_root": "0c11de9b6d4cab31f9f0f5388452ccab46456a9f3117e436c85105cec240979c",
+    "payload": {
+      "index": 1320,
+      "ts": "2026-10-22T18:31:00.545201+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1320,
+      "merkle_root": "0c11de9b6d4cab31f9f0f5388452ccab46456a9f3117e436c85105cec240979c"
+    }
+  },
+  {
+    "hash": "042bc650ca5a9e40d2f92c3b73378254046464adac9ec4933aa6597871e73b94",
+    "prev": "02ae7b222446f9fcdb0ef2b3da6481c572fae5409f41b179ef66739867833f30",
+    "index": 1321,
+    "nonce": 16,
+    "difficulty": 1,
+    "merkle_root": "17df3e6f4b9c95ac8ce979bf37cf8c7c41de191dbc58c20bb85c103b9397340e",
+    "payload": {
+      "index": 1321,
+      "ts": "2026-10-22T18:32:00.691009+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1321,
+      "merkle_root": "17df3e6f4b9c95ac8ce979bf37cf8c7c41de191dbc58c20bb85c103b9397340e"
+    }
+  },
+  {
+    "hash": "00720e7547f07f145c5898f9cb60829469c0a98aa1b5f786cbfa3fd0d8b7e636",
+    "prev": "042bc650ca5a9e40d2f92c3b73378254046464adac9ec4933aa6597871e73b94",
+    "index": 1322,
+    "nonce": 132,
+    "difficulty": 2,
+    "merkle_root": "4d582ccd93c56329b03a00fb1529bf89446fc35ba3db99195359634ad145f0c2",
+    "payload": {
+      "index": 1322,
+      "ts": "2026-10-22T18:33:49.387838+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1322,
+      "merkle_root": "4d582ccd93c56329b03a00fb1529bf89446fc35ba3db99195359634ad145f0c2",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "1236ace6251cd65612dcda2a5cd48fec423dd6d44807622e1126ea7ad3081f10",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1422
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694029,
+        "height": 1322
+      }
+    ]
+  },
+  {
+    "hash": "00c6ad0fac481f194a5e972a3727c9e40909392aadb0688d44def7e113c6ceac",
+    "prev": "00720e7547f07f145c5898f9cb60829469c0a98aa1b5f786cbfa3fd0d8b7e636",
+    "index": 1323,
+    "nonce": 135,
+    "difficulty": 2,
+    "merkle_root": "ea361a0cee47363c62bc6554ed8dd90bd17a378a72ea3bc3c60f06bacca783d1",
+    "payload": {
+      "index": 1323,
+      "ts": "2026-10-22T18:34:49.621482+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1323,
+      "merkle_root": "ea361a0cee47363c62bc6554ed8dd90bd17a378a72ea3bc3c60f06bacca783d1",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "b1c3ad01a916e6954dbdd23113e04c24ba3fda06e38085b8d7b6ada511061ff8",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1423
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694089,
+        "height": 1323
+      }
+    ]
+  },
+  {
+    "hash": "007e034688d315cef436bcdef804e86aaec5dba639f3d94c517e127f0109fa6b",
+    "prev": "00c6ad0fac481f194a5e972a3727c9e40909392aadb0688d44def7e113c6ceac",
+    "index": 1324,
+    "nonce": 365,
+    "difficulty": 2,
+    "merkle_root": "c58f731f3e8223f5a0d3aa1cc2a85a7ce99c13237d3f354a02436de93177ed5b",
+    "payload": {
+      "index": 1324,
+      "ts": "2026-10-22T18:35:49.839601+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1324,
+      "merkle_root": "c58f731f3e8223f5a0d3aa1cc2a85a7ce99c13237d3f354a02436de93177ed5b",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "c4cf2b9f1317eaac7e736cdf1fc72d9beb5501a6fe4d97877a45beb6f187d58e",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1424
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694149,
+        "height": 1324
+      }
+    ]
+  },
+  {
+    "hash": "006498ff785b2128a46071d40bdbe110ee361cee33046e34e825e89185583704",
+    "prev": "007e034688d315cef436bcdef804e86aaec5dba639f3d94c517e127f0109fa6b",
+    "index": 1325,
+    "nonce": 42,
+    "difficulty": 2,
+    "merkle_root": "c6edafcee918b7f41ab26c667c2ee00f4e7f56efa98d7dfbd76fa34838239e0c",
+    "payload": {
+      "index": 1325,
+      "ts": "2026-10-22T18:36:50.078126+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1325,
+      "merkle_root": "c6edafcee918b7f41ab26c667c2ee00f4e7f56efa98d7dfbd76fa34838239e0c",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "dd06847c1fb290ad64461ab661127c6fd26ffca26550f57246bafcb13efe2ac2",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1425
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694210,
+        "height": 1325
+      }
+    ]
+  },
+  {
+    "hash": "0063c4f318f094554c4098a9a2d3699be7303041181213a6097215952b737134",
+    "prev": "006498ff785b2128a46071d40bdbe110ee361cee33046e34e825e89185583704",
+    "index": 1326,
+    "nonce": 506,
+    "difficulty": 2,
+    "merkle_root": "81ddcb9963be394a691e5a14ed4a3ffbb2566d24e164673dd2383bb2fa029f16",
+    "payload": {
+      "index": 1326,
+      "ts": "2026-10-22T18:37:50.383197+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1326,
+      "merkle_root": "81ddcb9963be394a691e5a14ed4a3ffbb2566d24e164673dd2383bb2fa029f16",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "655936bad4a2457b31f0c47be52a8188d1cce319884a3f4a3644e5c953f36afd",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1426
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694270,
+        "height": 1326
+      }
+    ]
+  },
+  {
+    "hash": "001873ea73995d3324a14aef65635e282479d19e60e6aa90befbafced11b2622",
+    "prev": "0063c4f318f094554c4098a9a2d3699be7303041181213a6097215952b737134",
+    "index": 1327,
+    "nonce": 632,
+    "difficulty": 2,
+    "merkle_root": "5de55270e8a7f7f011ec071de72f053cdeb797b918d3a21f46824e2f4c2e4e92",
+    "payload": {
+      "index": 1327,
+      "ts": "2026-10-22T18:38:51.626071+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1327,
+      "merkle_root": "5de55270e8a7f7f011ec071de72f053cdeb797b918d3a21f46824e2f4c2e4e92",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "8b1fc1b65e817252ee648ae4d0aef085832aafba691eebd803f31469b5c0fcad",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1427
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694331,
+        "height": 1327
+      }
+    ]
+  },
+  {
+    "hash": "0062f370df2300b87e2dad508f54b7052f59769c5eac8c09195a769abf2963bd",
+    "prev": "001873ea73995d3324a14aef65635e282479d19e60e6aa90befbafced11b2622",
+    "index": 1328,
+    "nonce": 250,
+    "difficulty": 2,
+    "merkle_root": "111d13cf7558ec728608b372cc175045ebb97722d41956feaf45e520ce2e47b3",
+    "payload": {
+      "index": 1328,
+      "ts": "2026-10-22T18:39:52.685935+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1328,
+      "merkle_root": "111d13cf7558ec728608b372cc175045ebb97722d41956feaf45e520ce2e47b3",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "eae5c0c00d99f17fb979e8160139e67ac33d2345a6a9bdb834f41d9b12b34558",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1428
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694392,
+        "height": 1328
+      }
+    ]
+  },
+  {
+    "hash": "00d65dc0b46cb48498a2848dd10ab1763c74286b69a425463720759d938e72c6",
+    "prev": "0062f370df2300b87e2dad508f54b7052f59769c5eac8c09195a769abf2963bd",
+    "index": 1329,
+    "nonce": 102,
+    "difficulty": 2,
+    "merkle_root": "9cc4548d693654d752b3a151325888b700e9b5d1903442cc611798563f12465a",
+    "payload": {
+      "index": 1329,
+      "ts": "2026-10-22T18:40:52.926212+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1329,
+      "merkle_root": "9cc4548d693654d752b3a151325888b700e9b5d1903442cc611798563f12465a",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "3e610ae259cb3dcf0ca53506f898cd9d8758fe36574b00ffbc02963a2d38f1e1",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1429
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694452,
+        "height": 1329
+      }
+    ]
+  },
+  {
+    "hash": "001ceea42cc238589711ee7920d18f503d61efca3a49141846909c21d7acf063",
+    "prev": "00d65dc0b46cb48498a2848dd10ab1763c74286b69a425463720759d938e72c6",
+    "index": 1330,
+    "nonce": 56,
+    "difficulty": 2,
+    "merkle_root": "28e7daf2d395ef23311806a8df512afef8fc3d9c199f4e3ba0ab16d3c298e78e",
+    "payload": {
+      "index": 1330,
+      "ts": "2026-10-22T18:41:53.226520+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1330,
+      "merkle_root": "28e7daf2d395ef23311806a8df512afef8fc3d9c199f4e3ba0ab16d3c298e78e",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "32c4a48c3df1666bd7a0d6cea33caff20633e1bb09a00057329e8b201fba8793",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1430
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694513,
+        "height": 1330
+      }
+    ]
+  },
+  {
+    "hash": "000506a143aef63f626263aa3a23a284c3203ae66558cc498d709abd855d9246",
+    "prev": "001ceea42cc238589711ee7920d18f503d61efca3a49141846909c21d7acf063",
+    "index": 1331,
+    "nonce": 211,
+    "difficulty": 2,
+    "merkle_root": "4d2228b9646d18370746517cb2b8a8eba36d2952ed20daffcf25d254dfa396e7",
+    "payload": {
+      "index": 1331,
+      "ts": "2026-10-22T18:42:53.461718+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1331,
+      "merkle_root": "4d2228b9646d18370746517cb2b8a8eba36d2952ed20daffcf25d254dfa396e7",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "421630a64c6a0d75d25da2f52d4f20e45d954142446fd79d6ae427e7ebb239c1",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1431
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694573,
+        "height": 1331
+      }
+    ]
+  },
+  {
+    "hash": "003bce321f875c2cb56d6faf20cb864c655127bd44ae00a21b1d53c425222e71",
+    "prev": "000506a143aef63f626263aa3a23a284c3203ae66558cc498d709abd855d9246",
+    "index": 1332,
+    "nonce": 422,
+    "difficulty": 2,
+    "merkle_root": "0ed0bc44ed5fbb831dca94ea9580af38a3355e067b2d494da695058a71905424",
+    "payload": {
+      "index": 1332,
+      "ts": "2026-10-22T18:43:53.716787+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1332,
+      "merkle_root": "0ed0bc44ed5fbb831dca94ea9580af38a3355e067b2d494da695058a71905424",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "2fd0b4587d83d29f3663b6dbec68fb2c5091116da579825adbad86b31864de72",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1432
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694633,
+        "height": 1332
+      }
+    ]
+  },
+  {
+    "hash": "00eba11e8d849ba74d565fbf8e22055c7c83595f53af44499002d3015da8448b",
+    "prev": "003bce321f875c2cb56d6faf20cb864c655127bd44ae00a21b1d53c425222e71",
+    "index": 1333,
+    "nonce": 128,
+    "difficulty": 2,
+    "merkle_root": "2e45942592e81ea7d9364a5093b02b240a2c5c1538f3c43e1a4cc2ab4d927007",
+    "payload": {
+      "index": 1333,
+      "ts": "2026-10-22T18:44:54.048490+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1333,
+      "merkle_root": "2e45942592e81ea7d9364a5093b02b240a2c5c1538f3c43e1a4cc2ab4d927007",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "d5c246acc92b9c31f1140eaa33af192bc00e85414e6ab12c576141fde70b5ae9",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1433
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694694,
+        "height": 1333
+      }
+    ]
+  },
+  {
+    "hash": "00a0358301a3d53bef2f9286d2d5433c62b9f68ee9c30a96911fbca3e0ea348b",
+    "prev": "00eba11e8d849ba74d565fbf8e22055c7c83595f53af44499002d3015da8448b",
+    "index": 1334,
+    "nonce": 124,
+    "difficulty": 2,
+    "merkle_root": "62657bcaadc1e4ba7041d3f64a1fa48c8f902f3266f38a370aaf5420158845bf",
+    "payload": {
+      "index": 1334,
+      "ts": "2026-10-22T18:45:54.280138+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1334,
+      "merkle_root": "62657bcaadc1e4ba7041d3f64a1fa48c8f902f3266f38a370aaf5420158845bf",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "112b8b8ee2a685553ed38c32f66244df65a1946a97097e1012aa7631fecd3eb4",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1434
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694754,
+        "height": 1334
+      }
+    ]
+  },
+  {
+    "hash": "0091c276103c07a2e15e0d3e9b666edc023277aa67dbf2a3b1d6204d38a100b3",
+    "prev": "00a0358301a3d53bef2f9286d2d5433c62b9f68ee9c30a96911fbca3e0ea348b",
+    "index": 1335,
+    "nonce": 726,
+    "difficulty": 2,
+    "merkle_root": "b9f659f4e6e1a4aab5b1542965d94994fce8d168900aae2cdd9f6ad983cb5c16",
+    "payload": {
+      "index": 1335,
+      "ts": "2026-10-22T18:46:54.505567+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1335,
+      "merkle_root": "b9f659f4e6e1a4aab5b1542965d94994fce8d168900aae2cdd9f6ad983cb5c16",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "d58be7f1de24f097a8ecb3fdd2508f09836b8b75e4e06f2e745f17fd13390386",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1435
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694814,
+        "height": 1335
+      }
+    ]
+  },
+  {
+    "hash": "00f6f6eca2183610f186cab0c9f9d779509ed9ac77d828ff6c3b6109667f958a",
+    "prev": "0091c276103c07a2e15e0d3e9b666edc023277aa67dbf2a3b1d6204d38a100b3",
+    "index": 1336,
+    "nonce": 77,
+    "difficulty": 2,
+    "merkle_root": "88df0d47f83935d969a69d1ab59ec1bcbb2c1f5024f6b181de6741c69df638a4",
+    "payload": {
+      "index": 1336,
+      "ts": "2026-10-22T18:47:08.707168+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1336,
+      "merkle_root": "88df0d47f83935d969a69d1ab59ec1bcbb2c1f5024f6b181de6741c69df638a4",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "aac14adc257d0549b319bc2afbde9610d4af342c60787158634cef7bacf316bd",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1436
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694828,
+        "height": 1336
+      }
+    ]
+  },
+  {
+    "hash": "00bd572786cb475e4e9e00ab74ddd1a36e0246f695f6806bf222a67b37438e41",
+    "prev": "00f6f6eca2183610f186cab0c9f9d779509ed9ac77d828ff6c3b6109667f958a",
+    "index": 1337,
+    "nonce": 23,
+    "difficulty": 2,
+    "merkle_root": "7f82d73b6ee553c1cc0b7a52493b5e0c625df0b3c0a917f1eb0c330e624a7f15",
+    "payload": {
+      "index": 1337,
+      "ts": "2026-10-22T18:47:54.751146+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1337,
+      "merkle_root": "7f82d73b6ee553c1cc0b7a52493b5e0c625df0b3c0a917f1eb0c330e624a7f15",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "48832d78512133ffdb2ffae6ae3a8e11e20ff9f7e1ca2bc7daaf82b2052ffe6e",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1437
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694874,
+        "height": 1337
+      }
+    ]
+  },
+  {
+    "hash": "008009d1d00ea588ac1f34041f619e6505d8bc5fa399465b4d9ec8653fc1d98e",
+    "prev": "00bd572786cb475e4e9e00ab74ddd1a36e0246f695f6806bf222a67b37438e41",
+    "index": 1338,
+    "nonce": 375,
+    "difficulty": 2,
+    "merkle_root": "c529187b5b85c4795ad797b4ad4aa26ff0d82cc5bda7782fc3bdad78942341e6",
+    "payload": {
+      "index": 1338,
+      "ts": "2026-10-22T18:48:02.372079+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1338,
+      "merkle_root": "c529187b5b85c4795ad797b4ad4aa26ff0d82cc5bda7782fc3bdad78942341e6",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "670cd2a977dde70cb5bee80b3665e10211d612ae98c2ad3b9fc19bc1b8843a6b",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1438
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694882,
+        "height": 1338
+      }
+    ]
+  },
+  {
+    "hash": "00f99414f4198a9e5d2283264a3dbf102b7cf99588fd56e92d081fac2dc1921a",
+    "prev": "008009d1d00ea588ac1f34041f619e6505d8bc5fa399465b4d9ec8653fc1d98e",
+    "index": 1339,
+    "nonce": 122,
+    "difficulty": 2,
+    "merkle_root": "ef8a42fe4bf737c1779156263003cf4049c106eeabad4472191e46041adda9f4",
+    "payload": {
+      "index": 1339,
+      "ts": "2026-10-22T18:49:02.569989+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1339,
+      "merkle_root": "ef8a42fe4bf737c1779156263003cf4049c106eeabad4472191e46041adda9f4",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "c7e9bdf7ced71096213322048f1ec74459fad2c881b97e432b40944ed67d8215",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1439
+          }
+        ],
+        "fee": 0,
+        "ts": 1792694942,
+        "height": 1339
+      }
+    ]
+  },
+  {
+    "hash": "008d4b800ab9d610fd7f64612c5d771b97996c2019a5a84a03e48e74cbaa12f3",
+    "prev": "00f99414f4198a9e5d2283264a3dbf102b7cf99588fd56e92d081fac2dc1921a",
+    "index": 1340,
+    "nonce": 585,
+    "difficulty": 2,
+    "merkle_root": "c5ac8fa8e60560d85a2c21191be98c4f3421998b7440d4d423906d9133caa6af",
+    "payload": {
+      "index": 1340,
+      "ts": "2026-10-22T18:50:02.776791+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1340,
+      "merkle_root": "c5ac8fa8e60560d85a2c21191be98c4f3421998b7440d4d423906d9133caa6af",
+      "tx_count": 1,
+      "fee_total": 0
+    },
+    "txs": [
+      {
+        "txid": "1418eba24afbba469fe60084b78181f70717a69f02a6818a6da8c0538dc1b0f5",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1440
+          }
+        ],
+        "fee": 0,
+        "ts": 1792695002,
+        "height": 1340
+      }
+    ]
+  },
+  {
+    "hash": "0006a160a768622cf01b4c8b0ac65c6d0172501f36e4918e0c195282a944a79c",
+    "prev": "008d4b800ab9d610fd7f64612c5d771b97996c2019a5a84a03e48e74cbaa12f3",
+    "index": 1341,
+    "nonce": 10969,
+    "difficulty": 3,
+    "merkle_root": "0000362823766e0c3fd1a886a728dd44a1915df1debac2a106b369fa5d738fac",
+    "payload": {
+      "index": 1341,
+      "ts": "2026-10-22T18:50:49.181814+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1341,
+      "merkle_root": "0000362823766e0c3fd1a886a728dd44a1915df1debac2a106b369fa5d738fac",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "50f5b5c4c456b4c4371555941bb7195d91b5bb6f68bafdd1318b4b538477028c",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1441
+          }
+        ],
+        "fee": 0,
+        "ts": 1792695049,
+        "height": 1341
+      }
+    ]
+  },
+  {
+    "hash": "000017d93c9972f2b0099f8cc8517287563e157c7828fd29695466d22a16916f",
+    "prev": "0006a160a768622cf01b4c8b0ac65c6d0172501f36e4918e0c195282a944a79c",
+    "index": 1342,
+    "nonce": 76384,
+    "difficulty": 4,
+    "merkle_root": "2b20200ef97312b2c5b84581d92d40bd106c59be1dbb50e10ccc52b08bdd5b5b",
+    "payload": {
+      "index": 1342,
+      "ts": "2026-10-22T19:00:49.576414+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1342,
+      "merkle_root": "2b20200ef97312b2c5b84581d92d40bd106c59be1dbb50e10ccc52b08bdd5b5b",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "fcd2a4284586b90263096a4cbe301ccb6da618a24cc4c1993bfafbd53729b496",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1442
+          }
+        ],
+        "fee": 0,
+        "ts": 1792695649,
+        "height": 1342
+      }
+    ]
+  },
+  {
+    "hash": "0003722d0b6546e19d78ccc7efb96e8fbecd2e118da50530a1ab523333f43586",
+    "prev": "000017d93c9972f2b0099f8cc8517287563e157c7828fd29695466d22a16916f",
+    "index": 1343,
+    "nonce": 4674,
+    "difficulty": 3,
+    "merkle_root": "393e4d2165616a2bb6d9f29f7f12def0131bbe8aba3d2fb59162da132dd18f8c",
+    "payload": {
+      "index": 1343,
+      "ts": "2026-10-22T19:04:18.703831+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1343,
+      "merkle_root": "393e4d2165616a2bb6d9f29f7f12def0131bbe8aba3d2fb59162da132dd18f8c",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "64e73c7f7eeb6b58f66d292fdec0f6c678f8246d099e554583a96e31c975ddff",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1443
+          }
+        ],
+        "fee": 0,
+        "ts": 1792695858,
+        "height": 1343
+      }
+    ]
+  },
+  {
+    "hash": "00078cadfb34bc1959748a903da53f75b8ec1d274d224ae8e2fe474fe08eb7a1",
+    "prev": "0003722d0b6546e19d78ccc7efb96e8fbecd2e118da50530a1ab523333f43586",
+    "index": 1344,
+    "nonce": 1728,
+    "difficulty": 3,
+    "merkle_root": "f78aca8cad4f757d108380b45988752ac619a132159ecbe0fb7c7910252a87a8",
+    "payload": {
+      "index": 1344,
+      "ts": "2026-10-22T19:14:19.001169+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1344,
+      "merkle_root": "f78aca8cad4f757d108380b45988752ac619a132159ecbe0fb7c7910252a87a8",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "ca69dcc97020005903b2671d79d981f5002b7116f420ee17b9f0c97212280f0a",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1444
+          }
+        ],
+        "fee": 0,
+        "ts": 1792696458,
+        "height": 1344
+      }
+    ]
+  },
+  {
+    "hash": "000265abea43e69e836d0349ce0ebd2c304794b267d5c5fd464b380cb801b08f",
+    "prev": "00078cadfb34bc1959748a903da53f75b8ec1d274d224ae8e2fe474fe08eb7a1",
+    "index": 1345,
+    "nonce": 2457,
+    "difficulty": 3,
+    "merkle_root": "6ce904cb0f65c2af476cae8b2790bc377063adb925dd3de358c317f8eb9feb6c",
+    "payload": {
+      "index": 1345,
+      "ts": "2026-10-22T19:24:19.235380+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1345,
+      "merkle_root": "6ce904cb0f65c2af476cae8b2790bc377063adb925dd3de358c317f8eb9feb6c",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "e78bc175dfd5e96a33ee0a607f8075b75206a07ac45672ddd0c336c3633a8ca5",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1445
+          }
+        ],
+        "fee": 0,
+        "ts": 1792697059,
+        "height": 1345
+      }
+    ]
+  },
+  {
+    "hash": "000400f106d19e66f95c7ea6e32edf63d7a2c8a42aa7011702518b8a841502e8",
+    "prev": "000265abea43e69e836d0349ce0ebd2c304794b267d5c5fd464b380cb801b08f",
+    "index": 1346,
+    "nonce": 5228,
+    "difficulty": 3,
+    "merkle_root": "b4a5ec8c3dfe89265e9a17bc6f84e3cc464e6734b8a473158d571063f5a46f1f",
+    "payload": {
+      "index": 1346,
+      "ts": "2026-10-22T19:34:19.487821+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1346,
+      "merkle_root": "b4a5ec8c3dfe89265e9a17bc6f84e3cc464e6734b8a473158d571063f5a46f1f",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "ef46a28dd4b6cb7941539f9f1ee1c2d620191784cc56af405b755a0bf90e0ab5",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1446
+          }
+        ],
+        "fee": 0,
+        "ts": 1792697659,
+        "height": 1346
+      }
+    ]
+  },
+  {
+    "hash": "000142beef657c06855d400a3eaaef01a0c48805b16181c6a877297a7d9e3f1b",
+    "prev": "000400f106d19e66f95c7ea6e32edf63d7a2c8a42aa7011702518b8a841502e8",
+    "index": 1347,
+    "nonce": 7448,
+    "difficulty": 3,
+    "merkle_root": "77e4a6c3a3b10ad87c8408359161a35887cbe8901d564cab7d3c002c2da45843",
+    "payload": {
+      "index": 1347,
+      "ts": "2026-10-22T19:44:19.805766+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1347,
+      "merkle_root": "77e4a6c3a3b10ad87c8408359161a35887cbe8901d564cab7d3c002c2da45843",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "f7dca2331c41c16dcdc2d7c6c9d021c3c81ff05fb35b2a0bb97cf890ad4cb8e0",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1447
+          }
+        ],
+        "fee": 0,
+        "ts": 1792698259,
+        "height": 1347
+      }
+    ]
+  },
+  {
+    "hash": "000fe974245ecf4f2110996669fd718e5834ca6b859678734391bc7c685bbfba",
+    "prev": "000142beef657c06855d400a3eaaef01a0c48805b16181c6a877297a7d9e3f1b",
+    "index": 1348,
+    "nonce": 229910,
+    "difficulty": 3,
+    "merkle_root": "f17affd615ecfbcf433fe49194bfc003545f17dfe83178b6bed1c76cb34f6cd6",
+    "payload": {
+      "index": 1348,
+      "ts": "2026-10-22T21:16:28.029372+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1348,
+      "merkle_root": "f17affd615ecfbcf433fe49194bfc003545f17dfe83178b6bed1c76cb34f6cd6",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "000fe974245ecf4f2110996669fd718e5834ca6b859678734391bc7c685bbfba",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1448
+          }
+        ],
+        "fee": 0,
+        "ts": 1792703788,
+        "height": 1348
+      }
+    ]
+  },
+  {
+    "hash": "00052171e3e96543de15f9992a209db3d9fbac0bc7213fde9601a0a5d8ad422c",
+    "prev": "000fe974245ecf4f2110996669fd718e5834ca6b859678734391bc7c685bbfba",
+    "index": 1349,
+    "nonce": 53743,
+    "difficulty": 3,
+    "merkle_root": "554404c0d916cfbf6dacb7a14dcb43a6061d48ea6b4c49540104b8517823e949",
+    "payload": {
+      "index": 1349,
+      "ts": "2026-10-22T21:26:28.042783+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1349,
+      "merkle_root": "554404c0d916cfbf6dacb7a14dcb43a6061d48ea6b4c49540104b8517823e949",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00052171e3e96543de15f9992a209db3d9fbac0bc7213fde9601a0a5d8ad422c",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1449
+          }
+        ],
+        "fee": 0,
+        "ts": 1792704388,
+        "height": 1349
+      }
+    ]
+  },
+  {
+    "hash": "0001c755f7b76389339264a732faa4dd545913ca19795660d54df9719be27a6d",
+    "prev": "00052171e3e96543de15f9992a209db3d9fbac0bc7213fde9601a0a5d8ad422c",
+    "index": 1350,
+    "nonce": 723979,
+    "difficulty": 3,
+    "merkle_root": "d95ecab8d23e853077ad78999968591631adf64ea0fa1d1e63ec5850abf757c3",
+    "payload": {
+      "index": 1350,
+      "ts": "2026-10-22T21:36:28.403301+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1350,
+      "merkle_root": "d95ecab8d23e853077ad78999968591631adf64ea0fa1d1e63ec5850abf757c3",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "0001c755f7b76389339264a732faa4dd545913ca19795660d54df9719be27a6d",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1450
+          }
+        ],
+        "fee": 0,
+        "ts": 1792704988,
+        "height": 1350
+      }
+    ]
+  },
+  {
+    "hash": "000f68d50e4944bc15f6ad93ae2e3df1df4459eec7970838af21cb96897ef5be",
+    "prev": "0001c755f7b76389339264a732faa4dd545913ca19795660d54df9719be27a6d",
+    "index": 1351,
+    "nonce": 89844,
+    "difficulty": 2,
+    "merkle_root": "c6715a80181934ed978019d9e18f8ac50c910f8f3404664979cdf9d9ef8c6ffd",
+    "payload": {
+      "index": 1351,
+      "ts": "2026-10-22T21:46:28.403857+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1351,
+      "merkle_root": "c6715a80181934ed978019d9e18f8ac50c910f8f3404664979cdf9d9ef8c6ffd",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "000f68d50e4944bc15f6ad93ae2e3df1df4459eec7970838af21cb96897ef5be",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1451
+          }
+        ],
+        "fee": 0,
+        "ts": 1792705588,
+        "height": 1351
+      }
+    ]
+  },
+  {
+    "hash": "00cb57a257ba3ad81a4058b41a891a90ec07cffcee0ecd436c45a0249594dfe7",
+    "prev": "000f68d50e4944bc15f6ad93ae2e3df1df4459eec7970838af21cb96897ef5be",
+    "index": 1352,
+    "nonce": 689215,
+    "difficulty": 2,
+    "merkle_root": "33df0cb325df2d6f8d2f4523c8a379f84e2dcd66e5bae84122b3dd5939a0865d",
+    "payload": {
+      "index": 1352,
+      "ts": "2026-10-22T21:56:28.662244+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1352,
+      "merkle_root": "33df0cb325df2d6f8d2f4523c8a379f84e2dcd66e5bae84122b3dd5939a0865d",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00cb57a257ba3ad81a4058b41a891a90ec07cffcee0ecd436c45a0249594dfe7",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1452
+          }
+        ],
+        "fee": 0,
+        "ts": 1792706188,
+        "height": 1352
+      }
+    ]
+  },
+  {
+    "hash": "00020134015a11d8b95c30d63eddd2b9e81bf0fee6445b5d554a1e8276065acc",
+    "prev": "00cb57a257ba3ad81a4058b41a891a90ec07cffcee0ecd436c45a0249594dfe7",
+    "index": 1353,
+    "nonce": 491730,
+    "difficulty": 2,
+    "merkle_root": "9e7b40f85e57b1fd3c9d464b1c6a32d4219f7587ea1d92fd5364cd7a28dec9a0",
+    "payload": {
+      "index": 1353,
+      "ts": "2026-10-22T22:06:29.021279+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1353,
+      "merkle_root": "9e7b40f85e57b1fd3c9d464b1c6a32d4219f7587ea1d92fd5364cd7a28dec9a0",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00020134015a11d8b95c30d63eddd2b9e81bf0fee6445b5d554a1e8276065acc",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1453
+          }
+        ],
+        "fee": 0,
+        "ts": 1792706789,
+        "height": 1353
+      }
+    ]
+  },
+  {
+    "hash": "00fdda6c3c55b5e41dc75d17d52e4605fced1d984deb51677a10e756f25caff8",
+    "prev": "00020134015a11d8b95c30d63eddd2b9e81bf0fee6445b5d554a1e8276065acc",
+    "index": 1354,
+    "nonce": 124726,
+    "difficulty": 2,
+    "merkle_root": "c744962561e5be0eba9cafba53199bd07d0b2ea74a722833c22aace1818e61c8",
+    "payload": {
+      "index": 1354,
+      "ts": "2026-10-22T22:16:29.370439+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1354,
+      "merkle_root": "c744962561e5be0eba9cafba53199bd07d0b2ea74a722833c22aace1818e61c8",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00fdda6c3c55b5e41dc75d17d52e4605fced1d984deb51677a10e756f25caff8",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1454
+          }
+        ],
+        "fee": 0,
+        "ts": 1792707389,
+        "height": 1354
+      }
+    ]
+  },
+  {
+    "hash": "001bce053642ada655b85e1bba4a912330a8ccf3684903126c1df5b98ab049c3",
+    "prev": "00fdda6c3c55b5e41dc75d17d52e4605fced1d984deb51677a10e756f25caff8",
+    "index": 1355,
+    "nonce": 838839,
+    "difficulty": 2,
+    "merkle_root": "cf316b6d44d3987f9c030c2bb7ea5feddc7361d2e53cf4662b1a2870d9d86fe9",
+    "payload": {
+      "index": 1355,
+      "ts": "2026-10-22T22:26:29.688783+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1355,
+      "merkle_root": "cf316b6d44d3987f9c030c2bb7ea5feddc7361d2e53cf4662b1a2870d9d86fe9",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "001bce053642ada655b85e1bba4a912330a8ccf3684903126c1df5b98ab049c3",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1455
+          }
+        ],
+        "fee": 0,
+        "ts": 1792707989,
+        "height": 1355
+      }
+    ]
+  },
+  {
+    "hash": "008114d8c574486ad3b1245e15a24d9139994215287a07d4e5829040dc5ef8a2",
+    "prev": "001bce053642ada655b85e1bba4a912330a8ccf3684903126c1df5b98ab049c3",
+    "index": 1356,
+    "nonce": 854030,
+    "difficulty": 2,
+    "merkle_root": "39319aeac834698537d497a2de7773bbdfb6f6fb9ca37b0117ab911e721b6cb7",
+    "payload": {
+      "index": 1356,
+      "ts": "2026-10-22T22:36:30.079369+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1356,
+      "merkle_root": "39319aeac834698537d497a2de7773bbdfb6f6fb9ca37b0117ab911e721b6cb7",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "008114d8c574486ad3b1245e15a24d9139994215287a07d4e5829040dc5ef8a2",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1456
+          }
+        ],
+        "fee": 0,
+        "ts": 1792708590,
+        "height": 1356
+      }
+    ]
+  },
+  {
+    "hash": "006cdf50815429eedd221b640af247f8e6ff5751f2886bed52a06473b00bcf90",
+    "prev": "008114d8c574486ad3b1245e15a24d9139994215287a07d4e5829040dc5ef8a2",
+    "index": 1357,
+    "nonce": 604021,
+    "difficulty": 2,
+    "merkle_root": "3bb4179ea3411bf7dab034278e981d099ce6d2a64333d221f7d75900ec854990",
+    "payload": {
+      "index": 1357,
+      "ts": "2026-10-22T22:46:30.407994+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1357,
+      "merkle_root": "3bb4179ea3411bf7dab034278e981d099ce6d2a64333d221f7d75900ec854990",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "006cdf50815429eedd221b640af247f8e6ff5751f2886bed52a06473b00bcf90",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1457
+          }
+        ],
+        "fee": 0,
+        "ts": 1792709190,
+        "height": 1357
+      }
+    ]
+  },
+  {
+    "hash": "00e76bc395fb6b5ca4ef0d4ca0cb33c1974925b9a5887f0b6485e29deb1654c4",
+    "prev": "006cdf50815429eedd221b640af247f8e6ff5751f2886bed52a06473b00bcf90",
+    "index": 1358,
+    "nonce": 516837,
+    "difficulty": 2,
+    "merkle_root": "550d5aa8f1bf7a8f7f98c8bde1c83289dbc7eb310ff5d5a7a741e880be92ca17",
+    "payload": {
+      "index": 1358,
+      "ts": "2026-10-22T22:56:30.713032+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1358,
+      "merkle_root": "550d5aa8f1bf7a8f7f98c8bde1c83289dbc7eb310ff5d5a7a741e880be92ca17",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00e76bc395fb6b5ca4ef0d4ca0cb33c1974925b9a5887f0b6485e29deb1654c4",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1458
+          }
+        ],
+        "fee": 0,
+        "ts": 1792709790,
+        "height": 1358
+      }
+    ]
+  },
+  {
+    "hash": "00f7ffaee49fc56a959ec5ec8c39cfc47b7b76b186b4f31b637c9a014895ca8c",
+    "prev": "00e76bc395fb6b5ca4ef0d4ca0cb33c1974925b9a5887f0b6485e29deb1654c4",
+    "index": 1359,
+    "nonce": 144536,
+    "difficulty": 2,
+    "merkle_root": "15bcdd2851250ed865c10661124db1bc16063c666b936a1d6e6051f1efb087a5",
+    "payload": {
+      "index": 1359,
+      "ts": "2026-10-22T23:06:31.030720+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1359,
+      "merkle_root": "15bcdd2851250ed865c10661124db1bc16063c666b936a1d6e6051f1efb087a5",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00f7ffaee49fc56a959ec5ec8c39cfc47b7b76b186b4f31b637c9a014895ca8c",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1459
+          }
+        ],
+        "fee": 0,
+        "ts": 1792710391,
+        "height": 1359
+      }
+    ]
+  },
+  {
+    "hash": "00578cc4769c9e4ab37cb5c2aece91993d461fd1f043ae2b2b4689e154aaaf4f",
+    "prev": "00f7ffaee49fc56a959ec5ec8c39cfc47b7b76b186b4f31b637c9a014895ca8c",
+    "index": 1360,
+    "nonce": 530848,
+    "difficulty": 2,
+    "merkle_root": "9a2249ecf63d4c74e0bd4e6b46315bfe38ea040b53c6f05a48ba5323be65d89a",
+    "payload": {
+      "index": 1360,
+      "ts": "2026-10-22T23:16:31.394261+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1360,
+      "merkle_root": "9a2249ecf63d4c74e0bd4e6b46315bfe38ea040b53c6f05a48ba5323be65d89a",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00578cc4769c9e4ab37cb5c2aece91993d461fd1f043ae2b2b4689e154aaaf4f",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1460
+          }
+        ],
+        "fee": 0,
+        "ts": 1792710991,
+        "height": 1360
+      }
+    ]
+  },
+  {
+    "hash": "0009735750470bb64b80025a087ebed53c2383c7d06bc52e4f4073ab7e273dda",
+    "prev": "00578cc4769c9e4ab37cb5c2aece91993d461fd1f043ae2b2b4689e154aaaf4f",
+    "index": 1361,
+    "nonce": 86452,
+    "difficulty": 2,
+    "merkle_root": "40386ecd10be30e77f69fb08c91690ade4a8e1e2fb2fee3122a4c66fc467ea0c",
+    "payload": {
+      "index": 1361,
+      "ts": "2026-10-22T23:26:31.695010+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1361,
+      "merkle_root": "40386ecd10be30e77f69fb08c91690ade4a8e1e2fb2fee3122a4c66fc467ea0c",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "0009735750470bb64b80025a087ebed53c2383c7d06bc52e4f4073ab7e273dda",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1461
+          }
+        ],
+        "fee": 0,
+        "ts": 1792711591,
+        "height": 1361
+      }
+    ]
+  },
+  {
+    "hash": "001320760733b369dc59fe08058cad3db955c8db2975544c84aed3192617518a",
+    "prev": "0009735750470bb64b80025a087ebed53c2383c7d06bc52e4f4073ab7e273dda",
+    "index": 1362,
+    "nonce": 942478,
+    "difficulty": 2,
+    "merkle_root": "f6abddf8576199a5c9943ae346440818f29e3b51d41a4d000340d8d4df2d4258",
+    "payload": {
+      "index": 1362,
+      "ts": "2026-10-22T23:36:32.005361+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1362,
+      "merkle_root": "f6abddf8576199a5c9943ae346440818f29e3b51d41a4d000340d8d4df2d4258",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "001320760733b369dc59fe08058cad3db955c8db2975544c84aed3192617518a",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1462
+          }
+        ],
+        "fee": 0,
+        "ts": 1792712192,
+        "height": 1362
+      }
+    ]
+  },
+  {
+    "hash": "00fb5cbe00c5204e77e0e38a7c8444e81879b03d88718a1ed2fef7c1a2920d22",
+    "prev": "001320760733b369dc59fe08058cad3db955c8db2975544c84aed3192617518a",
+    "index": 1363,
+    "nonce": 922183,
+    "difficulty": 2,
+    "merkle_root": "79be42983c05618a002e2790973fe8d561b14ee634bdb4b6631cb9bf17b1ed47",
+    "payload": {
+      "index": 1363,
+      "ts": "2026-10-22T23:46:32.341863+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1363,
+      "merkle_root": "79be42983c05618a002e2790973fe8d561b14ee634bdb4b6631cb9bf17b1ed47",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00fb5cbe00c5204e77e0e38a7c8444e81879b03d88718a1ed2fef7c1a2920d22",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1463
+          }
+        ],
+        "fee": 0,
+        "ts": 1792712792,
+        "height": 1363
+      }
+    ]
+  },
+  {
+    "hash": "00bc533dcb0f95293b11b6e87c4226c4dc20d5e5fcf062c65fdc9f7364f4b039",
+    "prev": "00fb5cbe00c5204e77e0e38a7c8444e81879b03d88718a1ed2fef7c1a2920d22",
+    "index": 1364,
+    "nonce": 382925,
+    "difficulty": 2,
+    "merkle_root": "484e770ef818bf7744399187803563264c677e87e2d7c0591642b863cff6626e",
+    "payload": {
+      "index": 1364,
+      "ts": "2026-10-22T23:56:32.666464+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1364,
+      "merkle_root": "484e770ef818bf7744399187803563264c677e87e2d7c0591642b863cff6626e",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00bc533dcb0f95293b11b6e87c4226c4dc20d5e5fcf062c65fdc9f7364f4b039",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1464
+          }
+        ],
+        "fee": 0,
+        "ts": 1792713392,
+        "height": 1364
+      }
+    ]
+  },
+  {
+    "hash": "00e122317bc42c10adca83a3665e0f0f454828a135c3062edee71810064dbed9",
+    "prev": "00bc533dcb0f95293b11b6e87c4226c4dc20d5e5fcf062c65fdc9f7364f4b039",
+    "index": 1365,
+    "nonce": 947147,
+    "difficulty": 2,
+    "merkle_root": "95913f25d0b8186f070f9ff331c885117900367facd8722c2edc6599d449ec78",
+    "payload": {
+      "index": 1365,
+      "ts": "2026-10-23T00:06:32.979906+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1365,
+      "merkle_root": "95913f25d0b8186f070f9ff331c885117900367facd8722c2edc6599d449ec78",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00e122317bc42c10adca83a3665e0f0f454828a135c3062edee71810064dbed9",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1465
+          }
+        ],
+        "fee": 0,
+        "ts": 1792713993,
+        "height": 1365
+      }
+    ]
+  },
+  {
+    "hash": "00dd5588eb9cf54b788acee4a64966c0a3f36a12cb772fe3ab32c61bd1b38809",
+    "prev": "00e122317bc42c10adca83a3665e0f0f454828a135c3062edee71810064dbed9",
+    "index": 1366,
+    "nonce": 503310,
+    "difficulty": 2,
+    "merkle_root": "ed9fc780fc90a8257256e47212b32d6bdd05430d94481379bb8b1919eaa20bc5",
+    "payload": {
+      "index": 1366,
+      "ts": "2026-10-23T00:16:33.337059+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1366,
+      "merkle_root": "ed9fc780fc90a8257256e47212b32d6bdd05430d94481379bb8b1919eaa20bc5",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00dd5588eb9cf54b788acee4a64966c0a3f36a12cb772fe3ab32c61bd1b38809",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1466
+          }
+        ],
+        "fee": 0,
+        "ts": 1792714593,
+        "height": 1366
+      }
+    ]
+  },
+  {
+    "hash": "00927caf5410246ec08c4fe1c6bbc42e9c64203d130795fb0b3b7cb8a22604c0",
+    "prev": "00dd5588eb9cf54b788acee4a64966c0a3f36a12cb772fe3ab32c61bd1b38809",
+    "index": 1367,
+    "nonce": 965551,
+    "difficulty": 2,
+    "merkle_root": "ad75dc8c6f90b7994118cd5e030d9271a253a0e1b96d42c39c354313a19abbb7",
+    "payload": {
+      "index": 1367,
+      "ts": "2026-10-23T00:26:33.683010+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1367,
+      "merkle_root": "ad75dc8c6f90b7994118cd5e030d9271a253a0e1b96d42c39c354313a19abbb7",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00927caf5410246ec08c4fe1c6bbc42e9c64203d130795fb0b3b7cb8a22604c0",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1467
+          }
+        ],
+        "fee": 0,
+        "ts": 1792715193,
+        "height": 1367
+      }
+    ]
+  },
+  {
+    "hash": "00ec1c915402e267c55d8a89fd7b492386eabd2d0ac0a603c5b592a6a819b286",
+    "prev": "00927caf5410246ec08c4fe1c6bbc42e9c64203d130795fb0b3b7cb8a22604c0",
+    "index": 1368,
+    "nonce": 780193,
+    "difficulty": 2,
+    "merkle_root": "917b2e941f25e200d2ef39c31a5468548c66262222e38d9ac2317b2d5e4b1b45",
+    "payload": {
+      "index": 1368,
+      "ts": "2026-10-23T00:36:34.074942+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1368,
+      "merkle_root": "917b2e941f25e200d2ef39c31a5468548c66262222e38d9ac2317b2d5e4b1b45",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00ec1c915402e267c55d8a89fd7b492386eabd2d0ac0a603c5b592a6a819b286",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1468
+          }
+        ],
+        "fee": 0,
+        "ts": 1792715794,
+        "height": 1368
+      }
+    ]
+  },
+  {
+    "hash": "00fa7ffc0445e97de7c2103d23257a0d8857dc3f373414fd4c774dc00b51355f",
+    "prev": "00ec1c915402e267c55d8a89fd7b492386eabd2d0ac0a603c5b592a6a819b286",
+    "index": 1369,
+    "nonce": 46257,
+    "difficulty": 2,
+    "merkle_root": "348487a897390959f1e2d01880a7211d9ea48da93b7d6c888a1882ba7637fe09",
+    "payload": {
+      "index": 1369,
+      "ts": "2026-10-23T00:46:34.434125+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1369,
+      "merkle_root": "348487a897390959f1e2d01880a7211d9ea48da93b7d6c888a1882ba7637fe09",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00fa7ffc0445e97de7c2103d23257a0d8857dc3f373414fd4c774dc00b51355f",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1469
+          }
+        ],
+        "fee": 0,
+        "ts": 1792716394,
+        "height": 1369
+      }
+    ]
+  },
+  {
+    "hash": "004d0881be80f8d98b41d5f5b967b8578d98a86d0206244a3441be5b68dc3e6c",
+    "prev": "00fa7ffc0445e97de7c2103d23257a0d8857dc3f373414fd4c774dc00b51355f",
+    "index": 1370,
+    "nonce": 300279,
+    "difficulty": 2,
+    "merkle_root": "f41136f1844a74d07b771c85d65d5a6406d464e424114570e18596a5129c330e",
+    "payload": {
+      "index": 1370,
+      "ts": "2026-10-23T00:56:34.779038+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1370,
+      "merkle_root": "f41136f1844a74d07b771c85d65d5a6406d464e424114570e18596a5129c330e",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "004d0881be80f8d98b41d5f5b967b8578d98a86d0206244a3441be5b68dc3e6c",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1470
+          }
+        ],
+        "fee": 0,
+        "ts": 1792716994,
+        "height": 1370
+      }
+    ]
+  },
+  {
+    "hash": "00c494155c13f7a5b4e0ddf53d93a62ef918f660795bad4395fa74b141332403",
+    "prev": "004d0881be80f8d98b41d5f5b967b8578d98a86d0206244a3441be5b68dc3e6c",
+    "index": 1371,
+    "nonce": 957128,
+    "difficulty": 2,
+    "merkle_root": "e982bac032e28ec528f4954d7d26fb8d2ff02dce21d817bc8f3c54f611bc29c2",
+    "payload": {
+      "index": 1371,
+      "ts": "2026-10-23T01:06:35.062035+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1371,
+      "merkle_root": "e982bac032e28ec528f4954d7d26fb8d2ff02dce21d817bc8f3c54f611bc29c2",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00c494155c13f7a5b4e0ddf53d93a62ef918f660795bad4395fa74b141332403",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1471
+          }
+        ],
+        "fee": 0,
+        "ts": 1792717595,
+        "height": 1371
+      }
+    ]
+  },
+  {
+    "hash": "00a2b711a94cb5855a73572c9900465e017de7c7decc790963e2e04b61959063",
+    "prev": "00c494155c13f7a5b4e0ddf53d93a62ef918f660795bad4395fa74b141332403",
+    "index": 1372,
+    "nonce": 559327,
+    "difficulty": 2,
+    "merkle_root": "6427c8514701a65cb36c6b981ba06873ccde2345c2fe401851b8f3dceff46cac",
+    "payload": {
+      "index": 1372,
+      "ts": "2026-10-23T01:16:35.360151+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1372,
+      "merkle_root": "6427c8514701a65cb36c6b981ba06873ccde2345c2fe401851b8f3dceff46cac",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00a2b711a94cb5855a73572c9900465e017de7c7decc790963e2e04b61959063",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1472
+          }
+        ],
+        "fee": 0,
+        "ts": 1792718195,
+        "height": 1372
+      }
+    ]
+  },
+  {
+    "hash": "00e58171592efe67c9c23b7269ba33145e8523a95b678b58062abda6e7f9695f",
+    "prev": "00a2b711a94cb5855a73572c9900465e017de7c7decc790963e2e04b61959063",
+    "index": 1373,
+    "nonce": 872743,
+    "difficulty": 2,
+    "merkle_root": "2eb75dc921acf407804d8ff3a353d0aeaa3786a012e6c6e46ca5a44dfb98f4e8",
+    "payload": {
+      "index": 1373,
+      "ts": "2026-10-23T01:26:35.670746+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1373,
+      "merkle_root": "2eb75dc921acf407804d8ff3a353d0aeaa3786a012e6c6e46ca5a44dfb98f4e8",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00e58171592efe67c9c23b7269ba33145e8523a95b678b58062abda6e7f9695f",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1473
+          }
+        ],
+        "fee": 0,
+        "ts": 1792718795,
+        "height": 1373
+      }
+    ]
+  },
+  {
+    "hash": "002a648a4995f34783b2b8cf2438ce2b7a03f6bfbdb568bcd442e54e7fd76544",
+    "prev": "00e58171592efe67c9c23b7269ba33145e8523a95b678b58062abda6e7f9695f",
+    "index": 1374,
+    "nonce": 191872,
+    "difficulty": 2,
+    "merkle_root": "58c13dea3d50d89c1f5c83ef9cb33d65c37bf8d711b17fb6bc39241d59bffac9",
+    "payload": {
+      "index": 1374,
+      "ts": "2026-10-23T01:36:35.991408+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1374,
+      "merkle_root": "58c13dea3d50d89c1f5c83ef9cb33d65c37bf8d711b17fb6bc39241d59bffac9",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "002a648a4995f34783b2b8cf2438ce2b7a03f6bfbdb568bcd442e54e7fd76544",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1474
+          }
+        ],
+        "fee": 0,
+        "ts": 1792719396,
+        "height": 1374
+      }
+    ]
+  },
+  {
+    "hash": "0000953c60bc210b8abddb6cb2b9d05a02711f6e86440b5c6c549b5cf463966e",
+    "prev": "002a648a4995f34783b2b8cf2438ce2b7a03f6bfbdb568bcd442e54e7fd76544",
+    "index": 1375,
+    "nonce": 186109,
+    "difficulty": 2,
+    "merkle_root": "b7dd4aec3364266a111d14a23f7026b07c9d3ed8a7da429f3c38860e0ba7abf2",
+    "payload": {
+      "index": 1375,
+      "ts": "2026-10-23T01:46:36.305789+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1375,
+      "merkle_root": "b7dd4aec3364266a111d14a23f7026b07c9d3ed8a7da429f3c38860e0ba7abf2",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "0000953c60bc210b8abddb6cb2b9d05a02711f6e86440b5c6c549b5cf463966e",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1475
+          }
+        ],
+        "fee": 0,
+        "ts": 1792719996,
+        "height": 1375
+      }
+    ]
+  },
+  {
+    "hash": "00c493ddd605f7bee84609ad4ea013fbf96e775df850282fbb05e9c895a408f7",
+    "prev": "0000953c60bc210b8abddb6cb2b9d05a02711f6e86440b5c6c549b5cf463966e",
+    "index": 1376,
+    "nonce": 284747,
+    "difficulty": 2,
+    "merkle_root": "afceae4d86353e955e13810fe4902089741f184ef31cd37c26ba79ccdea0f1a4",
+    "payload": {
+      "index": 1376,
+      "ts": "2026-10-23T01:56:36.676943+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1376,
+      "merkle_root": "afceae4d86353e955e13810fe4902089741f184ef31cd37c26ba79ccdea0f1a4",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00c493ddd605f7bee84609ad4ea013fbf96e775df850282fbb05e9c895a408f7",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1476
+          }
+        ],
+        "fee": 0,
+        "ts": 1792720596,
+        "height": 1376
+      }
+    ]
+  },
+  {
+    "hash": "0043650ee3269ff6351a8fcaea84e1880d6e1490938a07bbf6979d3ab85d674c",
+    "prev": "00c493ddd605f7bee84609ad4ea013fbf96e775df850282fbb05e9c895a408f7",
+    "index": 1377,
+    "nonce": 922577,
+    "difficulty": 2,
+    "merkle_root": "2750c7540be3d1ef6c062530eab8d1ab325641f70472481f5a7c7aca38c712f4",
+    "payload": {
+      "index": 1377,
+      "ts": "2026-10-23T02:06:37.058473+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1377,
+      "merkle_root": "2750c7540be3d1ef6c062530eab8d1ab325641f70472481f5a7c7aca38c712f4",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "0043650ee3269ff6351a8fcaea84e1880d6e1490938a07bbf6979d3ab85d674c",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1477
+          }
+        ],
+        "fee": 0,
+        "ts": 1792721197,
+        "height": 1377
+      }
+    ]
+  },
+  {
+    "hash": "00f2c4f42fe10ce4a1a382e249fbde63381afde0aa4caf472beb9ab2e974828b",
+    "prev": "0043650ee3269ff6351a8fcaea84e1880d6e1490938a07bbf6979d3ab85d674c",
+    "index": 1378,
+    "nonce": 867315,
+    "difficulty": 2,
+    "merkle_root": "dc1e70012345d627d32396fd277c78bf9127c7d997bd0c20e7ee6cf0bd51dfdb",
+    "payload": {
+      "index": 1378,
+      "ts": "2026-10-23T02:16:37.410278+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1378,
+      "merkle_root": "dc1e70012345d627d32396fd277c78bf9127c7d997bd0c20e7ee6cf0bd51dfdb",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00f2c4f42fe10ce4a1a382e249fbde63381afde0aa4caf472beb9ab2e974828b",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1478
+          }
+        ],
+        "fee": 0,
+        "ts": 1792721797,
+        "height": 1378
+      }
+    ]
+  },
+  {
+    "hash": "00820615454333aea8070b28efa2589c8481a6eba40b95c6881b6898b694151f",
+    "prev": "00f2c4f42fe10ce4a1a382e249fbde63381afde0aa4caf472beb9ab2e974828b",
+    "index": 1379,
+    "nonce": 798566,
+    "difficulty": 2,
+    "merkle_root": "56de06cd37ed19988cba827e8396e723b77106f387c836ec255e52f295bde1ed",
+    "payload": {
+      "index": 1379,
+      "ts": "2026-10-23T02:26:37.737810+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1379,
+      "merkle_root": "56de06cd37ed19988cba827e8396e723b77106f387c836ec255e52f295bde1ed",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00820615454333aea8070b28efa2589c8481a6eba40b95c6881b6898b694151f",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1479
+          }
+        ],
+        "fee": 0,
+        "ts": 1792722397,
+        "height": 1379
+      }
+    ]
+  },
+  {
+    "hash": "00759198cd849d03c0302648092f07039893482cc81acb2ec75859aeab29e982",
+    "prev": "00820615454333aea8070b28efa2589c8481a6eba40b95c6881b6898b694151f",
+    "index": 1380,
+    "nonce": 55615,
+    "difficulty": 2,
+    "merkle_root": "d059d1d41482ac349caa392d7d7bfdfa9dfe9e7ec53ea2ad4ac24b4bf880b227",
+    "payload": {
+      "index": 1380,
+      "ts": "2026-10-23T02:36:38.049386+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1380,
+      "merkle_root": "d059d1d41482ac349caa392d7d7bfdfa9dfe9e7ec53ea2ad4ac24b4bf880b227",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00759198cd849d03c0302648092f07039893482cc81acb2ec75859aeab29e982",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1480
+          }
+        ],
+        "fee": 0,
+        "ts": 1792722998,
+        "height": 1380
+      }
+    ]
+  },
+  {
+    "hash": "005c6014ac286f52a0b4a1ed42975bc9abebab89bdf31a567e6b8755bfa162e9",
+    "prev": "00759198cd849d03c0302648092f07039893482cc81acb2ec75859aeab29e982",
+    "index": 1381,
+    "nonce": 627431,
+    "difficulty": 2,
+    "merkle_root": "075e748d7ed4a16bca5273c010fefa9405e612d3c043713178bffb7e96421168",
+    "payload": {
+      "index": 1381,
+      "ts": "2026-10-23T02:46:38.523556+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1381,
+      "merkle_root": "075e748d7ed4a16bca5273c010fefa9405e612d3c043713178bffb7e96421168",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "005c6014ac286f52a0b4a1ed42975bc9abebab89bdf31a567e6b8755bfa162e9",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1481
+          }
+        ],
+        "fee": 0,
+        "ts": 1792723598,
+        "height": 1381
+      }
+    ]
+  },
+  {
+    "hash": "00b52efb8b6265ecadfd67ff5605336f72e101616cb3c7ae9339c07aa5376c63",
+    "prev": "005c6014ac286f52a0b4a1ed42975bc9abebab89bdf31a567e6b8755bfa162e9",
+    "index": 1382,
+    "nonce": 159678,
+    "difficulty": 2,
+    "merkle_root": "e4b5574bb6f73bc0b78032704ca924f4719c955a823264fef0c9dc934f2c7363",
+    "payload": {
+      "index": 1382,
+      "ts": "2026-10-23T02:56:38.947843+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1382,
+      "merkle_root": "e4b5574bb6f73bc0b78032704ca924f4719c955a823264fef0c9dc934f2c7363",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00b52efb8b6265ecadfd67ff5605336f72e101616cb3c7ae9339c07aa5376c63",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1482
+          }
+        ],
+        "fee": 0,
+        "ts": 1792724199,
+        "height": 1382
+      }
+    ]
+  },
+  {
+    "hash": "00ef949f515b0dbf7f9a6b52c41b9299d1e926416bea4db89db82ecfc491bab5",
+    "prev": "00b52efb8b6265ecadfd67ff5605336f72e101616cb3c7ae9339c07aa5376c63",
+    "index": 1383,
+    "nonce": 465053,
+    "difficulty": 2,
+    "merkle_root": "a96c0740fd6aaa8aec67a43e80f3255dbc7d37fa5275f867a6b771bed4f9bf69",
+    "payload": {
+      "index": 1383,
+      "ts": "2026-10-23T03:06:39.309203+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1383,
+      "merkle_root": "a96c0740fd6aaa8aec67a43e80f3255dbc7d37fa5275f867a6b771bed4f9bf69",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00ef949f515b0dbf7f9a6b52c41b9299d1e926416bea4db89db82ecfc491bab5",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1483
+          }
+        ],
+        "fee": 0,
+        "ts": 1792724799,
+        "height": 1383
+      }
+    ]
+  },
+  {
+    "hash": "005cf93906cc6d34ab93477179e39997a458308a30d043765cc1dc9f2f857e15",
+    "prev": "00ef949f515b0dbf7f9a6b52c41b9299d1e926416bea4db89db82ecfc491bab5",
+    "index": 1384,
+    "nonce": 684008,
+    "difficulty": 2,
+    "merkle_root": "052a9c15fbfd2a4156e5d396977a6a0472007503fac9e7e1ccbcb189fde051b4",
+    "payload": {
+      "index": 1384,
+      "ts": "2026-10-23T03:16:39.668315+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1384,
+      "merkle_root": "052a9c15fbfd2a4156e5d396977a6a0472007503fac9e7e1ccbcb189fde051b4",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "005cf93906cc6d34ab93477179e39997a458308a30d043765cc1dc9f2f857e15",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1484
+          }
+        ],
+        "fee": 0,
+        "ts": 1792725399,
+        "height": 1384
+      }
+    ]
+  },
+  {
+    "hash": "00c63dd123c5365018e3448e63569547384afc78f1d7c6b535cd6b5983e879b2",
+    "prev": "005cf93906cc6d34ab93477179e39997a458308a30d043765cc1dc9f2f857e15",
+    "index": 1385,
+    "nonce": 161104,
+    "difficulty": 2,
+    "merkle_root": "049906328b27427928ca825328a3ce8936afd10ec011a98ad82c12ff027d3a7e",
+    "payload": {
+      "index": 1385,
+      "ts": "2026-10-23T03:26:39.977415+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1385,
+      "merkle_root": "049906328b27427928ca825328a3ce8936afd10ec011a98ad82c12ff027d3a7e",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00c63dd123c5365018e3448e63569547384afc78f1d7c6b535cd6b5983e879b2",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1485
+          }
+        ],
+        "fee": 0,
+        "ts": 1792726000,
+        "height": 1385
+      }
+    ]
+  },
+  {
+    "hash": "00f5dd8a8807b94ad95a379e1768b3d181db7de8a1adcde4800a28f2b874d053",
+    "prev": "00c63dd123c5365018e3448e63569547384afc78f1d7c6b535cd6b5983e879b2",
+    "index": 1386,
+    "nonce": 571781,
+    "difficulty": 2,
+    "merkle_root": "5cc7d649b4dc4b990048500f0b9c0d6cafee655cd7e413dd60e55d8c7651f892",
+    "payload": {
+      "index": 1386,
+      "ts": "2026-10-23T03:36:40.300056+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1386,
+      "merkle_root": "5cc7d649b4dc4b990048500f0b9c0d6cafee655cd7e413dd60e55d8c7651f892",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00f5dd8a8807b94ad95a379e1768b3d181db7de8a1adcde4800a28f2b874d053",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1486
+          }
+        ],
+        "fee": 0,
+        "ts": 1792726600,
+        "height": 1386
+      }
+    ]
+  },
+  {
+    "hash": "00aac195c6a484dda198bc6d35b670d9f353395fd6d2ed47eb47e201a377ce02",
+    "prev": "00f5dd8a8807b94ad95a379e1768b3d181db7de8a1adcde4800a28f2b874d053",
+    "index": 1387,
+    "nonce": 840210,
+    "difficulty": 2,
+    "merkle_root": "707f2c61d6483ae2019b84ca797753e03dd10c61bff6db7696726c115193e42a",
+    "payload": {
+      "index": 1387,
+      "ts": "2026-10-23T03:46:40.646600+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1387,
+      "merkle_root": "707f2c61d6483ae2019b84ca797753e03dd10c61bff6db7696726c115193e42a",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00aac195c6a484dda198bc6d35b670d9f353395fd6d2ed47eb47e201a377ce02",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1487
+          }
+        ],
+        "fee": 0,
+        "ts": 1792727200,
+        "height": 1387
+      }
+    ]
+  },
+  {
+    "hash": "005a89924af57420e5b0b511505fde6e3b7d5fea045890e12a03c51bf6e65691",
+    "prev": "00aac195c6a484dda198bc6d35b670d9f353395fd6d2ed47eb47e201a377ce02",
+    "index": 1388,
+    "nonce": 352843,
+    "difficulty": 2,
+    "merkle_root": "45dd25bdfc6f9f8052e9ccd158e3e1461c10ad08c7562b4c36ed61b4d6f830ab",
+    "payload": {
+      "index": 1388,
+      "ts": "2026-10-23T03:56:40.963282+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1388,
+      "merkle_root": "45dd25bdfc6f9f8052e9ccd158e3e1461c10ad08c7562b4c36ed61b4d6f830ab",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "005a89924af57420e5b0b511505fde6e3b7d5fea045890e12a03c51bf6e65691",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1488
+          }
+        ],
+        "fee": 0,
+        "ts": 1792727801,
+        "height": 1388
+      }
+    ]
+  },
+  {
+    "hash": "00188384d98c995d67d823d2943fb09b1c644944dd2260bbff032f4e6453f777",
+    "prev": "005a89924af57420e5b0b511505fde6e3b7d5fea045890e12a03c51bf6e65691",
+    "index": 1389,
+    "nonce": 199813,
+    "difficulty": 2,
+    "merkle_root": "a8a80171011a7b0229a715763ef76bedf90fc25d7bd87506ad8d388bfb4b57cb",
+    "payload": {
+      "index": 1389,
+      "ts": "2026-10-23T04:06:41.306317+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1389,
+      "merkle_root": "a8a80171011a7b0229a715763ef76bedf90fc25d7bd87506ad8d388bfb4b57cb",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00188384d98c995d67d823d2943fb09b1c644944dd2260bbff032f4e6453f777",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1489
+          }
+        ],
+        "fee": 0,
+        "ts": 1792728401,
+        "height": 1389
+      }
+    ]
+  },
+  {
+    "hash": "00a0c5b0919a3eb1c63f7adffe781ec167ef4d785e033d1bac375e8e38ef038d",
+    "prev": "00188384d98c995d67d823d2943fb09b1c644944dd2260bbff032f4e6453f777",
+    "index": 1390,
+    "nonce": 678910,
+    "difficulty": 2,
+    "merkle_root": "b034da709d95fb36e70f09fd2fb78fc3a72aeb146efeef11e3486d46a0e4ac43",
+    "payload": {
+      "index": 1390,
+      "ts": "2026-10-23T04:16:41.670974+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1390,
+      "merkle_root": "b034da709d95fb36e70f09fd2fb78fc3a72aeb146efeef11e3486d46a0e4ac43",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00a0c5b0919a3eb1c63f7adffe781ec167ef4d785e033d1bac375e8e38ef038d",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1490
+          }
+        ],
+        "fee": 0,
+        "ts": 1792729001,
+        "height": 1390
+      }
+    ]
+  },
+  {
+    "hash": "00bff631bb3a364be32c4f422f97101c37ccb534f4a2dcf181b7839a25122a39",
+    "prev": "00a0c5b0919a3eb1c63f7adffe781ec167ef4d785e033d1bac375e8e38ef038d",
+    "index": 1391,
+    "nonce": 867265,
+    "difficulty": 2,
+    "merkle_root": "f24ee82821234b875bc595cb4ba7844c6e453f5a8d713626f30b32233a37fe6d",
+    "payload": {
+      "index": 1391,
+      "ts": "2026-10-23T04:26:42.004119+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1391,
+      "merkle_root": "f24ee82821234b875bc595cb4ba7844c6e453f5a8d713626f30b32233a37fe6d",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00bff631bb3a364be32c4f422f97101c37ccb534f4a2dcf181b7839a25122a39",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1491
+          }
+        ],
+        "fee": 0,
+        "ts": 1792729602,
+        "height": 1391
+      }
+    ]
+  },
+  {
+    "hash": "00e77a50ac9fe474e7754ee5fff1b3e53ff88609d8de9ac5244dd2c576cd6928",
+    "prev": "00bff631bb3a364be32c4f422f97101c37ccb534f4a2dcf181b7839a25122a39",
+    "index": 1392,
+    "nonce": 227349,
+    "difficulty": 2,
+    "merkle_root": "864b053584f8d138b0a648ab3a911df7cc2e1b20079fbbc71ce92aecf9bbb7c2",
+    "payload": {
+      "index": 1392,
+      "ts": "2026-10-23T04:36:42.350197+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1392,
+      "merkle_root": "864b053584f8d138b0a648ab3a911df7cc2e1b20079fbbc71ce92aecf9bbb7c2",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00e77a50ac9fe474e7754ee5fff1b3e53ff88609d8de9ac5244dd2c576cd6928",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1492
+          }
+        ],
+        "fee": 0,
+        "ts": 1792730202,
+        "height": 1392
+      }
+    ]
+  },
+  {
+    "hash": "0037d3d56ddece2cd5eda0301c60b1e2ef17666317a107729c33b127ac2a8cb6",
+    "prev": "00e77a50ac9fe474e7754ee5fff1b3e53ff88609d8de9ac5244dd2c576cd6928",
+    "index": 1393,
+    "nonce": 83999,
+    "difficulty": 2,
+    "merkle_root": "eb08050b67ac77eb49626d8be0494b738f702b3c31257652a014d1eef0027242",
+    "payload": {
+      "index": 1393,
+      "ts": "2026-10-23T04:46:42.691995+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1393,
+      "merkle_root": "eb08050b67ac77eb49626d8be0494b738f702b3c31257652a014d1eef0027242",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "0037d3d56ddece2cd5eda0301c60b1e2ef17666317a107729c33b127ac2a8cb6",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1493
+          }
+        ],
+        "fee": 0,
+        "ts": 1792730802,
+        "height": 1393
+      }
+    ]
+  },
+  {
+    "hash": "00b1e163233e2e9b043511a5fed2ad8c6b9f8ae86112ac1430f77317aed15bf8",
+    "prev": "0037d3d56ddece2cd5eda0301c60b1e2ef17666317a107729c33b127ac2a8cb6",
+    "index": 1394,
+    "nonce": 377845,
+    "difficulty": 2,
+    "merkle_root": "84055462e91e7f031de6f1e520223adf565576ba106099f9f70c123ddf3f10c6",
+    "payload": {
+      "index": 1394,
+      "ts": "2026-10-23T04:56:43.063150+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1394,
+      "merkle_root": "84055462e91e7f031de6f1e520223adf565576ba106099f9f70c123ddf3f10c6",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00b1e163233e2e9b043511a5fed2ad8c6b9f8ae86112ac1430f77317aed15bf8",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1494
+          }
+        ],
+        "fee": 0,
+        "ts": 1792731403,
+        "height": 1394
+      }
+    ]
+  },
+  {
+    "hash": "0035c2ec3f367ac1a36949056bfd8d7c9e79cce68ea98dde13156a4b1c7dd85d",
+    "prev": "00b1e163233e2e9b043511a5fed2ad8c6b9f8ae86112ac1430f77317aed15bf8",
+    "index": 1395,
+    "nonce": 891773,
+    "difficulty": 2,
+    "merkle_root": "f834006d5b93ffd2e7105cd80a4bab5e9e020b22a66857d86dd6b50c1d6bc5eb",
+    "payload": {
+      "index": 1395,
+      "ts": "2026-10-23T05:06:43.447910+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1395,
+      "merkle_root": "f834006d5b93ffd2e7105cd80a4bab5e9e020b22a66857d86dd6b50c1d6bc5eb",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "0035c2ec3f367ac1a36949056bfd8d7c9e79cce68ea98dde13156a4b1c7dd85d",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1495
+          }
+        ],
+        "fee": 0,
+        "ts": 1792732003,
+        "height": 1395
+      }
+    ]
+  },
+  {
+    "hash": "000d6b0da33de5028fcb55b8ee1497ddcc3356f02472b6fecbc86fae497ef788",
+    "prev": "0035c2ec3f367ac1a36949056bfd8d7c9e79cce68ea98dde13156a4b1c7dd85d",
+    "index": 1396,
+    "nonce": 9536,
+    "difficulty": 2,
+    "merkle_root": "ad2d76e593b2de8eada9f946049c4dbccffee12185bfb7f4419b8c5b7f6f6f9d",
+    "payload": {
+      "index": 1396,
+      "ts": "2026-10-23T05:16:43.778297+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1396,
+      "merkle_root": "ad2d76e593b2de8eada9f946049c4dbccffee12185bfb7f4419b8c5b7f6f6f9d",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "000d6b0da33de5028fcb55b8ee1497ddcc3356f02472b6fecbc86fae497ef788",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1496
+          }
+        ],
+        "fee": 0,
+        "ts": 1792732603,
+        "height": 1396
+      }
+    ]
+  },
+  {
+    "hash": "00dd7d84d8c5a44fbd5223be531091b109aa4be2d8c4b25f229883894a954e46",
+    "prev": "000d6b0da33de5028fcb55b8ee1497ddcc3356f02472b6fecbc86fae497ef788",
+    "index": 1397,
+    "nonce": 360672,
+    "difficulty": 2,
+    "merkle_root": "9d89b83b0788273bd449479ae0123880fb27990572158d91812f06d144ae7fa9",
+    "payload": {
+      "index": 1397,
+      "ts": "2026-10-23T05:26:44.111671+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1397,
+      "merkle_root": "9d89b83b0788273bd449479ae0123880fb27990572158d91812f06d144ae7fa9",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00dd7d84d8c5a44fbd5223be531091b109aa4be2d8c4b25f229883894a954e46",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1497
+          }
+        ],
+        "fee": 0,
+        "ts": 1792733204,
+        "height": 1397
+      }
+    ]
+  },
+  {
+    "hash": "00dbbacf28c6dc0be4c9a3796146164cc7bd96e661dcf774288adffb1cb71d78",
+    "prev": "00dd7d84d8c5a44fbd5223be531091b109aa4be2d8c4b25f229883894a954e46",
+    "index": 1398,
+    "nonce": 959992,
+    "difficulty": 2,
+    "merkle_root": "0974cea5810316274b6ee5607e20f78dfdf373ca071ac24fb916ac9ae5323d67",
+    "payload": {
+      "index": 1398,
+      "ts": "2026-10-23T05:36:44.466591+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1398,
+      "merkle_root": "0974cea5810316274b6ee5607e20f78dfdf373ca071ac24fb916ac9ae5323d67",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00dbbacf28c6dc0be4c9a3796146164cc7bd96e661dcf774288adffb1cb71d78",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1498
+          }
+        ],
+        "fee": 0,
+        "ts": 1792733804,
+        "height": 1398
+      }
+    ]
+  },
+  {
+    "hash": "0030c95abbfc6d1a5fd34311475198fdd7e52baad72c05ed195e5d806458c2c7",
+    "prev": "00dbbacf28c6dc0be4c9a3796146164cc7bd96e661dcf774288adffb1cb71d78",
+    "index": 1399,
+    "nonce": 684400,
+    "difficulty": 2,
+    "merkle_root": "15cdde20d77d967ab2cff220dc7a57ae473bf9f792c4823ec808bcfe10418d2c",
+    "payload": {
+      "index": 1399,
+      "ts": "2026-10-23T05:46:44.793965+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1399,
+      "merkle_root": "15cdde20d77d967ab2cff220dc7a57ae473bf9f792c4823ec808bcfe10418d2c",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "0030c95abbfc6d1a5fd34311475198fdd7e52baad72c05ed195e5d806458c2c7",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1499
+          }
+        ],
+        "fee": 0,
+        "ts": 1792734404,
+        "height": 1399
+      }
+    ]
+  },
+  {
+    "hash": "00f59c03ec52c71a1b762aefb87ad99b5050e903e00b9976104927af3dd0d0b6",
+    "prev": "0030c95abbfc6d1a5fd34311475198fdd7e52baad72c05ed195e5d806458c2c7",
+    "index": 1400,
+    "nonce": 198415,
+    "difficulty": 2,
+    "merkle_root": "069e951b29eca28b973766ccb3262d1f1a2ad010335519ddd082e3b015824c12",
+    "payload": {
+      "index": 1400,
+      "ts": "2026-10-23T05:56:45.185980+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1400,
+      "merkle_root": "069e951b29eca28b973766ccb3262d1f1a2ad010335519ddd082e3b015824c12",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "00f59c03ec52c71a1b762aefb87ad99b5050e903e00b9976104927af3dd0d0b6",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1500
+          }
+        ],
+        "fee": 0,
+        "ts": 1792735005,
+        "height": 1400
+      }
+    ]
+  },
+  {
+    "hash": "008308f05d45828be015840bb773944281011502c9e6a90e6cb9501867d42c70",
+    "prev": "00f59c03ec52c71a1b762aefb87ad99b5050e903e00b9976104927af3dd0d0b6",
+    "index": 1401,
+    "nonce": 259271,
+    "difficulty": 2,
+    "merkle_root": "f3432b3a2367530843f9ad92827473295e0a78d24d0077e63a794412fed51f2e",
+    "payload": {
+      "index": 1401,
+      "ts": "2026-10-23T06:06:45.595730+00:00",
+      "btcHeight": 972583,
+      "sunAltitude": 15.2,
+      "cables_hash": "1e31d11e91da",
+      "drones_hash": "e2432daf31d0",
+      "stamp_hash": "00000000",
+      "wallet_height": 1401,
+      "merkle_root": "f3432b3a2367530843f9ad92827473295e0a78d24d0077e63a794412fed51f2e",
+      "tx_count": 1,
+      "fee_total": 0,
+      "block_time_target": 600
+    },
+    "txs": [
+      {
+        "txid": "008308f05d45828be015840bb773944281011502c9e6a90e6cb9501867d42c70",
+        "type": "coinbase",
+        "vin": [],
+        "vout": [
+          {
+            "to": "did:pond:biougra-a13",
+            "amount": 50,
+            "mature_height": 1501
+          }
+        ],
+        "fee": 0,
+        "ts": 1792735605,
+        "height": 1401
+      }
+    ]
+  },
+  {
+    "index": 1402,
+    "hash": "7f73549ecd3bac09422e65cd4d83b3c8e858fc5458aa54c09f5d28bc45e8da33",
+    "prev": "008308f05d45828be015840bb773944281011502c9e6a90e6cb9501867d42c70",
+    "payload": {
+      "index": 1402,
+      "ts": "2026-10-23T06:17:02.162574Z",
+      "prev": "008308f05d45828be015840bb773944281011502c9e6a90e6cb9501867d42c70",
+      "entropy": "092d603a35822f5c84ffa1ff376f0a4e",
+      "sunAltitude": -10.5701,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "ca76d4e7d538a271e776813f96ec62977ffb4962a1c86e1c480cca22b1bc0c1d",
+      "ots_time": "2026-10-23T06:17:02.162574Z",
+      "ots_file": "ca76d4e7d538a271.ots"
+    }
+  },
+  {
+    "index": 1403,
+    "hash": "2a55bb8a910cd2aa906974e9b4cd30f95fe7b2eb86f651f6509def0cf03c1864",
+    "prev": "7f73549ecd3bac09422e65cd4d83b3c8e858fc5458aa54c09f5d28bc45e8da33",
+    "payload": {
+      "index": 1403,
+      "ts": "2026-10-23T06:27:18.475077Z",
+      "prev": "7f73549ecd3bac09422e65cd4d83b3c8e858fc5458aa54c09f5d28bc45e8da33",
+      "entropy": "960bd7600505d811711ee2cc031f2a82",
+      "sunAltitude": -8.3773,
+      "gps": "30.12613,-9.37437",
+      "btcHeight": 972583,
+      "btc_anchor_hash": null,
+      "btc_anchor_height": null,
+      "btc_checkpoint_txid": null,
+      "pondId": "27ef008c31aec59f",
+      "ots_queued": true,
+      "ots_hash": "7dfbd0b8a542beda0d77ff1c2c19557d3a5ce6520d215c4de6ee5b845617d7bd",
+      "ots_time": "2026-10-23T06:27:18.475077Z",
+      "ots_file": "7dfbd0b8a542beda.ots"
+    }
   }
 ]

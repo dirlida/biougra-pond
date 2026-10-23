@@ -1,0 +1,6 @@
+{
+  "did": "did:pond:biougra-a13",
+  "version": "v5.0",
+  "keys": {"hot": "kernel/keys/hot.key", "stamp": "kernel/keys/stamp.key", "cold": "offline"},
+  "created": "2026-10-22"
+}

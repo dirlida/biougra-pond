@@ -1,0 +1,34 @@
+nohup: ignoring input
+POND START v5.4 count=1349 prev=000fe974245e CAP3 LIVE MIN=600s = 10min blocks
+10MIN RULE: 92.4s elapsed, sleeping 507.6s until next block... #1350
+10MIN RULE: 152.4s elapsed, sleeping 447.6s until next block... #1350
+10MIN RULE: 212.4s elapsed, sleeping 387.6s until next block... #1350
+10MIN RULE: 272.4s elapsed, sleeping 327.6s until next block... #1350
+10MIN RULE: 332.4s elapsed, sleeping 267.6s until next block... #1350
+10MIN RULE: 392.4s elapsed, sleeping 207.6s until next block... #1350
+10MIN RULE: 452.4s elapsed, sleeping 147.6s until next block... #1350
+10MIN RULE: 512.5s elapsed, sleeping 87.5s until next block... #1350
+10MIN RULE: 572.5s elapsed, sleeping 27.5s until next block... #1350
+[DIFF 10min A13 CAP3] h=1349 avg=810s target=600s last=3 -> 3
+MINING v5 #1349 diff3 after 600.0s...
+BLOCK #1349 00052171e3e96543 diff3 nonce53743 elapsed=600.0s
+10MIN RULE: 1.0s elapsed, sleeping 599.0s until next block... #1351
+10MIN RULE: 61.0s elapsed, sleeping 539.0s until next block... #1351
+10MIN RULE: 121.0s elapsed, sleeping 479.0s until next block... #1351
+10MIN RULE: 181.0s elapsed, sleeping 419.0s until next block... #1351
+10MIN RULE: 241.0s elapsed, sleeping 359.0s until next block... #1351
+10MIN RULE: 301.0s elapsed, sleeping 299.0s until next block... #1351
+10MIN RULE: 361.0s elapsed, sleeping 239.0s until next block... #1351
+10MIN RULE: 421.0s elapsed, sleeping 179.0s until next block... #1351
+10MIN RULE: 481.0s elapsed, sleeping 119.0s until next block... #1351
+10MIN RULE: 541.0s elapsed, sleeping 59.0s until next block... #1351
+[DIFF 10min A13 CAP3] h=1350 avg=864s target=600s last=3 -> 3
+MINING v5 #1350 diff3 after 600.0s...
+BLOCK #1350 0001c755f7b76389 diff3 nonce723979 elapsed=600.0s
+10MIN RULE: 1.0s elapsed, sleeping 599.0s until next block... #1352
+10MIN RULE: 61.0s elapsed, sleeping 539.0s until next block... #1352
+10MIN RULE: 121.0s elapsed, sleeping 479.0s until next block... #1352
+10MIN RULE: 181.0s elapsed, sleeping 419.0s until next block... #1352
+10MIN RULE: 241.0s elapsed, sleeping 359.0s until next block... #1352
+10MIN RULE: 301.0s elapsed, sleeping 299.0s until next block... #1352
+10MIN RULE: 361.0s elapsed, sleeping 239.0s until next block... #1352

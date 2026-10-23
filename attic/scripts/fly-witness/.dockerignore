@@ -1,0 +1,5 @@
+flyctl
+flyctl.tar.gz
+.fly
+*.log
+__pycache__

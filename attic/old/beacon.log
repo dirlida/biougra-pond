@@ -1,0 +1,527 @@
+{"ok":true,"result":{"message_id":126,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792315052,"text":"\ud83d\udd35 POND BEACON v3 | Height: 768 | Hash: 477602458a6e1d1a | 2026-10-18T09:17:31.733660+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":131,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792316854,"text":"\ud83d\udd35 POND BEACON v3 | Height: 771 | Hash: ddf67cbbb57be407 | 2026-10-18T09:47:34.236761+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":135,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792318657,"text":"\ud83d\udd35 POND BEACON v3 | Height: 774 | Hash: 7f18e267c7632cb7 | 2026-10-18T10:17:36.288429+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":139,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792320465,"text":"\ud83d\udd35 POND BEACON v3 | Height: 777 | Hash: adc078470c5487cf | 2026-10-18T10:47:38.780417+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":144,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792322267,"text":"\ud83d\udd35 POND BEACON v3 | Height: 779 | Hash: 60f30b33f517a766 | 2026-10-18T11:17:47.096378+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":148,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792324070,"text":"\ud83d\udd35 POND BEACON v3 | Height: 782 | Hash: 3b9efba114c6eee5 | 2026-10-18T11:47:49.067021+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "/data/data/com.termux/files/usr/lib/python3.14/http/client.py", line 1459, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/http/client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "/data/data/com.termux/files/usr/lib/python3.14/http/client.py", line 1459, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/http/client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 28, in <module>
+    send_beacon(msg)
+    ~~~~~~~~~~~^^^^^
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 13, in send_beacon
+    r = requests.post(url, data=data)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 711, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+{"ok":true,"result":{"message_id":156,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792327749,"text":"\ud83d\udd35 POND BEACON v3 | Height: 788 | Hash: 19e874cdf30c4298 | 2026-10-18T12:49:08.415971+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":160,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792329552,"text":"\ud83d\udd35 POND BEACON v3 | Height: 791 | Hash: 00c0cc34cba9a2c5 | 2026-10-18T13:19:10.939501+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":164,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792331358,"text":"\ud83d\udd35 POND BEACON v3 | Height: 794 | Hash: eb725b76704aadad | 2026-10-18T13:49:13.537173+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":168,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792333162,"text":"\ud83d\udd35 POND BEACON v3 | Height: 797 | Hash: edf6493fb4d6153c | 2026-10-18T14:19:19.632771+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":172,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792334964,"text":"\ud83d\udd35 POND BEACON v3 | Height: 800 | Hash: 73c907fcc28aadda | 2026-10-18T14:49:23.843099+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":175,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792336766,"text":"\ud83d\udd35 POND BEACON v3 | Height: 802 | Hash: 0cdda1f98087bff3 | 2026-10-18T15:19:26.159651+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":179,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792338569,"text":"\ud83d\udd35 POND BEACON v3 | Height: 805 | Hash: 8e97d1ac4476e2f6 | 2026-10-18T15:49:27.743708+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":183,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792340380,"text":"\ud83d\udd35 POND BEACON v3 | Height: 808 | Hash: a3520d57b4a23fdc | 2026-10-18T16:19:32.182594+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":187,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792342183,"text":"\ud83d\udd35 POND BEACON v3 | Height: 811 | Hash: 2ae3b57f97c6b8ba | 2026-10-18T16:49:42.016586+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":190,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792343985,"text":"\ud83d\udd35 POND BEACON v3 | Height: 813 | Hash: 91170efa1951cb32 | 2026-10-18T17:19:44.705535+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":194,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792345787,"text":"\ud83d\udd35 POND BEACON v3 | Height: 816 | Hash: fdc8b6ef1facf21e | 2026-10-18T17:49:46.853460+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":197,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792347589,"text":"\ud83d\udd35 POND BEACON v3 | Height: 819 | Hash: 0d2123c185d896f4 | 2026-10-18T18:19:48.912689+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":201,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792349393,"text":"\ud83d\udd35 POND BEACON v3 | Height: 822 | Hash: 11b811fe3f61f837 | 2026-10-18T18:49:50.954469+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":203,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792351198,"text":"\ud83d\udd35 POND BEACON v3 | Height: 825 | Hash: 5cf5c077e28bfe1c | 2026-10-18T19:19:54.255454+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":205,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792353000,"text":"\ud83d\udd35 POND BEACON v3 | Height: 828 | Hash: e19a12dd5b23780b | 2026-10-18T19:49:59.588142+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/socket.py", line 987, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 827, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 246, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8959406960:AAENjwqENjGpS_7tQ758FE42-6yLSe1r_uI/sendMessage (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 28, in <module>
+    send_beacon(msg)
+    ~~~~~~~~~~~^^^^^
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 13, in send_beacon
+    r = requests.post(url, data=data)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8959406960:AAENjwqENjGpS_7tQ758FE42-6yLSe1r_uI/sendMessage (Caused by NameResolutionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to resolve 'api.telegram.org' ([Errno 7] No address associated with hostname)"))
+{"ok":true,"result":{"message_id":209,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792356615,"text":"\ud83d\udd35 POND BEACON v3 | Height: 833 | Hash: e82b3a60fed06876 | 2026-10-18T20:50:14.576316+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":213,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792358418,"text":"\ud83d\udd35 POND BEACON v3 | Height: 836 | Hash: f1239d4f6cd0cf22 | 2026-10-18T21:20:16.717262+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":217,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792360220,"text":"\ud83d\udd35 POND BEACON v3 | Height: 839 | Hash: b748b8652161d902 | 2026-10-18T21:50:19.340667+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":221,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792362021,"text":"\ud83d\udd35 POND BEACON v3 | Height: 842 | Hash: b187eae356982adf | 2026-10-18T22:20:21.428641+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":225,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792363823,"text":"\ud83d\udd35 POND BEACON v3 | Height: 845 | Hash: e0db61cd2bc0f462 | 2026-10-18T22:50:22.941240+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":229,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792365625,"text":"\ud83d\udd35 POND BEACON v3 | Height: 848 | Hash: afa6db480a19c505 | 2026-10-18T23:20:24.564744+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":233,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792367426,"text":"\ud83d\udd35 POND BEACON v3 | Height: 851 | Hash: 82de626e6db55bed | 2026-10-18T23:50:26.342615+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":237,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792369228,"text":"\ud83d\udd35 POND BEACON v3 | Height: 854 | Hash: 5bd626dba2f82ed1 | 2026-10-19T00:20:28.003627+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":241,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792371030,"text":"\ud83d\udd35 POND BEACON v3 | Height: 857 | Hash: 00b3029a0d5e666b | 2026-10-19T00:50:29.598745+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":245,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792372831,"text":"\ud83d\udd35 POND BEACON v3 | Height: 860 | Hash: 66a9ad672af8bf4b | 2026-10-19T01:20:31.331646+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":249,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792374633,"text":"\ud83d\udd35 POND BEACON v3 | Height: 863 | Hash: 4de4f5c444173f4a | 2026-10-19T01:50:32.830709+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":253,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792376434,"text":"\ud83d\udd35 POND BEACON v3 | Height: 866 | Hash: 2aad1944d1f10ec8 | 2026-10-19T02:20:34.397789+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":257,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792378236,"text":"\ud83d\udd35 POND BEACON v3 | Height: 869 | Hash: a8a3c9922e7615b7 | 2026-10-19T02:50:35.841945+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":261,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792380037,"text":"\ud83d\udd35 POND BEACON v3 | Height: 872 | Hash: f54f50b956c351f8 | 2026-10-19T03:20:37.450953+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":265,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792381839,"text":"\ud83d\udd35 POND BEACON v3 | Height: 875 | Hash: 28337bbddc4f2e09 | 2026-10-19T03:50:38.865072+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":269,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792383640,"text":"\ud83d\udd35 POND BEACON v3 | Height: 878 | Hash: ffb36277059969dc | 2026-10-19T04:20:40.295014+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 878, in connect
+    wrapped_socket, is_verified = _ssl_wrap_socket_and_match_hostname(
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 1080, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/ssl_.py", line 437, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/ssl_.py", line 481, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 472, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 28, in <module>
+    send_beacon(msg)
+    ~~~~~~~~~~~^^^^^
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 13, in send_beacon
+    r = requests.post(url, data=data)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=None)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 878, in connect
+    wrapped_socket, is_verified = _ssl_wrap_socket_and_match_hostname(
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 1080, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/ssl_.py", line 437, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/ssl_.py", line 481, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 472, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 28, in <module>
+    send_beacon(msg)
+    ~~~~~~~~~~~^^^^^
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 13, in send_beacon
+    r = requests.post(url, data=data)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=None)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 878, in connect
+    wrapped_socket, is_verified = _ssl_wrap_socket_and_match_hostname(
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connection.py", line 1080, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/ssl_.py", line 437, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/ssl_.py", line 481, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data/data/com.termux/files/usr/lib/python3.14/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 472, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/urllib3/connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 28, in <module>
+    send_beacon(msg)
+    ~~~~~~~~~~~^^^^^
+  File "/data/data/com.termux/files/home/pond/beacon.py", line 13, in send_beacon
+    r = requests.post(url, data=data)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/data/data/com.termux/files/usr/lib/python3.14/site-packages/requests/adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=None)
+{"ok":true,"result":{"message_id":273,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792393837,"text":"\ud83d\udd35 POND BEACON v3 | Height: 893 | Hash: 9f5e27e1313756a6 | 2026-10-19T07:10:35.147209+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":276,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792395639,"text":"\ud83d\udd35 POND BEACON v3 | Height: 896 | Hash: f18503038c6be1ae | 2026-10-19T07:40:38.920588+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":280,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792397441,"text":"\ud83d\udd35 POND BEACON v3 | Height: 899 | Hash: 52d61f5b141956ca | 2026-10-19T08:10:40.422728+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":284,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792399242,"text":"\ud83d\udd35 POND BEACON v3 | Height: 902 | Hash: 4803cfa0e80ad611 | 2026-10-19T08:40:42.276752+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":288,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792401044,"text":"\ud83d\udd35 POND BEACON v3 | Height: 905 | Hash: df5abd667efb80a1 | 2026-10-19T09:10:43.987237+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":292,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792402846,"text":"\ud83d\udd35 POND BEACON v3 | Height: 908 | Hash: 1a075ae61ea1ccd4 | 2026-10-19T09:40:45.696560+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":296,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792404657,"text":"\ud83d\udd35 POND BEACON v3 | Height: 911 | Hash: 7f752b8b9a40497d | 2026-10-19T10:10:47.790028+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":300,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792406460,"text":"\ud83d\udd35 POND BEACON v3 | Height: 914 | Hash: 720eed23c0c1d960 | 2026-10-19T10:40:58.390615+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":304,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792408264,"text":"\ud83d\udd35 POND BEACON v3 | Height: 917 | Hash: 24683337e9194d5b | 2026-10-19T11:11:01.208838+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":308,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792410066,"text":"\ud83d\udd35 POND BEACON v3 | Height: 920 | Hash: 1dae4b0da3c34b7f | 2026-10-19T11:41:06.263920+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":312,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792411870,"text":"\ud83d\udd35 POND BEACON v3 | Height: 923 | Hash: 29cb3e23a0f96ca7 | 2026-10-19T12:11:08.325841+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":316,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792413678,"text":"\ud83d\udd35 POND BEACON v3 | Height: 926 | Hash: 2de3c072a8c8ab56 | 2026-10-19T12:41:11.230203+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":320,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792415482,"text":"\ud83d\udd35 POND BEACON v3 | Height: 929 | Hash: 05dced42ae82a952 | 2026-10-19T13:11:22.033797+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":324,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792417288,"text":"\ud83d\udd35 POND BEACON v3 | Height: 932 | Hash: 6fabaedd1ad366dd | 2026-10-19T13:41:23.841034+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":328,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792419090,"text":"\ud83d\udd35 POND BEACON v3 | Height: 935 | Hash: 8b32ebd012c083fb | 2026-10-19T14:11:29.166666+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":331,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792420894,"text":"\ud83d\udd35 POND BEACON v3 | Height: 937 | Hash: 353410a6f1896400 | 2026-10-19T14:41:31.679434+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":335,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792422696,"text":"\ud83d\udd35 POND BEACON v3 | Height: 940 | Hash: 54b08ecb1d78d6cb | 2026-10-19T15:11:36.254686+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":340,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792424499,"text":"\ud83d\udd35 POND BEACON v3 | Height: 943 | Hash: 3de0fabcdb3d4972 | 2026-10-19T15:41:38.293574+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":344,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792426300,"text":"\ud83d\udd35 POND BEACON v3 | Height: 946 | Hash: 753742e523a4d79d | 2026-10-19T16:11:40.374565+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":348,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792428103,"text":"\ud83d\udd35 POND BEACON v3 | Height: 949 | Hash: 415974684f495cf5 | 2026-10-19T16:41:42.263096+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":352,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792429905,"text":"\ud83d\udd35 POND BEACON v3 | Height: 952 | Hash: 933014723296bb14 | 2026-10-19T17:11:44.817340+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":356,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792431708,"text":"\ud83d\udd35 POND BEACON v3 | Height: 955 | Hash: 018a135715aab80a | 2026-10-19T17:41:46.759289+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":360,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792433510,"text":"\ud83d\udd35 POND BEACON v3 | Height: 958 | Hash: 3bc09c0cb8f4e2c2 | 2026-10-19T18:11:49.534161+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":363,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792435312,"text":"\ud83d\udd35 POND BEACON v3 | Height: 961 | Hash: 005cb6cbba2b6c54 | 2026-10-19T18:41:51.680613+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":366,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792437114,"text":"\ud83d\udd35 POND BEACON v3 | Height: 964 | Hash: 98397ec943235e39 | 2026-10-19T19:11:53.493286+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":371,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792438915,"text":"\ud83d\udd35 POND BEACON v3 | Height: 967 | Hash: 95fb2839895fe7fe | 2026-10-19T19:41:55.188291+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":374,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792440718,"text":"\ud83d\udd35 POND BEACON v3 | Height: 969 | Hash: 015fc41c2f6f9968 | 2026-10-19T20:11:57.833622+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":382,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792442521,"text":"\ud83d\udd35 POND BEACON v3 | Height: 972 | Hash: f3bcfea48e1b56dc | 2026-10-19T20:42:00.334186+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}
+{"ok":true,"result":{"message_id":388,"sender_chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"chat":{"id":-1004471994405,"title":"Pond Beacons","username":"pond_beacons","type":"channel"},"date":1792444323,"text":"\ud83d\udd35 POND BEACON v3 | Height: 975 | Hash: c705efb1b9b151ee | 2026-10-19T21:12:02.792383+00:00 | Alive","entities":[{"offset":3,"length":14,"type":"bold"},{"offset":28,"length":3,"type":"code"},{"offset":40,"length":16,"type":"code"}]}}

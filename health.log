@@ -1,0 +1,138 @@
+SLOW: [(1034, 1282), (1037, 1281)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 15.1m
+blocks 1304 last #1303 sun=24.9918 btc=972583 age 17.6m 787.1KB LIVE
+SLOW: [(1034, 1282), (1037, 1281)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 4.7m
+blocks 1304 last #1303 sun=24.9918 btc=972583 age 22.2m 787.1KB STALE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 6.5m
+blocks 1306 last #1305 sun=17.2225 btc=972583 age 6.5m 788.6KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 0.9m
+blocks 1307 last #1306 sun=15.2058 btc=972583 age 0.9m 789.5KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 15.9m
+blocks 1309 last #1308 sun=15.2 btc=972583 age 5.3m 790.7KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 20.6m
+blocks 1309 last #1308 sun=15.2 btc=972583 age 10.0m 790.7KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 45.9m
+blocks 1312 last #1311 sun=15.2 btc=972583 age 5.3m 791.7KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 50.6m
+blocks 1312 last #1311 sun=15.2 btc=972583 age 10.0m 791.7KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 75.9m
+blocks 1315 last #1314 sun=15.2 btc=972583 age 5.3m 792.7KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 80.6m
+blocks 1315 last #1314 sun=15.2 btc=972583 age 9.9m 792.7KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 3.7m
+blocks 1341 last #1340 sun=15.2 btc=972583 age 0.7m 704.5KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 3.1m
+blocks 1342 last #1341 sun=15.2 btc=972583 age 4.6m 705.4KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 3.0m
+blocks 1345 last #1344 sun=15.2 btc=972583 age 6.4m 708.0KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 7.7m
+blocks 1346 last #1345 sun=15.2 btc=972583 age 1.1m 708.9KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 33.0m
+blocks 1348 last #1347 sun=15.2 btc=972583 age 6.4m 710.6KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 37.7m
+blocks 1348 last #1347 sun=15.2 btc=972583 age 11.1m 710.6KB LIVE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 63.0m
+blocks 1348 last #1347 sun=15.2 btc=972583 age 36.4m 710.6KB STALE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 67.7m
+blocks 1348 last #1347 sun=15.2 btc=972583 age 41.1m 710.6KB STALE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 3.5m
+blocks 1348 last #1347 sun=15.2 btc=972583 age 66.4m 710.6KB STALE
+SLOW: [(1034, 1282), (1037, 1281), (1304, 1850)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 8.1m
+blocks 1348 last #1347 sun=15.2 btc=972583 age 71.1m 710.6KB STALE
+SLOW: [(1037, 1281), (1304, 1850), (1348, 5528)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 512.0m
+blocks 1402 last #1401 sun=15.2 btc=972583 age 0.2m 757.5KB LIVE
+SLOW: [(1037, 1281), (1304, 1850), (1348, 5528)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 513.6m
+blocks 1402 last #1401 sun=15.2 btc=972583 age 1.8m 757.5KB LIVE
+SLOW: [(1037, 1281), (1304, 1850), (1348, 5528)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 514.2m
+blocks 1402 last #1401 sun=15.2 btc=972583 age 2.5m 757.5KB LIVE
