@@ -1,0 +1,11 @@
+{
+  "height": 1402,
+  "last_index": 1401,
+  "last_hash": "008308f05d45828be015840bb773944281011502c9e6a90e6cb9501867d42c70",
+  "last_hash_short": "008308f05d45828b",
+  "verify": "OK 96d66c",
+  "btc": 972583,
+  "diff": 2,
+  "note": "old format 0-~1300 new format 1300+ with 00 POW, ready for 000 bump",
+  "slim_kb": 153
+}
