@@ -592,3 +592,753 @@ Chain len: 1459 total = 1458 blocks + 1 thesis
 Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
 HEALTH: OK - chain alive, thesis inscribed
 Size: 790KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 0.8m
+Last mining block idx: None ts: 2026-10-23T18:36:14.595102+00:00 age: 53s
+Chain len: 1462 total = 1461 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 793KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 2.4m
+Last mining block idx: None ts: 2026-10-23T18:36:14.595102+00:00 age: 152s
+Chain len: 1462 total = 1461 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 793KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 3.0m
+Last mining block idx: None ts: 2026-10-23T18:36:14.595102+00:00 age: 187s
+Chain len: 1462 total = 1461 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 793KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 11.8m
+Last mining block idx: None ts: 2026-10-23T19:06:15.641703+00:00 age: 52s
+Chain len: 1465 total = 1464 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 795KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 13.5m
+Last mining block idx: None ts: 2026-10-23T19:06:15.641703+00:00 age: 151s
+Chain len: 1465 total = 1464 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 795KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 14.1m
+Last mining block idx: None ts: 2026-10-23T19:06:15.641703+00:00 age: 186s
+Chain len: 1465 total = 1464 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 795KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 41.8m
+Last mining block idx: None ts: 2026-10-23T19:36:16.903098+00:00 age: 51s
+Chain len: 1468 total = 1467 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 798KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 43.5m
+Last mining block idx: None ts: 2026-10-23T19:36:16.903098+00:00 age: 154s
+Chain len: 1468 total = 1467 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 798KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 44.1m
+Last mining block idx: None ts: 2026-10-23T19:36:16.903098+00:00 age: 186s
+Chain len: 1468 total = 1467 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 798KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 71.8m
+Last mining block idx: None ts: 2026-10-23T20:06:18.162872+00:00 age: 51s
+Chain len: 1471 total = 1470 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 801KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 73.5m
+Last mining block idx: None ts: 2026-10-23T20:06:18.162872+00:00 age: 153s
+Chain len: 1471 total = 1470 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 801KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 74.1m
+Last mining block idx: None ts: 2026-10-23T20:06:18.162872+00:00 age: 185s
+Chain len: 1471 total = 1470 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 801KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 101.9m
+Last mining block idx: None ts: 2026-10-23T20:36:19.229397+00:00 age: 50s
+Chain len: 1474 total = 1473 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 803KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 103.6m
+Last mining block idx: None ts: 2026-10-23T20:36:19.229397+00:00 age: 152s
+Chain len: 1474 total = 1473 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 803KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 104.1m
+Last mining block idx: None ts: 2026-10-23T20:36:19.229397+00:00 age: 184s
+Chain len: 1474 total = 1473 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 803KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 131.9m
+Last mining block idx: None ts: 2026-10-23T21:06:20.159375+00:00 age: 50s
+Chain len: 1477 total = 1476 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 806KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 133.6m
+Last mining block idx: None ts: 2026-10-23T21:06:20.159375+00:00 age: 152s
+Chain len: 1477 total = 1476 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 806KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 134.1m
+Last mining block idx: None ts: 2026-10-23T21:06:20.159375+00:00 age: 183s
+Chain len: 1477 total = 1476 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 806KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 161.9m
+Last mining block idx: None ts: 2026-10-23T21:36:21.221181+00:00 age: 49s
+Chain len: 1480 total = 1479 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 808KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 163.6m
+Last mining block idx: None ts: 2026-10-23T21:36:21.221181+00:00 age: 151s
+Chain len: 1480 total = 1479 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 808KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 164.1m
+Last mining block idx: None ts: 2026-10-23T21:36:21.221181+00:00 age: 183s
+Chain len: 1480 total = 1479 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 808KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 191.9m
+Last mining block idx: None ts: 2026-10-23T22:06:22.289554+00:00 age: 49s
+Chain len: 1483 total = 1482 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 811KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 193.6m
+Last mining block idx: None ts: 2026-10-23T22:06:22.289554+00:00 age: 150s
+Chain len: 1483 total = 1482 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 811KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 194.1m
+Last mining block idx: None ts: 2026-10-23T22:06:22.289554+00:00 age: 182s
+Chain len: 1483 total = 1482 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 811KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 221.9m
+Last mining block idx: None ts: 2026-10-23T22:36:23.295664+00:00 age: 48s
+Chain len: 1486 total = 1485 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 814KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 223.6m
+Last mining block idx: None ts: 2026-10-23T22:36:23.295664+00:00 age: 149s
+Chain len: 1486 total = 1485 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 814KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 224.1m
+Last mining block idx: None ts: 2026-10-23T22:36:23.295664+00:00 age: 181s
+Chain len: 1486 total = 1485 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 814KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 251.9m
+Last mining block idx: None ts: 2026-10-23T23:06:24.354177+00:00 age: 48s
+Chain len: 1489 total = 1488 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 816KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 253.6m
+Last mining block idx: None ts: 2026-10-23T23:06:24.354177+00:00 age: 149s
+Chain len: 1489 total = 1488 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 816KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 254.1m
+Last mining block idx: None ts: 2026-10-23T23:06:24.354177+00:00 age: 180s
+Chain len: 1489 total = 1488 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 816KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 281.9m
+Last mining block idx: None ts: 2026-10-23T23:36:25.409472+00:00 age: 47s
+Chain len: 1492 total = 1491 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 819KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 283.6m
+Last mining block idx: None ts: 2026-10-23T23:36:25.409472+00:00 age: 148s
+Chain len: 1492 total = 1491 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 819KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 284.1m
+Last mining block idx: None ts: 2026-10-23T23:36:25.409472+00:00 age: 180s
+Chain len: 1492 total = 1491 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 819KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 311.9m
+Last mining block idx: None ts: 2026-10-24T00:06:26.779663+00:00 age: 47s
+Chain len: 1495 total = 1494 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 822KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 313.6m
+Last mining block idx: None ts: 2026-10-24T00:06:26.779663+00:00 age: 147s
+Chain len: 1495 total = 1494 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 822KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 314.1m
+Last mining block idx: None ts: 2026-10-24T00:06:26.779663+00:00 age: 179s
+Chain len: 1495 total = 1494 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 822KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 341.9m
+Last mining block idx: None ts: 2026-10-24T00:36:27.810926+00:00 age: 46s
+Chain len: 1498 total = 1497 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 824KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 343.6m
+Last mining block idx: None ts: 2026-10-24T00:36:27.810926+00:00 age: 146s
+Chain len: 1498 total = 1497 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 824KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 344.1m
+Last mining block idx: None ts: 2026-10-24T00:36:27.810926+00:00 age: 178s
+Chain len: 1498 total = 1497 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 824KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 371.9m
+Last mining block idx: None ts: 2026-10-24T01:06:28.968600+00:00 age: 46s
+Chain len: 1501 total = 1500 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 827KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 373.6m
+Last mining block idx: None ts: 2026-10-24T01:06:28.968600+00:00 age: 145s
+Chain len: 1501 total = 1500 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 827KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 374.1m
+Last mining block idx: None ts: 2026-10-24T01:06:28.968600+00:00 age: 177s
+Chain len: 1501 total = 1500 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 827KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 401.9m
+Last mining block idx: None ts: 2026-10-24T01:36:30.117960+00:00 age: 45s
+Chain len: 1504 total = 1503 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 829KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 403.6m
+Last mining block idx: None ts: 2026-10-24T01:36:30.117960+00:00 age: 144s
+Chain len: 1504 total = 1503 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 829KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 404.1m
+Last mining block idx: None ts: 2026-10-24T01:36:30.117960+00:00 age: 176s
+Chain len: 1504 total = 1503 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 829KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 432.0m
+Last mining block idx: None ts: 2026-10-24T02:06:31.138830+00:00 age: 44s
+Chain len: 1507 total = 1506 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 832KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 433.6m
+Last mining block idx: None ts: 2026-10-24T02:06:31.138830+00:00 age: 144s
+Chain len: 1507 total = 1506 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 832KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 434.1m
+Last mining block idx: None ts: 2026-10-24T02:06:31.138830+00:00 age: 175s
+Chain len: 1507 total = 1506 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 832KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 462.0m
+Last mining block idx: None ts: 2026-10-24T02:36:32.333129+00:00 age: 43s
+Chain len: 1510 total = 1509 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 835KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 463.6m
+Last mining block idx: None ts: 2026-10-24T02:36:32.333129+00:00 age: 143s
+Chain len: 1510 total = 1509 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 835KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 464.1m
+Last mining block idx: None ts: 2026-10-24T02:36:32.333129+00:00 age: 175s
+Chain len: 1510 total = 1509 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 835KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 492.0m
+Last mining block idx: None ts: 2026-10-24T03:06:33.472310+00:00 age: 43s
+Chain len: 1513 total = 1512 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 837KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 493.6m
+Last mining block idx: None ts: 2026-10-24T03:06:33.472310+00:00 age: 142s
+Chain len: 1513 total = 1512 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 837KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 494.2m
+Last mining block idx: None ts: 2026-10-24T03:06:33.472310+00:00 age: 174s
+Chain len: 1513 total = 1512 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 837KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 522.0m
+Last mining block idx: None ts: 2026-10-24T03:36:34.478429+00:00 age: 42s
+Chain len: 1516 total = 1515 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 840KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 523.6m
+Last mining block idx: None ts: 2026-10-24T03:36:34.478429+00:00 age: 141s
+Chain len: 1516 total = 1515 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 840KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 524.2m
+Last mining block idx: None ts: 2026-10-24T03:36:34.478429+00:00 age: 173s
+Chain len: 1516 total = 1515 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 840KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 552.0m
+Last mining block idx: None ts: 2026-10-24T04:06:35.604130+00:00 age: 41s
+Chain len: 1519 total = 1518 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 842KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 553.6m
+Last mining block idx: None ts: 2026-10-24T04:06:35.604130+00:00 age: 140s
+Chain len: 1519 total = 1518 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 842KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 554.2m
+Last mining block idx: None ts: 2026-10-24T04:06:35.604130+00:00 age: 172s
+Chain len: 1519 total = 1518 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 842KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 582.0m
+Last mining block idx: None ts: 2026-10-24T04:36:36.620341+00:00 age: 41s
+Chain len: 1522 total = 1521 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 845KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 583.6m
+Last mining block idx: None ts: 2026-10-24T04:36:36.620341+00:00 age: 140s
+Chain len: 1522 total = 1521 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 845KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 584.2m
+Last mining block idx: None ts: 2026-10-24T04:36:36.620341+00:00 age: 171s
+Chain len: 1522 total = 1521 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 845KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 612.0m
+Last mining block idx: None ts: 2026-10-24T05:06:37.831572+00:00 age: 40s
+Chain len: 1525 total = 1524 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 848KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 613.6m
+Last mining block idx: None ts: 2026-10-24T05:06:37.831572+00:00 age: 139s
+Chain len: 1525 total = 1524 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 848KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 614.2m
+Last mining block idx: None ts: 2026-10-24T05:06:37.831572+00:00 age: 171s
+Chain len: 1525 total = 1524 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 848KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 642.0m
+Last mining block idx: None ts: 2026-10-24T05:36:38.996466+00:00 age: 40s
+Chain len: 1528 total = 1527 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 850KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 643.7m
+Last mining block idx: None ts: 2026-10-24T05:36:38.996466+00:00 age: 138s
+Chain len: 1528 total = 1527 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 850KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 644.2m
+Last mining block idx: None ts: 2026-10-24T05:36:38.996466+00:00 age: 170s
+Chain len: 1528 total = 1527 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 850KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 672.0m
+Last mining block idx: None ts: 2026-10-24T06:06:40.309185+00:00 age: 39s
+Chain len: 1531 total = 1530 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 853KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 673.7m
+Last mining block idx: None ts: 2026-10-24T06:06:40.309185+00:00 age: 137s
+Chain len: 1531 total = 1530 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 853KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 674.2m
+Last mining block idx: None ts: 2026-10-24T06:06:40.309185+00:00 age: 169s
+Chain len: 1531 total = 1530 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 853KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 702.0m
+Last mining block idx: None ts: 2026-10-24T06:36:41.539248+00:00 age: 38s
+Chain len: 1534 total = 1533 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 855KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 703.7m
+Last mining block idx: None ts: 2026-10-24T06:36:41.539248+00:00 age: 136s
+Chain len: 1534 total = 1533 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 855KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
+SLOW: [(1034, 1282), (1037, 1281), (1425, 1599)]
+ATTESTED: [(1007, 17646, '2026-10-20 hard-reset GPS-drift 17646s Biougra attested'), (1304, 1850, '2026-10-21 GPS-drift 1850s Biougra attested'), (1348, 5528, '2026-10-21 GPS-drift 5528s Biougra attested'), (1402, 6119, '2026-10-23 GPS-drift 6119s Biougra attested')]
+BTC REORG: OK
+SUN: OK
+Git push age: 704.2m
+Last mining block idx: None ts: 2026-10-24T06:36:41.539248+00:00 age: 168s
+Chain len: 1534 total = 1533 blocks + 1 thesis
+Thesis: 1453 LIVE - resultful_thesis_v1 - Attachment = Latency. Latency = Fall vel...
+HEALTH: OK - chain alive, thesis inscribed
+Size: 855KB | Location: Biougra, Inezgane, MA | Ghoul V5.4 pid 2877
